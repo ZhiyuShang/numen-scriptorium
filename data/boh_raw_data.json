@@ -38,6 +38,7 @@
           "aspect": "lantern",
           "result_id": "x.watchmansparadoxes",
           "result_name": "Lesson: Watchman's Paradoxes",
+          "result_name_cn": "教诲：守夜人的悖论",
           "level": 2,
           "type": "spawn"
         },
@@ -46,6 +47,7 @@
           "aspect": "lantern",
           "result_id": "numen.asce",
           "result_name": "Numen: the Paths of the Sun",
+          "result_name_cn": "闰识：日之道途",
           "level": 1,
           "type": "spawn"
         }
@@ -88,6 +90,7 @@
           "aspect": "grail",
           "result_id": "x.applebrighteuphonies",
           "result_name": "Lesson: Applebright Euphonies",
+          "result_name_cn": "教诲：光明果悦音",
           "level": 2,
           "type": "spawn"
         },
@@ -96,6 +99,7 @@
           "aspect": "grail",
           "result_id": "numen.desc",
           "result_name": "Numen: the Sun's Weakness",
+          "result_name_cn": "闰识：日之瑕玷",
           "level": 1,
           "type": "spawn"
         }
@@ -138,6 +142,7 @@
           "aspect": "knock",
           "result_id": "x.glassblowing.vesselcrafting",
           "result_name": "Lesson: Glassblowing & Vesselcrafting",
+          "result_name_cn": "教诲：玻璃吹制与容器制造",
           "level": 2,
           "type": "spawn"
         },
@@ -146,6 +151,7 @@
           "aspect": "knock",
           "result_id": "numen.conf",
           "result_name": "Numen: Inescapable Confinement",
+          "result_name_cn": "闰识：永陷囹圄",
           "level": 1,
           "type": "spawn"
         }
@@ -188,6 +194,7 @@
           "aspect": "winter",
           "result_id": "x.sights.sensations",
           "result_name": "Lesson: Sights & Sensations",
+          "result_name_cn": "教诲：景象与感知",
           "level": 2,
           "type": "spawn"
         },
@@ -196,6 +203,7 @@
           "aspect": "winter",
           "result_id": "numen.unde",
           "result_name": "Numen: a Final Understanding",
+          "result_name_cn": "闰识：终焉之悟",
           "level": 1,
           "type": "spawn"
         }
@@ -237,6 +245,7 @@
           "aspect": "nectar",
           "result_id": "x.spices.savours",
           "result_name": "Lesson: Spices & Savours",
+          "result_name_cn": "教诲：香料与滋味",
           "level": 2,
           "type": "spawn"
         },
@@ -245,6 +254,7 @@
           "aspect": "nectar",
           "result_id": "numen.feas",
           "result_name": "Numen: an Irresistible Feast",
+          "result_name_cn": "闰识：销魂盛宴",
           "level": 1,
           "type": "spawn"
         }
@@ -287,6 +297,7 @@
           "aspect": "edge",
           "result_id": "x.sharps",
           "result_name": "Lesson: Sharps",
+          "result_name_cn": "教诲：锋锐",
           "level": 2,
           "type": "spawn"
         },
@@ -295,6 +306,7 @@
           "aspect": "edge",
           "result_id": "numen.alte",
           "result_name": "Numen: Merciless Alteration",
+          "result_name_cn": "闰识：无情变革",
           "level": 1,
           "type": "spawn"
         }
@@ -337,6 +349,7 @@
           "aspect": "moth",
           "result_id": "x.weaving.knotworking",
           "result_name": "Lesson: Weaving & Knotworking",
+          "result_name_cn": "教诲：缝纫与编织",
           "level": 2,
           "type": "spawn"
         },
@@ -345,6 +358,7 @@
           "aspect": "moth",
           "result_id": "numen.worl",
           "result_name": "Numen: Weaving the World",
+          "result_name_cn": "闰识：编织世界",
           "level": 1,
           "type": "spawn"
         }
@@ -387,6 +401,7 @@
           "aspect": "rose",
           "result_id": "x.pentiments.precursors",
           "result_name": "Lesson: Pentiments & Precursors",
+          "result_name_cn": "教诲：覆画残迹与古老前身",
           "level": 2,
           "type": "spawn"
         },
@@ -395,6 +410,7 @@
           "aspect": "rose",
           "result_id": "numen.oldl",
           "result_name": "Numen: That Old Lost Music",
+          "result_name_cn": "闰识：失落古调",
           "level": 1,
           "type": "spawn"
         }
@@ -437,6 +453,7 @@
           "aspect": "edge",
           "result_id": "x.sickle.eclipse",
           "result_name": "Lesson: Sickle & Eclipse",
+          "result_name_cn": "教诲：镰刀与日蚀",
           "level": 2,
           "type": "spawn"
         },
@@ -445,6 +462,7 @@
           "aspect": "edge",
           "result_id": "numen.bala",
           "result_name": "Numen: Back Into Balance",
+          "result_name_cn": "闰识：重返平衡",
           "level": 1,
           "type": "spawn"
         }
@@ -487,6 +505,7 @@
           "aspect": "sky",
           "result_id": "x.sacrasolisinvicti",
           "result_name": "Lesson: Sacra Solis Invicti",
+          "result_name_cn": "教诲：无敌太阳典仪",
           "level": 2,
           "type": "spawn"
         },
@@ -495,6 +514,7 @@
           "aspect": "sky",
           "result_id": "numen.secr",
           "result_name": "Numen: the Great Counterfeit",
+          "result_name_cn": "闰识：欺世赝身",
           "level": 1,
           "type": "spawn"
         }
@@ -537,6 +557,7 @@
           "aspect": "forge",
           "result_id": "x.bells.brazieries",
           "result_name": "Lesson: Bells & Brazieries",
+          "result_name_cn": "教诲：洪钟与铜器",
           "level": 2,
           "type": "spawn"
         },
@@ -545,6 +566,7 @@
           "aspect": "forge",
           "result_id": "numen.bell",
           "result_name": "Numen: the Bells of Ys",
+          "result_name_cn": "闰识：伊苏之钟",
           "level": 1,
           "type": "spawn"
         }
@@ -587,6 +609,7 @@
           "aspect": "nectar",
           "result_id": "x.rites.theroots",
           "result_name": "Lesson: Rites of the Roots",
+          "result_name_cn": "教诲：根系之仪",
           "level": 2,
           "type": "spawn"
         },
@@ -595,6 +618,7 @@
           "aspect": "nectar",
           "result_id": "numen.loop",
           "result_name": "Numen: Loopholes",
+          "result_name_cn": "闰识：永恒罅隙",
           "level": 1,
           "type": "spawn"
         }
@@ -636,6 +660,7 @@
           "aspect": "moon",
           "result_id": "x.edictsinviolable",
           "result_name": "Lesson: Edicts Inviolable",
+          "result_name_cn": "教诲：无侵之敕令",
           "level": 3,
           "type": "spawn"
         },
@@ -644,6 +669,7 @@
           "aspect": "moon",
           "result_id": "numen.thre",
           "result_name": "Numen: Three Rules",
+          "result_name_cn": "闰识：三者律法",
           "level": 1,
           "type": "spawn"
         }
@@ -685,6 +711,7 @@
           "aspect": "sky",
           "result_id": "x.watchmansparadoxes",
           "result_name": "Lesson: Watchman's Paradoxes",
+          "result_name_cn": "教诲：守夜人的悖论",
           "level": 1,
           "type": "spawn"
         },
@@ -693,6 +720,7 @@
           "aspect": "sky",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -734,6 +762,7 @@
           "aspect": "lantern",
           "result_id": "x.glaziery.lightsmithing",
           "result_name": "Lesson: Glaziery & Lightsmithing",
+          "result_name_cn": "教诲：玻璃与锻光",
           "level": 1,
           "type": "spawn"
         },
@@ -742,6 +771,7 @@
           "aspect": "lantern",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -783,6 +813,7 @@
           "aspect": "sky",
           "result_id": "x.ouranoscopy",
           "result_name": "Lesson: Ouranoscopy",
+          "result_name_cn": "教诲：窥天术",
           "level": 1,
           "type": "spawn"
         },
@@ -791,6 +822,7 @@
           "aspect": "sky",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -832,6 +864,7 @@
           "aspect": "moth",
           "result_id": "x.resurgences.emergences",
           "result_name": "Lesson: Resurgences & Emergences",
+          "result_name_cn": "教诲：复苏与羽化",
           "level": 1,
           "type": "spawn"
         },
@@ -840,6 +873,7 @@
           "aspect": "moth",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -881,6 +915,7 @@
           "aspect": "heart",
           "result_id": "x.drums.dances",
           "result_name": "Lesson: Drums & Dances",
+          "result_name_cn": "教诲：鼓点与舞步",
           "level": 2,
           "type": "spawn"
         },
@@ -889,6 +924,7 @@
           "aspect": "heart",
           "result_id": "earthsign",
           "result_name": "Earth-Sign",
+          "result_name_cn": "大地之兆",
           "level": 1,
           "type": "spawn"
         }
@@ -930,6 +966,7 @@
           "aspect": "moon",
           "result_id": "x.wolfstories",
           "result_name": "Lesson: Wolf Stories",
+          "result_name_cn": "教诲：狼的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -938,6 +975,7 @@
           "aspect": "moon",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -979,6 +1017,7 @@
           "aspect": "moon",
           "result_id": "x.sickle.eclipse",
           "result_name": "Lesson: Sickle & Eclipse",
+          "result_name_cn": "教诲：镰刀与日蚀",
           "level": 1,
           "type": "spawn"
         },
@@ -987,6 +1026,7 @@
           "aspect": "moon",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -1028,6 +1068,7 @@
           "aspect": "moth",
           "result_id": "x.solutions.separations",
           "result_name": "Lesson: Solutions & Separations",
+          "result_name_cn": "教诲：溶解与离析",
           "level": 2,
           "type": "spawn"
         },
@@ -1036,6 +1077,7 @@
           "aspect": "moth",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -1077,6 +1119,7 @@
           "aspect": "forge",
           "result_id": "x.door.wall",
           "result_name": "Lesson: Door & Wall",
+          "result_name_cn": "教诲：门扉与墙垣",
           "level": 2,
           "type": "spawn"
         },
@@ -1085,6 +1128,7 @@
           "aspect": "forge",
           "result_id": "secret.threshold",
           "result_name": "Secret Threshold",
+          "result_name_cn": "秘密门关",
           "level": 1,
           "type": "spawn"
         }
@@ -1127,6 +1171,7 @@
           "aspect": "grail",
           "result_id": "x.tridesmahiera",
           "result_name": "Lesson: Tridesma Hiera",
+          "result_name_cn": "教诲：三重誓之仪",
           "level": 1,
           "type": "spawn"
         },
@@ -1135,6 +1180,7 @@
           "aspect": "grail",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -1176,6 +1222,7 @@
           "aspect": "winter",
           "result_id": "x.rhyme.remembrance",
           "result_name": "Lesson: Rhyme & Remembrance",
+          "result_name_cn": "教诲：音律与铭记",
           "level": 1,
           "type": "spawn"
         },
@@ -1184,6 +1231,7 @@
           "aspect": "winter",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -1225,6 +1273,7 @@
           "aspect": "moon",
           "result_id": "x.putrefactions.calcinations",
           "result_name": "Lesson: Putrefactions & Calcinations",
+          "result_name_cn": "教诲：腐化与煅烧",
           "level": 1,
           "type": "spawn"
         },
@@ -1233,6 +1282,7 @@
           "aspect": "moon",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -1274,6 +1324,7 @@
           "aspect": "lantern",
           "result_id": "x.sacrasolisinvicti",
           "result_name": "Lesson: Sacra Solis Invicti",
+          "result_name_cn": "教诲：无敌太阳典仪",
           "level": 1,
           "type": "spawn"
         },
@@ -1282,6 +1333,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -1323,6 +1375,7 @@
           "aspect": "knock",
           "result_id": "x.edictsliminal",
           "result_name": "Lesson: Edicts Liminal",
+          "result_name_cn": "教诲：阈限之敕令",
           "level": 2,
           "type": "spawn"
         },
@@ -1331,6 +1384,7 @@
           "aspect": "knock",
           "result_id": "secret.threshold",
           "result_name": "Secret Threshold",
+          "result_name_cn": "秘密门关",
           "level": 1,
           "type": "spawn"
         }
@@ -1372,6 +1426,7 @@
           "aspect": "rose",
           "result_id": "x.preliminalmeter",
           "result_name": "Lesson: Preliminal Meter",
+          "result_name_cn": "教诲：阙前格律",
           "level": 1,
           "type": "spawn"
         },
@@ -1380,6 +1435,7 @@
           "aspect": "rose",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -1421,6 +1477,7 @@
           "aspect": "forge",
           "result_id": "x.pyroglyphics",
           "result_name": "Lesson: Pyroglyphics",
+          "result_name_cn": "教诲：焰篆体",
           "level": 1,
           "type": "spawn"
         },
@@ -1429,6 +1486,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -1471,6 +1529,7 @@
           "aspect": "moon",
           "result_id": "x.snowstories",
           "result_name": "Lesson: Snow Stories",
+          "result_name_cn": "教诲：白雪的故事",
           "level": 2,
           "type": "spawn"
         },
@@ -1479,6 +1538,7 @@
           "aspect": "moon",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -1520,6 +1580,7 @@
           "aspect": "rose",
           "result_id": "x.inks.power",
           "result_name": "Lesson: Inks of Power",
+          "result_name_cn": "教诲：力量之墨",
           "level": 2,
           "type": "spawn"
         },
@@ -1528,6 +1589,7 @@
           "aspect": "rose",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -1569,6 +1631,7 @@
           "aspect": "lantern",
           "result_id": "x.anbary.lapidary",
           "result_name": "Lesson: Anbary & Lapidary",
+          "result_name_cn": "教诲：雕珀与琢石",
           "level": 1,
           "type": "spawn"
         },
@@ -1577,6 +1640,7 @@
           "aspect": "lantern",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -1618,6 +1682,7 @@
           "aspect": "moon",
           "result_id": "x.seastories",
           "result_name": "Lesson: Sea Stories",
+          "result_name_cn": "教诲：大海的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -1626,6 +1691,7 @@
           "aspect": "moon",
           "result_id": "mem.gossip",
           "result_name": "Memory: Gossip",
+          "result_name_cn": "回忆：流言",
           "level": 1,
           "type": "spawn"
         }
@@ -1668,6 +1734,7 @@
           "aspect": "moon",
           "result_id": "x.wolfstories",
           "result_name": "Lesson: Wolf Stories",
+          "result_name_cn": "教诲：狼的故事",
           "level": 3,
           "type": "spawn"
         },
@@ -1676,6 +1743,7 @@
           "aspect": "moon",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -1717,6 +1785,7 @@
           "aspect": "knock",
           "result_id": "x.thegreatsignsandthegreatscars",
           "result_name": "Lesson: The Great Signs and the Great Scars",
+          "result_name_cn": "教诲：伟大符印与伟大伤疤",
           "level": 2,
           "type": "spawn"
         },
@@ -1725,6 +1794,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -1766,6 +1836,7 @@
           "aspect": "rose",
           "result_id": "x.preliminalmeter",
           "result_name": "Lesson: Preliminal Meter",
+          "result_name_cn": "教诲：阙前格律",
           "level": 2,
           "type": "spawn"
         },
@@ -1774,6 +1845,7 @@
           "aspect": "rose",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -1815,6 +1887,7 @@
           "aspect": "rose",
           "result_id": "x.preliminalmeter",
           "result_name": "Lesson: Preliminal Meter",
+          "result_name_cn": "教诲：阙前格律",
           "level": 2,
           "type": "spawn"
         },
@@ -1823,6 +1896,7 @@
           "aspect": "rose",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -1865,6 +1939,7 @@
           "aspect": "rose",
           "result_id": "x.sandstories",
           "result_name": "Lesson: Sand Stories",
+          "result_name_cn": "教诲：沙的故事",
           "level": 2,
           "type": "spawn"
         },
@@ -1873,6 +1948,7 @@
           "aspect": "rose",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -1914,6 +1990,7 @@
           "aspect": "grail",
           "result_id": "x.desires.dissolutions",
           "result_name": "Lesson: Desires & Dissolutions",
+          "result_name_cn": "教诲：诱惑与消殒",
           "level": 2,
           "type": "spawn"
         },
@@ -1922,6 +1999,7 @@
           "aspect": "grail",
           "result_id": "music.beguiling",
           "result_name": "Beguiling Melody",
+          "result_name_cn": "诱人旋律",
           "level": 1,
           "type": "spawn"
         }
@@ -1964,6 +2042,7 @@
           "aspect": "nectar",
           "result_id": "x.leaves.thorns",
           "result_name": "Lesson: Leaves & Thorns",
+          "result_name_cn": "教诲：叶片与棘刺",
           "level": 2,
           "type": "spawn"
         },
@@ -1972,6 +2051,7 @@
           "aspect": "nectar",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -2013,6 +2093,7 @@
           "aspect": "edge",
           "result_id": "x.disciplines.thehammer",
           "result_name": "Lesson: Disciplines of the Hammer",
+          "result_name_cn": "教诲：锤砧的戒律",
           "level": 2,
           "type": "spawn"
         },
@@ -2021,6 +2102,7 @@
           "aspect": "edge",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -2063,6 +2145,7 @@
           "aspect": "moon",
           "result_id": "x.seastories",
           "result_name": "Lesson: Sea Stories",
+          "result_name_cn": "教诲：大海的故事",
           "level": 2,
           "type": "spawn"
         },
@@ -2071,6 +2154,7 @@
           "aspect": "moon",
           "result_id": "mem.salt",
           "result_name": "Memory: Salt",
+          "result_name_cn": "回忆：盐",
           "level": 1,
           "type": "spawn"
         }
@@ -2112,6 +2196,7 @@
           "aspect": "moon",
           "result_id": "x.edictsinviolable",
           "result_name": "Lesson: Edicts Inviolable",
+          "result_name_cn": "教诲：无侵之敕令",
           "level": 1,
           "type": "spawn"
         },
@@ -2120,6 +2205,7 @@
           "aspect": "moon",
           "result_id": "mem.storm",
           "result_name": "Memory: Storm",
+          "result_name_cn": "回忆：风暴",
           "level": 1,
           "type": "spawn"
         }
@@ -2161,6 +2247,7 @@
           "aspect": "scale",
           "result_id": "x.coil.chasm",
           "result_name": "Lesson: Coil & Chasm",
+          "result_name_cn": "教诲：虬蟠与裂隙",
           "level": 1,
           "type": "spawn"
         },
@@ -2169,6 +2256,7 @@
           "aspect": "scale",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -2210,6 +2298,7 @@
           "aspect": "moon",
           "result_id": "x.wolfstories",
           "result_name": "Lesson: Wolf Stories",
+          "result_name_cn": "教诲：狼的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -2218,6 +2307,7 @@
           "aspect": "moon",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -2259,6 +2349,7 @@
           "aspect": "moon",
           "result_id": "x.pearl.tide",
           "result_name": "Lesson: Pearl & Tide",
+          "result_name_cn": "教诲：珍珠与浪潮",
           "level": 1,
           "type": "spawn"
         },
@@ -2267,6 +2358,7 @@
           "aspect": "moon",
           "result_id": "mem.salt",
           "result_name": "Memory: Salt",
+          "result_name_cn": "回忆：盐",
           "level": 1,
           "type": "spawn"
         }
@@ -2309,6 +2401,7 @@
           "aspect": "heart",
           "result_id": "x.stitching.binding",
           "result_name": "Lesson: Stitching & Binding",
+          "result_name_cn": "教诲：缝合与装订",
           "level": 2,
           "type": "spawn"
         },
@@ -2317,6 +2410,7 @@
           "aspect": "heart",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -2358,6 +2452,7 @@
           "aspect": "scale",
           "result_id": "x.pentiments.precursors",
           "result_name": "Lesson: Pentiments & Precursors",
+          "result_name_cn": "教诲：覆画残迹与古老前身",
           "level": 1,
           "type": "spawn"
         },
@@ -2366,6 +2461,7 @@
           "aspect": "scale",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -2407,6 +2503,7 @@
           "aspect": "moon",
           "result_id": "x.maggephenemysteries",
           "result_name": "Lesson: Maggephene Mysteries",
+          "result_name_cn": "教诲：疫疠之秘",
           "level": 1,
           "type": "spawn"
         },
@@ -2415,6 +2512,7 @@
           "aspect": "moon",
           "result_id": "mem.solace",
           "result_name": "Memory: Solace",
+          "result_name_cn": "回忆：慰藉",
           "level": 1,
           "type": "spawn"
         }
@@ -2456,6 +2554,7 @@
           "aspect": "grail",
           "result_id": "x.leaves.thorns",
           "result_name": "Lesson: Leaves & Thorns",
+          "result_name_cn": "教诲：叶片与棘刺",
           "level": 1,
           "type": "spawn"
         },
@@ -2464,6 +2563,7 @@
           "aspect": "grail",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -2506,6 +2606,7 @@
           "aspect": "knock",
           "result_id": "x.thegreatsignsandthegreatscars",
           "result_name": "Lesson: The Great Signs and the Great Scars",
+          "result_name_cn": "教诲：伟大符印与伟大伤疤",
           "level": 2,
           "type": "spawn"
         },
@@ -2514,6 +2615,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -2556,6 +2658,7 @@
           "aspect": "knock",
           "result_id": "x.thegreatsignsandthegreatscars",
           "result_name": "Lesson: The Great Signs and the Great Scars",
+          "result_name_cn": "教诲：伟大符印与伟大伤疤",
           "level": 1,
           "type": "spawn"
         },
@@ -2564,6 +2667,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -2606,6 +2710,7 @@
           "aspect": "knock",
           "result_id": "x.thegreatsignsandthegreatscars",
           "result_name": "Lesson: The Great Signs and the Great Scars",
+          "result_name_cn": "教诲：伟大符印与伟大伤疤",
           "level": 1,
           "type": "spawn"
         },
@@ -2614,6 +2719,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -2655,6 +2761,7 @@
           "aspect": "grail",
           "result_id": "x.applebrighteuphonies",
           "result_name": "Lesson: Applebright Euphonies",
+          "result_name_cn": "教诲：光明果悦音",
           "level": 2,
           "type": "spawn"
         },
@@ -2663,6 +2770,7 @@
           "aspect": "grail",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -2705,6 +2813,7 @@
           "aspect": "nectar",
           "result_id": "x.rites.theroots",
           "result_name": "Lesson: Rites of the Roots",
+          "result_name_cn": "教诲：根系之仪",
           "level": 2,
           "type": "spawn"
         },
@@ -2713,6 +2822,7 @@
           "aspect": "nectar",
           "result_id": "earthsign",
           "result_name": "Earth-Sign",
+          "result_name_cn": "大地之兆",
           "level": 1,
           "type": "spawn"
         }
@@ -2754,6 +2864,7 @@
           "aspect": "lantern",
           "result_id": "x.pyroglyphics",
           "result_name": "Lesson: Pyroglyphics",
+          "result_name_cn": "教诲：焰篆体",
           "level": 2,
           "type": "spawn"
         },
@@ -2762,6 +2873,7 @@
           "aspect": "lantern",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -2803,6 +2915,7 @@
           "aspect": "lantern",
           "result_id": "x.auroralcontemplations",
           "result_name": "Lesson: Auroral Contemplations",
+          "result_name_cn": "教诲：曙光的静观",
           "level": 1,
           "type": "spawn"
         },
@@ -2811,6 +2924,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -2853,6 +2967,7 @@
           "aspect": "nectar",
           "result_id": "x.rites.theroots",
           "result_name": "Lesson: Rites of the Roots",
+          "result_name_cn": "教诲：根系之仪",
           "level": 1,
           "type": "spawn"
         },
@@ -2861,6 +2976,7 @@
           "aspect": "nectar",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -2903,6 +3019,7 @@
           "aspect": "edge",
           "result_id": "x.disciplines.thehammer",
           "result_name": "Lesson: Disciplines of the Hammer",
+          "result_name_cn": "教诲：锤砧的戒律",
           "level": 1,
           "type": "spawn"
         },
@@ -2911,6 +3028,7 @@
           "aspect": "edge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -2953,6 +3071,7 @@
           "aspect": "edge",
           "result_id": "x.disciplines.thescar",
           "result_name": "Lesson: Disciplines of the Scar",
+          "result_name_cn": "教诲：伤疤的戒律",
           "level": 1,
           "type": "spawn"
         },
@@ -2961,6 +3080,7 @@
           "aspect": "edge",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -3002,6 +3122,7 @@
           "aspect": "knock",
           "result_id": "x.edictsliminal",
           "result_name": "Lesson: Edicts Liminal",
+          "result_name_cn": "教诲：阈限之敕令",
           "level": 1,
           "type": "spawn"
         },
@@ -3010,6 +3131,7 @@
           "aspect": "knock",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -3051,6 +3173,7 @@
           "aspect": "sky",
           "result_id": "x.sights.sensations",
           "result_name": "Lesson: Sights & Sensations",
+          "result_name_cn": "教诲：景象与感知",
           "level": 1,
           "type": "spawn"
         },
@@ -3059,6 +3182,7 @@
           "aspect": "sky",
           "result_id": "mem.solace",
           "result_name": "Memory: Solace",
+          "result_name_cn": "回忆：慰藉",
           "level": 1,
           "type": "spawn"
         }
@@ -3100,6 +3224,7 @@
           "aspect": "knock",
           "result_id": "x.door.wall",
           "result_name": "Lesson: Door & Wall",
+          "result_name_cn": "教诲：门扉与墙垣",
           "level": 1,
           "type": "spawn"
         },
@@ -3108,6 +3233,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -3149,6 +3275,7 @@
           "aspect": "lantern",
           "result_id": "x.purifications.exaltations",
           "result_name": "Lesson: Purifications & Exaltations",
+          "result_name_cn": "教诲：精炼与擢升",
           "level": 1,
           "type": "spawn"
         },
@@ -3157,6 +3284,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -3198,6 +3326,7 @@
           "aspect": "sky",
           "result_id": "x.lockworks.clockworks",
           "result_name": "Lesson: Lockworks & Clockworks",
+          "result_name_cn": "教诲：锁簧与发条",
           "level": 1,
           "type": "spawn"
         },
@@ -3206,6 +3335,7 @@
           "aspect": "sky",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -3247,6 +3377,7 @@
           "aspect": "knock",
           "result_id": "x.edictsliminal",
           "result_name": "Lesson: Edicts Liminal",
+          "result_name_cn": "教诲：阈限之敕令",
           "level": 1,
           "type": "spawn"
         },
@@ -3255,6 +3386,7 @@
           "aspect": "knock",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -3296,6 +3428,7 @@
           "aspect": "moth",
           "result_id": "x.transformations.liberations",
           "result_name": "Lesson: Transformations & Liberations",
+          "result_name_cn": "教诲：嬗变与解放",
           "level": 1,
           "type": "spawn"
         },
@@ -3304,6 +3437,7 @@
           "aspect": "moth",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -3345,6 +3479,7 @@
           "aspect": "edge",
           "result_id": "x.sharps",
           "result_name": "Lesson: Sharps",
+          "result_name_cn": "教诲：锋锐",
           "level": 1,
           "type": "spawn"
         },
@@ -3353,6 +3488,7 @@
           "aspect": "edge",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -3394,6 +3530,7 @@
           "aspect": "winter",
           "result_id": "x.snowstories",
           "result_name": "Lesson: Snow Stories",
+          "result_name_cn": "教诲：白雪的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -3402,6 +3539,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -3443,6 +3581,7 @@
           "aspect": "winter",
           "result_id": "x.quenchings.quellings",
           "result_name": "Lesson: Quenchings & Quellings",
+          "result_name_cn": "教诲：淬火与熄焰",
           "level": 1,
           "type": "spawn"
         },
@@ -3451,6 +3590,7 @@
           "aspect": "winter",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -3492,6 +3632,7 @@
           "aspect": "sky",
           "result_id": "x.skystories",
           "result_name": "Lesson: Sky Stories",
+          "result_name_cn": "教诲：天空的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -3500,6 +3641,7 @@
           "aspect": "sky",
           "result_id": "mem.gossip",
           "result_name": "Memory: Gossip",
+          "result_name_cn": "回忆：流言",
           "level": 1,
           "type": "spawn"
         }
@@ -3541,6 +3683,7 @@
           "aspect": "scale",
           "result_id": "x.path.pilgrim",
           "result_name": "Lesson: Path & Pilgrim",
+          "result_name_cn": "教诲：道途与朝圣",
           "level": 1,
           "type": "spawn"
         },
@@ -3549,6 +3692,7 @@
           "aspect": "scale",
           "result_id": "mem.gossip",
           "result_name": "Memory: Gossip",
+          "result_name_cn": "回忆：流言",
           "level": 1,
           "type": "spawn"
         }
@@ -3590,6 +3734,7 @@
           "aspect": "heart",
           "result_id": "x.surgeries.exsanguinations",
           "result_name": "Lesson: Surgeries & Exsanguinations",
+          "result_name_cn": "教诲：手术与放血",
           "level": 1,
           "type": "spawn"
         },
@@ -3598,6 +3743,7 @@
           "aspect": "heart",
           "result_id": "mem.storm",
           "result_name": "Memory: Storm",
+          "result_name_cn": "回忆：风暴",
           "level": 1,
           "type": "spawn"
         }
@@ -3639,6 +3785,7 @@
           "aspect": "grail",
           "result_id": "x.resurgences.emergences",
           "result_name": "Lesson: Resurgences & Emergences",
+          "result_name_cn": "教诲：复苏与羽化",
           "level": 1,
           "type": "spawn"
         },
@@ -3647,6 +3794,7 @@
           "aspect": "grail",
           "result_id": "music.beguiling",
           "result_name": "Beguiling Melody",
+          "result_name_cn": "诱人旋律",
           "level": 1,
           "type": "spawn"
         }
@@ -3689,6 +3837,7 @@
           "aspect": "grail",
           "result_id": "x.desires.dissolutions",
           "result_name": "Lesson: Desires & Dissolutions",
+          "result_name_cn": "教诲：诱惑与消殒",
           "level": 1,
           "type": "spawn"
         },
@@ -3697,6 +3846,7 @@
           "aspect": "grail",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -3739,6 +3889,7 @@
           "aspect": "heart",
           "result_id": "x.maggephenemysteries",
           "result_name": "Lesson: Maggephene Mysteries",
+          "result_name_cn": "教诲：疫疠之秘",
           "level": 1,
           "type": "spawn"
         },
@@ -3747,6 +3898,7 @@
           "aspect": "heart",
           "result_id": "mem.solace",
           "result_name": "Memory: Solace",
+          "result_name_cn": "回忆：慰藉",
           "level": 1,
           "type": "spawn"
         }
@@ -3789,6 +3941,7 @@
           "aspect": "grail",
           "result_id": "x.resurgences.emergences",
           "result_name": "Lesson: Resurgences & Emergences",
+          "result_name_cn": "教诲：复苏与羽化",
           "level": 2,
           "type": "spawn"
         },
@@ -3797,6 +3950,7 @@
           "aspect": "grail",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -3839,6 +3993,7 @@
           "aspect": "edge",
           "result_id": "x.disciplines.thescar",
           "result_name": "Lesson: Disciplines of the Scar",
+          "result_name_cn": "教诲：伤疤的戒律",
           "level": 1,
           "type": "spawn"
         },
@@ -3847,6 +4002,7 @@
           "aspect": "edge",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -3889,6 +4045,7 @@
           "aspect": "sky",
           "result_id": "x.glassblowing.vesselcrafting",
           "result_name": "Lesson: Glassblowing & Vesselcrafting",
+          "result_name_cn": "教诲：玻璃吹制与容器制造",
           "level": 1,
           "type": "spawn"
         },
@@ -3897,6 +4054,7 @@
           "aspect": "sky",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -3939,6 +4097,7 @@
           "aspect": "heart",
           "result_id": "x.weaving.knotworking",
           "result_name": "Lesson: Weaving & Knotworking",
+          "result_name_cn": "教诲：缝纫与编织",
           "level": 1,
           "type": "spawn"
         },
@@ -3947,6 +4106,7 @@
           "aspect": "heart",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -3988,6 +4148,7 @@
           "aspect": "lantern",
           "result_id": "x.auroralcontemplations",
           "result_name": "Lesson: Auroral Contemplations",
+          "result_name_cn": "教诲：曙光的静观",
           "level": 1,
           "type": "spawn"
         },
@@ -3996,6 +4157,7 @@
           "aspect": "lantern",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -4037,6 +4199,7 @@
           "aspect": "winter",
           "result_id": "x.snowstories",
           "result_name": "Lesson: Snow Stories",
+          "result_name_cn": "教诲：白雪的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -4045,6 +4208,7 @@
           "aspect": "winter",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -4087,6 +4251,7 @@
           "aspect": "edge",
           "result_id": "x.disciplines.thehammer",
           "result_name": "Lesson: Disciplines of the Hammer",
+          "result_name_cn": "教诲：锤砧的戒律",
           "level": 1,
           "type": "spawn"
         },
@@ -4095,6 +4260,7 @@
           "aspect": "edge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -4137,6 +4303,7 @@
           "aspect": "grail",
           "result_id": "x.thegreatsignsandthegreatscars",
           "result_name": "Lesson: The Great Signs and the Great Scars",
+          "result_name_cn": "教诲：伟大符印与伟大伤疤",
           "level": 2,
           "type": "spawn"
         },
@@ -4145,6 +4312,7 @@
           "aspect": "grail",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -4187,6 +4355,7 @@
           "aspect": "moth",
           "result_id": "x.weaving.knotworking",
           "result_name": "Lesson: Weaving & Knotworking",
+          "result_name_cn": "教诲：缝纫与编织",
           "level": 2,
           "type": "spawn"
         },
@@ -4195,6 +4364,7 @@
           "aspect": "moth",
           "result_id": "mem.solace",
           "result_name": "Memory: Solace",
+          "result_name_cn": "回忆：慰藉",
           "level": 1,
           "type": "spawn"
         }
@@ -4237,6 +4407,7 @@
           "aspect": "lantern",
           "result_id": "x.auroralcontemplations",
           "result_name": "Lesson: Auroral Contemplations",
+          "result_name_cn": "教诲：曙光的静观",
           "level": 2,
           "type": "spawn"
         },
@@ -4245,6 +4416,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -4286,6 +4458,7 @@
           "aspect": "knock",
           "result_id": "x.horns.ivories",
           "result_name": "Lesson: Horns & Ivories",
+          "result_name_cn": "教诲：兽角与象牙",
           "level": 1,
           "type": "spawn"
         },
@@ -4294,6 +4467,7 @@
           "aspect": "knock",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -4335,6 +4509,7 @@
           "aspect": "edge",
           "result_id": "x.meniscatereflections",
           "result_name": "Lesson: Meniscate Reflections",
+          "result_name_cn": "教诲：弧月的倒影",
           "level": 1,
           "type": "spawn"
         },
@@ -4343,6 +4518,7 @@
           "aspect": "edge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -4385,6 +4561,7 @@
           "aspect": "forge",
           "result_id": "x.sacrasolisinvicti",
           "result_name": "Lesson: Sacra Solis Invicti",
+          "result_name_cn": "教诲：无敌太阳典仪",
           "level": 1,
           "type": "spawn"
         },
@@ -4393,6 +4570,7 @@
           "aspect": "forge",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -4435,6 +4613,7 @@
           "aspect": "knock",
           "result_id": "x.horns.ivories",
           "result_name": "Lesson: Horns & Ivories",
+          "result_name_cn": "教诲：兽角与象牙",
           "level": 2,
           "type": "spawn"
         },
@@ -4443,6 +4622,7 @@
           "aspect": "knock",
           "result_id": "mem.dreamt",
           "result_name": "Memory: A Stolen Secret",
+          "result_name_cn": "回忆：偷来的秘密",
           "level": 1,
           "type": "spawn"
         }
@@ -4485,6 +4665,7 @@
           "aspect": "moth",
           "result_id": "x.solutions.separations",
           "result_name": "Lesson: Solutions & Separations",
+          "result_name_cn": "教诲：溶解与离析",
           "level": 1,
           "type": "spawn"
         },
@@ -4493,6 +4674,7 @@
           "aspect": "moth",
           "result_id": "mem.dreamt",
           "result_name": "Memory: A Stolen Secret",
+          "result_name_cn": "回忆：偷来的秘密",
           "level": 1,
           "type": "spawn"
         }
@@ -4535,6 +4717,7 @@
           "aspect": "forge",
           "result_id": "x.spices.savours",
           "result_name": "Lesson: Spices & Savours",
+          "result_name_cn": "教诲：香料与滋味",
           "level": 1,
           "type": "spawn"
         },
@@ -4543,6 +4726,7 @@
           "aspect": "forge",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -4585,6 +4769,7 @@
           "aspect": "grail",
           "result_id": "x.desires.dissolutions",
           "result_name": "Lesson: Desires & Dissolutions",
+          "result_name_cn": "教诲：诱惑与消殒",
           "level": 1,
           "type": "spawn"
         },
@@ -4593,6 +4778,7 @@
           "aspect": "grail",
           "result_id": "mem.gossip",
           "result_name": "Memory: Gossip",
+          "result_name_cn": "回忆：流言",
           "level": 1,
           "type": "spawn"
         }
@@ -4635,6 +4821,7 @@
           "aspect": "lantern",
           "result_id": "x.pyroglyphics",
           "result_name": "Lesson: Pyroglyphics",
+          "result_name_cn": "教诲：焰篆体",
           "level": 1,
           "type": "spawn"
         },
@@ -4643,6 +4830,7 @@
           "aspect": "lantern",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -4685,6 +4873,7 @@
           "aspect": "winter",
           "result_id": "x.raggedcrossroads",
           "result_name": "Lesson: Ragged Crossroads",
+          "result_name_cn": "教诲：残破十字路",
           "level": 1,
           "type": "spawn"
         },
@@ -4693,6 +4882,7 @@
           "aspect": "winter",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -4735,6 +4925,7 @@
           "aspect": "grail",
           "result_id": "x.applebrighteuphonies",
           "result_name": "Lesson: Applebright Euphonies",
+          "result_name_cn": "教诲：光明果悦音",
           "level": 1,
           "type": "spawn"
         },
@@ -4743,6 +4934,7 @@
           "aspect": "grail",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -4785,6 +4977,7 @@
           "aspect": "heart",
           "result_id": "x.weaving.knotworking",
           "result_name": "Lesson: Weaving & Knotworking",
+          "result_name_cn": "教诲：缝纫与编织",
           "level": 1,
           "type": "spawn"
         },
@@ -4793,6 +4986,7 @@
           "aspect": "heart",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -4835,6 +5029,7 @@
           "aspect": "lantern",
           "result_id": "x.watchmansparadoxes",
           "result_name": "Lesson: Watchman's Paradoxes",
+          "result_name_cn": "教诲：守夜人的悖论",
           "level": 1,
           "type": "spawn"
         },
@@ -4843,6 +5038,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -4885,6 +5081,7 @@
           "aspect": "scale",
           "result_id": "x.horns.ivories",
           "result_name": "Lesson: Horns & Ivories",
+          "result_name_cn": "教诲：兽角与象牙",
           "level": 1,
           "type": "spawn"
         },
@@ -4893,6 +5090,7 @@
           "aspect": "scale",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -4935,6 +5133,7 @@
           "aspect": "moth",
           "result_id": "x.rites.theroots",
           "result_name": "Lesson: Rites of the Roots",
+          "result_name_cn": "教诲：根系之仪",
           "level": 1,
           "type": "spawn"
         },
@@ -4943,6 +5142,7 @@
           "aspect": "moth",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -4985,6 +5185,7 @@
           "aspect": "scale",
           "result_id": "x.coil.chasm",
           "result_name": "Lesson: Coil & Chasm",
+          "result_name_cn": "教诲：虬蟠与裂隙",
           "level": 2,
           "type": "spawn"
         },
@@ -4993,6 +5194,7 @@
           "aspect": "scale",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -5035,6 +5237,7 @@
           "aspect": "rose",
           "result_id": "x.sandstories",
           "result_name": "Lesson: Sand Stories",
+          "result_name_cn": "教诲：沙的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -5043,6 +5246,7 @@
           "aspect": "rose",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -5085,6 +5289,7 @@
           "aspect": "moon",
           "result_id": "x.sharps",
           "result_name": "Lesson: Sharps",
+          "result_name_cn": "教诲：锋锐",
           "level": 1,
           "type": "spawn"
         },
@@ -5093,6 +5298,7 @@
           "aspect": "moon",
           "result_id": "mem.dreamt",
           "result_name": "Memory: A Stolen Secret",
+          "result_name_cn": "回忆：偷来的秘密",
           "level": 1,
           "type": "spawn"
         }
@@ -5135,6 +5341,7 @@
           "aspect": "forge",
           "result_id": "x.transformations.liberations",
           "result_name": "Lesson: Transformations & Liberations",
+          "result_name_cn": "教诲：嬗变与解放",
           "level": 1,
           "type": "spawn"
         },
@@ -5143,6 +5350,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -5185,6 +5393,7 @@
           "aspect": "moon",
           "result_id": "x.seastories",
           "result_name": "Lesson: Sea Stories",
+          "result_name_cn": "教诲：大海的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -5193,6 +5402,7 @@
           "aspect": "moon",
           "result_id": "mem.salt",
           "result_name": "Memory: Salt",
+          "result_name_cn": "回忆：盐",
           "level": 1,
           "type": "spawn"
         }
@@ -5235,6 +5445,7 @@
           "aspect": "sky",
           "result_id": "x.skystories",
           "result_name": "Lesson: Sky Stories",
+          "result_name_cn": "教诲：天空的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -5243,6 +5454,7 @@
           "aspect": "sky",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -5285,6 +5497,7 @@
           "aspect": "moon",
           "result_id": "x.tridesmahiera",
           "result_name": "Lesson: Tridesma Hiera",
+          "result_name_cn": "教诲：三重誓之仪",
           "level": 1,
           "type": "spawn"
         },
@@ -5293,6 +5506,7 @@
           "aspect": "moon",
           "result_id": "music.beguiling",
           "result_name": "Beguiling Melody",
+          "result_name_cn": "诱人旋律",
           "level": 1,
           "type": "spawn"
         }
@@ -5335,6 +5549,7 @@
           "aspect": "edge",
           "result_id": "x.edictsmartial",
           "result_name": "Lesson: Edicts Martial",
+          "result_name_cn": "教诲：武力之敕令",
           "level": 2,
           "type": "spawn"
         },
@@ -5343,6 +5558,7 @@
           "aspect": "edge",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -5385,6 +5601,7 @@
           "aspect": "forge",
           "result_id": "x.transformations.liberations",
           "result_name": "Lesson: Transformations & Liberations",
+          "result_name_cn": "教诲：嬗变与解放",
           "level": 2,
           "type": "spawn"
         },
@@ -5393,6 +5610,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -5435,6 +5653,7 @@
           "aspect": "grail",
           "result_id": "x.orchids.narcotics",
           "result_name": "Lesson: Orchids & Narcotics",
+          "result_name_cn": "教诲：兰花与迷药",
           "level": 2,
           "type": "spawn"
         },
@@ -5443,6 +5662,7 @@
           "aspect": "grail",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -5485,6 +5705,7 @@
           "aspect": "heart",
           "result_id": "x.maggephenemysteries",
           "result_name": "Lesson: Maggephene Mysteries",
+          "result_name_cn": "教诲：疫疠之秘",
           "level": 2,
           "type": "spawn"
         },
@@ -5493,6 +5714,7 @@
           "aspect": "heart",
           "result_id": "mem.storm",
           "result_name": "Memory: Storm",
+          "result_name_cn": "回忆：风暴",
           "level": 1,
           "type": "spawn"
         }
@@ -5535,6 +5757,7 @@
           "aspect": "lantern",
           "result_id": "x.purifications.exaltations",
           "result_name": "Lesson: Purifications & Exaltations",
+          "result_name_cn": "教诲：精炼与擢升",
           "level": 2,
           "type": "spawn"
         },
@@ -5543,6 +5766,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -5585,6 +5809,7 @@
           "aspect": "knock",
           "result_id": "x.edictsliminal",
           "result_name": "Lesson: Edicts Liminal",
+          "result_name_cn": "教诲：阈限之敕令",
           "level": 2,
           "type": "spawn"
         },
@@ -5593,6 +5818,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -5635,6 +5861,7 @@
           "aspect": "moth",
           "result_id": "x.solutions.separations",
           "result_name": "Lesson: Solutions & Separations",
+          "result_name_cn": "教诲：溶解与离析",
           "level": 2,
           "type": "spawn"
         },
@@ -5643,6 +5870,7 @@
           "aspect": "moth",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -5685,6 +5913,7 @@
           "aspect": "edge",
           "result_id": "x.sickle.eclipse",
           "result_name": "Lesson: Sickle & Eclipse",
+          "result_name_cn": "教诲：镰刀与日蚀",
           "level": 2,
           "type": "spawn"
         },
@@ -5693,6 +5922,7 @@
           "aspect": "edge",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -5735,6 +5965,7 @@
           "aspect": "rose",
           "result_id": "x.path.pilgrim",
           "result_name": "Lesson: Path & Pilgrim",
+          "result_name_cn": "教诲：道途与朝圣",
           "level": 2,
           "type": "spawn"
         },
@@ -5743,6 +5974,7 @@
           "aspect": "rose",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -5785,6 +6017,7 @@
           "aspect": "edge",
           "result_id": "x.disciplines.thehammer",
           "result_name": "Lesson: Disciplines of the Hammer",
+          "result_name_cn": "教诲：锤砧的戒律",
           "level": 2,
           "type": "spawn"
         },
@@ -5793,6 +6026,7 @@
           "aspect": "edge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -5835,6 +6069,7 @@
           "aspect": "moth",
           "result_id": "x.edictsliminal",
           "result_name": "Lesson: Edicts Liminal",
+          "result_name_cn": "教诲：阈限之敕令",
           "level": 2,
           "type": "spawn"
         },
@@ -5843,6 +6078,7 @@
           "aspect": "moth",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -5885,6 +6121,7 @@
           "aspect": "winter",
           "result_id": "x.quenchings.quellings",
           "result_name": "Lesson: Quenchings & Quellings",
+          "result_name_cn": "教诲：淬火与熄焰",
           "level": 2,
           "type": "spawn"
         },
@@ -5893,6 +6130,7 @@
           "aspect": "winter",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -5935,6 +6173,7 @@
           "aspect": "heart",
           "result_id": "x.weaving.knotworking",
           "result_name": "Lesson: Weaving & Knotworking",
+          "result_name_cn": "教诲：缝纫与编织",
           "level": 2,
           "type": "spawn"
         },
@@ -5943,6 +6182,7 @@
           "aspect": "heart",
           "result_id": "mem.solace",
           "result_name": "Memory: Solace",
+          "result_name_cn": "回忆：慰藉",
           "level": 1,
           "type": "spawn"
         }
@@ -5985,6 +6225,7 @@
           "aspect": "grail",
           "result_id": "x.pentiments.precursors",
           "result_name": "Lesson: Pentiments & Precursors",
+          "result_name_cn": "教诲：覆画残迹与古老前身",
           "level": 2,
           "type": "spawn"
         },
@@ -5993,6 +6234,7 @@
           "aspect": "grail",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -6035,6 +6277,7 @@
           "aspect": "moth",
           "result_id": "x.resurgences.emergences",
           "result_name": "Lesson: Resurgences & Emergences",
+          "result_name_cn": "教诲：复苏与羽化",
           "level": 2,
           "type": "spawn"
         },
@@ -6043,6 +6286,7 @@
           "aspect": "moth",
           "result_id": "music.beguiling",
           "result_name": "Beguiling Melody",
+          "result_name_cn": "诱人旋律",
           "level": 1,
           "type": "spawn"
         }
@@ -6085,6 +6329,7 @@
           "aspect": "winter",
           "result_id": "x.putrefactions.calcinations",
           "result_name": "Lesson: Putrefactions & Calcinations",
+          "result_name_cn": "教诲：腐化与煅烧",
           "level": 2,
           "type": "spawn"
         },
@@ -6093,6 +6338,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -6135,6 +6381,7 @@
           "aspect": "edge",
           "result_id": "x.sharps",
           "result_name": "Lesson: Sharps",
+          "result_name_cn": "教诲：锋锐",
           "level": 2,
           "type": "spawn"
         },
@@ -6143,6 +6390,7 @@
           "aspect": "edge",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -6185,6 +6433,7 @@
           "aspect": "forge",
           "result_id": "x.transformations.liberations",
           "result_name": "Lesson: Transformations & Liberations",
+          "result_name_cn": "教诲：嬗变与解放",
           "level": 2,
           "type": "spawn"
         },
@@ -6193,6 +6442,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -6235,6 +6485,7 @@
           "aspect": "grail",
           "result_id": "x.orchids.narcotics",
           "result_name": "Lesson: Orchids & Narcotics",
+          "result_name_cn": "教诲：兰花与迷药",
           "level": 2,
           "type": "spawn"
         },
@@ -6243,6 +6494,7 @@
           "aspect": "grail",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -6285,6 +6537,7 @@
           "aspect": "heart",
           "result_id": "x.surgeries.exsanguinations",
           "result_name": "Lesson: Surgeries & Exsanguinations",
+          "result_name_cn": "教诲：手术与放血",
           "level": 2,
           "type": "spawn"
         },
@@ -6293,6 +6546,7 @@
           "aspect": "heart",
           "result_id": "mem.storm",
           "result_name": "Memory: Storm",
+          "result_name_cn": "回忆：风暴",
           "level": 1,
           "type": "spawn"
         }
@@ -6335,6 +6589,7 @@
           "aspect": "lantern",
           "result_id": "x.pyroglyphics",
           "result_name": "Lesson: Pyroglyphics",
+          "result_name_cn": "教诲：焰篆体",
           "level": 2,
           "type": "spawn"
         },
@@ -6343,6 +6598,7 @@
           "aspect": "lantern",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -6385,6 +6641,7 @@
           "aspect": "knock",
           "result_id": "x.edictsliminal",
           "result_name": "Lesson: Edicts Liminal",
+          "result_name_cn": "教诲：阈限之敕令",
           "level": 2,
           "type": "spawn"
         },
@@ -6393,6 +6650,7 @@
           "aspect": "knock",
           "result_id": "secret.threshold",
           "result_name": "Secret Threshold",
+          "result_name_cn": "秘密门关",
           "level": 1,
           "type": "spawn"
         }
@@ -6435,6 +6693,7 @@
           "aspect": "moth",
           "result_id": "x.sacralimiae",
           "result_name": "Lesson: Sacra Limiae",
+          "result_name_cn": "教诲：利米亚典仪",
           "level": 2,
           "type": "spawn"
         },
@@ -6443,6 +6702,7 @@
           "aspect": "moth",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -6485,6 +6745,7 @@
           "aspect": "edge",
           "result_id": "x.auroralcontemplations",
           "result_name": "Lesson: Auroral Contemplations",
+          "result_name_cn": "教诲：曙光的静观",
           "level": 2,
           "type": "spawn"
         },
@@ -6493,6 +6754,7 @@
           "aspect": "edge",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -6535,6 +6797,7 @@
           "aspect": "winter",
           "result_id": "x.snowstories",
           "result_name": "Lesson: Snow Stories",
+          "result_name_cn": "教诲：白雪的故事",
           "level": 2,
           "type": "spawn"
         },
@@ -6543,6 +6806,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -6585,6 +6849,7 @@
           "aspect": "edge",
           "result_id": "x.meniscatereflections",
           "result_name": "Lesson: Meniscate Reflections",
+          "result_name_cn": "教诲：弧月的倒影",
           "level": 2,
           "type": "spawn"
         },
@@ -6593,6 +6858,7 @@
           "aspect": "edge",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -6635,6 +6901,7 @@
           "aspect": "forge",
           "result_id": "x.transformations.liberations",
           "result_name": "Lesson: Transformations & Liberations",
+          "result_name_cn": "教诲：嬗变与解放",
           "level": 2,
           "type": "spawn"
         },
@@ -6643,6 +6910,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -6685,6 +6953,7 @@
           "aspect": "grail",
           "result_id": "x.resurgences.emergences",
           "result_name": "Lesson: Resurgences & Emergences",
+          "result_name_cn": "教诲：复苏与羽化",
           "level": 2,
           "type": "spawn"
         },
@@ -6693,6 +6962,7 @@
           "aspect": "grail",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -6735,6 +7005,7 @@
           "aspect": "rose",
           "result_id": "x.sandstories",
           "result_name": "Lesson: Sand Stories",
+          "result_name_cn": "教诲：沙的故事",
           "level": 2,
           "type": "spawn"
         },
@@ -6743,6 +7014,7 @@
           "aspect": "rose",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -6785,6 +7057,7 @@
           "aspect": "lantern",
           "result_id": "x.sacrasolisinvicti",
           "result_name": "Lesson: Sacra Solis Invicti",
+          "result_name_cn": "教诲：无敌太阳典仪",
           "level": 2,
           "type": "spawn"
         },
@@ -6793,6 +7066,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -6835,6 +7109,7 @@
           "aspect": "scale",
           "result_id": "x.horns.ivories",
           "result_name": "Lesson: Horns & Ivories",
+          "result_name_cn": "教诲：兽角与象牙",
           "level": 2,
           "type": "spawn"
         },
@@ -6843,6 +7118,7 @@
           "aspect": "scale",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -6885,6 +7161,7 @@
           "aspect": "moth",
           "result_id": "x.weaving.knotworking",
           "result_name": "Lesson: Weaving & Knotworking",
+          "result_name_cn": "教诲：缝纫与编织",
           "level": 2,
           "type": "spawn"
         },
@@ -6893,6 +7170,7 @@
           "aspect": "moth",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -6935,6 +7213,7 @@
           "aspect": "sky",
           "result_id": "x.skystories",
           "result_name": "Lesson: Sky Stories",
+          "result_name_cn": "教诲：天空的故事",
           "level": 3,
           "type": "spawn"
         },
@@ -6943,6 +7222,7 @@
           "aspect": "sky",
           "result_id": "mem.gossip",
           "result_name": "Memory: Gossip",
+          "result_name_cn": "回忆：流言",
           "level": 1,
           "type": "spawn"
         }
@@ -6985,6 +7265,7 @@
           "aspect": "winter",
           "result_id": "x.raggedcrossroads",
           "result_name": "Lesson: Ragged Crossroads",
+          "result_name_cn": "教诲：残破十字路",
           "level": 2,
           "type": "spawn"
         },
@@ -6993,6 +7274,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -7035,6 +7317,7 @@
           "aspect": "edge",
           "result_id": "x.disciplines.thescar",
           "result_name": "Lesson: Disciplines of the Scar",
+          "result_name_cn": "教诲：伤疤的戒律",
           "level": 3,
           "type": "spawn"
         },
@@ -7043,6 +7326,7 @@
           "aspect": "edge",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -7085,6 +7369,7 @@
           "aspect": "forge",
           "result_id": "x.transformations.liberations",
           "result_name": "Lesson: Transformations & Liberations",
+          "result_name_cn": "教诲：嬗变与解放",
           "level": 3,
           "type": "spawn"
         },
@@ -7093,6 +7378,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -7135,6 +7421,7 @@
           "aspect": "grail",
           "result_id": "x.thegreatsignsandthegreatscars",
           "result_name": "Lesson: The Great Signs and the Great Scars",
+          "result_name_cn": "教诲：伟大符印与伟大伤疤",
           "level": 3,
           "type": "spawn"
         },
@@ -7143,6 +7430,7 @@
           "aspect": "grail",
           "result_id": "mem.gossip",
           "result_name": "Memory: Gossip",
+          "result_name_cn": "回忆：流言",
           "level": 1,
           "type": "spawn"
         }
@@ -7185,6 +7473,7 @@
           "aspect": "sky",
           "result_id": "x.watchmansparadoxes",
           "result_name": "Lesson: Watchman's Paradoxes",
+          "result_name_cn": "教诲：守夜人的悖论",
           "level": 3,
           "type": "spawn"
         },
@@ -7193,6 +7482,7 @@
           "aspect": "sky",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -7235,6 +7525,7 @@
           "aspect": "sky",
           "result_id": "x.glaziery.lightsmithing",
           "result_name": "Lesson: Glaziery & Lightsmithing",
+          "result_name_cn": "教诲：玻璃与锻光",
           "level": 2,
           "type": "spawn"
         },
@@ -7243,6 +7534,7 @@
           "aspect": "sky",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -7285,6 +7577,7 @@
           "aspect": "sky",
           "result_id": "x.glaziery.lightsmithing",
           "result_name": "Lesson: Glaziery & Lightsmithing",
+          "result_name_cn": "教诲：玻璃与锻光",
           "level": 2,
           "type": "spawn"
         },
@@ -7293,6 +7586,7 @@
           "aspect": "sky",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -7335,6 +7629,7 @@
           "aspect": "sky",
           "result_id": "x.glaziery.lightsmithing",
           "result_name": "Lesson: Glaziery & Lightsmithing",
+          "result_name_cn": "教诲：玻璃与锻光",
           "level": 3,
           "type": "spawn"
         },
@@ -7343,6 +7638,7 @@
           "aspect": "sky",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -7385,6 +7681,7 @@
           "aspect": "moth",
           "result_id": "x.edictsliminal",
           "result_name": "Lesson: Edicts Liminal",
+          "result_name_cn": "教诲：阈限之敕令",
           "level": 3,
           "type": "spawn"
         },
@@ -7393,6 +7690,7 @@
           "aspect": "moth",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -7435,6 +7733,7 @@
           "aspect": "sky",
           "result_id": "x.sacralimiae",
           "result_name": "Lesson: Sacra Limiae",
+          "result_name_cn": "教诲：利米亚典仪",
           "level": 3,
           "type": "spawn"
         },
@@ -7443,6 +7742,7 @@
           "aspect": "sky",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -7485,6 +7785,7 @@
           "aspect": "rose",
           "result_id": "x.sandstories",
           "result_name": "Lesson: Sand Stories",
+          "result_name_cn": "教诲：沙的故事",
           "level": 3,
           "type": "spawn"
         },
@@ -7493,6 +7794,7 @@
           "aspect": "rose",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -7535,6 +7837,7 @@
           "aspect": "heart",
           "result_id": "x.quenchings.quellings",
           "result_name": "Lesson: Quenchings & Quellings",
+          "result_name_cn": "教诲：淬火与熄焰",
           "level": 3,
           "type": "spawn"
         },
@@ -7543,6 +7846,7 @@
           "aspect": "heart",
           "result_id": "bittersweet.certainty",
           "result_name": "Bittersweet Certainty",
+          "result_name_cn": "苦乐参半的必然",
           "level": 1,
           "type": "spawn"
         }
@@ -7585,6 +7889,7 @@
           "aspect": "edge",
           "result_id": "x.raggedcrossroads",
           "result_name": "Lesson: Ragged Crossroads",
+          "result_name_cn": "教诲：残破十字路",
           "level": 2,
           "type": "spawn"
         },
@@ -7593,6 +7898,7 @@
           "aspect": "edge",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -7635,6 +7941,7 @@
           "aspect": "forge",
           "result_id": "x.anbary.lapidary",
           "result_name": "Lesson: Anbary & Lapidary",
+          "result_name_cn": "教诲：雕珀与琢石",
           "level": 2,
           "type": "spawn"
         },
@@ -7643,6 +7950,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -7685,6 +7993,7 @@
           "aspect": "moth",
           "result_id": "x.resurgences.emergences",
           "result_name": "Lesson: Resurgences & Emergences",
+          "result_name_cn": "教诲：复苏与羽化",
           "level": 2,
           "type": "spawn"
         },
@@ -7693,6 +8002,7 @@
           "aspect": "moth",
           "result_id": "mem.gossip",
           "result_name": "Memory: Gossip",
+          "result_name_cn": "回忆：流言",
           "level": 1,
           "type": "spawn"
         }
@@ -7735,6 +8045,7 @@
           "aspect": "heart",
           "result_id": "x.stitching.binding",
           "result_name": "Lesson: Stitching & Binding",
+          "result_name_cn": "教诲：缝合与装订",
           "level": 2,
           "type": "spawn"
         },
@@ -7743,6 +8054,7 @@
           "aspect": "heart",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -7785,6 +8097,7 @@
           "aspect": "heart",
           "result_id": "x.surgeries.exsanguinations",
           "result_name": "Lesson: Surgeries & Exsanguinations",
+          "result_name_cn": "教诲：手术与放血",
           "level": 2,
           "type": "spawn"
         },
@@ -7793,6 +8106,7 @@
           "aspect": "heart",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -7835,6 +8149,7 @@
           "aspect": "knock",
           "result_id": "x.door.wall",
           "result_name": "Lesson: Door & Wall",
+          "result_name_cn": "教诲：门扉与墙垣",
           "level": 2,
           "type": "spawn"
         },
@@ -7843,6 +8158,7 @@
           "aspect": "knock",
           "result_id": "secret.threshold",
           "result_name": "Secret Threshold",
+          "result_name_cn": "秘密门关",
           "level": 1,
           "type": "spawn"
         }
@@ -7885,6 +8201,7 @@
           "aspect": "moth",
           "result_id": "x.transformations.liberations",
           "result_name": "Lesson: Transformations & Liberations",
+          "result_name_cn": "教诲：嬗变与解放",
           "level": 2,
           "type": "spawn"
         },
@@ -7893,6 +8210,7 @@
           "aspect": "moth",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -7935,6 +8253,7 @@
           "aspect": "moon",
           "result_id": "x.seastories",
           "result_name": "Lesson: Sea Stories",
+          "result_name_cn": "教诲：大海的故事",
           "level": 3,
           "type": "spawn"
         },
@@ -7943,6 +8262,7 @@
           "aspect": "moon",
           "result_id": "mem.salt",
           "result_name": "Memory: Salt",
+          "result_name_cn": "回忆：盐",
           "level": 1,
           "type": "spawn"
         }
@@ -7985,6 +8305,7 @@
           "aspect": "winter",
           "result_id": "x.quenchings.quellings",
           "result_name": "Lesson: Quenchings & Quellings",
+          "result_name_cn": "教诲：淬火与熄焰",
           "level": 2,
           "type": "spawn"
         },
@@ -7993,6 +8314,7 @@
           "aspect": "winter",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -8034,6 +8356,7 @@
           "aspect": "sky",
           "result_id": "x.preliminalmeter",
           "result_name": "Lesson: Preliminal Meter",
+          "result_name_cn": "教诲：阙前格律",
           "level": 2,
           "type": "spawn"
         },
@@ -8042,6 +8365,7 @@
           "aspect": "sky",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -8083,6 +8407,7 @@
           "aspect": "heart",
           "result_id": "x.preliminalmeter",
           "result_name": "Lesson: Preliminal Meter",
+          "result_name_cn": "教诲：阙前格律",
           "level": 1,
           "type": "spawn"
         },
@@ -8091,6 +8416,7 @@
           "aspect": "heart",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -8133,6 +8459,7 @@
           "aspect": "rose",
           "result_id": "x.preliminalmeter",
           "result_name": "Lesson: Preliminal Meter",
+          "result_name_cn": "教诲：阙前格律",
           "level": 2,
           "type": "spawn"
         },
@@ -8141,6 +8468,7 @@
           "aspect": "rose",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -8183,6 +8511,7 @@
           "aspect": "grail",
           "result_id": "x.tridesmahiera",
           "result_name": "Lesson: Tridesma Hiera",
+          "result_name_cn": "教诲：三重誓之仪",
           "level": 2,
           "type": "spawn"
         },
@@ -8191,6 +8520,7 @@
           "aspect": "grail",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -8233,6 +8563,7 @@
           "aspect": "scale",
           "result_id": "x.stonestories",
           "result_name": "Lesson: Stone Stories",
+          "result_name_cn": "教诲：岩石的故事",
           "level": 2,
           "type": "spawn"
         },
@@ -8241,6 +8572,7 @@
           "aspect": "scale",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -8283,6 +8615,7 @@
           "aspect": "moon",
           "result_id": "x.tridesmahiera",
           "result_name": "Lesson: Tridesma Hiera",
+          "result_name_cn": "教诲：三重誓之仪",
           "level": 2,
           "type": "spawn"
         },
@@ -8291,6 +8624,7 @@
           "aspect": "moon",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -8332,6 +8666,7 @@
           "aspect": "edge",
           "result_id": "x.raggedcrossroads",
           "result_name": "Lesson: Ragged Crossroads",
+          "result_name_cn": "教诲：残破十字路",
           "level": 1,
           "type": "spawn"
         },
@@ -8340,6 +8675,7 @@
           "aspect": "edge",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -8381,6 +8717,7 @@
           "aspect": "grail",
           "result_id": "x.applebrighteuphonies",
           "result_name": "Lesson: Applebright Euphonies",
+          "result_name_cn": "教诲：光明果悦音",
           "level": 1,
           "type": "spawn"
         },
@@ -8389,6 +8726,7 @@
           "aspect": "grail",
           "result_id": "music.beguiling",
           "result_name": "Beguiling Melody",
+          "result_name_cn": "诱人旋律",
           "level": 1,
           "type": "spawn"
         }
@@ -8430,6 +8768,7 @@
           "aspect": "moon",
           "result_id": "x.pearl.tide",
           "result_name": "Lesson: Pearl & Tide",
+          "result_name_cn": "教诲：珍珠与浪潮",
           "level": 1,
           "type": "spawn"
         },
@@ -8438,6 +8777,7 @@
           "aspect": "moon",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -8479,6 +8819,7 @@
           "aspect": "moon",
           "result_id": "x.inks.containment",
           "result_name": "Lesson: Inks of Containment",
+          "result_name_cn": "教诲：收容之墨",
           "level": 2,
           "type": "spawn"
         },
@@ -8487,6 +8828,7 @@
           "aspect": "moon",
           "result_id": "bittersweet.certainty",
           "result_name": "Bittersweet Certainty",
+          "result_name_cn": "苦乐参半的必然",
           "level": 1,
           "type": "spawn"
         }
@@ -8528,6 +8870,7 @@
           "aspect": "winter",
           "result_id": "x.raggedcrossroads",
           "result_name": "Lesson: Ragged Crossroads",
+          "result_name_cn": "教诲：残破十字路",
           "level": 2,
           "type": "spawn"
         },
@@ -8536,6 +8879,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -8577,6 +8921,7 @@
           "aspect": "rose",
           "result_id": "x.inks.power",
           "result_name": "Lesson: Inks of Power",
+          "result_name_cn": "教诲：力量之墨",
           "level": 2,
           "type": "spawn"
         },
@@ -8585,6 +8930,7 @@
           "aspect": "rose",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -8626,6 +8972,7 @@
           "aspect": "sky",
           "result_id": "x.sights.sensations",
           "result_name": "Lesson: Sights & Sensations",
+          "result_name_cn": "教诲：景象与感知",
           "level": 2,
           "type": "spawn"
         },
@@ -8634,6 +8981,7 @@
           "aspect": "sky",
           "result_id": "mem.solace",
           "result_name": "Memory: Solace",
+          "result_name_cn": "回忆：慰藉",
           "level": 1,
           "type": "spawn"
         }
@@ -8675,6 +9023,7 @@
           "aspect": "forge",
           "result_id": "x.purifications.exaltations",
           "result_name": "Lesson: Purifications & Exaltations",
+          "result_name_cn": "教诲：精炼与擢升",
           "level": 2,
           "type": "spawn"
         },
@@ -8683,6 +9032,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -8724,6 +9074,7 @@
           "aspect": "sky",
           "result_id": "x.lockworks.clockworks",
           "result_name": "Lesson: Lockworks & Clockworks",
+          "result_name_cn": "教诲：锁簧与发条",
           "level": 1,
           "type": "spawn"
         },
@@ -8732,6 +9083,7 @@
           "aspect": "sky",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -8773,6 +9125,7 @@
           "aspect": "sky",
           "result_id": "x.ouranoscopy",
           "result_name": "Lesson: Ouranoscopy",
+          "result_name_cn": "教诲：窥天术",
           "level": 2,
           "type": "spawn"
         },
@@ -8781,6 +9134,7 @@
           "aspect": "sky",
           "result_id": "mem.storm",
           "result_name": "Memory: Storm",
+          "result_name_cn": "回忆：风暴",
           "level": 1,
           "type": "spawn"
         }
@@ -8822,6 +9176,7 @@
           "aspect": "heart",
           "result_id": "x.drums.dances",
           "result_name": "Lesson: Drums & Dances",
+          "result_name_cn": "教诲：鼓点与舞步",
           "level": 2,
           "type": "spawn"
         },
@@ -8830,6 +9185,7 @@
           "aspect": "heart",
           "result_id": "music.cheerful",
           "result_name": "Cheerful Ditty",
+          "result_name_cn": "欢快小调",
           "level": 1,
           "type": "spawn"
         }
@@ -8871,6 +9227,7 @@
           "aspect": "sky",
           "result_id": "x.ouranoscopy",
           "result_name": "Lesson: Ouranoscopy",
+          "result_name_cn": "教诲：窥天术",
           "level": 1,
           "type": "spawn"
         },
@@ -8879,6 +9236,7 @@
           "aspect": "sky",
           "result_id": "mem.salt",
           "result_name": "Memory: Salt",
+          "result_name_cn": "回忆：盐",
           "level": 1,
           "type": "spawn"
         }
@@ -8920,6 +9278,7 @@
           "aspect": "forge",
           "result_id": "x.door.wall",
           "result_name": "Lesson: Door & Wall",
+          "result_name_cn": "教诲：门扉与墙垣",
           "level": 1,
           "type": "spawn"
         },
@@ -8928,6 +9287,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -8969,6 +9329,7 @@
           "aspect": "moon",
           "result_id": "x.seastories",
           "result_name": "Lesson: Sea Stories",
+          "result_name_cn": "教诲：大海的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -8977,6 +9338,7 @@
           "aspect": "moon",
           "result_id": "mem.salt",
           "result_name": "Memory: Salt",
+          "result_name_cn": "回忆：盐",
           "level": 1,
           "type": "spawn"
         }
@@ -9018,6 +9380,7 @@
           "aspect": "sky",
           "result_id": "x.furs.feathers",
           "result_name": "Lesson: Furs & Feathers",
+          "result_name_cn": "教诲：毛皮与羽翎",
           "level": 1,
           "type": "spawn"
         },
@@ -9026,6 +9389,7 @@
           "aspect": "sky",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -9068,6 +9432,7 @@
           "aspect": "winter",
           "result_id": "x.inks.containment",
           "result_name": "Lesson: Inks of Containment",
+          "result_name_cn": "教诲：收容之墨",
           "level": 1,
           "type": "spawn"
         },
@@ -9076,6 +9441,7 @@
           "aspect": "winter",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -9118,6 +9484,7 @@
           "aspect": "nectar",
           "result_id": "x.herbs.infusions",
           "result_name": "Lesson: Herbs & Infusions",
+          "result_name_cn": "教诲：草药与药汤",
           "level": 1,
           "type": "spawn"
         },
@@ -9126,6 +9493,7 @@
           "aspect": "nectar",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -9167,6 +9535,7 @@
           "aspect": "nectar",
           "result_id": "x.leaves.thorns",
           "result_name": "Lesson: Leaves & Thorns",
+          "result_name_cn": "教诲：叶片与棘刺",
           "level": 1,
           "type": "spawn"
         },
@@ -9175,6 +9544,7 @@
           "aspect": "nectar",
           "result_id": "mem.gossip",
           "result_name": "Memory: Gossip",
+          "result_name_cn": "回忆：流言",
           "level": 1,
           "type": "spawn"
         }
@@ -9216,6 +9586,7 @@
           "aspect": "nectar",
           "result_id": "x.coil.chasm",
           "result_name": "Lesson: Coil & Chasm",
+          "result_name_cn": "教诲：虬蟠与裂隙",
           "level": 1,
           "type": "spawn"
         },
@@ -9224,6 +9595,7 @@
           "aspect": "nectar",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -9265,6 +9637,7 @@
           "aspect": "nectar",
           "result_id": "x.insects.nectars",
           "result_name": "Lesson: Insects & Nectars",
+          "result_name_cn": "教诲：昆虫与花蜜",
           "level": 2,
           "type": "spawn"
         },
@@ -9273,6 +9646,7 @@
           "aspect": "nectar",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -9314,6 +9688,7 @@
           "aspect": "scale",
           "result_id": "x.hill.hollow",
           "result_name": "Lesson: Hill & Hollow",
+          "result_name_cn": "教诲：丘陵与孔窍",
           "level": 2,
           "type": "spawn"
         },
@@ -9322,6 +9697,7 @@
           "aspect": "scale",
           "result_id": "mem.salt",
           "result_name": "Memory: Salt",
+          "result_name_cn": "回忆：盐",
           "level": 1,
           "type": "spawn"
         }
@@ -9364,6 +9740,7 @@
           "aspect": "knock",
           "result_id": "x.door.wall",
           "result_name": "Lesson: Door & Wall",
+          "result_name_cn": "教诲：门扉与墙垣",
           "level": 2,
           "type": "spawn"
         },
@@ -9372,6 +9749,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -9414,6 +9792,7 @@
           "aspect": "rose",
           "result_id": "x.path.pilgrim",
           "result_name": "Lesson: Path & Pilgrim",
+          "result_name_cn": "教诲：道途与朝圣",
           "level": 1,
           "type": "spawn"
         },
@@ -9422,6 +9801,7 @@
           "aspect": "rose",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -9463,6 +9843,7 @@
           "aspect": "sky",
           "result_id": "x.strings.songs",
           "result_name": "Lesson: Strings & Songs",
+          "result_name_cn": "教诲：弦乐与歌谣",
           "level": 1,
           "type": "spawn"
         },
@@ -9471,6 +9852,7 @@
           "aspect": "sky",
           "result_id": "music.cheerful",
           "result_name": "Cheerful Ditty",
+          "result_name_cn": "欢快小调",
           "level": 1,
           "type": "spawn"
         }
@@ -9512,6 +9894,7 @@
           "aspect": "scale",
           "result_id": "x.pentiments.precursors",
           "result_name": "Lesson: Pentiments & Precursors",
+          "result_name_cn": "教诲：覆画残迹与古老前身",
           "level": 1,
           "type": "spawn"
         },
@@ -9520,6 +9903,7 @@
           "aspect": "scale",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -9561,6 +9945,7 @@
           "aspect": "sky",
           "result_id": "x.bells.brazieries",
           "result_name": "Lesson: Bells & Brazieries",
+          "result_name_cn": "教诲：洪钟与铜器",
           "level": 1,
           "type": "spawn"
         },
@@ -9569,6 +9954,7 @@
           "aspect": "sky",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -9611,6 +9997,7 @@
           "aspect": "moon",
           "result_id": "x.serpents.venoms",
           "result_name": "Lesson: Serpents & Venoms",
+          "result_name_cn": "教诲：群蛇与毒液",
           "level": 2,
           "type": "spawn"
         },
@@ -9619,6 +10006,7 @@
           "aspect": "moon",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -9660,6 +10048,7 @@
           "aspect": "scale",
           "result_id": "x.serpents.venoms",
           "result_name": "Lesson: Serpents & Venoms",
+          "result_name_cn": "教诲：群蛇与毒液",
           "level": 1,
           "type": "spawn"
         },
@@ -9668,6 +10057,7 @@
           "aspect": "scale",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -9709,6 +10099,7 @@
           "aspect": "sky",
           "result_id": "x.furs.feathers",
           "result_name": "Lesson: Furs & Feathers",
+          "result_name_cn": "教诲：毛皮与羽翎",
           "level": 1,
           "type": "spawn"
         },
@@ -9717,6 +10108,7 @@
           "aspect": "sky",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -9758,6 +10150,7 @@
           "aspect": "grail",
           "result_id": "x.resurgences.emergences",
           "result_name": "Lesson: Resurgences & Emergences",
+          "result_name_cn": "教诲：复苏与羽化",
           "level": 2,
           "type": "spawn"
         },
@@ -9766,6 +10159,7 @@
           "aspect": "grail",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -9807,6 +10201,7 @@
           "aspect": "knock",
           "result_id": "x.surgeries.exsanguinations",
           "result_name": "Lesson: Surgeries & Exsanguinations",
+          "result_name_cn": "教诲：手术与放血",
           "level": 1,
           "type": "spawn"
         },
@@ -9815,6 +10210,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -9856,6 +10252,7 @@
           "aspect": "winter",
           "result_id": "x.inks.containment",
           "result_name": "Lesson: Inks of Containment",
+          "result_name_cn": "教诲：收容之墨",
           "level": 1,
           "type": "spawn"
         },
@@ -9864,6 +10261,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -9905,6 +10303,7 @@
           "aspect": "lantern",
           "result_id": "x.watchmansparadoxes",
           "result_name": "Lesson: Watchman's Paradoxes",
+          "result_name_cn": "教诲：守夜人的悖论",
           "level": 2,
           "type": "spawn"
         },
@@ -9913,6 +10312,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -9954,6 +10354,7 @@
           "aspect": "forge",
           "result_id": "x.pyroglyphics",
           "result_name": "Lesson: Pyroglyphics",
+          "result_name_cn": "教诲：焰篆体",
           "level": 2,
           "type": "spawn"
         },
@@ -9962,6 +10363,7 @@
           "aspect": "forge",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -10003,6 +10405,7 @@
           "aspect": "lantern",
           "result_id": "x.inks.revelation",
           "result_name": "Lesson: Inks of Revelation",
+          "result_name_cn": "教诲：启示之墨",
           "level": 2,
           "type": "spawn"
         },
@@ -10011,6 +10414,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -10052,6 +10456,7 @@
           "aspect": "scale",
           "result_id": "x.inks.power",
           "result_name": "Lesson: Inks of Power",
+          "result_name_cn": "教诲：力量之墨",
           "level": 2,
           "type": "spawn"
         },
@@ -10060,6 +10465,7 @@
           "aspect": "scale",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -10101,6 +10507,7 @@
           "aspect": "winter",
           "result_id": "x.inks.containment",
           "result_name": "Lesson: Inks of Containment",
+          "result_name_cn": "教诲：收容之墨",
           "level": 2,
           "type": "spawn"
         },
@@ -10109,6 +10516,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -10150,6 +10558,7 @@
           "aspect": "sky",
           "result_id": "x.strings.songs",
           "result_name": "Lesson: Strings & Songs",
+          "result_name_cn": "教诲：弦乐与歌谣",
           "level": 2,
           "type": "spawn"
         },
@@ -10158,6 +10567,7 @@
           "aspect": "sky",
           "result_id": "music.cheerful",
           "result_name": "Cheerful Ditty",
+          "result_name_cn": "欢快小调",
           "level": 1,
           "type": "spawn"
         }
@@ -10199,6 +10609,7 @@
           "aspect": "sky",
           "result_id": "x.strings.songs",
           "result_name": "Lesson: Strings & Songs",
+          "result_name_cn": "教诲：弦乐与歌谣",
           "level": 2,
           "type": "spawn"
         },
@@ -10207,6 +10618,7 @@
           "aspect": "sky",
           "result_id": "music.cheerful",
           "result_name": "Cheerful Ditty",
+          "result_name_cn": "欢快小调",
           "level": 1,
           "type": "spawn"
         }
@@ -10248,6 +10660,7 @@
           "aspect": "heart",
           "result_id": "x.drums.dances",
           "result_name": "Lesson: Drums & Dances",
+          "result_name_cn": "教诲：鼓点与舞步",
           "level": 2,
           "type": "spawn"
         },
@@ -10256,6 +10669,7 @@
           "aspect": "heart",
           "result_id": "music.beguiling",
           "result_name": "Beguiling Melody",
+          "result_name_cn": "诱人旋律",
           "level": 1,
           "type": "spawn"
         }
@@ -10297,6 +10711,7 @@
           "aspect": "forge",
           "result_id": "x.bells.brazieries",
           "result_name": "Lesson: Bells & Brazieries",
+          "result_name_cn": "教诲：洪钟与铜器",
           "level": 1,
           "type": "spawn"
         },
@@ -10305,6 +10720,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -10346,6 +10762,7 @@
           "aspect": "nectar",
           "result_id": "x.insects.nectars",
           "result_name": "Lesson: Insects & Nectars",
+          "result_name_cn": "教诲：昆虫与花蜜",
           "level": 1,
           "type": "spawn"
         },
@@ -10354,6 +10771,7 @@
           "aspect": "nectar",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -10396,6 +10814,7 @@
           "aspect": "nectar",
           "result_id": "x.herbs.infusions",
           "result_name": "Lesson: Herbs & Infusions",
+          "result_name_cn": "教诲：草药与药汤",
           "level": 1,
           "type": "spawn"
         },
@@ -10404,6 +10823,7 @@
           "aspect": "nectar",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -10445,6 +10865,7 @@
           "aspect": "nectar",
           "result_id": "x.spices.savours",
           "result_name": "Lesson: Spices & Savours",
+          "result_name_cn": "教诲：香料与滋味",
           "level": 1,
           "type": "spawn"
         },
@@ -10453,6 +10874,7 @@
           "aspect": "nectar",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -10495,6 +10917,7 @@
           "aspect": "winter",
           "result_id": "x.rhyme.remembrance",
           "result_name": "Lesson: Rhyme & Remembrance",
+          "result_name_cn": "教诲：音律与铭记",
           "level": 2,
           "type": "spawn"
         },
@@ -10503,6 +10926,7 @@
           "aspect": "winter",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -10544,6 +10968,7 @@
           "aspect": "sky",
           "result_id": "x.sacralimiae",
           "result_name": "Lesson: Sacra Limiae",
+          "result_name_cn": "教诲：利米亚典仪",
           "level": 2,
           "type": "spawn"
         },
@@ -10552,6 +10977,7 @@
           "aspect": "sky",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -10593,6 +11019,7 @@
           "aspect": "edge",
           "result_id": "x.sickle.eclipse",
           "result_name": "Lesson: Sickle & Eclipse",
+          "result_name_cn": "教诲：镰刀与日蚀",
           "level": 1,
           "type": "spawn"
         },
@@ -10601,6 +11028,7 @@
           "aspect": "edge",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -10642,6 +11070,7 @@
           "aspect": "scale",
           "result_id": "x.hill.hollow",
           "result_name": "Lesson: Hill & Hollow",
+          "result_name_cn": "教诲：丘陵与孔窍",
           "level": 1,
           "type": "spawn"
         },
@@ -10650,6 +11079,7 @@
           "aspect": "scale",
           "result_id": "music.savage",
           "result_name": "Savage Hymn",
+          "result_name_cn": "野蛮颂歌",
           "level": 1,
           "type": "spawn"
         }
@@ -10691,6 +11121,7 @@
           "aspect": "moon",
           "result_id": "x.edictsmartial",
           "result_name": "Lesson: Edicts Martial",
+          "result_name_cn": "教诲：武力之敕令",
           "level": 1,
           "type": "spawn"
         },
@@ -10699,6 +11130,7 @@
           "aspect": "moon",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -10740,6 +11172,7 @@
           "aspect": "heart",
           "result_id": "x.edictsinviolable",
           "result_name": "Lesson: Edicts Inviolable",
+          "result_name_cn": "教诲：无侵之敕令",
           "level": 1,
           "type": "spawn"
         },
@@ -10748,6 +11181,7 @@
           "aspect": "heart",
           "result_id": "mem.dreamt",
           "result_name": "Memory: A Stolen Secret",
+          "result_name_cn": "回忆：偷来的秘密",
           "level": 1,
           "type": "spawn"
         }
@@ -10789,6 +11223,7 @@
           "aspect": "moon",
           "result_id": "x.hill.hollow",
           "result_name": "Lesson: Hill & Hollow",
+          "result_name_cn": "教诲：丘陵与孔窍",
           "level": 1,
           "type": "spawn"
         },
@@ -10797,6 +11232,7 @@
           "aspect": "moon",
           "result_id": "mem.dreamt",
           "result_name": "Memory: A Stolen Secret",
+          "result_name_cn": "回忆：偷来的秘密",
           "level": 1,
           "type": "spawn"
         }
@@ -10839,6 +11275,7 @@
           "aspect": "scale",
           "result_id": "x.stonestories",
           "result_name": "Lesson: Stone Stories",
+          "result_name_cn": "教诲：岩石的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -10847,6 +11284,7 @@
           "aspect": "scale",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -10888,6 +11326,7 @@
           "aspect": "sky",
           "result_id": "x.anbary.lapidary",
           "result_name": "Lesson: Anbary & Lapidary",
+          "result_name_cn": "教诲：雕珀与琢石",
           "level": 1,
           "type": "spawn"
         },
@@ -10896,6 +11335,7 @@
           "aspect": "sky",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -10937,6 +11377,7 @@
           "aspect": "knock",
           "result_id": "x.glassblowing.vesselcrafting",
           "result_name": "Lesson: Glassblowing & Vesselcrafting",
+          "result_name_cn": "教诲：玻璃吹制与容器制造",
           "level": 1,
           "type": "spawn"
         },
@@ -10945,6 +11386,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -10986,6 +11428,7 @@
           "aspect": "forge",
           "result_id": "x.lockworks.clockworks",
           "result_name": "Lesson: Lockworks & Clockworks",
+          "result_name_cn": "教诲：锁簧与发条",
           "level": 2,
           "type": "spawn"
         },
@@ -10994,6 +11437,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -11035,6 +11479,7 @@
           "aspect": "forge",
           "result_id": "x.bells.brazieries",
           "result_name": "Lesson: Bells & Brazieries",
+          "result_name_cn": "教诲：洪钟与铜器",
           "level": 2,
           "type": "spawn"
         },
@@ -11043,6 +11488,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -11084,6 +11530,7 @@
           "aspect": "heart",
           "result_id": "x.stitching.binding",
           "result_name": "Lesson: Stitching & Binding",
+          "result_name_cn": "教诲：缝合与装订",
           "level": 2,
           "type": "spawn"
         },
@@ -11092,6 +11539,7 @@
           "aspect": "heart",
           "result_id": "mem.solace",
           "result_name": "Memory: Solace",
+          "result_name_cn": "回忆：慰藉",
           "level": 1,
           "type": "spawn"
         }
@@ -11133,6 +11581,7 @@
           "aspect": "scale",
           "result_id": "x.furs.feathers",
           "result_name": "Lesson: Furs & Feathers",
+          "result_name_cn": "教诲：毛皮与羽翎",
           "level": 2,
           "type": "spawn"
         },
@@ -11141,6 +11590,7 @@
           "aspect": "scale",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -11182,6 +11632,7 @@
           "aspect": "moon",
           "result_id": "x.pearl.tide",
           "result_name": "Lesson: Pearl & Tide",
+          "result_name_cn": "教诲：珍珠与浪潮",
           "level": 2,
           "type": "spawn"
         },
@@ -11190,6 +11641,7 @@
           "aspect": "moon",
           "result_id": "mem.salt",
           "result_name": "Memory: Salt",
+          "result_name_cn": "回忆：盐",
           "level": 1,
           "type": "spawn"
         }
@@ -11231,6 +11683,7 @@
           "aspect": "nectar",
           "result_id": "x.insects.nectars",
           "result_name": "Lesson: Insects & Nectars",
+          "result_name_cn": "教诲：昆虫与花蜜",
           "level": 2,
           "type": "spawn"
         },
@@ -11239,6 +11692,7 @@
           "aspect": "nectar",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -11281,6 +11735,7 @@
           "aspect": "heart",
           "result_id": "x.herbs.infusions",
           "result_name": "Lesson: Herbs & Infusions",
+          "result_name_cn": "教诲：草药与药汤",
           "level": 2,
           "type": "spawn"
         },
@@ -11289,6 +11744,7 @@
           "aspect": "heart",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -11330,6 +11786,7 @@
           "aspect": "grail",
           "result_id": "x.orchids.narcotics",
           "result_name": "Lesson: Orchids & Narcotics",
+          "result_name_cn": "教诲：兰花与迷药",
           "level": 2,
           "type": "spawn"
         },
@@ -11338,6 +11795,7 @@
           "aspect": "grail",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -11380,6 +11838,7 @@
           "aspect": "scale",
           "result_id": "x.serpents.venoms",
           "result_name": "Lesson: Serpents & Venoms",
+          "result_name_cn": "教诲：群蛇与毒液",
           "level": 2,
           "type": "spawn"
         },
@@ -11388,6 +11847,7 @@
           "aspect": "scale",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -11429,6 +11889,7 @@
           "aspect": "winter",
           "result_id": "x.sights.sensations",
           "result_name": "Lesson: Sights & Sensations",
+          "result_name_cn": "教诲：景象与感知",
           "level": 2,
           "type": "spawn"
         },
@@ -11437,6 +11898,7 @@
           "aspect": "winter",
           "result_id": "bittersweet.certainty",
           "result_name": "Bittersweet Certainty",
+          "result_name_cn": "苦乐参半的必然",
           "level": 1,
           "type": "spawn"
         }
@@ -11478,6 +11940,7 @@
           "aspect": "forge",
           "result_id": "x.spices.savours",
           "result_name": "Lesson: Spices & Savours",
+          "result_name_cn": "教诲：香料与滋味",
           "level": 2,
           "type": "spawn"
         },
@@ -11486,6 +11949,7 @@
           "aspect": "forge",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -11527,6 +11991,7 @@
           "aspect": "winter",
           "result_id": "x.rhyme.remembrance",
           "result_name": "Lesson: Rhyme & Remembrance",
+          "result_name_cn": "教诲：音律与铭记",
           "level": 2,
           "type": "spawn"
         },
@@ -11535,6 +12000,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -11576,6 +12042,7 @@
           "aspect": "forge",
           "result_id": "x.meniscatereflections",
           "result_name": "Lesson: Meniscate Reflections",
+          "result_name_cn": "教诲：弧月的倒影",
           "level": 2,
           "type": "spawn"
         },
@@ -11584,6 +12051,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -11625,6 +12093,7 @@
           "aspect": "winter",
           "result_id": "x.rhyme.remembrance",
           "result_name": "Lesson: Rhyme & Remembrance",
+          "result_name_cn": "教诲：音律与铭记",
           "level": 1,
           "type": "spawn"
         },
@@ -11633,6 +12102,7 @@
           "aspect": "winter",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -11674,6 +12144,7 @@
           "aspect": "winter",
           "result_id": "x.putrefactions.calcinations",
           "result_name": "Lesson: Putrefactions & Calcinations",
+          "result_name_cn": "教诲：腐化与煅烧",
           "level": 2,
           "type": "spawn"
         },
@@ -11682,6 +12153,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -11723,6 +12195,7 @@
           "aspect": "lantern",
           "result_id": "x.purifications.exaltations",
           "result_name": "Lesson: Purifications & Exaltations",
+          "result_name_cn": "教诲：精炼与擢升",
           "level": 2,
           "type": "spawn"
         },
@@ -11731,6 +12204,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -11773,6 +12247,7 @@
           "aspect": "scale",
           "result_id": "x.stonestories",
           "result_name": "Lesson: Stone Stories",
+          "result_name_cn": "教诲：岩石的故事",
           "level": 2,
           "type": "spawn"
         },
@@ -11781,6 +12256,7 @@
           "aspect": "scale",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -11823,6 +12299,7 @@
           "aspect": "lantern",
           "result_id": "x.sacrasolisinvicti",
           "result_name": "Lesson: Sacra Solis Invicti",
+          "result_name_cn": "教诲：无敌太阳典仪",
           "level": 2,
           "type": "spawn"
         },
@@ -11831,6 +12308,7 @@
           "aspect": "lantern",
           "result_id": "music.savage",
           "result_name": "Savage Hymn",
+          "result_name_cn": "野蛮颂歌",
           "level": 1,
           "type": "spawn"
         }
@@ -11873,6 +12351,7 @@
           "aspect": "moth",
           "result_id": "x.sacralimiae",
           "result_name": "Lesson: Sacra Limiae",
+          "result_name_cn": "教诲：利米亚典仪",
           "level": 2,
           "type": "spawn"
         },
@@ -11881,6 +12360,7 @@
           "aspect": "moth",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -11923,6 +12403,7 @@
           "aspect": "moon",
           "result_id": "x.sickle.eclipse",
           "result_name": "Lesson: Sickle & Eclipse",
+          "result_name_cn": "教诲：镰刀与日蚀",
           "level": 2,
           "type": "spawn"
         },
@@ -11931,6 +12412,7 @@
           "aspect": "moon",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -11973,6 +12455,7 @@
           "aspect": "edge",
           "result_id": "x.edictsmartial",
           "result_name": "Lesson: Edicts Martial",
+          "result_name_cn": "教诲：武力之敕令",
           "level": 2,
           "type": "spawn"
         },
@@ -11981,6 +12464,7 @@
           "aspect": "edge",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -12022,6 +12506,7 @@
           "aspect": "moon",
           "result_id": "x.edictsinviolable",
           "result_name": "Lesson: Edicts Inviolable",
+          "result_name_cn": "教诲：无侵之敕令",
           "level": 2,
           "type": "spawn"
         },
@@ -12030,6 +12515,7 @@
           "aspect": "moon",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -12071,6 +12557,7 @@
           "aspect": "moon",
           "result_id": "x.edictsinviolable",
           "result_name": "Lesson: Edicts Inviolable",
+          "result_name_cn": "教诲：无侵之敕令",
           "level": 2,
           "type": "spawn"
         },
@@ -12079,6 +12566,7 @@
           "aspect": "moon",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -12120,6 +12608,7 @@
           "aspect": "sky",
           "result_id": "x.anbary.lapidary",
           "result_name": "Lesson: Anbary & Lapidary",
+          "result_name_cn": "教诲：雕珀与琢石",
           "level": 2,
           "type": "spawn"
         },
@@ -12128,6 +12617,7 @@
           "aspect": "sky",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -12169,6 +12659,7 @@
           "aspect": "knock",
           "result_id": "x.glassblowing.vesselcrafting",
           "result_name": "Lesson: Glassblowing & Vesselcrafting",
+          "result_name_cn": "教诲：玻璃吹制与容器制造",
           "level": 2,
           "type": "spawn"
         },
@@ -12177,6 +12668,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -12219,6 +12711,7 @@
           "aspect": "moon",
           "result_id": "x.sickle.eclipse",
           "result_name": "Lesson: Sickle & Eclipse",
+          "result_name_cn": "教诲：镰刀与日蚀",
           "level": 2,
           "type": "spawn"
         },
@@ -12227,6 +12720,7 @@
           "aspect": "moon",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -12269,6 +12763,7 @@
           "aspect": "knock",
           "result_id": "x.edictsliminal",
           "result_name": "Lesson: Edicts Liminal",
+          "result_name_cn": "教诲：阈限之敕令",
           "level": 2,
           "type": "spawn"
         },
@@ -12277,6 +12772,7 @@
           "aspect": "knock",
           "result_id": "mem.dreamt",
           "result_name": "Memory: A Stolen Secret",
+          "result_name_cn": "回忆：偷来的秘密",
           "level": 1,
           "type": "spawn"
         }
@@ -12319,6 +12815,7 @@
           "aspect": "knock",
           "result_id": "x.preliminalmeter",
           "result_name": "Lesson: Preliminal Meter",
+          "result_name_cn": "教诲：阙前格律",
           "level": 3,
           "type": "spawn"
         },
@@ -12327,6 +12824,7 @@
           "aspect": "knock",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -12369,6 +12867,7 @@
           "aspect": "rose",
           "result_id": "x.preliminalmeter",
           "result_name": "Lesson: Preliminal Meter",
+          "result_name_cn": "教诲：阙前格律",
           "level": 3,
           "type": "spawn"
         },
@@ -12377,6 +12876,7 @@
           "aspect": "rose",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -12418,6 +12918,7 @@
           "aspect": "lantern",
           "result_id": "x.inks.revelation",
           "result_name": "Lesson: Inks of Revelation",
+          "result_name_cn": "教诲：启示之墨",
           "level": 2,
           "type": "spawn"
         },
@@ -12426,6 +12927,7 @@
           "aspect": "lantern",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -12467,6 +12969,7 @@
           "aspect": "sky",
           "result_id": "x.sacralimiae",
           "result_name": "Lesson: Sacra Limiae",
+          "result_name_cn": "教诲：利米亚典仪",
           "level": 2,
           "type": "spawn"
         },
@@ -12475,6 +12978,7 @@
           "aspect": "sky",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -12516,6 +13020,7 @@
           "aspect": "forge",
           "result_id": "x.disciplines.thehammer",
           "result_name": "Lesson: Disciplines of the Hammer",
+          "result_name_cn": "教诲：锤砧的戒律",
           "level": 2,
           "type": "spawn"
         },
@@ -12524,6 +13029,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -12565,6 +13071,7 @@
           "aspect": "forge",
           "result_id": "x.disciplines.thehammer",
           "result_name": "Lesson: Disciplines of the Hammer",
+          "result_name_cn": "教诲：锤砧的戒律",
           "level": 3,
           "type": "spawn"
         },
@@ -12573,6 +13080,7 @@
           "aspect": "forge",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -12614,6 +13122,7 @@
           "aspect": "lantern",
           "result_id": "x.inks.revelation",
           "result_name": "Lesson: Inks of Revelation",
+          "result_name_cn": "教诲：启示之墨",
           "level": 2,
           "type": "spawn"
         },
@@ -12622,6 +13131,7 @@
           "aspect": "lantern",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -12663,6 +13173,7 @@
           "aspect": "moth",
           "result_id": "x.inks.revelation",
           "result_name": "Lesson: Inks of Revelation",
+          "result_name_cn": "教诲：启示之墨",
           "level": 2,
           "type": "spawn"
         },
@@ -12671,6 +13182,7 @@
           "aspect": "moth",
           "result_id": "mem.intuition",
           "result_name": "Memory: Intuition",
+          "result_name_cn": "回忆：直觉",
           "level": 1,
           "type": "spawn"
         }
@@ -12713,6 +13225,7 @@
           "aspect": "heart",
           "result_id": "x.quenchings.quellings",
           "result_name": "Lesson: Quenchings & Quellings",
+          "result_name_cn": "教诲：淬火与熄焰",
           "level": 3,
           "type": "spawn"
         },
@@ -12721,6 +13234,7 @@
           "aspect": "heart",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -12763,6 +13277,7 @@
           "aspect": "winter",
           "result_id": "x.quenchings.quellings",
           "result_name": "Lesson: Quenchings & Quellings",
+          "result_name_cn": "教诲：淬火与熄焰",
           "level": 2,
           "type": "spawn"
         },
@@ -12771,6 +13286,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -12812,6 +13328,7 @@
           "aspect": "moon",
           "result_id": "x.edictsinviolable",
           "result_name": "Lesson: Edicts Inviolable",
+          "result_name_cn": "教诲：无侵之敕令",
           "level": 2,
           "type": "spawn"
         },
@@ -12820,6 +13337,7 @@
           "aspect": "moon",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -12861,6 +13379,7 @@
           "aspect": "grail",
           "result_id": "x.resurgences.emergences",
           "result_name": "Lesson: Resurgences & Emergences",
+          "result_name_cn": "教诲：复苏与羽化",
           "level": 1,
           "type": "spawn"
         },
@@ -12869,6 +13388,7 @@
           "aspect": "grail",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -12911,6 +13431,7 @@
           "aspect": "edge",
           "result_id": "x.disciplines.thescar",
           "result_name": "Lesson: Disciplines of the Scar",
+          "result_name_cn": "教诲：伤疤的戒律",
           "level": 2,
           "type": "spawn"
         },
@@ -12919,6 +13440,7 @@
           "aspect": "edge",
           "result_id": "mem.revelation",
           "result_name": "Memory: Revelation",
+          "result_name_cn": "回忆：启示",
           "level": 1,
           "type": "spawn"
         }
@@ -12961,6 +13483,7 @@
           "aspect": "moon",
           "result_id": "x.snowstories",
           "result_name": "Lesson: Snow Stories",
+          "result_name_cn": "教诲：白雪的故事",
           "level": 2,
           "type": "spawn"
         },
@@ -12969,6 +13492,7 @@
           "aspect": "moon",
           "result_id": "mem.salt",
           "result_name": "Memory: Salt",
+          "result_name_cn": "回忆：盐",
           "level": 1,
           "type": "spawn"
         }
@@ -13010,6 +13534,7 @@
           "aspect": "moon",
           "result_id": "x.hill.hollow",
           "result_name": "Lesson: Hill & Hollow",
+          "result_name_cn": "教诲：丘陵与孔窍",
           "level": 2,
           "type": "spawn"
         },
@@ -13018,6 +13543,7 @@
           "aspect": "moon",
           "result_id": "mem.salt",
           "result_name": "Memory: Salt",
+          "result_name_cn": "回忆：盐",
           "level": 1,
           "type": "spawn"
         }
@@ -13060,6 +13586,7 @@
           "aspect": "forge",
           "result_id": "x.disciplines.thehammer",
           "result_name": "Lesson: Disciplines of the Hammer",
+          "result_name_cn": "教诲：锤砧的戒律",
           "level": 2,
           "type": "spawn"
         },
@@ -13068,6 +13595,7 @@
           "aspect": "forge",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -13110,6 +13638,7 @@
           "aspect": "grail",
           "result_id": "x.tridesmahiera",
           "result_name": "Lesson: Tridesma Hiera",
+          "result_name_cn": "教诲：三重誓之仪",
           "level": 2,
           "type": "spawn"
         },
@@ -13118,6 +13647,7 @@
           "aspect": "grail",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -13160,6 +13690,7 @@
           "aspect": "moth",
           "result_id": "x.sacralimiae",
           "result_name": "Lesson: Sacra Limiae",
+          "result_name_cn": "教诲：利米亚典仪",
           "level": 1,
           "type": "spawn"
         },
@@ -13168,6 +13699,7 @@
           "aspect": "moth",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -13210,6 +13742,7 @@
           "aspect": "edge",
           "result_id": "x.disciplines.thescar",
           "result_name": "Lesson: Disciplines of the Scar",
+          "result_name_cn": "教诲：伤疤的戒律",
           "level": 3,
           "type": "spawn"
         },
@@ -13218,6 +13751,7 @@
           "aspect": "edge",
           "result_id": "mem.regret",
           "result_name": "Memory: Regret",
+          "result_name_cn": "回忆：悔恨",
           "level": 1,
           "type": "spawn"
         }
@@ -13259,6 +13793,7 @@
           "aspect": "forge",
           "result_id": "x.sights.sensations",
           "result_name": "Lesson: Sights & Sensations",
+          "result_name_cn": "教诲：景象与感知",
           "level": 2,
           "type": "spawn"
         },
@@ -13267,6 +13802,7 @@
           "aspect": "forge",
           "result_id": "bittersweet.certainty",
           "result_name": "Bittersweet Certainty",
+          "result_name_cn": "苦乐参半的必然",
           "level": 1,
           "type": "spawn"
         }
@@ -13309,6 +13845,7 @@
           "aspect": "grail",
           "result_id": "x.tridesmahiera",
           "result_name": "Lesson: Tridesma Hiera",
+          "result_name_cn": "教诲：三重誓之仪",
           "level": 2,
           "type": "spawn"
         },
@@ -13317,6 +13854,7 @@
           "aspect": "grail",
           "result_id": "mem.satisfaction",
           "result_name": "Memory: Satisfaction",
+          "result_name_cn": "回忆：满足",
           "level": 1,
           "type": "spawn"
         }
@@ -13359,6 +13897,7 @@
           "aspect": "knock",
           "result_id": "x.door.wall",
           "result_name": "Lesson: Door & Wall",
+          "result_name_cn": "教诲：门扉与墙垣",
           "level": 2,
           "type": "spawn"
         },
@@ -13367,6 +13906,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -13409,6 +13949,7 @@
           "aspect": "forge",
           "result_id": "x.door.wall",
           "result_name": "Lesson: Door & Wall",
+          "result_name_cn": "教诲：门扉与墙垣",
           "level": 3,
           "type": "spawn"
         },
@@ -13417,6 +13958,7 @@
           "aspect": "forge",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -13459,6 +14001,7 @@
           "aspect": "knock",
           "result_id": "x.door.wall",
           "result_name": "Lesson: Door & Wall",
+          "result_name_cn": "教诲：门扉与墙垣",
           "level": 3,
           "type": "spawn"
         },
@@ -13467,6 +14010,7 @@
           "aspect": "knock",
           "result_id": "mem.pattern",
           "result_name": "Memory: Pattern",
+          "result_name_cn": "回忆：典范",
           "level": 1,
           "type": "spawn"
         }
@@ -13509,6 +14053,7 @@
           "aspect": "nectar",
           "result_id": "x.rites.theroots",
           "result_name": "Lesson: Rites of the Roots",
+          "result_name_cn": "教诲：根系之仪",
           "level": 2,
           "type": "spawn"
         },
@@ -13517,6 +14062,7 @@
           "aspect": "nectar",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -13559,6 +14105,7 @@
           "aspect": "moth",
           "result_id": "x.rites.theroots",
           "result_name": "Lesson: Rites of the Roots",
+          "result_name_cn": "教诲：根系之仪",
           "level": 2,
           "type": "spawn"
         },
@@ -13567,6 +14114,7 @@
           "aspect": "moth",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -13610,6 +14158,7 @@
           "aspect": "knock",
           "result_id": "x.preliminalmeter",
           "result_name": "Lesson: Preliminal Meter",
+          "result_name_cn": "教诲：阙前格律",
           "level": 3,
           "type": "spawn"
         },
@@ -13618,6 +14167,7 @@
           "aspect": "knock",
           "result_id": "confounding.parable",
           "result_name": "Confounding Parable",
+          "result_name_cn": "混淆寓言",
           "level": 1,
           "type": "spawn"
         }
@@ -13661,6 +14211,7 @@
           "aspect": "lantern",
           "result_id": "x.auroralcontemplations",
           "result_name": "Lesson: Auroral Contemplations",
+          "result_name_cn": "教诲：曙光的静观",
           "level": 3,
           "type": "spawn"
         },
@@ -13669,6 +14220,7 @@
           "aspect": "lantern",
           "result_id": "mem.contradiction",
           "result_name": "Memory: Contradiction",
+          "result_name_cn": "回忆：矛盾",
           "level": 1,
           "type": "spawn"
         }
@@ -13712,6 +14264,7 @@
           "aspect": "grail",
           "result_id": "x.pentiments.precursors",
           "result_name": "Lesson: Pentiments & Precursors",
+          "result_name_cn": "教诲：覆画残迹与古老前身",
           "level": 3,
           "type": "spawn"
         },
@@ -13720,6 +14273,7 @@
           "aspect": "grail",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -13763,6 +14317,7 @@
           "aspect": "scale",
           "result_id": "x.stonestories",
           "result_name": "Lesson: Stone Stories",
+          "result_name_cn": "教诲：岩石的故事",
           "level": 3,
           "type": "spawn"
         },
@@ -13771,6 +14326,7 @@
           "aspect": "scale",
           "result_id": "mem.impulse",
           "result_name": "Memory: Impulse",
+          "result_name_cn": "回忆：冲动",
           "level": 1,
           "type": "spawn"
         }
@@ -13814,6 +14370,7 @@
           "aspect": "winter",
           "result_id": "x.sights.sensations",
           "result_name": "Lesson: Sights & Sensations",
+          "result_name_cn": "教诲：景象与感知",
           "level": 3,
           "type": "spawn"
         },
@@ -13822,6 +14379,7 @@
           "aspect": "winter",
           "result_id": "mem.hindsight",
           "result_name": "Memory: Hindsight",
+          "result_name_cn": "回忆：后见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -13865,6 +14423,7 @@
           "aspect": "moth",
           "result_id": "x.transformations.liberations",
           "result_name": "Lesson: Transformations & Liberations",
+          "result_name_cn": "教诲：嬗变与解放",
           "level": 3,
           "type": "spawn"
         },
@@ -13873,6 +14432,7 @@
           "aspect": "moth",
           "result_id": "mem.foresight",
           "result_name": "Memory: Foresight",
+          "result_name_cn": "回忆：先见之明",
           "level": 1,
           "type": "spawn"
         }
@@ -13915,6 +14475,7 @@
           "aspect": "edge",
           "result_id": "x.sharps",
           "result_name": "Lesson: Sharps",
+          "result_name_cn": "教诲：锋锐",
           "level": 2,
           "type": "spawn"
         },
@@ -13923,6 +14484,7 @@
           "aspect": "edge",
           "result_id": "mem.fear",
           "result_name": "Memory: Fear",
+          "result_name_cn": "回忆：恐惧",
           "level": 1,
           "type": "spawn"
         }
@@ -14069,6 +14631,7 @@
           "aspect": "edge",
           "result_id": "x.edictsmartial",
           "result_name": "Lesson: Edicts Martial",
+          "result_name_cn": "教诲：武力之敕令",
           "level": 3,
           "type": "spawn"
         },
@@ -14077,6 +14640,7 @@
           "aspect": "edge",
           "result_id": "x.skystories",
           "result_name": "Lesson: Sky Stories",
+          "result_name_cn": "教诲：天空的故事",
           "level": 1,
           "type": "spawn"
         }
@@ -14100,6 +14664,7 @@
           "aspect": "edge",
           "result_id": "x.sickle.eclipse",
           "result_name": "Lesson: Sickle & Eclipse",
+          "result_name_cn": "教诲：镰刀与日蚀",
           "level": 3,
           "type": "spawn"
         },
@@ -14108,6 +14673,7 @@
           "aspect": "edge",
           "result_id": "x.surgeries.exsanguinations",
           "result_name": "Lesson: Surgeries & Exsanguinations",
+          "result_name_cn": "教诲：手术与放血",
           "level": 1,
           "type": "spawn"
         }
@@ -14131,6 +14697,7 @@
           "aspect": "edge",
           "result_id": "x.raggedcrossroads",
           "result_name": "Lesson: Ragged Crossroads",
+          "result_name_cn": "教诲：残破十字路",
           "level": 3,
           "type": "spawn"
         },
@@ -14139,6 +14706,7 @@
           "aspect": "edge",
           "result_id": "x.wolfstories",
           "result_name": "Lesson: Wolf Stories",
+          "result_name_cn": "教诲：狼的故事",
           "level": 1,
           "type": "spawn"
         },
@@ -14147,6 +14715,7 @@
           "aspect": "winter",
           "result_id": "x.inks.containment",
           "result_name": "Lesson: Inks of Containment",
+          "result_name_cn": "教诲：收容之墨",
           "level": 3,
           "type": "spawn"
         },
@@ -14155,6 +14724,7 @@
           "aspect": "winter",
           "result_id": "x.wolfstories",
           "result_name": "Lesson: Wolf Stories",
+          "result_name_cn": "教诲：狼的故事",
           "level": 1,
           "type": "spawn"
         }
@@ -14178,6 +14748,7 @@
           "aspect": "lantern",
           "result_id": "x.inks.revelation",
           "result_name": "Lesson: Inks of Revelation",
+          "result_name_cn": "教诲：启示之墨",
           "level": 3,
           "type": "spawn"
         },
@@ -14186,6 +14757,7 @@
           "aspect": "lantern",
           "result_id": "x.path.pilgrim",
           "result_name": "Lesson: Path & Pilgrim",
+          "result_name_cn": "教诲：道途与朝圣",
           "level": 1,
           "type": "spawn"
         }
@@ -14209,6 +14781,7 @@
           "aspect": "lantern",
           "result_id": "x.pyroglyphics",
           "result_name": "Lesson: Pyroglyphics",
+          "result_name_cn": "教诲：焰篆体",
           "level": 3,
           "type": "spawn"
         },
@@ -14217,6 +14790,7 @@
           "aspect": "lantern",
           "result_id": "x.bells.brazieries",
           "result_name": "Lesson: Bells & Brazieries",
+          "result_name_cn": "教诲：洪钟与铜器",
           "level": 1,
           "type": "spawn"
         }
@@ -14240,6 +14814,7 @@
           "aspect": "lantern",
           "result_id": "x.auroralcontemplations",
           "result_name": "Lesson: Auroral Contemplations",
+          "result_name_cn": "教诲：曙光的静观",
           "level": 3,
           "type": "spawn"
         },
@@ -14248,6 +14823,7 @@
           "aspect": "lantern",
           "result_id": "x.glaziery.lightsmithing",
           "result_name": "Lesson: Glaziery & Lightsmithing",
+          "result_name_cn": "教诲：玻璃与锻光",
           "level": 1,
           "type": "spawn"
         }
@@ -14271,6 +14847,7 @@
           "aspect": "winter",
           "result_id": "x.quenchings.quellings",
           "result_name": "Lesson: Quenchings & Quellings",
+          "result_name_cn": "教诲：淬火与熄焰",
           "level": 3,
           "type": "spawn"
         },
@@ -14279,6 +14856,7 @@
           "aspect": "winter",
           "result_id": "x.sacralimiae",
           "result_name": "Lesson: Sacra Limiae",
+          "result_name_cn": "教诲：利米亚典仪",
           "level": 1,
           "type": "spawn"
         }
@@ -14302,6 +14880,7 @@
           "aspect": "winter",
           "result_id": "x.rhyme.remembrance",
           "result_name": "Lesson: Rhyme & Remembrance",
+          "result_name_cn": "教诲：音律与铭记",
           "level": 3,
           "type": "spawn"
         },
@@ -14310,6 +14889,7 @@
           "aspect": "winter",
           "result_id": "x.skystories",
           "result_name": "Lesson: Sky Stories",
+          "result_name_cn": "教诲：天空的故事",
           "level": 1,
           "type": "spawn"
         }
@@ -14333,6 +14913,7 @@
           "aspect": "grail",
           "result_id": "x.desires.dissolutions",
           "result_name": "Lesson: Desires & Dissolutions",
+          "result_name_cn": "教诲：诱惑与消殒",
           "level": 3,
           "type": "spawn"
         },
@@ -14341,6 +14922,7 @@
           "aspect": "grail",
           "result_id": "x.rites.theroots",
           "result_name": "Lesson: Rites of the Roots",
+          "result_name_cn": "教诲：根系之仪",
           "level": 1,
           "type": "spawn"
         }

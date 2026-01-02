@@ -67,9 +67,10 @@ def merge_data(core_data, loc_data):
             loc_item = loc_map[uid]
             for k, v in loc_item.items():
                 # Update text fields and xexts (for BoH)
-                if k in ['label', 'Label', 'description', 'Description', 'Desc', 'startdescription', 'slots', 'xexts','aspect']: 
+                if k in ['label', 'Label', 'description', 'Description', 'Desc', 'startdescription', 'slots', 'xexts']: 
                     item[f'{k}_cn'] = v
         merged.append(item)
+
        
     
     return merged

@@ -1,0 +1,40 @@
+1. 加入密教部分
+2. 加入专有名词，世界观RAG
+3. train.jsonl分段 （desc + into + content）
+4 . 训练 loss：
+
+本质是 token-level cross entropy，对整个 [指令+输入+输出] 序列做自回归重建。
+可以考虑以后用 label=-100 屏蔽 prompt 部分，让 loss 更集中在回答段落。
+
+
+{'other': {'codex', 'infinitereadable', 'journal', 'correspondence', 'film', 'soph', 'tablet', 'scroll', 'invitation', 
+'delivery', 'considerable', 'readable', 'blank', 'soaked', 'thing'}, 'mystery': {'moth', 'nectar', 'edge', 'scale', 'knock', 'winter', 'moon', 
+'sky', 'heart', 'lantern', 'forge', 'grail', 'rose'}, 'period': {'curia', 'nocturnal', 'baronial', 'solar', 'dawn'}, 'w': {'hyksos', 'cracktrack', 'henavek', 'sanskrit', 'aramaic', 
+'ramsund', 'sabazine', 'mandaic', 'greek', 'phrygian', 'ericapaean', 'fucine', 'killasimi', 'vak', 'latin'}, 'cost': {'tally'}, 'r': {'disciplines.thehammer', 'snowstories', 
+'rhyme.remembrance', 'raggedcrossroads', 'sharps', 'tridesmahiera', 'preliminalmeter', 'door.wall', 'inks.power', 'insects.nectars', 'resurgences.emergences', 'sickle.eclipse', 
+'solutions.separations', 'skystories', 'strings.songs', 'desires.dissolutions', 
+'wolfstories', 'spices.savours', 'disciplines.thescar', 'pentiments.precursors', 'edictsliminal', 'anbary.lapidary', 'pearl.tide', 'glassblowing.vesselcrafting', 
+'watchmansparadoxes', 'applebrighteuphonies', 'purifications.exaltations', 'coil.chasm', 'transformations.liberations', 'furs.feathers', 'sandstories', 
+'maggephenemysteries', 'auroralcontemplations', 'stitching.binding', 'stonestories', 'quenchings.quellings', 'inks.containment', 'horns.ivories',
+ 'meniscatereflections', 'edictsmartial', 'hill.hollow', 'leaves.thorns', 'surgeries.exsanguinations', 'thegreatsignsandthegreatscars', 'ouranoscopy',
+  'lockworks.clockworks', 'edictsinviolable', 'orchids.narcotics', 'herbs.infusions', 'serpents.venoms', 'inks.revelation', 'seastories', 'rites.theroots', 
+  'putrefactions.calcinations', 'sacrasolisinvicti', 'pyroglyphics', 'sights.sensations', 'path.pilgrim', 'bells.brazieries', 'sacralimiae', 'glaziery.lightsmithing', 
+  'drums.dances', 'weaving.knotworking'}, 'record': {'phonograph'}, 'memories': {'executioner', 'prodigal', 'symurgist', 'twiceborn', 'revolutionary', 'magnate',
+   'cartographer', 'artist', 'archaeologist'}, 'post': {'ready'}, 'form': {'order'}, 'message': {'rhonwen.act1'}, 'address': {'serena'}, 'wc': {'markeraspect'}}
+
+## 准则描述加入RAG
+灯：关于不仁、理性、求知、辉光、启明、预知的准则
+铸：关于转变、技巧、火、毁灭、塑形、力量、科技的准则
+刃：关于蛮力、背叛、狡诈、痛苦、征服、统治、斗争、抗击的准则
+冬：关于消逝、铭记、死寂、破败、雪、终末、结尾的准则
+心：关于生命、存续、保护、永不停息的鼓点和舞蹈的准则
+蛾：关于变化、奇想、非理性、直觉、寻觅、混沌、渴慕、激情、自然、林地、遗忘的准则
+杯：关于感官欲望、生育、诱惑、苦痛、血与渴求、干渴与饥饿、贪婪、迷醉、愉悦的准则
+启：关于伤口、锁匠、门与钥匙、揭示、洞开与拆解的准则
+秘史：关于被压制、遗忘、抹除、传说的准则
+月：关于行于夜者，被遗忘者。秘密轻柔，夜柔尤甚；大海低语。而倾听未必总是明智
+蜜：世界脉络中的常绿珍宝；时节轮转的跃动脉搏
+引：关于探索、启迪、希望。指引一切的罗盘玫瑰。通向新视界的九重引导。
+鳞：关于大地深处原始力量的残余。坚于表，固于里；难唤醒，更难抑
+穹：关于平衡，和谐与必需。轻风，暴风，回响，歌咏；数学的复杂，飞行的原理。法则的碰触有时比我们想象的要轻
+

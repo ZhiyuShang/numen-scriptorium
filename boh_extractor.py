@@ -42,8 +42,10 @@ def load_all_elements_for_lookup():
             uid = item.get('id') or item.get('ID')
             if uid:
                 label = item.get('Label') or item.get('label')
+                label_cn = item.get('Label_cn') or item.get('label_cn')
+                
                 if label:
-                    lookup[uid] = label
+                    lookup[uid] = [label, label_cn]
                     
     print(f"Lookup map built with {len(lookup)} entries.")
     return lookup
@@ -56,10 +58,10 @@ def parse_xexts(xexts):
         return None
     
     readings = {}
-    
+
     for key, text in xexts.items():
         parts = key.split('.')
-        
+
         if len(parts) >= 2 and parts[0] == 'reading':
             aspect = parts[1] # e.g., 'lantern'
             if aspect not in readings:
@@ -69,7 +71,7 @@ def parse_xexts(xexts):
                 readings[aspect]['intro'] = text
             elif len(parts) == 2:
                 readings[aspect]['content'] = text
-                
+              
     return list(readings.values())
 
 def parse_xtriggers(xtriggers, lookup_map):
@@ -101,13 +103,14 @@ def parse_xtriggers(xtriggers, lookup_map):
             if not effect_id:
                 continue
                 
-            result_name = lookup_map.get(effect_id, effect_id)
+            result_name,result_name_cn = lookup_map.get(effect_id, effect_id)
             
             results.append({
                 "action": action_type,
                 "aspect": aspect,
                 "result_id": effect_id,
                 "result_name": result_name,
+                "result_name_cn": result_name_cn,
                 "level": effect.get('level', 1),
                 "type": "spawn" if effect.get('morpheffect') == 'spawn' else "transform"
             })
@@ -180,9 +183,9 @@ def run():
             item_data['results_cn'] = results_cn
             
         extracted_items.append(item_data)
-
+    
     # 4. Save
-    output_file = os.path.join(OUTPUT_DIR, "boh_data.json")
+    output_file = os.path.join(OUTPUT_DIR, "boh_raw_data.json")
     save_json({"game": "Book of Hours", "items": extracted_items}, output_file)
     print("Done.")
 
