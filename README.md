@@ -3,7 +3,6 @@
 
 # 🇬🇧 English README
 
-```markdown
 # Numen Scriptorium 
 
 Numen Scriptorium is a bilingual text engine based on **Qwen3-0.6B**, fine-tuned to write and translate in a style inspired by occult libraries and intricate game worlds.
