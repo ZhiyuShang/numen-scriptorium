@@ -103,6 +103,7 @@ models/
   qwen3_0_6b_qlora/         # Fine-tuned LoRA weights (base model not included)
 
 README.md                   # This file
+```
 
 # 闰识书斋(中文)
 
