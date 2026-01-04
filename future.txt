@@ -3,24 +3,27 @@
 3. train.jsonl分段 （desc + into + content）
 4 . 训练 loss：
 
+数据 & 训练
+整理 Cultist Simulator 的 rawdata（与 BOH 类似结构）。
+修改构建脚本，支持多 raw 文件 → 合并生成统一的 train.jsonl + eval.jsonl。
+在构建脚本中：
+保持翻译 / 对照 / 结构→文本的样本结构
+对不同来源（BOH/CS）的样本在 instruction 中加轻量风格标注（可选）。
+重新跑 QLoRA 训练（注意使用 eval 集，观察 train/eval loss）。
+🔹 评估
+使用 eval loss / ppl 监控微调效果。
+
 本质是 token-level cross entropy，对整个 [指令+输入+输出] 序列做自回归重建。
 可以考虑以后用 label=-100 屏蔽 prompt 部分，让 loss 更集中在回答段落。
 
-
-{'other': {'codex', 'infinitereadable', 'journal', 'correspondence', 'film', 'soph', 'tablet', 'scroll', 'invitation', 
-'delivery', 'considerable', 'readable', 'blank', 'soaked', 'thing'}, 'mystery': {'moth', 'nectar', 'edge', 'scale', 'knock', 'winter', 'moon', 
-'sky', 'heart', 'lantern', 'forge', 'grail', 'rose'}, 'period': {'curia', 'nocturnal', 'baronial', 'solar', 'dawn'}, 'w': {'hyksos', 'cracktrack', 'henavek', 'sanskrit', 'aramaic', 
-'ramsund', 'sabazine', 'mandaic', 'greek', 'phrygian', 'ericapaean', 'fucine', 'killasimi', 'vak', 'latin'}, 'cost': {'tally'}, 'r': {'disciplines.thehammer', 'snowstories', 
-'rhyme.remembrance', 'raggedcrossroads', 'sharps', 'tridesmahiera', 'preliminalmeter', 'door.wall', 'inks.power', 'insects.nectars', 'resurgences.emergences', 'sickle.eclipse', 
-'solutions.separations', 'skystories', 'strings.songs', 'desires.dissolutions', 
-'wolfstories', 'spices.savours', 'disciplines.thescar', 'pentiments.precursors', 'edictsliminal', 'anbary.lapidary', 'pearl.tide', 'glassblowing.vesselcrafting', 
-'watchmansparadoxes', 'applebrighteuphonies', 'purifications.exaltations', 'coil.chasm', 'transformations.liberations', 'furs.feathers', 'sandstories', 
-'maggephenemysteries', 'auroralcontemplations', 'stitching.binding', 'stonestories', 'quenchings.quellings', 'inks.containment', 'horns.ivories',
- 'meniscatereflections', 'edictsmartial', 'hill.hollow', 'leaves.thorns', 'surgeries.exsanguinations', 'thegreatsignsandthegreatscars', 'ouranoscopy',
-  'lockworks.clockworks', 'edictsinviolable', 'orchids.narcotics', 'herbs.infusions', 'serpents.venoms', 'inks.revelation', 'seastories', 'rites.theroots', 
-  'putrefactions.calcinations', 'sacrasolisinvicti', 'pyroglyphics', 'sights.sensations', 'path.pilgrim', 'bells.brazieries', 'sacralimiae', 'glaziery.lightsmithing', 
-  'drums.dances', 'weaving.knotworking'}, 'record': {'phonograph'}, 'memories': {'executioner', 'prodigal', 'symurgist', 'twiceborn', 'revolutionary', 'magnate',
-   'cartographer', 'artist', 'archaeologist'}, 'post': {'ready'}, 'form': {'order'}, 'message': {'rhonwen.act1'}, 'address': {'serena'}, 'wc': {'markeraspect'}}
+准备 20–50 条人工评估样本（翻译 + 结构→文本 + 设定解释），定期人工打分。
+（可选）对翻译子任务使用 BLEU / chrF 做自动评估，对比微调前后效果。
+🔹 RAG & 世界观
+收集 BOH + CS 的 lore 文本，整理成 lore_docs，构建向量库。
+写 retrieve_lore(query) + generate_with_rag(query)，接 Qwen3-0.6B LoRA 模型。
+抽象实体 & 关系，做一个简单 JSON 型知识图谱，写 query_graph(entities)。
+把图谱信息和文档检索结果一起拼成 [Lore]，由模型生成最终文本。
+针对几类任务（物品描述、任务故事、世界观解释），测试 RAG+模型联合效果，检查是否减少 OOC、设定更一致。
 
 ## 准则描述加入RAG
 灯：关于不仁、理性、求知、辉光、启明、预知的准则

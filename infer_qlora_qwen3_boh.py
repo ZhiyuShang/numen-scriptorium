@@ -63,7 +63,7 @@ if __name__ == "__main__":
     tokenizer, model = load_model()
     start_time = time.time()
 
-    # 示例：英→中翻译
+    # Example: English -> Chinese translation
     instr = "你是一名翻译者，需要将英文文本翻译为中文。\n"
     "要求：\n"
     "1. 保留所有专有名词（包括人物、地名），不要将它们翻译为《司辰之书》；\n"
@@ -79,7 +79,7 @@ if __name__ == "__main__":
     )
 
     out = generate(tokenizer, model, instr, user, max_new_tokens=200)
-    print("=== 英→中翻译 ===")
+    print("=== English -> Chinese Translation ===")
     print(out)
     end_time = time.time()
     print(f"Time taken: {end_time - start_time:.2f} seconds")

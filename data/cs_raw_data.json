@@ -1,6 +1,6 @@
 {
   "game": "Cultist Simulator",
-  "items": [
+  "books": [
     {
       "id": "dehoris1",
       "name": "De Horis (Book 1)",
@@ -2663,7 +2663,9 @@
         "auctionable": 1
       },
       "type": "book"
-    },
+    }
+  ],
+  "tools": [
     {
       "id": "tooledgeb",
       "name": "Meteoric Bullet",
@@ -3190,7 +3192,9 @@
         "ascension.remembrance.offering": 1
       },
       "type": "tool"
-    },
+    }
+  ],
+  "ingredients": [
     {
       "id": "ingredientedgeb",
       "name": "Martensite Paste",
@@ -3515,6 +3519,2226 @@
         "poison": 3
       },
       "type": "ingredient"
+    }
+  ],
+  "fragments": [
+    {
+      "id": "fragmentedge",
+      "name": "A Knife's Secret",
+      "name_cn": "刀子的秘密",
+      "description": "When our ancestors forged swords, taught the arts of martial movement, spoke curses on the eve of battle - all these things shared certain patterns. [Use this in a Rite with a corpse and Winter power, and the corpse will rise.]",
+      "description_cn": "我们的祖先铸造刀剑、教授武艺、在战争前夕咒骂——这些行为都遵循相同的规律。[在<b>仪式</b>中与尸体及<b>冬</b>之力一同运用，可使尸体复生。]",
+      "aspects": {
+        "edge": 2,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.practical": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentedgeb",
+      "name": "Chiliarch's Lesson",
+      "name_cn": "千夫长的教诲",
+      "description": "This is the bone-deep story the thousandman learnt in antiquity, of blood and its exits. To speak it aloud is to hear the sword hiss. [Use this in a Rite with a corpse and Winter power, and the corpse will rise.]",
+      "description_cn": "千夫长在悠久的过去中学到了有关于鲜血和伤口的刻骨故事。刀剑嘶鸣声，正大声诉说着这个故事。[在<b>仪式</b>中与尸体及<b>冬</b>之力一同运用，可使尸体复生。]",
+      "aspects": {
+        "edge": 4,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.practical": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentedgec",
+      "name": "An Operation of the Labhite",
+      "name_cn": "狻猊行动",
+      "description": "A series of mystic exercises that requires both dedication and terror. [Use this in a Rite with a corpse and Winter power, and the corpse will rise.]",
+      "description_cn": "一系列需要为之献身、为之惊骇的神秘活动。[在<b>仪式</b>中与尸体及<b>冬</b>之力一同运用，可使尸体复生。]",
+      "aspects": {
+        "edge": 6,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.practical": 1,
+        "challenge.grim": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentedged",
+      "name": "The Colonel's Names",
+      "name_cn": "上校的具名者",
+      "description": "The Colonel has been many things in many ages. He is blind; he is deaf; he cannot be wounded; he cannot be denied. His Names are cunning as only the very old can be.",
+      "description_cn": "上校在不同的时代有着不同的形象。他目盲；他耳聋；他不受创伤；他不容违抗。他的具名者皆如极年迈之人一般狡诈。",
+      "aspects": {
+        "edge": 8,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.practical": 1,
+        "challenge.grim": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentedgee",
+      "name": "The Lionsmith's Names",
+      "name_cn": "狮子匠的具名者",
+      "description": "The Lionsmith is young by the standards of the Hours, but old by the standards of war. His Names are recent recruits, and their recitation has a savage power.",
+      "description_cn": "狮子匠，按司辰的标准来看尚显青涩，而按战争的标准来看相当老成。他的具名者皆是刚被招募的新成员，其吟诵有一种野蛮的力量。",
+      "aspects": {
+        "edge": 10,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.practical": 1,
+        "challenge.grim": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentedgef",
+      "name": "The Alignments of Murder",
+      "name_cn": "谋杀连珠",
+      "description": "These are the arts that ensure an ending.",
+      "description_cn": "此为确保终结的技艺。",
+      "aspects": {
+        "edge": 12,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.practical": 1,
+        "challenge.grim": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentedgeg",
+      "name": "The Mysteries of Force",
+      "name_cn": "武力之秘",
+      "description": "The Colonel and the Lionsmith are gods-who-were-flesh, but the Wolf-Divided is a god-who-was-blood. Cunning, Strength and Agony are the three roots of victory, and here is their secret doctrine...",
+      "description_cn": "上校和狮子匠是肉源之神，但是裂分之狼是血源之神。狡诈、力气与痛苦乃胜利的三大根基，下文即其秘密教义……",
+      "aspects": {
+        "edge": 14,
+        "lore": 1,
+        "subvertable_lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentforge",
+      "name": "A Smith's Secret",
+      "name_cn": "铁匠的秘密",
+      "description": "In five continents, smiths have whispered the same words to the iron. Murderers have been known to whisper these words, too. And adepts, of course. These words are spoken in ritual to inspire an unmerciful Change.",
+      "description_cn": "在五块大陆上，铁匠对钢铁低语相同的字句。众所周知，杀人犯也会低语这些字句。而学徒自然也是如此。在仪式中念出这些字句可激发出无情的<b>改变</b>。",
+      "aspects": {
+        "forge": 2,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentforgeb",
+      "name": "An Ardent Orison",
+      "name_cn": "热烈的祷告",
+      "description": "When we watch a fire, what are we watching for? When we find it, these are the words it will speak: a word that sanctifies the change that comes when the seared skin peels.",
+      "description_cn": "当我们注视火焰时，我们所视何物？我们找到此物时，它会说出：一个赋予转变神性的词汇，此改变随烧焦的皮肤剥落而出现。",
+      "aspects": {
+        "forge": 4,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentforgec",
+      "name": "A Shaping Chant",
+      "name_cn": "塑形之咏",
+      "description": "The proper words must be employed when the Change comes. [Use this in a Rite with a Knock influence and a Bone Flute - or other resources of equal power - to summon a Caligine.]",
+      "description_cn": "当改变来临之际，必须运用恰当的知识。[将其与<b>启</b>之影响以及骨笛——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可召唤汽灵。]",
+      "aspects": {
+        "forge": 6,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.practical": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentforged",
+      "name": "Callidate Invocation",
+      "name_cn": "巧匠祷文",
+      "description": "The Names of the Forge have all spoken these words. [Use this in a Rite with a Knock influence and a Bone Flute - or other resources of equal power - to summon a Caligine.]",
+      "description_cn": "铸之具名者都念诵过这些话语。[将其与<b>启</b>之影响以及骨笛——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可召唤汽灵。]",
+      "aspects": {
+        "forge": 8,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.practical": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentforgee",
+      "name": "Formula Fissive",
+      "name_cn": "裂变法术",
+      "description": "Break a thing, and you have fragments. Break those fragments, and you have dust. Break the dust, and then break what remains. Here is fire. [Use this in a Rite with a Consecrated Lintel and a little Refulgin - or other resources of equal power - to summon King Crucible.]",
+      "description_cn": "破坏一样东西，你就能得到片段。破坏那些片段，你就能得到尘埃。破坏尘埃，然后再破坏它的残余。就这样，你得到了火。[将其与祝圣门楣以及少量耀素——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可召唤坩埚王。]",
+      "aspects": {
+        "forge": 10,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.practical": 1,
+        "challenge.illumination": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentforgef",
+      "name": "Furnace Paean",
+      "name_cn": "熔炉颂",
+      "description": "This is the hymn the heat sings to the iron. If we imitate it faithfully enough we will parch our lips and crisp our tongue, but O, the rewards. [Use this in a Rite with a Consecrated Lintel and a little Refulgin - or other resources of equal power - to summon King Crucible.]",
+      "description_cn": "这是热力向钢铁吟唱的赞歌。如果我们如实模仿，会使嘴唇干裂，舌头脱水。但是，哦！回报多么丰厚。[将其与祝圣门楣以及少量耀素——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可召唤坩埚王。]",
+      "aspects": {
+        "forge": 12,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.practical": 1,
+        "challenge.illumination": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentforgeg",
+      "name": "Mysteries of Making",
+      "name_cn": "铸造之秘",
+      "description": "The Forge of Days, the Meniscate and the Madrugad are gods-from-Light. Mercury, silver and gold are the seeds of the Work, and here is their secret doctrine... [Use this in a Rite with a Consecrated Lintel and a little Refulgin - or other resources of equal power - to summon King Crucible.]",
+      "description_cn": "白日铸炉、弧月和昕旦是光源之神。汞、银和金乃功业的种穰，下文即其秘密教义……[将其与祝圣门楣以及少量耀素——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可召唤坩埚王。]",
+      "aspects": {
+        "forge": 14,
+        "lore": 1,
+        "subvertable_lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentgrail",
+      "name": "A Red Secret",
+      "name_cn": "赤红的秘密",
+      "description": "Some words are spelt correctly only when the proper ink is used.",
+      "description_cn": "只有使用了适当的墨水，一些字词才能拼写正确。",
+      "aspects": {
+        "grail": 2,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentgrailb",
+      "name": "A Megalesian Incantation",
+      "name_cn": "伟大的咒语",
+      "description": "The Great Mother remembers.",
+      "description_cn": "伟大母亲永记不忘。",
+      "aspects": {
+        "grail": 4,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentgrailc",
+      "name": "A Delightful Sacrament",
+      "name_cn": "悦人的圣礼",
+      "description": "So pleasant upon the ear. One could listen over and over. These are the words that make sacrifice sweet. [Use this with Byzantine Tinct and a Moth influence - or other resources of equal power - to summon a Raw Prophet.]",
+      "description_cn": "多么悦耳啊。让人想要一遍又一遍地聆听。正是这些话语使献祭变得甘甜。[将其与“拜占庭染剂”和<b>蛾</b>之影响——或其他拥有同等法力的材料——一同运用于仪式中，可召唤原生先知。]",
+      "aspects": {
+        "grail": 6,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.practical": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentgraild",
+      "name": "Thiatic Invocation",
+      "name_cn": "酩酊祷文",
+      "description": "Raucous shrieks attend the passage of the Names of the Grail. We reproduce them as best we can, for the pulsing power they lend. [Use this with Byzantine Tinct and a Moth influence - or other resources of equal power - to summon a Raw Prophet.]",
+      "description_cn": "杯之具名者的典仪进程有刺耳尖叫声的参与。我们要尽可能地重现这些声音，以求得其所提供的搏动之力。[将其与“拜占庭染剂”和<b>蛾</b>之影响——或其他拥有同等法力的材料——一同运用于仪式中，可召唤原生先知。]",
+      "aspects": {
+        "grail": 8,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.practical": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentgraile",
+      "name": "Formulae Voluptuous",
+      "name_cn": "销魂法术",
+      "description": "There exist some pleasures intense enough to corrupt the laws of the physical world. [This formula can be used in a Rite with Bitterblack Salts and a Subtle Rupture - or similar sources of power - to summon Ezeem itself.]",
+      "description_cn": "有些快感如此强烈，足以侵蚀现实世界的法则。[将该法术与“苦黑盐”和“轻微的豁口”——或类似的法力源——一同运用于<b>仪式</b>中，可召唤伊泽姆本人。]",
+      "aspects": {
+        "grail": 10,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.practical": 1,
+        "challenge.paradox": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentgrailf",
+      "name": "Anthic Elaboration",
+      "name_cn": "芳卉述论",
+      "description": "The Flowermaker cannot touch you; he cannot find you; he always has what you desire. Even an elaboration of the properties of his works can draw the attention of Hours. [This formula can be used in a Rite with Bitterblack Salts and a Subtle Rupture - or similar sources of power - to summon Ezeem itself.]",
+      "description_cn": "制花人无法碰触你；他无法找到你；他永远拥有你欲求的东西。哪怕是细述他作品之精巧的言论也能引起众司辰注意。[将该法术与“苦黑盐”和“轻微的豁口”——或类似的法力源——一同运用于<b>仪式</b>中，可召唤伊泽姆本人。]",
+      "aspects": {
+        "grail": 12,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.practical": 1,
+        "challenge.paradox": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentgrailg",
+      "name": "Devouring Mysteries",
+      "name_cn": "吞食之秘",
+      "description": "The Grail was the first god-who-was-blood. The Flowermaker came from Light. The Beach-Crow was flesh. Hunger and Greed and Yearning are the matrix of appetite, and here is their secret doctrine...  [Use this formula in Rite with Bitterblack Salts and a Subtle Rupture - or similar sources of power - to summon Ezeem itself.]",
+      "description_cn": "圣杯是第一位血源之神。制花人来自于光。拾滩鸦曾是肉身。“饥饿”、“贪婪”和“渴求”乃食欲的苗床，下文即其秘密教义……[将该法术与“苦黑盐”和“轻微的豁口”——或类似的法力源——一同运用于<b>仪式</b>中，可召唤伊泽姆本人。]",
+      "aspects": {
+        "grail": 14,
+        "lore": 1,
+        "subvertable_lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentheart",
+      "name": "A Thunderous Secret",
+      "name_cn": "雷鸣的秘密",
+      "description": "There are common sentiments in every thunderclap. Let us acknowledge them.",
+      "description_cn": "每一声雷霆都蕴含着共通的情绪。让我们向它们致意吧。",
+      "aspects": {
+        "heart": 2,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentheartb",
+      "name": "Words that Walk",
+      "name_cn": "行步的言辞",
+      "description": "The syllables of this formula are compelling. I find myself snapping my fingers to its rhythm. It desires not to cease.",
+      "description_cn": "这个法术的音节扣人心弦。我发现自己正跟随节拍打着响指。它与我都不想停歇。",
+      "aspects": {
+        "heart": 4,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentheartc",
+      "name": "A Waking Chant",
+      "name_cn": "唤醒之咏",
+      "description": "Who could hear this and remain unmoved? The sleeping? The dead? The earth and the sky? [Use this in a Rite with Byzantine Tinct and a Meteoric Bullet - or other resources of equal power - to summon a Percussigant.]",
+      "description_cn": "谁听后能依然无动于衷？沉睡之人？离世之人？大地与天空？[将其与“拜占庭染剂”和“陨铁子弹”——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可召唤擂击者。]",
+      "aspects": {
+        "heart": 6,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.practical": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentheartd",
+      "name": "Geminate Invocation",
+      "name_cn": "成双祷文",
+      "description": "The Sister-and-Witch has always been invoked for protection, at crossroads and at moonrise and where the land shelters the sea. [Use this in a Rite with Byzantine Tinct and a Meteoric Bullet - or other resources of equal power - to summon a Percussigant.]",
+      "description_cn": "人们总是祈求双生女巫的护佑，于十字路口，于月初时分，于陆地庇护大海之处。[将其与“拜占庭染剂”和“陨铁子弹”——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可召唤擂击者。]",
+      "aspects": {
+        "heart": 8,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.practical": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmenthearte",
+      "name": "Formulae Vigilant",
+      "name_cn": "警醒法术",
+      "description": "One who watches does not sleep, one who sleeps watches not. <b>One who watches does not sleep, one who sleeps watches not.</b> [Use this in a Rite with Byzantine Tinct and a Meteoric Bullet - or other resources of equal power - to summon a Percussigant.]",
+      "description_cn": "守夜者不入眠，入眠者不守夜。<b>守夜者不入眠，入眠者不守夜。</b>[将其与“拜占庭染剂”和“陨铁子弹”——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可召唤擂击者。]",
+      "aspects": {
+        "heart": 10,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.practical": 1,
+        "challenge.obsessive": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentheartf",
+      "name": "Velvet Charm",
+      "name_cn": "丝绒符咒",
+      "description": "The Velvet always answers 'No', but we can shelter in that 'No' like beasts in the crook of a tree. [Use this in a Rite with Byzantine Tinct and a Meteoric Bullet - or other resources of equal power - to summon a Percussigant.]",
+      "description_cn": "丝毧总以否定作答，然而我们能在那声否定中得到荫蔽，就像野兽藏于树杈间。[将其与“拜占庭染剂”和“陨铁子弹”——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可召唤擂击者。]",
+      "aspects": {
+        "heart": 12,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.practical": 1,
+        "challenge.obsessive": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentheartg",
+      "name": "Unceasing Mysteries",
+      "name_cn": "不休之秘",
+      "description": "The Grail ripped the Thunderskin from flesh. The Sister-and-Witch was born from two wombs. The Velvet woke when the Wood-roots tasted blood. The Heart is Blood's Drum, and here is its secret doctrine... [Use this in a Rite with Byzantine Tinct and a Meteoric Bullet - or other resources of equal power - to summon a Percussigant.]",
+      "description_cn": "圣杯将轰雷之皮从肉体撕下。双生女巫生于两个子宫。丝毧觉醒于在林地根部尝到血的味道时。心脏乃鲜血之鼓，下文即其秘密教义……[将其与“拜占庭染剂”和“陨铁子弹”——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可召唤擂击者。]",
+      "aspects": {
+        "heart": 14,
+        "lore": 1,
+        "subvertable_lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentknock",
+      "name": "A Locksmith's Secret",
+      "name_cn": "锁匠的秘密",
+      "description": "Sooner or later, every locksmith has the Dream. Now we recite its seven phases... [Nearly every summoning Rite requires Knock influence. This lore will provide it.]",
+      "description_cn": "每个锁匠迟早会做梦。现在我们来背诵它的七个阶段吧……[几乎所有召唤<b>仪式</b>都需要<b>启</b>之影响，此密传可提供之。]",
+      "aspects": {
+        "knock": 2,
+        "lore": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentknockb",
+      "name": "An Iguvine Rite",
+      "name_cn": "伊库维姆仪式之一",
+      "description": "Every door in the Mansus requires its sacrifice before it will open. The Iguvine Rites prescribe the manner of the sacrifice. [Nearly every summoning Rite requires Knock influence. This lore will provide it.]",
+      "description_cn": "漫宿的每一道门在开启前都需要献祭。伊库维姆诸仪式则规定了献祭的方式。[几乎所有召唤<b>仪式</b>都需要<b>启</b>之影响，此密传可提供之。]",
+      "aspects": {
+        "knock": 4,
+        "lore": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentknockc",
+      "name": "A Consent of Wounds",
+      "name_cn": "伤口通行权",
+      "description": "To open certain Ways, one must first open oneself. This practice outlines that opening, in the name of the Mother of Ants. [Nearly every summoning Rite requires Knock influence. This lore will provide it.]",
+      "description_cn": "要开启某些道路，人必须先开启自己。此种修炼将以蚁母之名的开启之法概括其中。[几乎所有召唤<b>仪式</b>都需要<b>启</b>之影响，此密传可提供之。]",
+      "aspects": {
+        "knock": 6,
+        "lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.grim": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentknockd",
+      "name": "Meniscate Invocation",
+      "name_cn": "弧月祷文",
+      "description": "When the moon's face was wounded, these words appeared. [Nearly every summoning Rite requires Knock influence. This lore will provide it.]",
+      "description_cn": "当月亮的脸上添了伤口，这些字句便出现了。[几乎所有召唤<b>仪式</b>都需要<b>启</b>之影响，此密传可提供之。]",
+      "aspects": {
+        "knock": 8,
+        "lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.grim": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentknocke",
+      "name": "Formulae Ophidian",
+      "name_cn": "蚺虵法术",
+      "description": "Serpents are the visitors which may not be denied. [Nearly every summoning Rite requires Knock influence. This lore will provide it.]",
+      "description_cn": "蛇是不容拒绝的访客。[几乎所有召唤<b>仪式</b>都需要<b>启</b>之影响，此密传可提供之。]",
+      "aspects": {
+        "knock": 10,
+        "lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.grim": 1,
+        "challenge.paradox": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentknockf",
+      "name": "Liminal Evocation",
+      "name_cn": "门阈唤起",
+      "description": "One god-who-was-stone remains, and she watches all thresholds. [Nearly every summoning Rite requires Knock influence. This lore will provide it.]",
+      "description_cn": "仍有一位石源之神留存，她看守着所有的门关。[几乎所有召唤<b>仪式</b>都需要<b>启</b>之影响，此密传可提供之。]",
+      "aspects": {
+        "knock": 12,
+        "lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.grim": 1,
+        "challenge.paradox": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentknockg",
+      "name": "Mysteries of Opening",
+      "name_cn": "开启之秘",
+      "description": "The Mother of Ants is the child of two rivers. The Horned-Axe is the last god-from-Stone. The Meniscate was born in the Moon from Light. The Wound and the Threshold and the Revelation are all the Gate's aspects, and here is their secret doctrine... [Nearly every summoning Rite requires Knock influence. This lore will provide it.]",
+      "description_cn": "蚁母是两河的孩子。双角斧是最后的石源之神。弧月源于光，生于月亮。伤口、门槛和揭示皆乃门的面相，下文即其秘密教义……[几乎所有召唤<b>仪式</b>都需要<b>启</b>之影响，此密传可提供之。]",
+      "aspects": {
+        "knock": 14,
+        "lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentlantern",
+      "name": "A Watchman's Secret",
+      "name_cn": "守夜人的秘密",
+      "description": "It has been expressed like this: 'Each Hour has its colour, but colour exists only where there is light.'",
+      "description_cn": "其表述如下：“司辰各有其颜色，但颜色只存在于有光的地方。”",
+      "aspects": {
+        "lantern": 2,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentlanternb",
+      "name": "A Mansus-Glimpse",
+      "name_cn": "漫宿一瞥",
+      "description": "A snatch of poetry; a single memory of a certain house that all of us visit at least twice in our lives. For one's first visit to the Mansus, this lore is almost essential.",
+      "description_cn": "诗章的只言片语；关于我们所有人在一生中都至少要造访两次的某座房屋的一次回忆。对于第一次来到漫宿的人来说，此密传几乎是必不可少的。",
+      "aspects": {
+        "lantern": 4,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentlanternc",
+      "name": "An Unmerciful Mantra",
+      "name_cn": "不仁梵咒",
+      "description": "'Mercy', saith the Watchman, 'is found only in shadow.'",
+      "description_cn": "“仁慈，”守夜人道，“仅能在影中觅得。”",
+      "aspects": {
+        "lantern": 6,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.illumination": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentlanternd",
+      "name": "Phanaean Invocation",
+      "name_cn": "烁光祷文",
+      "description": "The Door-in-the-Eye navigates; he is not merciful; but first and always, he illuminates. [Use this in a Rite with a Knock tool and a Thrilling Air - or other resources of equal power - to summon a Hint from behind mirrors.]",
+      "description_cn": "瞳中扉指引前路；他并不仁慈；然而从始至今，他一直在照明驱暗。[将其与<b>启</b>之工具以及“激振的气氛”——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可从镜子后召唤迹形。]",
+      "aspects": {
+        "lantern": 8,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.illumination": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentlanterne",
+      "name": "Formulae Concursate",
+      "name_cn": "聚集法术",
+      "description": "The Concursum waits at the Lantern of the Mansus. It has been called the Chamber of Ways and also the Chamber of Endings. Its intricacies are probably beyond human comprehension, but these formulae are a first approximation. [Use this in a Rite with a Knock tool and a Thrilling Air - or other resources of equal power - to summon a Hint from behind mirrors.]",
+      "description_cn": "聚点于漫宿之灯处守候。它又被称作道路之室，还有结尾之室。其错综复杂或许超出了人类的理解范围，但这些法术可以对其进行基本的近似。[将其与<b>启</b>之工具以及“激振的气氛”——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可从镜子背后召唤迹形。]",
+      "aspects": {
+        "lantern": 10,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.illumination": 1,
+        "challenge.paradox": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentlanternf",
+      "name": "Mantra of Ascent",
+      "name_cn": "攀升梵咒",
+      "description": "The Ascent of Knives is the bloodiest of the Watchman's tests. Those who pass it and are dead enter the service of the Sun-in-Rags. Those living who pass it are a little closer to the Glory. [Use this in a Rite with a Knock tool and a Thrilling Air - or other resources of equal power - to summon a Hint from behind mirrors.]",
+      "description_cn": "刀刃阶梯是守夜人最血腥的考验。行过此梯且已死去之人都受到了残阳的接待。而活着的行过此梯之人都距辉光近了一点点。[将其与<b>启</b>之工具以及“激振的气氛”——或其他拥有同等法力的材料——一同运用于<b>仪式</b>中，可从镜子后召唤迹形。]",
+      "aspects": {
+        "lantern": 12,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.illumination": 1,
+        "challenge.paradox": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentlanterng",
+      "name": "Illuminate Mysteries",
+      "name_cn": "照明之秘",
+      "description": "The Meniscate, the Madrugad, the Flowermaker and the Forge of Days are the gods-from-Light. There is a fifth, but now we know it is not the Watchman. Yet the Watchman shares a secret doctrine with those five, and here is that doctrine... [Use this in a Rite with a Subtle Rupture and a Paradoxical Curio, and someone will come. Speak it to a Hunter, and it might drive them insane on the spot.]",
+      "description_cn": "弧月、昕旦、制花人和白日铸炉是光源之神。尚有第五位，但现在我们知道那不是守夜人。不过守夜人仍与前五者共用一条秘密教义，下文即此秘密教义……[将其与“轻微的豁口”和“矛盾的古董”一同运用于<b>仪式</b>中，而后某位将来临。将其告知猎人，则会使他当场发疯。]",
+      "aspects": {
+        "lantern": 14,
+        "lore": 1,
+        "subvertable_lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentmoth",
+      "name": "A Barber's Warning",
+      "name_cn": "理发师的警告",
+      "description": "A power of the Wood enjoys the separation of the lock from the scalp. For attention, burn it. For opportunity, bury it. [Speak this over a corpse in a Rite, with a Winter influence present, and the corpse will rise.]",
+      "description_cn": "一位林地之神乐于将缕缕发丝从头皮上分离。以求关注，则将之焚烧。以求机遇，则将之埋葬。[在<b>仪式</b>中将其对一具尸体念诵，加上<b>冬</b>之影响，可使尸体复生。]",
+      "aspects": {
+        "moth": 2,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentmothb",
+      "name": "A Wood-Whisper",
+      "name_cn": "林地低语",
+      "description": "Lie awake, and listen. The wind speaks in the branches. The house cries out in its sleep. These are the roads that chaos rides. [Speak this over a corpse in a Rite, with a Winter influence present, and the corpse will rise.]",
+      "description_cn": "夜不能寐，侧耳聆听。微风穿梭于枝桠间，窃窃私语。房屋沉溺于自己的梦中，大声呼号。这皆是混沌所经之路。[在<b>仪式</b>中将其对一具尸体念诵，加上<b>冬</b>之影响，可使尸体复生。]",
+      "aspects": {
+        "moth": 4,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentmothc",
+      "name": "An Ecdysiast's Parable",
+      "name_cn": "蜕衣舞者的寓言",
+      "description": "The Ecdysiast's Riddle is 'What may be lost?' Each Ecdysiast's Parable is an attempt to answer the Riddle. ",
+      "description_cn": "蜕衣舞者的谜语是：“何物会失去？”每个蜕衣舞者的寓言都是回答谜语的一次尝试。",
+      "aspects": {
+        "moth": 6,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.illumination": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentmothd",
+      "name": "Moldywarp Admonitions",
+      "name_cn": "鼹鼠的劝诫",
+      "description": "Moldywarp keeps her crowns in the moss and her feet in the dirt and the trees locked jaw-tight. Moldywarp has these warnings for you.",
+      "description_cn": "鼹鼠的头顶覆满青苔，双脚深陷泥土，且使树木被紧锁住。此文是鼹鼠给你的警告。",
+      "aspects": {
+        "moth": 8,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.illumination": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentmothe",
+      "name": "Centipede Testament",
+      "name_cn": "蜈蚣的证词",
+      "description": "The Centipede came up out of the sands and went in under the roots. She found a new home but now she can't go home. She creeps in everywhere else: keyholes and histories and the channels of birth and sight and hearing. Here's what she has to say.",
+      "description_cn": "蜈蚣自沙中来，往根下去。她找到了一个新家，但现在永远也回不去了。她在除此之外的所有地方爬过：锁眼，诸历史，还有生育的、视觉的、听觉的通道。此文是她要说的话。",
+      "aspects": {
+        "moth": 10,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.illumination": 1,
+        "challenge.obsessive": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentmothf",
+      "name": "Thigh-born Thorax-Sweet",
+      "name_cn": "诞于股，甜于胸",
+      "description": "Vine-crowned moth-king hatched in the thigh of the thunder-king who's dead. Drink up his belly-lymph. These are the sights you'll see.",
+      "description_cn": "藤冠的飞蛾王在死去的轰雷王的大腿处孵化。饮尽他腹部的淋巴液。上述为你将看到的景象。",
+      "aspects": {
+        "moth": 12,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.intuition": 1,
+        "challenge.illumination": 1,
+        "challenge.obsessive": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentmothg",
+      "name": "Mare-in-the-Yew",
+      "name_cn": "杉中牝马",
+      "description": "The real Hours don't meet the gods-from-Nowhere, but the Ring-Yew meets the Mare-in-the-Tree in where the Wood grows lush. Their couplings are forbidden, and forbidden things have power, and this is the story of their couplings.",
+      "description_cn": "真正的司辰不会面见虚源之神，环杉却在林地茂盛处与树中牝马会面。她们的交合是被禁止的，而被禁止的事物拥有力量。此即他们交合的故事。",
+      "aspects": {
+        "moth": 14,
+        "lore": 1,
+        "subvertable_lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentsecrethistories",
+      "name": "An Occult Scrap",
+      "name_cn": "密教残篇",
+      "description": "Secret histories are layered beneath the one we know, like the notes in rare wine. This is a detail from one of those histories. [Exploring with this scrap of knowledge may uncover secret locations in the Capital.]",
+      "description_cn": "隐秘的历史被掩盖于我们所知的历史之下，就像珍贵红酒的气味。这便是其中一重历史中的一个细节。[用此知识残篇探索，或可发现都城的秘密地点。]",
+      "aspects": {
+        "secrethistories": 2,
+        "lore": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentsecrethistoriesb",
+      "name": "A Furtive Truth",
+      "name_cn": "鬼祟的真相",
+      "description": "A detail smuggled in from an adjacent narrative. Don't speak this where you may be overheard. [Exploring with this scrap of knowledge may uncover secret locations in the Shires.]",
+      "description_cn": "从毗邻的故事中悄然透露出的一个细节。不要在可能被窃听的地方谈论这个。[用此知识残篇探索，或可发现各郡的秘密地点。]",
+      "aspects": {
+        "secrethistories": 4,
+        "lore": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentsecrethistoriesc",
+      "name": "A Forgotten Chronicle",
+      "name_cn": "被遗忘的史籍",
+      "description": "A story of a city without a gate, of a queen who was not born, of a war which was not fought. [Exploring with this scrap of knowledge may uncover secret locations on the Continent.]",
+      "description_cn": "一段故事，有关于一座没有大门的城市，一位非曾出生的女王，一场非曾打起的战争。[用此知识残篇探索，或可发现大陆上的秘密地点。]",
+      "aspects": {
+        "secrethistories": 6,
+        "lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.intuition": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentsecrethistoriesd",
+      "name": "Forbidden Epic",
+      "name_cn": "禁断的史诗",
+      "description": "The attention of the Hours is drawn to the bloodiest wars. Afterwards, the Histories are braided like hair. [Exploring with this scrap of knowledge may uncover secret locations in the Land Beyond the Forest, across the Continent.]",
+      "description_cn": "众司辰被最为血腥的战争吸引了注意。而后，重重历史被编结如发辫。[用此知识残篇探索，或可发现在大陆另一端，森林尽头之地中的秘密地点。]",
+      "aspects": {
+        "secrethistories": 8,
+        "lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.intuition": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentsecrethistoriese",
+      "name": "Unresolved Ambiguity",
+      "name_cn": "悬而未定的模棱两可",
+      "description": "In the Mansus, the Hours strive one against another. As the struggles are resolved, they iron out the impossible, exalt the possible, tie the fraying braids of what has been into one golden ribbon of future. Everything is resolved. History becomes the past. There are, however, exceptions. [Exploring with this scrap of knowledge may uncover secret locations in the Rending Mountains, three thousand miles away among the wreck of the oldest empires.]",
+      "description_cn": "在漫宿中，司辰互相抗衡。纷争平定后，祂们消解了不可能之事，歌颂了可能之事，将纠缠交错的已成之事细密编织成如金色丝带般的未来。万事落定，历史成为过去。然而例外依然存在。[用此知识残篇探索，或可发现撕身山脉中的秘密地点，位于三千英里之外最古老帝国的遗骸之中。]",
+      "aspects": {
+        "secrethistories": 10,
+        "lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.intuition": 1,
+        "challenge.illumination": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentsecrethistoriesf",
+      "name": "Vagabond's Map",
+      "name_cn": "浪游旅人的地图",
+      "description": "The Vagabond is the one Hour who can never enter the Mansus, but she goes <i>everywhere</i> else... and, if you believe her boasts, she's the only one who knows all the Histories. Sometimes, she lets someone record her travels. [Exploring with this scrap of knowledge may uncover secret locations in the Lone and Level Sands, far from here.]",
+      "description_cn": "浪游旅人是一位无法踏足漫宿的司辰，但她能前往其他<i>任意地点</i>……并且，如果你相信她的自夸，她还是唯一知晓每重历史的人。有时候，她会让某人记录下她的行踪。[用此知识残篇探索，或可发现遥远的荒寂而平阔的沙地中的秘密地点。]",
+      "aspects": {
+        "secrethistories": 12,
+        "lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.intuition": 1,
+        "challenge.illumination": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentsecrethistoriesg",
+      "name": "Port Noon Anecdote",
+      "name_cn": "午港奇闻",
+      "description": "Port Noon is where the Long go to enjoy the sea and the sun, to drink from the Spring that makes them forgotten, and to stay out of trouble. Mostly out of trouble. The stories you can hear in the Hotel Ciervo are golden-dewed, quintuple-distilled toasts to memory, served straight up. [Exploring with this scrap of knowledge may uncover secret locations in the Evening Isles, where Port Noon is located, across the great ocean.]",
+      "description_cn": "午港是长生者享受大海与阳光，饮下泉水被世界遗忘，躲避纷扰，或者说躲避大部分纷扰之处。你能在希耶尔沃旅店听到的故事，就像一杯将回忆五次蒸馏、不加冰块的鸡尾酒。[用此知识残篇探索，或可发现薄暮群屿的秘密地点，位于大洋彼岸的午港之处。]",
+      "aspects": {
+        "secrethistories": 14,
+        "lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentwinter",
+      "name": "A Sexton's Secret",
+      "name_cn": "守墓人的秘密",
+      "description": "Certain knowledge, it is said, can be expressed only through the particular quality of a silence. It has been suggested that one can only read such knowledge with one's eyes closed, but only by mischievous commentators. [Use this in a Rite with a corpse and Edge aspect, and the corpse will rise.]",
+      "description_cn": "据说，某种特定的知识只能通过特定种类的沉默来表达。那些淘气的注释者建议你闭着眼睛阅读这些知识。[将其与尸体以及<b>刃</b>相一同运用于<b>仪式</b>中，可使尸体复生。]",
+      "aspects": {
+        "winter": 2,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentwinterb",
+      "name": "A White Ceremony",
+      "name_cn": "纯白之礼",
+      "description": "When I speak it, my lips don't crisp with frost. Each time, this is surprising. [Use this in a Rite with a Heart influence and Byzantine Tinct to summon the Voiceless Dead.]",
+      "description_cn": "当我说起它时，我的双唇不会因寒冷而结霜。每次都是如此，令人惊讶。[将其与<b>心</b>之影响以及拜占庭染剂一同运用于<b>仪式</b>中，可召唤无声亡者。]",
+      "aspects": {
+        "winter": 4,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentwinterc",
+      "name": "An Operation of the Declining Sun",
+      "name_cn": "落日行动",
+      "description": "This invokes, acknowledges and welcomes the passage to silence. [Use this in a Rite with a Heart influence and Byzantine Tinct to summon the Voiceless Dead.]",
+      "description_cn": "唤起、知悉并接纳通往沉默的道路。[将其与<b>心</b>之影响以及“拜占庭染剂”一同运用于<b>仪式</b>中，可召唤无声亡者。]",
+      "aspects": {
+        "winter": 6,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.grim": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentwinterd",
+      "name": "Invocation of the Ivory Dove",
+      "name_cn": "骨白鸽祷文",
+      "description": "There is a power that commemorates and grieves, from whom nothing is taken, but who cannot be deceived. You might expect to be able to crush him in your hand, into bird-bone fragments. [Use this in a Rite with Martensite Paste and an assistant dedicated to Knock - or other resources of equal power - to summon a Maid-in-the-Mirror.]",
+      "description_cn": "有一位司掌纪念与哀悼的神灵，他已被剥夺至尽，然而他不受欺骗。你或可期待将来能亲手碾碎他，把他变成一把碎鸟骨。[将其与“马氏膏”以及一名追奉<b>启</b>的助手——或其他有着同等力的资源——一同运用于<b>仪式</b>中，可召唤镜中少女。]",
+      "aspects": {
+        "winter": 8,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.grim": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentwintere",
+      "name": "Recitation of Lost Hours",
+      "name_cn": "失落司辰的吟诵",
+      "description": "Six are gone. Five came from Stone and one from Light. All went to Nowhere. Still their memories have power, and now we call upon it. [Use this in a Rite with Martensite Paste and an assistant dedicated to Knock - or other resources of equal power - to summon a Maid-in-the-Mirror.]",
+      "description_cn": "六位已逝。五位源自岩石，一位源自光。现都归于虚界。但他们的回忆仍具神力，而我们现在要拜请这种神力。[将其与“马氏膏”以及一名追奉<b>启</b>的助手——或其他有着同等力的资源——一同运用于<b>仪式</b>中，可召唤镜中少女。]",
+      "aspects": {
+        "winter": 10,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.grim": 1,
+        "challenge.obsessive": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentwinterf",
+      "name": "The Divisions of the Names",
+      "name_cn": "具名者的分裂",
+      "description": "When the Sun-in-Splendour was divided, its Names fractured too. Here are the shards of their names which once were whole. [Use this in a Rite with Martensite Paste and an assistant dedicated to Knock - or other resources of equal power - to summon a Maid-in-the-Mirror.]",
+      "description_cn": "当骄阳被分裂，它的具名者亦随之崩解。这些是曾为整体的那些具名者们的碎片。[将其与“马氏膏”以及一名追奉<b>启</b>的助手——或其他有着同等力的资源——一同运用于<b>仪式</b>中，可召唤镜中少女。]",
+      "aspects": {
+        "winter": 12,
+        "lore": 1,
+        "subvertable_lore": 1,
+        "challenge.knowledge": 1,
+        "challenge.grim": 1,
+        "challenge.obsessive": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentwinterg",
+      "name": "Wolf-Word",
+      "name_cn": "狼言",
+      "description": "When the Forge is cold and the Glory is dark and the Wood is dust, perhaps the Wolf Divided will rest, but only until it can devour itself. This Word almost expresses the Divided One's hatred. [Speak this to a Hunter, and it might drive them insane on the spot.]",
+      "description_cn": "当铸炉冷却，辉光黯淡，林地化尘，裂分之狼也许方能将息，却止于其能噬己之时。此言几道出了被分裂者的怨恨。[对猎人说出此言，也许能令其当场发疯。]",
+      "aspects": {
+        "winter": 14,
+        "lore": 1,
+        "subvertable_lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "fragmentglory",
+      "name": "A Recollection of Glory",
+      "name_cn": "辉光的记忆",
+      "description": "--",
+      "description_cn": "——",
+      "aspects": {
+        "lantern": 6,
+        "forge": 6,
+        "lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "prealzabo",
+      "name": "Formula: Elixir Zeboim?",
+      "name_cn": "配方：洗波音灵药？",
+      "description": "I have here a secret - a recipe of honey, asphodel, powdered ivory, and a mottled fungus that grows only where the dead are buried.",
+      "description_cn": "我取得了一个秘密配方——蜂蜜、冥府百合、象牙骨粉，再加一种只在埋葬死者处生长的斑点菌菇。",
+      "aspects": {
+        "lore": 1
+      },
+      "type": "fragment"
+    },
+    {
+      "id": "alzabo",
+      "name": "Formula: Elixir Zeboim",
+      "name_cn": "配方：洗波音灵药",
+      "description": "That formula which quickens the memories of decaying flesh in the bellies of the living. Such a thing could not exist without the consent of both the Flowermaker and the Elegiast... and with the assistance of one more Hour besides.",
+      "description_cn": "此配方用于复苏处于生人肚中的腐肉的回忆。这种药既然存在，必得到了制花人和悼歌诗人的允许……还有另一位司辰的协助。",
+      "aspects": {
+        "lore": 1
+      },
+      "type": "fragment"
+    }
+  ],
+  "influences": [
+    {
+      "id": "influenceedge",
+      "name": "A Thrilling Air",
+      "name_cn": "激振的气氛",
+      "description": "The senses are sharpened. [A second-order influence: apparent to the perceptive, instantly recognisable to an adept. This can be used in some Rites to summon minions.]",
+      "description_cn": "五感变得敏锐。[一种二阶影响：对于有洞察力的学徒来说很明显，立刻能被辨别出来。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "edge": 2,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceedgec",
+      "name": "A Rousing Air",
+      "name_cn": "昂扬的气氛",
+      "description": "The passions are roused. [A sixth-order influence: the signs are unmistakable. This can be used in some Rites to summon minions.]",
+      "description_cn": "群情激昂。[一种六阶影响：迹象显著无误。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "edge": 6,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceedgee",
+      "name": "A Furious Air",
+      "name_cn": "狂怒的气氛",
+      "description": "Anger is implicit in every shape. [A tenth-order influence! A gathering knot of power and peril. This can be used in some Rites to summon minions.]",
+      "description_cn": "愤怒以各种形态彰显。[一种十阶影响！力量与危险互相穿插，结为一体。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "edge": 10,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceedgeg",
+      "name": "A Resolution",
+      "name_cn": "破局之力",
+      "description": "Who can avert the finality of battle? [A fifteenth-order influence! This might be the personal attention of an Hour. This can be used in some Rites to summon minions.]",
+      "description_cn": "谁人能将注定的战局扭转？[一种十五阶影响！可能引来某位司辰亲身过问。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "edge": 15,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceforge",
+      "name": "A Rising Heat",
+      "name_cn": "上升的热力",
+      "description": "A haze and a shimmer. [A second-order influence: apparent to the perceptive, instantly recognisable to an adept. This can be used in some Rites to summon minions, and some minions will leave it lingering when they are destroyed.]",
+      "description_cn": "薄雾与微光。[一种二阶影响：对于有洞察力的学徒来说很明显，立刻能被辨别出来。可用于在某些<b>仪式</b>中召唤手下，并且会在某些手下被摧毁时遗留。]",
+      "aspects": {
+        "forge": 2,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceforgec",
+      "name": "A Trembling Heat",
+      "name_cn": "颤抖的热力",
+      "description": "The possibility of sparks. [A sixth-order influence: the signs are unmistakable. This can be used in some Rites to summon minions.]",
+      "description_cn": "迸出火花的可能性。[一种六阶影响：迹象显著无误。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "forge": 6,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceforgee",
+      "name": "An Exalting Heat",
+      "name_cn": "蒸腾的热力",
+      "description": "This is the aura at the volcano's edge. [A tenth-order influence! A gathering knot of power and peril. This can be used in some Rites to summon minions.]",
+      "description_cn": "这是火山的边缘散发出的气息。[一种十阶影响！力量与危险互相穿插，结为一体。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "forge": 10,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceforgeg",
+      "name": "An Incandescence",
+      "name_cn": "炽烈已极",
+      "description": "Change follows fire. [A fifteenth-order influence! This might be the personal attention of an Hour. This can be used in some Rites to summon minions.]",
+      "description_cn": "改变随火焰而来。[一种十五阶影响！可能引来某位司辰亲身过问。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "forge": 15,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencegrail",
+      "name": "An Awareness of Appetite",
+      "name_cn": "抬头的食欲",
+      "description": "Every sense is heightened; every sensation, deepened. [A second-order influence: apparent to the perceptive, instantly recognisable to an adept. This can be used in some Rites to summon minions, and some minions will leave it lingering when they are destroyed.]",
+      "description_cn": "所有知觉都被增强；所有感情都被加深。[一种二阶影响：对于有洞察力的学徒来说很明显，立刻能被辨别出来。可用于在某些<b>仪式</b>中召唤手下，并且会在某些手下被摧毁时遗留。]",
+      "aspects": {
+        "grail": 2,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencegrailc",
+      "name": "An Urgency of Appetite",
+      "name_cn": "急切的食欲",
+      "description": "It is difficult to control oneself. [A sixth-order influence: significant resonances or correspondences. This can be used in some Rites to summon minions.]",
+      "description_cn": "难以控制自己。[一种六阶影响：可引发强烈的共鸣或同感。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "grail": 6,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencegraile",
+      "name": "An Imperative of Appetite",
+      "name_cn": "难耐的食欲",
+      "description": "The lips ache to savour; the fingers ache to clutch. [A tenth-order influence! A gathering knot of power and peril. This can be used in some Rites to summon minions.]",
+      "description_cn": "唇舌期盼尝味，十指期盼抓扼。[一种十阶影响！力量与危险互相穿插，结为一体。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "grail": 10,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencegrailg",
+      "name": "An Incarnadescence",
+      "name_cn": "道成肉红身",
+      "description": "The very air is succulent with possibility. Pierce it, and it might bleed. [A fifteenth-order influence! This might be the personal attention of an Hour. This can be used in some Rites to summon minions.]",
+      "description_cn": "连空气都似果肉饱含汁水般饱含着可能性。刺一下说不定便会淌出。[一种十五阶影响！可能引来某位司辰亲身过问。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "grail": 15,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceheart",
+      "name": "Trembling Airs",
+      "name_cn": "战栗的气息",
+      "description": "The toes tap. All is brisk and all is well. [A second-order influence: apparent to the perceptive, instantly recognisable to an adept. This can be used in some Rites to summon minions, and some minions will leave it lingering when they are destroyed.]",
+      "description_cn": "轻点脚尖。轻快又舒适。[一种二阶影响：对于有洞察力的学徒来说很明显，立刻能被辨别出来。可用于在某些<b>仪式</b>中召唤手下，并且会在某些手下被摧毁时遗留。]",
+      "aspects": {
+        "heart": 2,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceheartc",
+      "name": "Pulsing Airs",
+      "name_cn": "脉动的气息",
+      "description": "A rising power; a reassuring energy. [A sixth-order influence: significant resonances or correspondences. This can be used in some Rites to summon minions.]",
+      "description_cn": "力量上涌，精神鼓舞。[一种六阶影响：可引发强烈的共鸣或同感。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "heart": 6,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencehearte",
+      "name": "Pounding Airs",
+      "name_cn": "鼓震的气息",
+      "description": "The heart moves; the world moves. [A tenth-order influence! A gathering knot of power and peril. This can be used in some Rites to summon minions.]",
+      "description_cn": "世界随心而动。[一种十阶影响！力量与危险互相穿插，结为一体。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "heart": 10,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceheartg",
+      "name": "An Imminence",
+      "name_cn": "近在眉睫",
+      "description": "The sky is a drum; the earth is ready for its ecstasy. [A fifteenth-order influence! This might be the personal attention of an Hour. This can be used in some Rites to summon minions.]",
+      "description_cn": "天空为鼓，大地已经准备好接受它的痴狂。[一种十五阶影响！可能引来某位司辰亲身过问。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "heart": 15,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "sicknessprotection",
+      "name": "A Stay of Execution",
+      "name_cn": "推迟行刑",
+      "description": "All flesh fails. But I've been promised that my flesh will fail a little later. [This is a final insurance against sickness, if no Health remains to you.]",
+      "description_cn": "肉体皆会衰败。但我得到了保证，我的肉体会衰败得稍晚一点。[此卡是在你没有“健康”时对付生病的最后一道保险。]",
+      "aspects": {},
+      "type": "influence"
+    },
+    {
+      "id": "influenceknock",
+      "name": "Subtle Flaw",
+      "name_cn": "轻微的破绽",
+      "description": "Laces uncoil -- windows swing open -- locks move as if oiled. [A second-order influence: apparent to the perceptive, instantly recognisable to an adept. This can be used in some Rites to summon minions.]",
+      "description_cn": "系带解开——窗户外敞——锁像上过油一样转动。[一种二阶影响：对于有洞察力的学徒来说很明显，立刻能辨别出来。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "knock": 2,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceknockc",
+      "name": "Subtle Fracture",
+      "name_cn": "轻微的裂缝",
+      "description": "Clouds part -- walls creak -- old wounds ache. [A sixth-order influence: significant resonances or correspondences. This can be used in some Rites to summon minions.]",
+      "description_cn": "云朵分离——墙壁碾动——旧伤作痛。[一种六阶影响：可引发强烈的共鸣或同感。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "knock": 6,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceknocke",
+      "name": "Subtle Rupture",
+      "name_cn": "轻微的豁口",
+      "description": "Geometry contorts -- doors burst open -- snakes boil from the earth! [A tenth-order influence! A gathering knot of power and peril. This can be used in some Rites to summon minions.]",
+      "description_cn": "框架扭曲——门扉爆开——蛇群自土中沸腾而出！[一种十阶影响！力量与危险互相穿插，结为一体。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "knock": 10,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influenceknockg",
+      "name": "Wrong Door",
+      "name_cn": "错误的门",
+      "description": "There is a Door that should not open, and even now its hinges are roused -- [A fifteenth-order influence! This might be the personal attention of an Hour. This can be used in some Rites to summon minions.]",
+      "description_cn": "那里有一扇不该开启的门，现在连它的合页都在摇摇欲动。[一种十五阶影响！可能引来某位司辰亲身过问。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "knock": 15,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencelantern",
+      "name": "A Consciousness of Radiance",
+      "name_cn": "初识的光芒",
+      "description": "There is a light behind the world, a light above the Mansus, a light that penetrates both glass and skin. It is present here. [A second-order influence: apparent to the perceptive, instantly recognisable to an adept. This can be used in some Rites to summon minions, and some minions will leave it lingering when they are destroyed.  If unused, it will become Fascination.]",
+      "description_cn": "在世界背后，有这样一道光，凌驾于漫宿之上，能够刺透玻璃与皮肤。它出现在了这里。[一种二阶影响：对于有洞察力的学徒来说很明显，立刻能被辨别出来。可用于在某些<b>仪式</b>中召唤手下，且不会随其中一部分手下的毁灭的而消失。如果不使用，将会拗转为入迷。]",
+      "aspects": {
+        "lantern": 2,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencelanternc",
+      "name": "An Intensity of Radiance",
+      "name_cn": "强烈的光芒",
+      "description": "Light dews the skin and suffuses the air. [A sixth-order influence: significant resonances or correspondences. This can be used in some Rites to summon minions.]",
+      "description_cn": "光滴落在皮肤上，弥漫在空气中。[一种六阶影响：可引发强烈的共鸣或同感。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "lantern": 6,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencelanterne",
+      "name": "A Blaze of Radiance",
+      "name_cn": "暴烈的光芒",
+      "description": "Every colour has grown bright as new dye, but now all of them begin to bleed towards white. [A tenth-order influence! A gathering knot of power and peril. This can be used in some Rites to summon minions.]",
+      "description_cn": "每个颜色都更加明亮，仿佛新染过一样，然而现在它们全都开始流失色泽，褪至纯白。[一种十阶影响！力量与危险互相穿插，结为一体。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "lantern": 10,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencelanterng",
+      "name": "A Splendour",
+      "name_cn": "骄盛夺目",
+      "description": "Cover your eyes, if you like. It will serve no purpose. [A fifteenth-order influence! This might be the personal attention of an Hour. This can be used in some Rites to summon minions.]",
+      "description_cn": "你可以遮住双眼，随便你。遮也无用。[一种十五阶影响！可能引来某位司辰亲身过问。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "lantern": 15,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencemoth",
+      "name": "A Buzzing in the Brain",
+      "name_cn": "脑中的嗡鸣",
+      "description": "in gi rum imus noc te et con sumi <b>snip snip snip</b> [A second-order influence: apparent to the perceptive, instantly recognisable to an adept. This can be used in some Rites to summon minions, and some minions will leave it lingering when they are destroyed.]",
+      "description_cn": "in gi rum imus noc te et con sumi <b>喀嚓喀嚓喀嚓</b>[一种二阶影响：对于有洞察力的学徒来说很明显，立刻能辨别出来。可用于某些<b>仪式</b>中召唤手下，并且会在某些手下被摧毁时遗留。]",
+      "aspects": {
+        "moth": 2,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencemothc",
+      "name": "A Rattling in the Soul",
+      "name_cn": "灵魂的振响",
+      "description": "Oh the friends that we played and the skins that we made; still they drive us! [A sixth-order influence: significant resonances or correspondences. This can be used in some Rites to summon minions.]",
+      "description_cn": "噢，我们玩弄过的朋友，我们制造出的皮囊，依然在驱策着我们！[一种六阶影响：可引发强烈的共鸣或同感。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "moth": 6,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencemothe",
+      "name": "A Howling in the Heart",
+      "name_cn": "心灵的咆哮",
+      "description": "Emotions contort our thoughts. One passion yields to the next like leaves in the wind's grip! [A tenth-order influence! A gathering knot of power and peril. This can be used in some Rites to summon minions.]",
+      "description_cn": "情感歪曲了我们的思想。一种激情臣服于另一种，就像被风卷起的叶子！[一种十阶影响！力量与危险互相穿插，结为一体。可用于在某些<b>仪式</b>中召唤手下。]",
+      "aspects": {
+        "moth": 10,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencemothg",
+      "name": "That Old Yearning",
+      "name_cn": "旧日的渴慕",
+      "description": "\"\r\n    please\"",
+      "description_cn": "\"\t\t\t\r\n我切切想望\"",
+      "aspects": {
+        "moth": 15,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencewinter",
+      "name": "A Chilly Atmosphere",
+      "name_cn": "冷冽的气场",
+      "description": "A peculiar chill lingers in my rooms. [A second-order influence: apparent to the perceptive, instantly recognisable to an adept. This can be used in some Rites to summon minions, and some minions will leave it lingering when they are destroyed.]",
+      "description_cn": "一股特别的寒意徘徊于我的房间。[一种二阶影响：对于有洞察力的学徒来说很明显，立刻能被辨别出来。可用于在某些<b>仪式</b>中召唤手下，并且会在某些手下被摧毁时遗留。]",
+      "aspects": {
+        "winter": 2,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencewinterc",
+      "name": "An Icy Atmosphere",
+      "name_cn": "冰结的气场",
+      "description": "The air crisps the skin. Frost marks the glass. [A sixth-order influence: the signs are unmistakable. This can be used in some Rites to summon minions. If unused, it will become Dread.]",
+      "description_cn": "空气冻得皮肤发脆。霜结上了玻璃。[一种六阶影响：迹象显著无误。可用于在某些<b>仪式</b>中召唤手下。如果不使用，将会拗转为恐惧。]",
+      "aspects": {
+        "winter": 6,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencewintere",
+      "name": "A Bitter Atmosphere",
+      "name_cn": "严寒的气场",
+      "description": "Winter passes the clothes, passes the skin, nestles in the veins. [A tenth-order influence! A gathering knot of power and peril. This can be used in some Rites to summon minions. If unused, it will become Dread.]",
+      "description_cn": "冬季穿透了衣物，穿透了皮肤，宿居在血管里。[一种十阶影响！力量与危险互相穿插，结为一体。可用于在某些<b>仪式</b>中召唤手下。如果不使用，将会拗转为恐惧。]",
+      "aspects": {
+        "winter": 10,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "influencewinterg",
+      "name": "Perfect Frost",
+      "name_cn": "无瑕的冰霜",
+      "description": "The world is still as ice. Each movement is a journey. [A fifteenth-order influence! This might be the personal attention of an Hour. This can be used in some Rites to summon minions. If unused, it will become Dread.]",
+      "description_cn": "这个世界死寂如冰，每一步都是一段艰辛旅程。[一种十五阶影响！可能引来某位司辰亲身过问。可用于在某些<b>仪式</b>中召唤手下。如果不使用，将会拗转为恐惧。]",
+      "aspects": {
+        "winter": 15,
+        "influence": 1
+      },
+      "type": "influence"
+    },
+    {
+      "id": "husk",
+      "name": "Husk",
+      "name_cn": "空壳",
+      "description": "Something's been used up.",
+      "description_cn": "已被耗尽之物。",
+      "aspects": {
+        "exhausted": 1
+      },
+      "type": "influence"
+    }
+  ],
+  "others": [],
+  "vaults": [
+    {
+      "id": "vaultcapital1",
+      "name": "Beginning an Expedition: Strathcoyne's Collection",
+      "name_cn": "探险开始：斯特拉思科因的藏品",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Mr Strathcoyne has forbidden entry to his library. Unfortunate. Let's see what we can do. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "很遗憾，斯特拉思科因先生禁止他人进入他的藏书室。我们看看有何办法可想。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "Strathcoyne's cosy sanctum. A fire smoulders in the grate. Glass cases display hard-won trinkets. We must seize what we can, quickly! Strathcoyne may already have telephoned the police.",
+          "cn": "这里是斯特拉思科因布置的舒适密室。壁炉里的火忽明忽暗，玻璃展柜里摆放着各种稀奇的小玩意。我们必须抓紧时间，能拿多少拿多少！斯特拉思科因可能已经通过电话报警了。"
+        },
+        "success_desc": {
+          "en": "Out into the night! We escape unseen, but the next day there are reports of a fire at Strathcoyne's. Did someone knock a live coal on to the hearth-rug? Or did Strathcoyne destroy the place himself, as part of some larger scheme?",
+          "cn": "逃之夭夭，没入黑夜！我们逃离时并没有被人看见，然而第二天报上却刊登了斯特拉思科因家遭火灾的消息。是有人把烧红的煤块碰到壁炉前的地毯上了？或者是斯特拉思科因自己烧毁了住处，为了实施一场更大的阴谋？"
+        }
+      }
+    },
+    {
+      "id": "vaultcapital2",
+      "name": "Beginning an Expedition: the Forgotten Mithraeum",
+      "name_cn": "探险开始：被遗忘的密特拉寺",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "I'm convinced the Mithraeum still holds secrets that its discoverers never found. It's unlikely to be dangerous, but the search will require funds. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "我相信这座密特拉寺仍保有未被发掘的秘密。搜寻工作虽无甚危险，却需要资金的支持。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "A lonely space, musty with the memory of blood. We have found the hidden door that the highest grades of initiate used.",
+          "cn": "一个孤寂的地方。散发着腐臭味道和血的回忆。我们在其中发现了新人中最高级别者所用的那扇暗门。"
+        },
+        "success_desc": {
+          "en": "The altar tilts back like a jaw. Behind it is the pyramid-space where only the Sun-hunters and Dawn-givers might go... but others have been here too, much more recently. They have left their treasures.",
+          "cn": "祭坛向后倾倒，像一张大嘴。后面是只有逐阳者和赋晓者们能进入的金字塔状空间……然而就在短短不久前，亦有我们之外的人踏足此地。他们留下了宝物。"
+        }
+      }
+    },
+    {
+      "id": "vaultcapital3",
+      "name": "Beginning an Expedition: Cater & Hero Limited",
+      "name_cn": "探险开始：凯特与赫洛有限公司",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The remaining factory walls could topple at any moment. Blackened timbers creak in pain. We must equip ourselves properly and move with dreadful care. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "工厂的残垣断壁摇摇欲倒。熏成黑色的梁木咯吱作响，发出痛苦的声音。我们需要装备妥当，并且提心吊胆，极其谨慎地前行。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "Here is the capacious room where Mr Cater once watched his workers on the factory floor. The window-glass is long gone, and rats and crows have made this place their battle-ground, but perhaps there is still something of use here...",
+          "cn": "这里就是那间宽敞的大房间，凯特先生曾在这里监工车间的工人。窗玻璃早已不在，此地变作了老鼠和乌鸦的乐园。不过这里或许还存留着有用的东西……"
+        },
+        "success_desc": {
+          "en": "Two floorboards lift away to reveal a hollow beneath Cater's desk! The rats have made free with the biscuits he stored there against the peckishness which haunts the entrepreneur, but they could not penetrate this iron lock-box. A moment with a crowbar will open it.",
+          "cn": "挪开两块地板后，凯特的办公桌下露出了一个空洞！老鼠已经不请自来地享用了这位企业家为抵抗腹中辘辘所预备的饼干，但是它们无法穿透这个铁质保险箱。我们用撬棍小试片刻便可将之开启。"
+        }
+      }
+    },
+    {
+      "id": "vaultcapital4",
+      "name": "Beginning an Expedition: St Agnes Hospital",
+      "name_cn": "探险开始：圣亚割妮医院",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Only echoes walk the hospital halls now, but malice lingers in the air. We must search meticulously, room by room. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "如今的医院的厅堂只剩余音徘徊，空气中的恶意却仍不肯离去。我们的调查必须细致入微，不放过一个房间。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "What was this place? The door bore no sign. There were no windows. The walls were painted a rich violet - rich even now after the ravages of rain through the leaking ceiling. A rotting chair has leather straps on the arms. The floor is porcelain, and runnelled.",
+          "cn": "这是什么地方？房门上没有任何标识。没有窗户，墙壁刷成浓重的蓝紫色——被由天花板破洞漏下的雨水蹂躏后浓重依旧。一把木料腐烂的椅子，扶手处装着皮制捆绳。地面是瓷砖铺成的，开有下水渠。"
+        },
+        "success_desc": {
+          "en": "There is a padlocked cupboard in the wall: it does not long resist our strength. It contains instruments tipped with flint and glass - instruments one would not expect a surgeon to use. It contains other matters of more interest to us too...",
+          "cn": "墙上安着一个用挂锁的锁住的橱柜：我们的力气很快使它就范。里面是一些镶有燧石和玻璃的器具——不像是外科医生会用的。还有一些我们更感兴趣的物质……"
+        }
+      }
+    },
+    {
+      "id": "vaultcapital5",
+      "name": "Beginning an Expedition: the Congregation of St Felix of Schüren",
+      "name_cn": "探险开始：许伦的圣菲利克斯之会众",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Membership of the Congregation is strictly controlled. It may even be inherited. The safest approach is to burgle the minister's residence while he's conducting a service - but the sworn mothers of the Congregation guard the place in shifts, and they are not easily distracted. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "会众的成员资格是严格受控的，甚至可能采取血缘继承的方式。最保险的取得法是在牧师举行礼拜时去他的住处偷。但那里有发过永愿的修女嬷嬷轮流保卫，而且她们不会随便分神。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The minister's bed-chamber is grand in proportion, but sparsely furnished. Beneath the window, a feathered ornamental axe rests besides an enameled chalice-drum on a little altar of yew-wood.",
+          "cn": "牧师卧室面积巨大，家具却鲜少。在窗下一方小小的红豆杉木祭台上，一把羽毛装饰的斧头摆在一面珐琅制杯状鼓旁。"
+        },
+        "success_desc": {
+          "en": "Beneath the altar, in a box secured with a complicated triple knot, we find a trove of books - and more besides - a knife rank with old blood, a twist of cloth, a leathery remnant of something the minister must have surrendered at his ordination.",
+          "cn": "在祭台下，一个被复杂的三重结封死的盒子中，我们发现了一批书籍——旁边还有更多东西——一把散发着腐旧血味的刀、一卷布，一块准是牧师受任圣职时丢弃的皮革制品残片。"
+        }
+      }
+    },
+    {
+      "id": "vaultcapitaldefault",
+      "name": "Beginning an Expedition: The Forsaken Reach",
+      "name_cn": "探险开始：荒废的河岸街",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The law does not touch this decaying fringe of the city. The mud here has claimed many lives, and there will, no doubt, be some wretched criminals or other lairing in the warehouse. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "法律约束不了这片衰落的城市边缘地带。这里的淤泥已夺去了许多条性命，这间仓库无疑也盘踞着可鄙的罪犯或此类人等。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "A barred door, a cramped space, a hidden cargo.",
+          "cn": "面前是一扇栅栏门，狭窄的空间，货物藏于其中。"
+        },
+        "success_desc": {
+          "en": "The watchers here were guarding crates sealed with thief-signed ribbons. This was not a lawful operation: the owners of the cargo may not be pleased with our meddling.",
+          "cn": "有人在这里看守着一堆板条箱，上面捆着被贼做过记号的封带。我们这次行动不为法律允许：货物的主人很可能不会喜欢我们动手脚。"
+        }
+      }
+    },
+    {
+      "id": "vaultshires1",
+      "name": "Beginning an Expedition: Gladwyn Lake",
+      "name_cn": "探险开始：格拉德温湖",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Beneath the surface of the lake, or in some cliff-side nook, perhaps some relics remain for us yet. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "在湖面的下方，或在崖壁的的凹坑里，或许还有些遗物等待着我们。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "There are ruins beneath the water - just beneath, at wading depth. The lake has risen a little in all these years, but not enough to keep us out.",
+          "cn": "水面下存在遗迹——刚好没于其下，在涉水可及的深度。这些年湖面微有上涨，却并不能拦住我们。"
+        },
+        "success_desc": {
+          "en": "The chapel crypt is flooded, and the water soupy with old corpse-matter, but at last we bring up a wax-sealed coffer. Eighteenth-century? No older than that. Let's see what's within.",
+          "cn": "礼拜堂的地窖已被淹没，浑浊的水中沉浮着古尸的碎块，不过我们总算带上来一个蜡封的宝箱。是十八世纪的？总之不会在那之前。让我们看看里面装着什么。"
+        }
+      }
+    },
+    {
+      "id": "vaultshires2",
+      "name": "Beginning an Expedition: Lockwood Fen",
+      "name_cn": "探险开始：洛克伍德沼地",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Out into the mudlands. Somewhere, we are certain, is a shrine bedecked with precious oddments. If the locals try to kill us, we are probably heading in the right direction. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "我们来到泥泞的沼地。在这里的某个地点，我们确信，有一座残存着珍贵余料的神殿。如果当地人想要杀死我们的话，我们大概正中他们的下怀。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "Here on a flat rock, inches above the marsh-water, is a throne carved of yew-wood, ripe with fungus, ornamented with tarnished copper. This is the shrine we seek.",
+          "cn": "在一块平坦，高出沼泽水面几寸的岩石之上，是一张红豆杉木雕成的王座，上面布满了菌菇和锈渍斑斑的铜饰。这里就是我们要找的神殿。"
+        },
+        "success_desc": {
+          "en": "Apple-green paint marks ritual circles on the rock. The remains of sacrifices past squelch beneath our feet as we search the shrine. In a little hollow in the throne rests an oiled bundle of treasures.",
+          "cn": "岩石上是苹果绿色的颜料绘制的祭祀圈。调查神殿时，祭品留下的遗骨在我们脚下咯吱作响。王座上的一个小洞里躺着一个涂了油的宝物包。"
+        }
+      }
+    },
+    {
+      "id": "vaultshires3",
+      "name": "Beginning an Expedition: Crowkiss Hill",
+      "name_cn": "探险开始：克罗基斯山丘",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The one who came here before us had marked the door in the hillside. And here it may yet be, but it is sealed besides with stone and binding-spell. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "先于我们的来者已经找到了斜坡里的门。门虽可能尚在此处，却被石块和咒语一起封得严严实实。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "It is almost possible to stand upright in this place, but the air is foul and our lamps burn low. Here is the warrior-king staked out on the funeral-stone, his bones smashed to keep him from walking. The orbits of his skull are bound with bronze.",
+          "cn": "这个地方算是可以容人站直了，但空气污浊，我们的灯火也燃得黯淡。这里，身兼战士的国王踞于墓石之上，他的骨骸已碎，再不能够行走。他脸上的两个骷髅眼眶各镶着一圈青铜。"
+        },
+        "success_desc": {
+          "en": "Others have been here before us - power still lingers, and no doubt they used it in their ceremonies. They have taken some of the warrior-king's funeral treasures, but left something of their own.",
+          "cn": "有人先我们来过——其法力还残留在此处，这无疑是他们举行祭典所用的法力。他们拿走了战士国王的一部分陪葬宝物，又留下了些自己的东西。"
+        }
+      }
+    },
+    {
+      "id": "vaultshires4",
+      "name": "Beginning an Expedition: Keglin's Scratch",
+      "name_cn": "探险开始：凯格琳的财宝",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "We prepare for the descent. We bring rope, tools, light; we arm ourselves against anything down there that may yet move. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "我们为深入地底做好准备。我们携带了绳索，工具，照明：用来武装自己，准备对付接下来遇到的任何会动的东西。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The air is stale, and dust sifts worryingly down from the rock above, but the dead lie still. This chamber, with its chalked figures and ancient stains, looks promising.",
+          "cn": "空气味道陈腐，尘土从头顶的岩石飘洒而下，令人见之不安，然而躺卧其间的死者依旧一动不动。房中可见白垩绘成的图案和古老的污渍，看上去我们在这将大有收获。"
+        },
+        "success_desc": {
+          "en": "In a lead-lined sarcophagus lies the skeleton of a woman. She wasn't buried here: it looks like she crawled in to die... something has happened to the shape of her skull, pushing out the jaw like the muzzle of a beast. Scraps of rotting linen swathe her bones. Treasures lie among the remains of her clutching hands between her ribs.",
+          "cn": "一座镶铅边的石棺内躺着一具女人的骨骸。她不是被人葬在这儿的——倒像是自己爬进来赴死的……她头骨的形状有些不对劲，下颚像兽一样向前凸出。腐烂的碎亚麻布条裹在她的骨殖上。她攫紧的两手放在胸骨前，仅存的手骨间散落着各色宝物。"
+        }
+      }
+    },
+    {
+      "id": "vaultshires5",
+      "name": "Beginning an Expedition: the Gwaer Inn",
+      "name_cn": "探险开始：高威尔旅馆",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "We can reserve rooms at the Inn easily enough, but we can expect the locals - if they divine our intentions - to turn nasty. And if the library is still there, it will be well-hidden. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "我们可以轻易地订到旅馆的客房，但这里的本地人却绝非善类——如果让他们推测出我们的所图。而且如果藏书室还在此处，它应该隐蔽得很好。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The room is bleached and quiet. The chairs are pale wood; the table is topped with white marble. A low draught blows through the ill-fitting sea-facing casement. In winter, it must be insupportably cold. A white-painted glass case holds a shelf of books, wrapped oddly in coils of copper wire.",
+          "cn": "房间洁白而安静。椅子由灰白的木材制成；而桌子则用白色的大理石装点。低沉的海风吹过面海并令人不适的窗扉。冬天，这寒冷一定难以忍受。一个涂白的玻璃箱子里装着一排书，书却被铜丝卷怪怪模怪样地缠绕了起来。"
+        },
+        "success_desc": {
+          "en": "Some of the books are exotic eighteenth-century pornography. Others are botanist's journals. Some, however, have value for our studies. A yellowing note tucked into the spine of one reads 'Watch for me. - JC.'",
+          "cn": "有些书是来自异国的十八世纪春宫图。其他的，则是植物学家的手记。可是，有些书则对我们研究有所帮助。一张发黄的纸条卡在一本书的书脊上，写道“来找我。——JC。”"
+        }
+      }
+    },
+    {
+      "id": "vaultshiresdefault",
+      "name": "Beginning an Expedition: Kerisham",
+      "name_cn": "探险开始：凯尔伊苏姆",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Slink along the streets to a once-fine townhouse. Surreptitiously case the back garden. Odd stories circulate about the woman who lives here. She might be an adept, a collector, or even the rare thing called <i>empousa</i>. We must be watchful. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "沿着街道潜入一幢光鲜不再的大宅。我们蹑手蹑脚围住大宅的后园。围绕住在这里的女人流传着各种诡异的故事。她可能是一名学徒，一位收藏家，抑或名为<i>恩浦萨</i>的罕见存在。我们必须保持警觉。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "Nothing remains to bar our way. Search the cellar first, then the upper rooms. We don't want to be trapped.",
+          "cn": "再没有什么能阻挡我们的道路。我们先搜地下室，然后再搜上层房间。我们可不想被困住。"
+        },
+        "success_desc": {
+          "en": "On the topmost floor is an altar to the Sun Divided - which could be one of many Hours. Sweep the items there displayed into a carpet-bag, and let's make haste into the back streets.",
+          "cn": "在最顶层是祭奉裂分之阳的祭坛——他或是众位司辰之一。让我们把摆在上面的物品扫进一个毛毡口袋，然后赶紧逃入小巷，溜之大吉吧。"
+        }
+      }
+    },
+    {
+      "id": "vaultcontinent1",
+      "name": "Beginning an Expedition: Chateau Raveline",
+      "name_cn": "探险开始：拉维林城堡",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The remote and rotting chateau of the Comtes de Raveline was looted long ago. We have found hints that it was not looted thoroughly enough. There may be a secret room. Equally, there may be a curse. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "拉维林伯爵的城堡偏远而破败，早已经历过掠夺。然而我们找到证据，那里尚未被洗劫一空。那里也许有个秘密房间。与此相对，那里也许存在着诅咒。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "Behind a rotting tapestry of wolves hunting men, a panelled wall. In the panelled wall, a secret door. The spring is long gone, of course. We had to smash it in with hammers.",
+          "cn": "在一幅破败的描绘着狼群猎杀人类的挂毯背后，是一堵镶板墙。在镶板墙之中，隐藏着一扇门。弹簧失踪已久，毫不让人意外。我们不得不用锤子砸门而入。"
+        },
+        "success_desc": {
+          "en": "The last treasures of the Comtes de Raveline lie here, in a surprisingly airy room. High skylight windows have long since broken, and the floor is lost underneath leaves and debris, but once the place was furnished as a nursery. Here is a cradle, with the skeleton of a puppy.",
+          "cn": "拉维林伯爵最后的宝藏位于此处，在一个空气出乎意料地流通的房间里。高处的天窗早已破损，地板被树叶和碎片所掩埋，但这个地方曾被布置成育婴室。这里有一个摇篮，里面放着仔犬的骨骸。"
+        }
+      }
+    },
+    {
+      "id": "vaultcontinent2",
+      "name": "Beginning an Expedition: Fermier Abbey",
+      "name_cn": "探险开始：费米尔修道院",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Fermier Abbey, folded into the forest like a jewel-box smuggled in a green robe. If we can make it through the forest, we'll still have to face the monks. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "费米尔修道院，深藏于森林之中，宛如被塞入绿色外袍中偷运的珠宝盒。纵使我们设法穿越了森林，我们仍然得面对僧众。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The monks and their miseries lie behind us. Here in their chapel-courtyard, a great yew rises beside a granite altar, lidded like a sarcophagus. What's within?",
+          "cn": "我们摆脱了僧侣和他们的不幸。在他们的礼拜堂的庭院中，一棵巨大的红豆杉矗立在花岗岩祭坛旁生长着，宛如石棺盖。里面有什么？"
+        },
+        "success_desc": {
+          "en": "The space inside the altar is filled with broken cups, every one painted red, every one scrawled with vile graffiti and otherwise befouled. The monks must have held great ceremonies of detestation, and kept the remains as trophies. Buried among the cup-corpses are other treasures.",
+          "cn": "祭坛内部装满了损毁的杯子，每只都涂成了红色，每只都绘有丑恶的涂鸦，或者其他污秽的图案。这些僧侣必定进行过令人憎恶的庞大祭典，保留了残余部分作为战利品。而别的宝藏被埋藏在杯子的尸身里。"
+        }
+      }
+    },
+    {
+      "id": "vaultcontinent3",
+      "name": "Beginning an Expedition: Orthos Wood",
+      "name_cn": "探险开始：俄耳托斯树林",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "In the black heart of Orthos Wood, we might find the tree where the masked Crow met its peers. But the forest itself is a peril, and the cannibal clans who live there are another. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "在黑暗的俄耳托斯树林的中心，我们也许能找到那棵戴面具的乌鸦与它的党徒用以会面的树木。但树林本身就是险境，居住其中的食人部落则是另外个危险因素。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "This is the great oak where the masked Crow once roosted. Lightning has split it from head to heart, and the tree is charred and rotting. It squirms with finger-length worms. Something glints dully in the swarm of dead roots.",
+          "cn": "这是面具乌鸦曾栖息的大橡树。它被闪电纵向劈开，焦黑腐烂。其上爬满了手指长度的蠕虫。在死亡的树根堆中有什么东西微微闪光。"
+        },
+        "success_desc": {
+          "en": "A root coils around an egg of lead the size of a child. Perhaps it was plated with another metal, once, but the weather has removed all trace of any coating. After a struggle, the halves of the egg come apart to reveal its contents.",
+          "cn": "树根盘绕着一个孩子大小的铅蛋。也许它曾被镀上另一种金属，但风吹雨打已经抹消了所有涂抹的痕迹。一番努力后，蛋一分为二，显露出内部。"
+        }
+      }
+    },
+    {
+      "id": "vaultcontinent4",
+      "name": "Beginning an Expedition: the Vanderschaaf Collection",
+      "name_cn": "探险开始：范德沙夫收藏馆",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The door to the Painted Chamber of the Vanderschaaf Collection is locked and warded. The building is said to be 'haunted by flowers'. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "通往范德沙夫收藏馆墙绘厅的门上着锁和门闩。这幢建筑据说有“花影作祟”。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The walls of the Painted Chamber carry scenes of war from all the major histories - Vienna falling to the Worms, the Sovereigns of the Leashed Flame burning the martyr-soldiers of the Knot Sisterhood, the meeting of Alexander and the Shadowless King. Along one wall, a shelf is stuffed with junk and curiosities.",
+          "cn": "厅堂的墙上绘有取自所有主要历史的场景：蠕虫攻陷维也纳，受控之火的君王焚烧绳结姐妹会的殉道战士，亚历山大会晤无影之王。一面墙上靠着一个架子，上面堆满垃圾和新奇之物。"
+        },
+        "success_desc": {
+          "en": "A book of pressed flowers emanating a peculiar scent; three elderly Baedekers; a collection of butterflies painted black and white; and the real treasures. An oddity in a glass case and a  cloisonnéd coffer of rare books.",
+          "cn": "一本关于压花标本的书籍，散发着异香；三位上了年纪的贝德克尔家族成员；被涂成黑白两色的蝴蝶藏品；最后是真正的宝藏：装在玻璃盒中的罕物和装在景泰蓝保险箱中的稀有书籍。"
+        }
+      }
+    },
+    {
+      "id": "vaultcontinent5",
+      "name": "Beginning an Expedition: Forman House",
+      "name_cn": "探险开始：福曼的家宅",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Unquestionably, this bleak mansion is haunted. The last visitor saw and fled the dead before they could touch him with their fraying hands. The visitor before that claimed she saw nothing, but she died of despair exactly one year later to the day. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "毫无疑问，昏暗的宅邸闹鬼了。最后一名到访者看见了死者，并在它们用那锐利的双手触碰到他之前逃走了。再前一位到访者声称她什么也没看到，但在那天的整一年后，她便死于绝望。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "In the room that overlooks the grimy glass of the broken conservatory, twisted shapes yellow-pale as maggots recline on slabs of wood. These are the plaster-casts that Forman made of the poor souls inhabited by the creatures he studied. In some of the figures, the entry-holes are visible in the relevant surface. In others, we might assume the creatures entered by ear, or mouth, or elsewhere. ",
+          "cn": "远望着破旧温室的阴冷玻璃的房间里，淡黄色的扭曲形状犹如蛆虫躺靠在木板上。这些是福曼通过他研究过的生物，用那些可怜栖息灵魂制作的石膏模型。在其中的一些模型中，可以看到在相关表面有很大的进入通道。其他模型的话，我们可以假设能通过耳朵或嘴或身体其他部位进入这些生物。"
+        },
+        "success_desc": {
+          "en": "The room is empty. But at last, when we chance to break one of the casts, we find Forman's library-treasures, cached in the figure's yellowing abdomen.",
+          "cn": "房间空荡荡的。但在最后，我们偶然打破其中的一个模型，并在什么东西泛黄的肚肠里发现了福曼的宝贝藏书。"
+        }
+      }
+    },
+    {
+      "id": "vaultcontinent6",
+      "name": "Beginning an Expedition: the Key-Hunter's Garret",
+      "name_cn": "探险开始:钥匙猎人的阁楼",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Once in Vienna, we hear that the key-hunter has not been seen for many days. A local drunk insists that a great serpent entered the house to devour them. Certainly, the house is unlit and boarded up, and there is a reptile-house smell. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "曾经在维也纳，我们听说钥匙猎人已经多天未出现在人们的视线里。一个当地的醉汉坚称一条大毒蛇潜进房子把他给吞了。可以肯定的是，房子被木板围住，周围毫无亮光，有一种爬虫屋的味道。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The room stinks of serpent-musk and burnt paper. Someone has comprehensively destroyed all the records they could find. They've even scrubbed the walls clean. Cold ashes choke the fireplace. No trace of the poor soul who rented this place remains.",
+          "cn": "房间散发着蛇臭和烧纸的气味。某人彻底破坏了所有他能够找到的记录。他甚至将墙壁清洗干净。冰冷的灰烬堆积在壁炉里。没有留下一丝关于租借这里的可怜人的痕迹。"
+        },
+        "success_desc": {
+          "en": "A single corner of fire-curled paper has survived the flames. In a shaky hand, it reads: 'Lady K. Green Chalcedony. Three-lobed. Spring leaves in fi -' But, unexpectedly,in a suitcase beside the flames, a little trove of books survives. Whoever destroyed the key-hunter's journals saw no need to burn these books.",
+          "cn": "被火烧弯的纸张一角在火焰中幸存了下来。上面颤抖的字迹写道：“K女士。绿色石髓。三瓣。春叶映于火——”但出乎意料的是，在火焰旁一个手提箱里面，有一小堆书幸存了下来。那位摧毁了钥匙猎人的手记的人，也觉得没必要烧掉这些书籍。"
+        }
+      }
+    },
+    {
+      "id": "vaultcontinentdefault",
+      "name": "Beginning an Expedition: the Unnumbered Stones",
+      "name_cn": "探险开始：一望无际的巨石阵",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Treasure-seekers visiting the Stones must penetrate the forest that conceals them; grapple with the locals who revere them; and finally be prepared to do some digging, even if they can find a hidden door. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "前来拜访石岗的寻宝者必须穿越隐藏着石岗的森林；和崇敬石岗的本地人格斗；最后即使发现了暗门，仍需为挖掘做好准备。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The moonlight bleaches the grass to winter. All around, the stones loom. Here in the tumulus side beneath the turf is a stone that will rise like a trap-door. We must put our backs into it. ",
+          "cn": "月光将草地漂染成冬天的颜色。环顾四周，石岗隐约可见。在草地下面的古墓中，有一块石头会像陷门一样升降。我们必须紧紧背靠着它。"
+        },
+        "success_desc": {
+          "en": "The chamber inside the tumulus has half-collapsed with the years. Fat white spiders crawl from the touch of our lamplight, insolently slow. The stone reliefs are cracked and dripping. But here is the offering-hole still, with its treasures.",
+          "cn": "岁月让古墓里的空间坍塌了一半。肥胖的白色蜘蛛从我们的提灯边缘缓缓爬出，缓慢得近乎傲慢。画像砖开裂，碎屑不断落下。但这里仍然有着用以供奉的孔洞，装着宝藏。"
+        }
+      }
+    },
+    {
+      "id": "vaultlandbeyondforest1",
+      "name": "Beginning an Expedition: the Cave of Candles",
+      "name_cn": "探险开始：蜡烛岩洞",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The ascent to the cave through the high passes will be dangerous. Whatever waits in the darkness below is probably more dangerous still. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "通往高处的洞穴的道路是危险的。但下方黑暗中所蛰伏着的东西很可能更为可怕。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The tunnels beneath the cave are smooth with the great serpent's passage, and chokingly dark until we come with our lanterns. But the chamber where it nested is surprisingly bright. Luminescent fungi flood the place with ersatz moonlight. Perhaps the candles drew it, not repelled it.",
+          "cn": "因为充当巨蛇的通路，山洞下的隧道非常平滑，但要不是我们带着灯，它的黑暗将令人窒息。然而它盘踞的房间出乎意料地明亮。作为月光的替代品，发光的真菌充满了整个空间。也许蜡烛并没有驱赶走这些真菌，反而吸引了它们。"
+        },
+        "success_desc": {
+          "en": "A little cache of treasures, culled over the years from the serpent's meals. It has nosed them into a glinting pile.",
+          "cn": "一小堆宝藏，自经年累月的巨蛇食物中筛选而出，并被巨蛇拱成一堆，闪闪发光。"
+        }
+      }
+    },
+    {
+      "id": "vaultlandbeyondforest2",
+      "name": "Beginning an Expedition: the Voivode's Citadel",
+      "name_cn": "探险开始：大公的城塞",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The Voivode's vault will be hidden well, and if the stories are true, his victims may not rest peacefully in the dark behind the citadel's walls. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "大公城塞的地下室必然极为隐秘，并且如果传闻为真，在要塞的高墙背后，为他所害者很可能死不瞑目。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "Here is the Voivode's mausoleum. Swagged cobwebs hang like soft grey drapes. A great sandstone sarcophagus stands upright at the far end. It's empty.",
+          "cn": "此处乃大公的陵墓。垂挂的蛛网宛如柔软的灰色的帘幕。在最尽头竖立着一个巨大的砂岩石棺，里面空无一物。"
+        },
+        "success_desc": {
+          "en": "Someone has left a little heap of treasures before the sarcophagus, like an offering. There are no footprints in the dust. Whoever left them came here long ago, or else has no need to touch the ground when they pass.",
+          "cn": "有人在棺枢前面留下了一小堆宝物，仿佛贡品。尘土上没有任何足迹。无论是何人留下的宝物，此人定是来于很久之前，或者在通过时无需接触地面。"
+        }
+      }
+    },
+    {
+      "id": "vaultlandbeyondforest3",
+      "name": "Beginning an Expedition: Grunewald's Permanent Circus",
+      "name_cn": "探险开始：格吕内瓦尔德的长驻马戏团",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The circus folk will be ready to take up arms against us, and the power in the Circus, we fear, may be Worm-touched. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "马戏团一众人准备对我们举起武器，且我们担心，马戏团里的神怪也许受了蠕虫的碰触。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "In the striped tent, coiling teratologies behind smeared and murky glass. In the grey tent, dripping fog that nuzzles us like a hunting cat - fog rank as an animal. In the black-and-starred tent, wonderful meshes of orrery and sculpture spangled with costume gems. In the red tent, the waxen priest in the glass coffin, and the books clasped to his chest -",
+          "cn": "在条纹帐篷里，脏污而浑浊的玻璃后的畸形阴魂不散。在灰色帐篷里，滴水的雾气紧紧包裹我们，宛如捕猎中的猫——那雾简直仿佛是活物。在黑色上缀着星点的帐篷里，星象仪与表面镶嵌着宝石的雕塑完美啮合。在红色帐篷里，面如白蜡的教士躺在玻璃棺材里，胸前紧抱着书本——"
+        },
+        "success_desc": {
+          "en": "In the red tent, a madness of paper. The circus folk have pasted diagram-crowded paper to every surface: the anatomies of time, the dissections of old weather. The place stinks of Nowhere. We should burn it when we leave. A trestle table holds an unceremonious muddle of trophies and keepsakes.",
+          "cn": "在红色的帐篷里，满纸荒唐。马戏团众人在每个地方都贴满了写满图标的纸张：时间分析，旧时气候的解构。这个地方散发着虚界的气息。我们应当在离开时烧毁它。在一个支架桌上随意堆放着一些战利品和纪念品。"
+        }
+      }
+    },
+    {
+      "id": "vaultlandbeyondforest4",
+      "name": "Beginning an Expedition: Tower Revek",
+      "name_cn": "探险开始：瑞弗克塔楼",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "We will have to search assiduously to find whatever treasures might remain; and if the tower was truly destroyed in a battle between adepts, dangerous influences may still cling to it. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "我们必须努力搜寻任何可能留存的宝藏；如果塔楼的确已经被学徒内战所摧毁，那里可能仍然残留着危险的影响。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "Beneath the tower is a cramped cellar with cracked slate walls. The proportions - it should be a perfect cube, but somehow there are too many corners. Blue light festers at the junction of ceiling and wall. The floor flexes, slowly, like the skin of a bubble. It echoes to a stamped foot. What spaces open beneath?",
+          "cn": "塔的下方是一个狭窄的地窖，地窖的板岩墙已经裂缝。它的体积——它本应是个正立方型空间，却不知为何有超额数量的角。房顶和墙壁的接合处渗出蓝色的光。地面缓慢地伸缩，如同气泡的表面。如果跺脚，能听到回音。向下挖掘，还出现有怎样的空间？"
+        },
+        "success_desc": {
+          "en": "Bundle the books into a sack. Hurry up the handholds to the tower-stump. The sky above ripples with cobalt aurorae. The hills around are washed with shudders of blue light. There is a high and singing sound from the stones of the tower as we leave. Lightning cracks from the sky, and suddenly everything is silent. The tower-stump is gone.",
+          "cn": "把书捆好放进麻袋。迅速沿扶手爬回残塔。头顶的天空飘着涟漪般的钴蓝色极光。颤动的蓝光冲刷着四周的山岭。我们离去时，从筑塔的石块传来高亢的鸣响。闪电从天空劈下，突然间万籁俱寂。残塔消失了。"
+        }
+      }
+    },
+    {
+      "id": "vaultlandbeyondforest5",
+      "name": "Beginning an Expedition: the Kusnetsov Endowment",
+      "name_cn": "探险开始：库兹涅佐夫的捐赠",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The journey to the Endowment buildings is not long, but the ground is difficult. We have sent three times for permission to visit, and received a less friendly answer each time. No doubt the staff will attempt to forbid our entry. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "前往捐赠楼的路并不漫长，但走进去却很困难。我们已三次申请访问许可，然而每次都收到不甚友好的回复。毋庸置疑，楼里的员工会试图阻止我们进入。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The library ceiling collapsed years ago. Many of the books have been reduced to swollen pulp by dripping water. Something must remain. ",
+          "cn": "图书馆的天花板在多年前便已坍塌。许多书籍已被漏水泡成了发胀的书浆。一定还有留存的东西。"
+        },
+        "success_desc": {
+          "en": "A portrait of a genially smiling man - dark skin, bright eyes, neither hair nor eyebrows - watches over the ruined library. It is titled 'Don't Mind Me', and signed with an indecipherable serpentine scrawl. The paint is peeling. It watches us with its benevolent smile as we find intact treasures among the swollen books on the shelves.",
+          "cn": "一副和蔼微笑着的男人——深色皮肤，眼睛明亮，没有头发与眉毛——的肖像看管着这座破败的图书馆。肖像画题为“不要在意我”，签名难以辨认，蜷曲潦草。画的四角已经卷起。当我们在书架上泡胀的书本中寻找完好无损的宝物时，这副画用它仁慈的微笑看着我们。"
+        }
+      }
+    },
+    {
+      "id": "vaultlandbeyondforestdefault",
+      "name": "Beginning an Expedition: Foxlily Meadows",
+      "name_cn": "探险开始：狐百合原野",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The path through the mountains to the high meadow will be hard. The peasants of the mountains will seek to drive us away. If we return home safe, we may struggle to shake off the visions of the place. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "穿过群山通向高处的狐百合之海的的道路将是艰险的。山上的农民会试图赶走我们。即便我们安全到家，也很可能难以在脑海中摆脱那里的景象。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "We've dipped cloths in ammonia, and bound them round our faces, to deaden the foxlily scent. Even so, our heads swim, our bodies respond to a half-dozen contradictory desires. Here are the bones we sought. Loot them and get out.",
+          "cn": "我们将布浸入氨水，蒙在脸上，以抵抗狐百合的香气。即便这样，我们仍然头晕目眩，身体却对各种矛盾的欲望作出回应。这里有我们所找寻的遗骨。搜索它们，然后离开。"
+        },
+        "success_desc": {
+          "en": "The foxlilies are white as cave-skin, white as frost, white as unsullied sheets. It is hard to look away. We will close our eyes and struggle away with our treasures.",
+          "cn": "狐百合之花白如穴居动物，如冰霜，如清洁的床单。很难将目光从它们身上移开。我们将阖上眼睛，带着宝藏拼力离开。"
+        }
+      }
+    },
+    {
+      "id": "vaultrendingmountains1",
+      "name": "Beginning an Expedition: Hunter's Pit",
+      "name_cn": "探险开始:猎手之穴",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The trap-labyrinths of the Tearing Tribes. We'll have to scale the mountains and battle our way through the tribes. After that, no doubt, there will be something else. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "撕祭部落的陷阱迷宫。我们必须穿山越岭，一路杀入部落。在那之后，毫无疑问的是，我们会在那里发现别的东西。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "In the crumbling depths of the Hunter's Pits, we've found a room where battle-scenes are painted on the walls. Here are the shrines of all the greatest hunters of the Tearing Tribes.",
+          "cn": "在猎手之穴的塌陷深处，我们找到了一个房间，房间的墙壁上绘满了战斗场景。此处是座圣坛，用以祭奠撕祭部落最伟大的猎手。"
+        },
+        "success_desc": {
+          "en": "These are the trophies the hunters won. Not all the beasts they slew are beasts that walk the earth today.",
+          "cn": "这里还堆着那些猎手所猎获的战利品。里边也有现在已经灭绝了的动物。"
+        }
+      }
+    },
+    {
+      "id": "vaultrendingmountains2",
+      "name": "Beginning an Expedition: Snow's Keeper",
+      "name_cn": "探险开始:避雪神庙",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "We'll brave the mountain-snows to reach the temple. If the dead rise against us, we'll suppress them. But there is a malignity here that we must suppress, or it will return home with us. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "我们踏雪而行，攀山而上前往那座神庙。如果那些死者苏生过来袭击我们，我们会干掉它们。但挡在我们面前的还有一股扭曲的恶意，若是不消灭它，那它会跟着我们回去。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The interior of the temple throbs with luminescent fungi. We must peel them from the altar with our gloved hands before we can loot the place. It is as cold as rain-chilled flesh. Our gloves now are stained with light. Our breath mists in the temple's cold.",
+          "cn": "神殿内耸动着泛冷光的菌菇。要搜刮这个地方，我们先得戴着手套把密布在祭坛上的菌菇都剥下来。它们摸起来冰冷如霜。我们的手套现在也开始发光，我们的呼吸为这冰冷的神殿蒙上了雾气。"
+        },
+        "success_desc": {
+          "en": "The treasures that unknown priests left here, and a pitiful huddle of bones. A sacrifice? Or did a later visitor end their visit here? The glowing fungus has etched their skeleton with its acids.",
+          "cn": "那些无名祭司在这里留下了一堆尸骨和一堆珍宝。是祭品吗？又或者是后来者死在了这里？那些发光的菌菇用酸腐蚀着尸骨。"
+        }
+      }
+    },
+    {
+      "id": "vaultrendingmountains3",
+      "name": "Beginning an Expedition: the Eye of Ikirmawi",
+      "name_cn": "探险开始:伊克玛维之眼",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The Rending Mountains stand between us and the observatory. The door will be sealed and barred against us. The visions we find may tear at our senses. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "我们与观星台之间隔着撕身山脉。那扇门会在我们面前紧闭，让我们无法入内。我们所见的那些幻象会撕碎我们的五感。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The great telescope has rusted and fallen from the dome. The lenses have cracked. But pale lights rotate slowly above the floor, like lamps held aloft by dancers. Perhaps they imitate the procession of heavenly bodies. Perhaps their motion mourns the passing of the Sun.",
+          "cn": "大望远镜生锈了，从穹顶上掉了下来。镜头碎裂。苍白的光在地板上来回旋转，宛若有舞者举着提灯起舞一般。或许它们在效仿天体的运转，又或者它们在用此来悼念太阳的消亡。"
+        },
+        "success_desc": {
+          "en": "The chief of the astronomers who dwelt here must have been a practitioner of the invisible arts. In a cedarwood box in his quarters, beneath the decaying bed, we find what we sought.",
+          "cn": "居住在这里的首席天文学家一定是无形之术的实践者。在他住处那张腐朽的床下，一只柏木箱子里，我们找到了我们想要的东西。"
+        }
+      }
+    },
+    {
+      "id": "vaultrendingmountains4",
+      "name": "Beginning an Expedition: the Mausoleum of Wolves",
+      "name_cn": "探险开始:石狼陵墓",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Did the Sun ever come here, when its death was pronounced? Perhaps that pronouncement was premature. In any case, if we usurp its progress, we'll have to face avalanches, furious ghosts, and a door sealed by adept-architects. Let's be ready. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "自从墓主死了之后，这里是不是就变成了连太阳都未曾踏足过的地方？不过或许，说墓主已死还为时尚早。如果我们想要洗劫这座寝陵，那我们就得面对雪崩，狂灵还有被手艺精湛的建筑师们所密封的那扇墓门。让我们做好准备吧。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The whispering of the Dead is quiet, but another sound echoes in the Mausoleum: a faint descending howl, like metal tearing in the hull of a ship, dropping in pitch until it churns our bones. It could almost be the wind, but it is not. We should not stay long here.",
+          "cn": "死者并没未发出低语，但陵墓内回荡着另一种声音，我们听到了微弱的嚎叫声，嚎叫声渐渐低沉，就仿佛一艘船外壳上的铁皮逐渐剥落，这声音搅着我们的骨髓。尽管听起来非常像，但它绝对不是风的声音。我们不该在这里待上太久。"
+        },
+        "success_desc": {
+          "en": "The chill in the air deepens, until our skin crisps with ice. At the core of the Mausoleum is a white marble bowl upon a granite plinth. It is filled with snow whose touch burns the skin - and buried in it, items of note. Were they concealed here? Or were they offerings? Nothing beside remains.",
+          "cn": "寒气逐渐加重，我们的皮肤上都结了一层薄冰。陵墓中央是一个陈放在花岗岩底座上的白色大理石碗状物。里边装满触手如灼的冷雪——雪中埋了值得注意的物什。这些东西是藏在此处？还是供奉在此处？除此之外没有剩下任何东西了。"
+        }
+      }
+    },
+    {
+      "id": "vaultrendingmountainsdefault",
+      "name": "Beginning an Expedition: Tombs of the Shadowless Kings",
+      "name_cn": "探险开始:无影众王的墓群",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "We must penetrate the mountains, pass the guardians, and brave the curse the Shadowless Kings left behind. Perhaps then we will find treasures. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "我们必须翻越群山，闯过守卫，而后解开无影众王的诅咒。这样我们或许才能找到宝藏。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "We roll the stone aside, and light floods the tomb. Here is the king, dried to papery leather and crumbling bone. He does not move. This one was not immortal.",
+          "cn": "我们把石头移到一边，然后用光照亮整座王陵。国王就躺在那里，已经只剩下一具纸一样薄而干的尸体，碎骨散落四处。国王并没有坐起身来，看来他并非不死者。"
+        },
+        "success_desc": {
+          "en": "The Shadowless Kings were buried only with their most personal treasures. They expected no luxury in the afterlife. Here is a tiny cache of the things this king valued.",
+          "cn": "无影众王只会将自己最为珍爱的宝物随葬。他们并不打算把财富带到来世。此物是这位王所珍视的随葬珍宝。"
+        }
+      }
+    },
+    {
+      "id": "vaultloneandlevelsands1",
+      "name": "Beginning an Expedition: the Star-Shattered Fane",
+      "name_cn": "探险开始：被星辰击碎的神殿",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "A star fell in the deep desert. It did not quite destroy the sacred place it struck. The treasures of the old altar may remain, hidden beneath the grave of the star. But we must approach the star cautiously: it still resonates with energies from outside the world. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "一颗星辰坠落在沙漠深处。它没能完全摧毁它击中的圣地。古老祭坛的宝藏或许仍然埋藏在星辰的墓穴之下。但我们必须谨慎地靠近星辰：它仍然会与不属于这个世界的能量产生共鸣。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The meteorite lies in the shattered temple, ridged like a sea creature, smoothed by its passage through the atmosphere. The old altar must have been crushed centuries ago, but the meteorite responds to our touch. It hums like wires in wind. Its surface shifts, and it opens like an eye - ",
+          "cn": "陨石位于分崩离析的神庙中，蜿蜒如海洋生物，表面在穿过大气层的过程中变得平滑。早在几个世纪前古老祭坛肯定已然坍塌，但陨石仍然回应着我们的触摸。在风中它发出电线般的嗡嗡声。它的表面不断变换，如眼睛般张开……"
+        },
+        "success_desc": {
+          "en": "What has passed? The meteorite is cold and closed and silent. The sand of centuries lies untouched upon it. But here in our hands are the treasures we found within.",
+          "cn": "发生了什么？陨石已经合上，冰冷而沉默。沙土堆积其上，显示这数百年来从未有人涉足。但此刻在我们的手中的，是我们在陨石之中发现的宝藏。"
+        }
+      }
+    },
+    {
+      "id": "vaultloneandlevelsands2",
+      "name": "Beginning an Expedition: Lagun's Tomb",
+      "name_cn": "探险开始：拉贡之墓",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Lagun's Tomb will be difficult to find in the desert. We must navigate by the stars. Its door has long resisted the assaults of tomb-robbers. We must bring what force we can. There will likely be a curse. We must be prepared for it. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "拉贡之墓地处沙漠，难以发现。我们必须借助星星确认方向。墓门经受住了盗墓者长久以来的攻击。我们必须拿出我们拥有的所有武力。那里宛如诅咒。我们必须做好万全的准备。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "In the central chamber, Lagun, the once-immortal Long, lies peacefully naked on a sandalwood bier. He is perfectly preserved - a slender, dark-skinned man in excellent physical health - but at our approach, he crumbles into blackened flakes like fallen leaves. Objects glint from the remains.",
+          "cn": "在中央大厅中，拉贡，那位曾经不死的长生者，赤裸而平静地横躺在檀香制成的棺枢之上。他被保存得很好——身形修长、皮肤黝黑、无比健康——但当我们靠近时，他化为黑色的碎块，落叶般地分崩离析。残渣中有东西发出微光。"
+        },
+        "success_desc": {
+          "en": "We find a pocket-watch, a book, a quantity of Algerian currency - all from our own era. He must have come and gone many times from this place before he resigned himself to his final rest. On the back of the watch, we see engraved the closed eye of the Long society called the Obliviates...",
+          "cn": "我们发现一块怀表，一本书，一些阿尔及利亚货币——都是我们这个时代的产物。他在听任自己最终安息之前，一定多次往返此处。在怀表的背面，我们发现它雕刻着名为忘却会的长生者社团的标志——闭合的眼睛。"
+        }
+      }
+    },
+    {
+      "id": "vaultloneandlevelsands3",
+      "name": "Beginning an Expedition: Messana",
+      "name_cn": "探险开始：墨萨拿",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Messana, where the villagers routinely remain hale and vigorous past their hundredth year. They will resist attempts to pry into their secrets, and they may have curses at their disposal - if we can even penetrate the desert to reach them. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "墨萨拿的村民在过去百年都保持着强健的体魄和充沛的活力。他们会阻止任何挖掘他们秘密的企图，甚至很可能拥有操纵诅咒的能力——前提是我们得先设法穿过沙漠，与他们接触。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "Beneath the granary, we find the deepest secret of Messana: an altar on which are displayed segments of an embalmed human body. Little of it still remains. The visitors must have been feasting on this for years. Is it Long-flesh? That might account for their longevity.",
+          "cn": "在粮仓下方，我们发现了墨萨拿最深的秘密：一座祭坛，上面摆放着人类尸体的残肢断臂，已做过防腐处理。仅有很少的部分得以留存。数年来访客们一定有在大吃这副身躯。这是长生者的肉吗？这也许能解释他们的长寿。"
+        },
+        "success_desc": {
+          "en": "Items of note are displayed on the walls. They might be trophies from unwise travellers, or they might have been possessions of the Long. There is no indication whether the Long was a willing victim, an ancestor, or a prisoner, and we'll learn nothing from the villagers now. A Greek inscription on the altar reads: FOR THE FLOOD.",
+          "cn": "墙上陈列着值得注意的物什。可能是从不明智的旅客身上获得的战利品，也可能是长生者的所有物。没有迹象表明那名长生者究竟是自愿的牺牲者，祖先，还是阶下囚，现在我们也无法从村民处得知更多。祭坛上以希腊文写就铭文：<b>献给洪水</b>。"
+        }
+      }
+    },
+    {
+      "id": "vaultloneandlevelsands4",
+      "name": "Beginning an Expedition: the Temple of Seven Coils",
+      "name_cn": "探险开始：七蟠寺",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "'The site will tolerate no life', says the journal of Zane Marc Gentis. So we will find no serpents there. But the place sounds cursed, and Gentis recorded a door that his expedition could not open. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "“这个地方禁止生命的存在”，赞恩·马克·甘提斯在手记中如是写道。因此我们不会在那里发现蛇。此外那个地方听起来被诅咒了，并且甘提斯记录了他在探索中没能开启的门。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "'Seven Coils', said Gentis' journal, but the idol within is an impossible heap of stone serpent - coil upon coil, a knot that dizzies the soul. Wrongness squirms in the temple corners. We should search the place quickly, before its influences overwhelm us.",
+          "cn": "“七蟠寺”，甘提斯在手记中如此称呼它，位于其中的偶像是由石头奇迹般堆叠而成的石蛇——一重又一重，形成了令灵魂晕眩的蛇结。不安的预感蔓延至庙宇的每个角落。在这种感觉压垮我们之前，我们应迅速搜查这个地方。"
+        },
+        "success_desc": {
+          "en": "The temple is as clean as if it were newly swept. No sand has crossed the threshold, no dust settled on the idol's horrible twists. We find things tucked away here and there amid the coils, as if they had been playfully left for us to find, or as if the idol had coiled round them.",
+          "cn": "寺庙干净得如同刚刚清扫过。门槛上没有沙土，恐怖而盘旋回转的石蛇上亦一尘不染。在其回旋之中我们不时找到一些藏品，仿佛它们是调皮地留给我们找到，亦或是偶像盘旋在它们之上。"
+        }
+      }
+    },
+    {
+      "id": "vaultloneandlevelsandsdefault",
+      "name": "Beginning an Expedition: Miah",
+      "name_cn": "探险开始：弥阿",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The city, Miah, has long been sunk in the desert. Only ghosts walk its streets. Anything left there will be well-hidden. And the Vagabond's curse hangs over it all: her revenge on the place that wronged her so. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "弥阿，陷入沙漠已久的城市。仅有幽灵还在市街徘徊。任何尚存之物都会被彻底掩藏起来。浪游旅人的诅咒笼罩着整座城市：这座城市曾亏待她，而这就是她的复仇。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The wind of Miah is a pettish wind. It tugs at our garments like a needy child; it tosses sand in our faces; it whines among the dust-choked stones. The desolation of the city is not quite absolute. There are pillars, arches, sand-blinded statues, steps to nowhere.",
+          "cn": "弥阿的风十分任性。它像个穷孩子一样拉扯着我们的衣服，向我们的脸上投掷沙土，在布满尘土的石块中哀鸣。这座荒废之城并不单调。这里有柱子、拱门、被沙子蒙蔽的雕像，和不知延伸到何处的脚印。"
+        },
+        "success_desc": {
+          "en": "We find relics in an abandoned chamber which might equally have been a cellar or a shrine. The walls are cracked and sand has poured through. When we return to the surface, the wind is rising. It almost tugs us from our feet. Perhaps it missed us.",
+          "cn": "我们在一个可能是地窖或神殿的废弃房间里发现了遗迹。房间的墙壁开裂，裂缝中流出沙土。当我们回到地面时，风正在上行，几乎将我们吹至空中。也许它很是想念我们。"
+        }
+      }
+    },
+    {
+      "id": "vaulteveningisles1",
+      "name": "An Expedition to Raven Isle",
+      "name_cn": "探险渡鸦屿",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The chiefest peril of Raven Isle is the soucouyants, the fallen immortals. But the way there across the sea will be hard, and the isle is full of voices which carry the curse of visions. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "渡鸦屿最大的危险是索寇焰特——堕落的不死者们。此外还有艰难的海上航行，和充满岛屿的幻像诅咒之声。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "A mountain cave befouled by soucouyants. On the walls they have scrawled their sad histories, in a hundred languages, in script of striking elegance: the creatures they were, the histories they owned, the children they mourn.",
+          "cn": "一个被索寇焰特涂脏的山洞。它们在洞壁上涂写它们悲哀的历史，用一百种语言，惊人典雅的字迹记录下：它们自身的生态，拥有过的历史，悲悼过的孩童。"
+        },
+        "success_desc": {
+          "en": "At the back of the cave, the soucouyants have made a sort of museum-nest. The fine clothes they wore once, adorned now with raven feathers. A little miscellany of cameo portraits and rotting family albums. A few items of power.",
+          "cn": "在山洞深处，索寇焰特放置了一个像是展示用的巢。有它们曾经穿过，现在饰以渡鸦羽毛的细布衣衫。有一小堆浮雕小肖像和腐烂的家族相簿。有几件存有法力的器物。"
+        }
+      }
+    },
+    {
+      "id": "vaulteveningisles2",
+      "name": "An Expedition to Fort Geryk",
+      "name_cn": "探险格里克堡",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "A crumbling sandstone fortress broods over an empty bay. At night the dead walk. By day they lie in wait. In a sealed vault, the old governor's hoard awaits its plunderer. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "一座坍圮的砂岩堡垒笼罩着空荡荡的海湾。死者至黑夜则出走，白昼则蛰伏。在一间闭锁的地下宝库中，旧督官的财宝正等待下一任主人来夺得。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The vault of Fort Geryk. A mosaic has been laid out as a game board of stupendous size and complexity: a map of the Evening Isles. The sea-tiles are lapis; the islands are nephrite and obsidian. There are toy ships and tin soldiers. The isle of St Thomas is sieged. Raven Isle is crowded with black chess-queens.",
+          "cn": "格里克堡的地下金库。地面上用石子镶着一副面积广大，错综复杂的马赛克棋盘——薄暮群屿的地图。上面用青金石表示海，墨玉和黑曜石表示岛屿，还摆放着玩具船和锡兵。其中圣托马斯屿遭到围攻，渡鸦屿则挤满了黑色的王后棋子。"
+        },
+        "success_desc": {
+          "en": "Among the game-pieces, items of true power have been used as temporary markers. Was this an attempt to hide them? Or did the Governor know nothing of their real worth?",
+          "cn": "棋子和玩具中混杂着充当地图标识的，含有真正法力的物件。这样做是为了鱼龙混杂，掩人耳目？还是因为督官对它们真正的价值一无所知？"
+        }
+      }
+    },
+    {
+      "id": "vaulteveningisles3",
+      "name": "An Expedition to the Wreck of the Christabel",
+      "name_cn": "探险克丽斯塔贝号船骸",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "Storms have lifted the Christabel from the sea to lay it on a reef, but a wreck with such a sad end will carry a curse. And the beast that once loved it remains there still. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "风暴将克丽斯塔贝号从海中托起，放在礁石上。然而下场如此悲伤的船骸必有诅咒缠身。爱过它的海兽也依然没有离开。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "The ship still stinks of the sea. A sluggish octopus crawls from our lamp-light. The timbers are half-coral. Where are the bodies of the crew? Only one survivor was recorded. Did the serpent devour the rest?",
+          "cn": "船仍旧散发出浓烈的海的味道。一只行动迟缓的章鱼爬着逃开我们的灯光。木料已半被珊瑚覆盖。船员的尸体哪里去了？记录上只有一人生还。是巨蛇吞吃了其他人？"
+        },
+        "success_desc": {
+          "en": "We've found the captain's cabin. The log-book is here, but its pages are a mass of salt-caked pulp. Someone has scratched a closed-eye symbol on the desk where it was chained. Beneath the symbol is a hidden drawer in the desk, which we can wrench open to loot its treasures...",
+          "cn": "我们找到了船长室。航海日志在里面，纸页已经成了一团结着盐晶的浆糊。有人在拴着日志的书桌上刻下了一个闭阖的眼睛图案。图案下是一个暗屉，我们可以把它拽开掏空里面的财宝……"
+        }
+      }
+    },
+    {
+      "id": "vaulteveningisles4",
+      "name": "An Expedition to St Tentreto of the Deep Door",
+      "name_cn": "探险深邃之门的圣滕特雷之僧院",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "The monks of St Tentreto will not be inclined to allow us to pass. They will hide their treasures well, and if we manage to seize them, no doubt they will pursue us with curses. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "圣滕特雷托的僧侣不会愿意让我们通过。他们会将宝物藏起，如果宝物被我们所夺，他们无疑会咒骂着追捕我们。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "Here we are in the cave of the deep sea-pool, beneath the monastery. Dark water shivers in the light of our lamps. As we approach, the level of the water suddenly drops. There are no tides in this sea. What's happening?",
+          "cn": "我们来到僧院下面海水深潭所在的岩洞。幽暗的水面在我们的灯光下震颤。当我们接近时，水位突然下降。这片海域没有涨潮落潮，发生了什么？"
+        },
+        "success_desc": {
+          "en": "We have profaned the cave! Already the Hours withdraw their blessing. The water sinks away, leaving the pool empty. Offerings lie on its bed. We must snatch them up quickly. Already the first tremors have begun - the forerunners of the long-delayed earthquake that the monks held at bay for so long.",
+          "cn": "我们亵渎了这座岩洞！众司辰已经收回了他们的祝福。海水褪去，水池干涸，供物都落在池底。我们必须抓紧时间拿取。第一次震动已经开始——这是被僧侣一再延后的地震终于到来的征兆。"
+        }
+      }
+    },
+    {
+      "id": "vaulteveningislesdefault",
+      "name": "An Expedition to Port Noon",
+      "name_cn": "探险午港",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "If we can cross the sea to Port Noon, if we can defeat the Long who do not die, if we can breach their private vaults, still we must resist the temptation of visions. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "如果我们能够成功跨过海面到达午港，战胜不死的长生者，掘开他们的私人金库的话，最后我们还须要抵抗住幻像的诱惑。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "This is the secret sub-cellar of the Hotel Ciervo. The walls are whitewashed; the floor is freshly scrubbed; shelves bulge with oddities. A caged man with a wild beard peers morosely at you from the corner. 'Again?' he says. 'Or are you a different lot? No, I don't need rescuing, thank you. It's much worse out there.' ",
+          "cn": "这里是希耶尔沃旅店秘密的半地下室。墙上刷着白石灰，地板刚擦洗过，架子上各种奇古怪的物件多到塞不下。一个关在笼子里，胡须疯长的男人从笼子所在的屋角愁眉苦脸地盯着你看。“又来？”他说，“还是说你是另外一拨？不，我不需要人救，谢谢。外面比里面糟多了。”"
+        },
+        "success_desc": {
+          "en": "'Grab what you can, quickly!' the caged man hisses. 'They'll be back soon. Only please leave the gladius. I brought that all the way from Gallaecia, back in the day. There, that shelf's good. Hurry, they're coming! You can escape up the delivery stairs.'",
+          "cn": "“能拿多少拿多少，抓紧！”笼中人压低声音道。“他们快要回来了。只求你留下那把罗马短剑。那是我当年从加拉埃西亚大老远带来的。那儿，架子上的可以拿。快，他们来了！你可以从货用楼梯爬出去。”"
+        }
+      }
+    },
+    {
+      "id": "vaultfloating1",
+      "name": "Beginning an Expedition: the 'Hebe Stanton'",
+      "name_cn": "探险开始：赫柏·斯坦顿号",
+      "aspects": {},
+      "type": "vault",
+      "descriptions": {
+        "setup_start": {
+          "en": "It is rare for passenger vessels to visit the grim island where the 'Hebe Stanton' is docking - but we can charter a fishing boat, and trust the sea behaves. The real work, of passing guards and doors, will begin if we get on board. [Expeditions need at least one Funds per obstacle. Followers will defeat obstacles. If you run out of Funds or Followers, the Expedition ends.]",
+          "cn": "客船是极少造访赫柏·斯坦顿号停泊的这座阴沉的海岛的——但我们可以包下一艘渔船，然后听凭海浪的安排。穿过守卫与重重门关的真正工作始于我们登上赫柏·斯坦顿号后。[探险时，突破一个阻碍需消耗至少一份资金；阻碍由追随者负责突破。资金或追随者耗尽时，探险将终止。]"
+        },
+        "success_start": {
+          "en": "There are few passengers on board - no wonder, if this cheerless icy isle was the ship's destination. But there's at least one passenger - someone who had protected their cabin door with more than physical locks. They must have gone ashore. They might return at any moment - ",
+          "cn": "船上的乘客寥寥—难怪如此，既然这艘船的目的地是这座这沉闷而冰冷的岛屿。不过乘客至少有一名之数——此人用不止是物理上的门锁守住了他的舱门。他肯定上岸去了。他随时可能回来——"
+        },
+        "success_desc": {
+          "en": "We empty the luggage, upend the books to shake them, turn pictures to check the backs. We find clothes, tickets, maps, nothing out of the ordinary... although there is a curious translucent material like a sheet of snakeskin draped over a chair-back. At last, when we slash the mattress to search its stuffing, we find a little collection of ivory scroll-cases.",
+          "cn": "我们把行李全部打开，把书本倒过来来回抖动，图画翻过来检查背面。我们找到了衣物、票据、地图，没有什么出格的东西……除了一片奇妙的、半透明的物质，状如蛇蜕，搭在椅子背上。最后，我们在劈开床垫搜查里面的填充物时，找到了一小堆象牙制卷轴筒。"
+        }
+      }
     }
   ]
 }

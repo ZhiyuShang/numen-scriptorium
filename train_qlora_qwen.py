@@ -12,24 +12,22 @@ from transformers import (
 )
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
-# ================= 用户需确认 / 修改的配置 =================
-
-BASE_MODEL = "Qwen/Qwen3-0.6B"   # HF 上的模型名
+BASE_MODEL = "Qwen/Qwen3-0.6B"   # Model name 
 TRAIN_FILE = os.path.join("data", "train.jsonl")
 OUTPUT_DIR = os.path.join("outputs", "qwen3_0_6b_boh_qlora")
 
 MICRO_BATCH_SIZE = 1
 GRADIENT_ACCUM_STEPS = 8
-NUM_EPOCHS = 1.5          # 先跑 1~2 轮看效果
+NUM_EPOCHS = 1.5          # Run 1~2 epochs first to see effects
 LEARNING_RATE = 5e-5
-MAX_SEQ_LEN = 768         # 你的段落有点长，768 比 512 安全
+MAX_SEQ_LEN = 768       
 
 # =====================================================
 
 
 def format_example(example: Dict) -> Dict:
     """
-    将一条 {"instruction", "input", "output"} 样本拼成单条文本序列。
+    Combine a {"instruction", "input", "output"} sample into a single text sequence.
     """
     instruction = example.get("instruction", "").strip()
     inp = example.get("input", "").strip()
@@ -46,7 +44,7 @@ def format_example(example: Dict) -> Dict:
 
 def encode_dataset(tokenizer, dataset):
     """
-    使用 tokenizer 编码数据集，并把 labels 设为 input_ids（标准 SFT）
+    Encode dataset using tokenizer, and set labels to input_ids (standard SFT)
     """
     def tokenize_fn(batch):
         return tokenizer(
@@ -70,7 +68,7 @@ def encode_dataset(tokenizer, dataset):
 
 
 def main():
-    # 1. tokenizer
+    # 1. Tokenizer
     tokenizer = AutoTokenizer.from_pretrained(
         BASE_MODEL,
         trust_remote_code=True,
@@ -78,7 +76,7 @@ def main():
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    # 2. 4bit 量化配置
+    # 2. 4bit quantization config
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_use_double_quant=True,
@@ -86,7 +84,7 @@ def main():
         bnb_4bit_compute_dtype=torch.bfloat16,
     )
 
-    # 3. 加载基座模型（4bit）
+    # 3. Load base model (4bit)
     model = AutoModelForCausalLM.from_pretrained(
         BASE_MODEL,
         quantization_config=bnb_config,
@@ -94,10 +92,10 @@ def main():
         trust_remote_code=True,
     )
 
-    # 4. 为 k-bit 训练做准备
+    # 4. Prepare for k-bit training
     model = prepare_model_for_kbit_training(model)
 
-    # 5. LoRA Config（Qwen3 target_modules）
+    # 5. LoRA Config (Qwen3 target_modules)
     lora_config = LoraConfig(
         r=8,
         lora_alpha=16,
@@ -109,7 +107,7 @@ def main():
     model = get_peft_model(model, lora_config)
     model.print_trainable_parameters()
 
-    # 6. 数据集
+    # 6. Dataset
     dataset = load_dataset(
         "json",
         data_files={"train": TRAIN_FILE},
@@ -117,7 +115,7 @@ def main():
     )
     tokenized_train = encode_dataset(tokenizer, dataset)
 
-    # 7. 训练参数
+    # 7. Training arguments
     training_args = TrainingArguments(
         output_dir=OUTPUT_DIR,
         per_device_train_batch_size=MICRO_BATCH_SIZE,
@@ -137,7 +135,7 @@ def main():
         logging_steps=10,
 
         save_strategy="epoch",
-        save_steps=500,       # 被 save_strategy="epoch" 覆盖，但参数存在无害
+        save_steps=500,       # Overridden by save_strategy="epoch", but harmless to exist
         save_total_limit=2,
 
         fp16=False,
@@ -154,14 +152,14 @@ def main():
         tokenizer=tokenizer,
     )
 
-    # 9. 训练
+    # 9. Train
     trainer.train()
 
-    # 10. 保存 LoRA
+    # 10. Save LoRA
     trainer.save_model()
     tokenizer.save_pretrained(OUTPUT_DIR)
 
-    print(f"训练完成！LoRA 适配器和 tokenizer 已保存到：{OUTPUT_DIR}")
+    print(f"Training complete! LoRA adapter and tokenizer saved to: {OUTPUT_DIR}")
 
 
 if __name__ == "__main__":
