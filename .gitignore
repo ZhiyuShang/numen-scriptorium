@@ -1,0 +1,45 @@
+# Python cache and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Generated JSON files
+hours.json
+lore_entities.json
+
+# Python virtual environments
+.env
+.venv
+venv/
+ENV/
+env.bak/
+env/
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+
+# Python specific
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*~
+~*
+
+# Merge script (if it's generated/temporary)
+merge_hours.py
+future.txt

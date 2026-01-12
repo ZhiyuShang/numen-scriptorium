@@ -318,7 +318,8 @@ def run():
         if group_key == "visitors":
             visitors_base.append(item_data)
         elif group_key == "incidents":
-            incidents_base.append(item_data)
+            if item['id'].split('.')[0] == 'incident':
+                incidents_base.append(item_data)
         elif group_key == "weather":
             weather_entries.append(item)  # will convert below
         else:
@@ -359,8 +360,11 @@ def run():
                 visitors_base.append(base)
 
             xexts_emb = emb.get("xexts") or {}
+            xexts_emb_cn = emb.get("xexts_cn") or {}
+
             if xexts_emb:
                 base.setdefault("embarking_xexts", {}).update(xexts_emb)
+                base['embarking_xexts']['dissatisfying_cn'] = xexts_emb_cn.get('dissatisfying', "")
 
     grouped["visitors"].extend(visitors_base)
 

@@ -28716,296 +28716,6 @@
       "icon": "incident.consultation"
     },
     {
-      "id": "affair.box",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.box"
-    },
-    {
-      "id": "affair.revolution",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.revolution"
-    },
-    {
-      "id": "affair.heist",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.heist"
-    },
-    {
-      "id": "affair.stalk",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.stalk"
-    },
-    {
-      "id": "affair.wound",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.wound"
-    },
-    {
-      "id": "affair.intrusion",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.intrusion"
-    },
-    {
-      "id": "affair.pan",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.pan"
-    },
-    {
-      "id": "affair.curse",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.curse"
-    },
-    {
-      "id": "affair.omen.dawn",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.omen.dawn"
-    },
-    {
-      "id": "affair.omen.horizon",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.omen.horizon"
-    },
-    {
-      "id": "affair.mob",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.mob"
-    },
-    {
-      "id": "affair.rising",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.rising"
-    },
-    {
-      "id": "affair.lost.find",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.lost.find"
-    },
-    {
-      "id": "affair.project.ingenious",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.project.ingenious"
-    },
-    {
-      "id": "affair.project.solar",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.project.solar"
-    },
-    {
-      "id": "affair.mystical",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.mystical"
-    },
-    {
-      "id": "affair.opera.apollo",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.opera.apollo"
-    },
-    {
-      "id": "affair.opera.wings",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.opera.wings"
-    },
-    {
-      "id": "affair.box",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.box"
-    },
-    {
-      "id": "affair.rite.renewal",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.rite.renewal"
-    },
-    {
-      "id": "affair.rite.awakening",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.rite.awakening"
-    },
-    {
-      "id": "affair.hunt.changing",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.hunt.changing"
-    },
-    {
-      "id": "affair.observe.scaly",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.observe.scaly"
-    },
-    {
-      "id": "affair.numa.grail.a",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.numa.grail.a"
-    },
-    {
-      "id": "affair.numa.grail.b",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.numa.grail.b"
-    },
-    {
-      "id": "affair.numa.moon.a",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.numa.moon.a"
-    },
-    {
-      "id": "affair.numa.moon.b",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.numa.moon.b"
-    },
-    {
-      "id": "affair.numa.winter.a",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.numa.winter.a"
-    },
-    {
-      "id": "affair.numa.wood",
-      "name": "Unknown",
-      "name_cn": "Unknown",
-      "description": "",
-      "description_cn": "",
-      "aspects": {},
-      "type": "incident",
-      "icon": "affair.numa.wood"
-    },
-    {
       "id": "incident.box",
       "name": "The Affair of the Messenger's Casket",
       "name_cn": "信使灵柩事件",
@@ -31063,7 +30773,8 @@
       "type": "visitor",
       "icon": "agdistis",
       "embarking_xexts": {
-        "dissatisfying": "'You have nothing? No matter, no matter! There's always another time.'"
+        "dissatisfying": "'You have nothing? No matter, no matter! There's always another time.'",
+        "dissatisfying_cn": "“你什么都没有？没关系，没关系！总有机会的。”"
       }
     },
     {
@@ -31089,7 +30800,8 @@
       "type": "visitor",
       "icon": "aladim",
       "embarking_xexts": {
-        "dissatisfying": "'Mm. Well, no doubt we shall see each other again.'"
+        "dissatisfying": "'Mm. Well, no doubt we shall see each other again.'",
+        "dissatisfying_cn": "“嗯。好吧，我们定能再见的。”"
       }
     },
     {
@@ -31113,7 +30825,8 @@
       "type": "visitor",
       "icon": "arthur",
       "embarking_xexts": {
-        "dissatisfying": "'Then I'll have to find my enlightenment somewhere else. Good day to you.'"
+        "dissatisfying": "'Then I'll have to find my enlightenment somewhere else. Good day to you.'",
+        "dissatisfying_cn": "“那我只能去别处寻找启迪了。祝你有美好的一天。”"
       }
     },
     {
@@ -31140,7 +30853,8 @@
       "type": "visitor",
       "icon": "arun",
       "embarking_xexts": {
-        "dissatisfying": "'Never mind. The traveller is always returning, no? So if I come back later, am I returning then? Or am I returning now?'"
+        "dissatisfying": "'Never mind. The traveller is always returning, no? So if I come back later, am I returning then? Or am I returning now?'",
+        "dissatisfying_cn": "“不要紧。旅者总会归来，不是吗？所以若我迟些时日回返，是那时算我踏上归途？还是此时算我踏上归途？”"
       }
     },
     {
@@ -31182,7 +30896,8 @@
       "type": "visitor",
       "icon": "azita",
       "embarking_xexts": {
-        "dissatisfying": "'My move, then...'"
+        "dissatisfying": "'My move, then...'",
+        "dissatisfying_cn": "“那么，轮到我走了……”"
       }
     },
     {
@@ -31206,7 +30921,8 @@
       "type": "visitor",
       "icon": "chaima",
       "embarking_xexts": {
-        "dissatisfying": "'And your weather. Your weather is also a disappointment.'"
+        "dissatisfying": "'And your weather. Your weather is also a disappointment.'",
+        "dissatisfying_cn": "“还有这儿的天气。这儿的天气也令人失望。”"
       }
     },
     {
@@ -31231,7 +30947,8 @@
       "type": "visitor",
       "icon": "connie",
       "embarking_xexts": {
-        "dissatisfying": "'I can't believe we used to fund this place.'"
+        "dissatisfying": "'I can't believe we used to fund this place.'",
+        "dissatisfying_cn": "“我不敢相信我们曾经资助过这个地方。”"
       }
     },
     {
@@ -31254,7 +30971,8 @@
       "type": "visitor",
       "icon": "coquille",
       "embarking_xexts": {
-        "dissatisfying": "'Oh, sweetie. I'm not disappointed, just... well, perhaps I'm a <i>little</i> disappointed.'"
+        "dissatisfying": "'Oh, sweetie. I'm not disappointed, just... well, perhaps I'm a <i>little</i> disappointed.'",
+        "dissatisfying_cn": "“噢，亲爱的。我没有失望，只是……好吧，也许我是<i>有点儿</i>失望。”"
       }
     },
     {
@@ -31278,7 +30996,8 @@
       "type": "visitor",
       "icon": "corso",
       "embarking_xexts": {
-        "dissatisfying": "'Well, I have other contacts...'"
+        "dissatisfying": "'Well, I have other contacts...'",
+        "dissatisfying_cn": "“好吧，我还有其他人能联系……”"
       }
     },
     {
@@ -31301,7 +31020,8 @@
       "type": "visitor",
       "icon": "dagmar",
       "embarking_xexts": {
-        "dissatisfying": "'Not to worry! Nice to get a bit of sea air.'"
+        "dissatisfying": "'Not to worry! Nice to get a bit of sea air.'",
+        "dissatisfying_cn": "“别担心！能呼吸点海边的空气真好。”"
       }
     },
     {
@@ -31322,7 +31042,8 @@
       "type": "visitor",
       "icon": "douglas",
       "embarking_xexts": {
-        "dissatisfying": "'Well, mustn't grumble.'"
+        "dissatisfying": "'Well, mustn't grumble.'",
+        "dissatisfying_cn": "“好吧，没什么好抱怨的。”"
       }
     },
     {
@@ -31345,7 +31066,8 @@
       "type": "visitor",
       "icon": "ehsan",
       "embarking_xexts": {
-        "dissatisfying": "'I know the House has been through hard times. But though much is taken, much abides, does it not? Another time.'"
+        "dissatisfying": "'I know the House has been through hard times. But though much is taken, much abides, does it not? Another time.'",
+        "dissatisfying_cn": "“我知道居屋经历过一段艰难的时期。但失落虽多，留存亦多，不是吗？下次吧。”"
       }
     },
     {
@@ -31365,7 +31087,8 @@
       "type": "visitor",
       "icon": "franklin",
       "embarking_xexts": {
-        "dissatisfying": "'That's the bloody thing about bloody libraries."
+        "dissatisfying": "'That's the bloody thing about bloody libraries.",
+        "dissatisfying_cn": "“这就是该死的图书馆的该死之处。”"
       }
     },
     {
@@ -31387,7 +31110,8 @@
       "type": "visitor",
       "icon": "fraser",
       "embarking_xexts": {
-        "dissatisfying": "'This would not have happened in the time of the Curia of the Isle. Goodbye.'"
+        "dissatisfying": "'This would not have happened in the time of the Curia of the Isle. Goodbye.'",
+        "dissatisfying_cn": "“这种事在岛屿决议会时期是绝不会发生的。再见。”"
       }
     },
     {
@@ -31412,7 +31136,8 @@
       "type": "visitor",
       "icon": "hokobald",
       "embarking_xexts": {
-        "dissatisfying": "'Why is this damned place always so damned desperate to waste my damned time?'"
+        "dissatisfying": "'Why is this damned place always so damned desperate to waste my damned time?'",
+        "dissatisfying_cn": "“为什么这个该死的鬼地方总是那么该死地想浪费我那该死的时间？”"
       }
     },
     {
@@ -31434,7 +31159,8 @@
       "type": "visitor",
       "icon": "julian",
       "embarking_xexts": {
-        "dissatisfying": "'Sometimes, the end comes sooner. Sometimes, there's no damned end to it at all.'"
+        "dissatisfying": "'Sometimes, the end comes sooner. Sometimes, there's no damned end to it at all.'",
+        "dissatisfying_cn": "“有的时候，结局来得更快。有的时候，该死的结局压根就不存在。”"
       }
     },
     {
@@ -31458,7 +31184,8 @@
       "type": "visitor",
       "icon": "morgen",
       "embarking_xexts": {
-        "dissatisfying": "'I arrive hungry. I leave <i>famished</i>. Someone will regret that... but not you, not today.'"
+        "dissatisfying": "'I arrive hungry. I leave <i>famished</i>. Someone will regret that... but not you, not today.'",
+        "dissatisfying_cn": "“我来时已肚子空空，去时更是<i>饥肠辘辘</i>。有人将为此而后悔……但不是你，不是今天。”"
       }
     },
     {
@@ -31482,7 +31209,8 @@
       "type": "visitor",
       "icon": "olympe",
       "embarking_xexts": {
-        "dissatisfying": "'<i>C'est la vie.</i>'"
+        "dissatisfying": "'<i>C'est la vie.</i>'",
+        "dissatisfying_cn": "“<i>C'est la vie</i>（这就是生活）。”"
       }
     },
     {
@@ -31502,7 +31230,8 @@
       "type": "visitor",
       "icon": "rowena",
       "embarking_xexts": {
-        "dissatisfying": "The Trust expects better...'"
+        "dissatisfying": "The Trust expects better...'",
+        "dissatisfying_cn": "“信托期望的比这更好……”"
       }
     },
     {
@@ -31527,7 +31256,8 @@
       "type": "visitor",
       "icon": "serena",
       "embarking_xexts": {
-        "dissatisfying": "'So much has been lost, hasn't it? I don't envy you. Good luck.'"
+        "dissatisfying": "'So much has been lost, hasn't it? I don't envy you. Good luck.'",
+        "dissatisfying_cn": "“失落甚多，不是吗？我不会埋怨你的。祝你好运。”"
       }
     },
     {
@@ -31553,7 +31283,8 @@
       "type": "visitor",
       "icon": "stanislav",
       "embarking_xexts": {
-        "dissatisfying": "'As God wills, I suppose. (Don't ask me which God!)'"
+        "dissatisfying": "'As God wills, I suppose. (Don't ask me which God!)'",
+        "dissatisfying_cn": "“我想这是神的旨意。（别问我是哪个神！）”"
       }
     },
     {
@@ -31577,7 +31308,8 @@
       "type": "visitor",
       "icon": "yvette",
       "embarking_xexts": {
-        "dissatisfying": "'Perhaps I'll never understand...'"
+        "dissatisfying": "'Perhaps I'll never understand...'",
+        "dissatisfying_cn": "“也许我永远无法理解……”"
       }
     },
     {
@@ -31602,7 +31334,8 @@
       "type": "visitor",
       "icon": "zachary",
       "embarking_xexts": {
-        "dissatisfying": "Wakefield says nothing at all. But then, he seldom does."
+        "dissatisfying": "Wakefield says nothing at all. But then, he seldom does.",
+        "dissatisfying_cn": "韦克菲尔德什么也没有说。但他很少这么做。"
       }
     },
     {
@@ -31619,7 +31352,8 @@
       "type": "visitor",
       "icon": "embarking_auntmopsy",
       "embarking_xexts": {
-        "dissatisfying": "'The Mare's blessings on you. And your Tree.'"
+        "dissatisfying": "'The Mare's blessings on you. And your Tree.'",
+        "dissatisfying_cn": "“愿牝马祝福你。还有你的树。”"
       }
     }
   ],

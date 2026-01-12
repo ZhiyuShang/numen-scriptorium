@@ -67,25 +67,6 @@ def load_json_file(filepath):
     print(f"Failed to load {filepath} with any encoding. Last error: {last_error}")
     return None
 
-# def load_json_file(filepath):
-#     encodings = ['utf-8-sig', 'utf-16', 'utf-8', 'latin-1']
-#     for enc in encodings:
-#         try:
-#             with open(filepath, 'r', encoding=enc) as f:
-#                 return json.load(f, strict=False)
-#         except UnicodeDecodeError:
-#             continue
-#         except json.JSONDecodeError as e:
-#             print(f"JSON Error in {filepath} with {enc}: {e}")
-#             # Try to clean up JSON?
-#             continue
-#         except Exception as e:
-#             print(f"Error loading {filepath} with {enc}: {e}")
-#             return None
-    
-#     print(f"Failed to load {filepath} with any encoding.")
-#     return None
-
 def get_id(item):
     """Returns the value of 'id' or 'ID' from the item."""
     if 'id' in item:

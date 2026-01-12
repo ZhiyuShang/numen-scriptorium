@@ -1,0 +1,804 @@
+[
+  {
+    "id": "hour.horned_axe",
+    "sourceId": "hour_XIII",
+    "type": "hour",
+    "name_cn": "双角斧",
+    "name_en": "The Horned Axe",
+    "aliases": [
+      "双角斧",
+      "The Horned Axe"
+    ],
+    "origin": ["Stone"],
+    "factions": [
+      "Knot"
+    ],
+    "aspects": [
+      "Knock",
+      "Winter",
+      "Scale",
+      "Edge"
+    ],
+    "gender": "阴性",
+    "desc_cn": "被放逐的古老守卫。她在界限之处徘徊，她是那把将完整之物劈开的斧头，严酷而公正。"
+  },
+  {
+    "id": "hour.seven_coils",
+    "sourceId": "hour_XXXV",
+    "type": "hour",
+    "name_cn": "七蟠",
+    "name_en": "The Seven-Coils",
+    "aliases": [
+      "七蟠",
+      "The Seven-Coils"
+    ],
+    "origin": ["Stone"],
+    "factions": [],
+    "aspects": [
+      "Knock",
+      "Secret Histories",
+      "Scale",
+      "Edge"
+    ],
+    "gender": "阴性",
+    "desc_cn": "在神灵降临之前的古老存在。它们盘踞在世界的基座上，每一层盘绕都压碎了一个时代。"
+  },
+  {
+    "id": "hour.wheel",
+    "sourceId": "hour_XXXVI",
+    "type": "hour",
+    "name_cn": "转轮",
+    "name_en": "The Wheel",
+    "aliases": [
+      "转轮",
+      "The Wheel"
+    ],
+    "origin": ["Stone"],
+    "factions": [],
+    "aspects": [
+      "Heart",
+      "Moth",
+      "Nectar"
+    ],
+    "gender": "阳性",
+    "desc_cn": "时间不是直线，而是碾碎一切的轮盘。曾经发生的必将再次发生，无法逃避，无法停止。"
+  },
+  {
+    "id": "hour.flint",
+    "sourceId": "hour_XXXVII",
+    "type": "hour",
+    "name_cn": "燧石",
+    "name_en": "The Flint",
+    "aliases": [
+      "燧石",
+      "The Flint"
+    ],
+    "origin": ["Stone"],
+    "factions": [],
+    "aspects": [
+      "Forge",
+      "Sky"
+    ],
+    "gender": "阴性",
+    "desc_cn": "最初的火花来自石头的碰撞。她是冷酷的创造者，在没有温度的虚空中击打出第一缕光。"
+  },
+  {
+    "id": "hour.egg_unhatching",
+    "sourceId": "hour_XXXVIII",
+    "type": "hour",
+    "name_cn": "逆孵之卵",
+    "name_en": "The Egg Unhatching",
+    "aliases": [
+      "逆孵之卵",
+      "The Egg Unhatching"
+    ],
+    "origin": ["Stone"],
+    "factions": [],
+    "aspects": [
+      "Lantern",
+      "Sky",
+      "Scale"
+    ],
+    "gender": "阳性",
+    "desc_cn": "并不是所有的蛋都应该孵化。有些东西如果保持封闭，才是对世界最大的仁慈。那是未诞生的辉光。"
+  },
+  {
+    "id": "hour.tide",
+    "sourceId": "hour_XXXIX",
+    "type": "hour",
+    "name_cn": "浪潮",
+    "name_en": "The Tide",
+    "aliases": [
+      "浪潮",
+      "The Tide"
+    ],
+    "origin": ["Stone"],
+    "factions": [],
+    "aspects": [
+      "Grail",
+      "Moon"
+    ],
+    "gender": "阴性",
+    "desc_cn": "吞没一切的海洋。她不仅仅是水，她是贪婪的引力，将陆地、生命和理性全部拉入深渊。"
+  },
+  {
+    "id": "hour.moth",
+    "sourceId": "hour_O",
+    "type": "hour",
+    "name_cn": "飞蛾",
+    "name_en": "The Moth",
+    "aliases": [
+      "飞蛾",
+      "斑纹王",
+      "The Moth",
+      "The Dapple-King"
+    ],
+    "origin": ["Blood"],
+    "factions": [
+      "Wood"
+    ],
+    "aspects": [
+      "Moth"
+    ],
+    "gender": "阳性",
+    "desc_cn": "它是林地中躁动的拍翅声。它不是第一，但它是最后。它在理智的边缘剥去旧皮，寻找那不属于现世的光。"
+  },
+  {
+    "id": "hour.red_grail",
+    "sourceId": "hour_XV",
+    "type": "hour",
+    "name_cn": "赤杯",
+    "name_en": "The Red Grail",
+    "aliases": [
+      "赤杯",
+      "渴慕之母",
+      "山峦之母",
+      "伟大母亲",
+      "大母神",
+      "The Red Grail",
+      "The Mother of Mountains",
+      "The Great Mother",
+      "The Source"
+    ],
+    "origin": ["Blood"],
+    "factions": [
+      "Knot"
+    ],
+    "aspects": [
+      "Grail"
+    ],
+    "gender": "阴性",
+    "desc_cn": "永不满足的渴望。她是诱惑，是饥饿，是所有感觉的极致。我们因饮下而干渴，因诞生而受苦。"
+  },
+  {
+    "id": "hour.velvet",
+    "sourceId": "hour_II",
+    "type": "hour",
+    "name_cn": "丝毧",
+    "name_en": "The Velvet",
+    "aliases": [
+      "丝毧",
+      "丝绒",
+      "黑丝绒",
+      "The Velvet",
+      "The Black Velvet"
+    ],
+    "origin": ["Blood"],
+    "factions": [
+      "Wood"
+    ],
+    "aspects": [
+      "Moth",
+      "Heart",
+      "Moon",
+      "Nectar"
+    ],
+    "gender": "阴性",
+    "desc_cn": "漫宿最深沉的阴影。她在石头与苔藓间起舞，她是秘密的守护者，因为只有在绝对的黑暗中，颜色才拥有触感。"
+  },
+  {
+    "id": "hour.thunderskin",
+    "sourceId": "hour_IV",
+    "type": "hour",
+    "name_cn": "轰雷之皮",
+    "name_en": "The Thunderskin",
+    "aliases": [
+      "轰雷之皮",
+      "The Thunderskin",
+      "警醒风暴",
+      "松树骑士",
+      "不息之心",
+      "The Vigilant Storm",
+      "Pine-Knight",
+      "The Heart Relentless"
+    ],
+    "origin": ["Blood","Flesh"],
+    "factions": [
+      "Knot"
+    ],
+    "aspects": [
+      "Heart",
+      "Sky"
+    ],
+    "gender": "阳性",
+    "desc_cn": "永不停歇的舞者。他在风暴中大笑，因为他的心脏不再跳动，所以他必须不停地跳舞，以免此身终结。"
+  },
+  {
+    "id": "hour.forge_of_days",
+    "sourceId": "hour_XX",
+    "type": "hour",
+    "name_cn": "白日铸炉",
+    "name_en": "The Forge of Days",
+    "aliases": [
+      "白日铸炉",
+      "不焚之神",
+      "The Forge of Days",
+      "The Unburnt God"
+    ],
+    "origin": ["Light"],
+    "factions": [
+      "Solar"
+    ],
+    "aspects": [
+      "Forge",
+      "Lantern"
+    ],
+    "gender": "阴性",
+    "desc_cn": "烈火不灭。她不是为了毁灭，而是为了改变。所有静止的事物都将被投入炉中，直到它们成为新的形态。"
+  },
+  {
+    "id": "hour.meniscate",
+    "sourceId": "hour_XI",
+    "type": "hour",
+    "name_cn": "弧月",
+    "name_en": "The Meniscate",
+    "aliases": [
+      "弧月",
+      "新月",
+      "镜子女王",
+      "The Meniscate",
+      "The Mirror-Queen"
+    ],
+    "origin": ["Light"],
+    "factions": [
+      "Solar"
+    ],
+    "aspects": [
+      "Knock",
+      "Forge",
+      "Lantern",
+      "Sky",
+      "Moon"
+    ],
+    "gender": "阴性",
+    "desc_cn": "镜中的倒影，光辉的替身。她在辉光稍歇时掌管秩序。一切看起来都很好，只要你不打破那面镜子。"
+  },
+  {
+    "id": "hour.sun_in_rags",
+    "sourceId": "hour_XII",
+    "type": "hour",
+    "name_cn": "残阳",
+    "name_en": "The Sun-in-Rags",
+    "aliases": [
+      "残阳",
+      "衣衫褴褛的骄阳",
+      "寒日",
+      "破碎的太阳",
+      "Sun-in-Rags",
+      "The Cold Sun"
+    ],
+    "origin": ["Light"],
+    "factions": [
+      "Solar"
+    ],
+    "aspects": [
+      "Winter",
+      "Lantern"
+    ],
+    "gender": "阳性",
+    "desc_cn": "即使是太阳也会衰老。他是黄昏的寒意，是那件破旧的斗篷。结局总是美丽的，只要你接受它的到来。"
+  },
+  {
+    "id": "hour.madrugad",
+    "sourceId": "hour_XIV",
+    "type": "hour",
+    "name_cn": "昕旦",
+    "name_en": "The Madrugad",
+    "aliases": [
+      "昕旦",
+      "拂晓",
+      "黎明之神",
+      "The Madrugad"
+    ],
+    "origin": ["Light"],
+    "factions": [
+      "Solar"
+    ],
+    "aspects": [
+      "Winter",
+      "Forge",
+      "Lantern",
+      "Sky"
+    ],
+    "gender": "阴性",
+    "desc_cn": "黎明前最冷的一刻。在太阳升起之前，必有某种东西被唤醒，必有某种寂静被打破。"
+  },
+  {
+    "id": "hour.flowermaker",
+    "sourceId": "hour_XIX",
+    "type": "hour",
+    "name_cn": "制花人",
+    "name_en": "The Flowermaker",
+    "aliases": [
+      "制花人",
+      "The Flowermaker"
+    ],
+    "origin": ["Light"],
+    "factions": [],
+    "aspects": [
+      "Grail",
+      "Lantern",
+      "Nectar"
+    ],
+    "gender": "阳性",
+    "desc_cn": "极乐的施予者。不要接受他的礼物，除非你愿意为了那一瞬间的欢愉，付出永恒的代价。"
+  },
+  {
+    "id": "hour.sun_in_splendour",
+    "sourceId": "hour_XXXX",
+    "type": "hour",
+    "name_cn": "骄阳",
+    "name_en": "The Sun-in-Splendour",
+    "aliases": [
+      "骄阳",
+      "The Sun-in-Splendour"
+    ],
+    "origin": ["Light"],
+    "factions": [
+      "Solar"
+    ],
+    "aspects": [
+      "Lantern"
+    ],
+    "gender": "阳性",
+    "desc_cn": "曾经的最高神。他是绝对的理性，绝对的光明。但他已被瓜分，辉光已碎。我们如今沐浴的，只是他尸体的余晖。"
+  },
+  {
+    "id": "hour.malachite",
+    "sourceId": "hour_III",
+    "type": "hour",
+    "name_cn": "石绿",
+    "name_en": "The Malachite",
+    "aliases": [
+      "石绿",
+      "The Malachite",
+      "环杉",
+      "ring_yew",
+      "蜂蜜树",
+      "The Honey-Tree",
+      "铜绿"
+    ],
+    "origin": ["Blood"],
+    "factions": ["Knot",
+      "Wood"],
+    "aspects": [
+      "Moth",
+      "Heart",
+      "Grail",
+      "Nectar"
+    ],
+    "gender": "阴性",
+    "desc_cn": "既是毒药也是解药。生命在腐烂中最为茂盛，它是那抹在尸骨上绽放的、令人不安的生机之绿。"
+  },
+  {
+    "id": "hour.mother_of_ants",
+    "sourceId": "hour_V",
+    "type": "hour",
+    "name_cn": "蚁母",
+    "name_en": "The Mother of Ants",
+    "aliases": [
+      "蚁母",
+      "The Mother of Ants"
+    ],
+    "origin": ["Flesh"],
+    "factions": [],
+    "aspects": [
+      "Knock",
+      "Scale"
+    ],
+    "gender": "阴性",
+    "desc_cn": "伤口是世界的裂隙。她在痛苦中行走，保护着那些不应被开启的门，或是将它们撑得更开。女王万岁。"
+  },
+  {
+    "id": "hour.colonel",
+    "sourceId": "hour_VII",
+    "type": "hour",
+    "name_cn": "上校",
+    "name_en": "The Colonel",
+    "aliases": [
+      "上校",
+      "伤疤上尉",
+      "疤痕上尉",
+      "盲眼的统帅",
+      "The Colonel",
+      "The Scarred Captain"
+    ],
+    "origin": "Flesh",
+    "factions": [],
+    "aspects": [
+      "Edge",
+      "Sky",
+      "Lantern"
+    ],
+    "gender": "阳性",
+    "desc_cn": "那道不会愈合的伤疤。他手握这一刻的武器，却凝视着下一刻的终局。盲眼的战略家，钢铁的意志。"
+  },
+  {
+    "id": "hour.lionsmith",
+    "sourceId": "hour_VIII",
+    "type": "hour",
+    "name_cn": "狮子匠",
+    "name_en": "The Lionsmith",
+    "aliases": [
+      "狮子匠",
+      "怪物杀手",
+      "叛逆的铸造者",
+      "The Lionsmith",
+      "The Monster-Slayer"
+    ],
+    "origin": "Flesh",
+    "factions": [],
+    "aspects": [
+      "Edge",
+      "Heart",
+      "Forge"
+    ],
+    "gender": "阳性",
+    "desc_cn": "怪物与英雄的混合体。如果不满意现在的形态，那就打碎它，重铸它。痛苦是变得更强的必经之路。"
+  },
+  {
+    "id": "hour.elegiast",
+    "sourceId": "hour_IX",
+    "type": "hour",
+    "name_cn": "悼歌诗人",
+    "name_en": "The Elegiast",
+    "aliases": [
+      "悼歌诗人",
+      "悼亡者",
+      "骨白鸽",
+      "The Elegiast",
+      "The Ivory Dove"
+    ],
+    "origin": "Flesh",
+    "factions": ["Roost"],
+    "aspects": [
+      "Winter"
+    ],
+    "gender": "阳性",
+    "desc_cn": "唯有他记得那些被遗忘的死者。他是灰白色的宁静，是那杯为了不复存在之物而举起的酒。"
+  },
+  {
+    "id": "hour.white",
+    "sourceId": "hour_XXII",
+    "type": "hour",
+    "name_cn": "白雪",
+    "name_en": "The White",
+    "aliases": [
+      "白雪",
+      "The White"
+    ],
+    "origin": "Nowhere",
+    "factions": [],
+    "aspects": [
+      "Winter",
+      "Heart"
+    ],
+    "gender": "阴性",
+    "desc_cn": "纯白的寂静。在一切声音消失之后，剩下的只有她。她是安抚者，也是最终的遗忘。"
+  },
+  {
+    "id": "hour.vagabond",
+    "sourceId": "hour_XVII",
+    "type": "hour",
+    "name_cn": "浪游旅人",
+    "name_en": "The Vagabond",
+    "aliases": [
+      "浪游旅人",
+      "The Vagabond",
+      "笑鸫",
+      "蜈蚣",
+      "巡礼者",
+      "景象窃贼"
+
+    ],
+    "origin": "肉源",
+    "factions": ["Roost"],
+    "aspects": [
+      "Moth",
+      "Rose",
+      "Secret Histories"
+    ],
+    "gender": "阴性",
+    "desc_cn": "她不在此处。她在地图的边缘，在未知的路径上。为了不被捕获，她甚至出卖了自己的眼睛。"
+  },
+  {
+    "id": "hour.crowned_growth",
+    "sourceId": "hour_XXV",
+    "type": "hour",
+    "name_cn": "戴冠之孳",
+    "name_en": "The Crowned Growth",
+    "aliases": [
+      "戴冠之孳",
+      "The Crowned Growth"
+    ],
+    "origin": "Nowhere",
+    "factions": [],
+    "aspects": [
+      "Grail",
+      "Winter"
+    ],
+    "gender": "阳性",
+    "desc_cn": "祂司掌欲望和疾病的力量，只渴望感染与嬗变。别接触祂，别直视祂，最好也别梦见祂。"
+  },
+  {
+    "id": "hour.wolf_divided",
+    "sourceId": "hour_XVI",
+    "type": "hour",
+    "name_cn": "裂分之狼",
+    "name_en": "The Wolf-Divided",
+    "aliases": [
+      "裂分之狼",
+      "憎恨之狼",
+      "噬身之狼",
+      "The Wolf Divided"
+    ],
+    "origin": "血源",
+    "factions": [],
+    "aspects": [
+      "Edge",
+      "Winter"
+    ],
+    "gender": "阳性",
+    "desc_cn": "他恨，故他在。他甚至憎恨自己的存在。他是那吞噬世界的虚无，是所有毁灭冲动的具象化。"
+  },
+  {
+    "id": "hour.beachcomber",
+    "sourceId": "hour_X",
+    "type": "hour",
+    "name_cn": "拾滩鸦",
+    "name_en": "The Beachcomber",
+    "aliases": [
+      "拾滩鸦",
+      "The Beachcomber",
+      "The Beach-Crow"
+    ],
+    "origin": "肉源",
+    "factions": [
+      "Roost"
+    ],
+    "aspects": [
+      "Knock",
+      "Grail"
+    ],
+    "gender": "阳性",
+    "desc_cn": "贪婪的收藏家。他在时间的潮汐线上徘徊，捡拾那些辉煌的碎片。什么都想要，什么都不放手。"
+  },
+  {
+    "id": "hour.witch_and_sister",
+    "sourceId": "hour_VI",
+    "type": "hour",
+    "name_cn": "双生女巫",
+    "name_en": "The Witch-and-Sister",
+    "aliases": [
+      "双生女巫",
+      "双生姝丽",
+      "海之孪生子",
+      "十字路孪生子",
+      "The Witch-and-Sister",
+      "The Twins"
+    ],
+    "origin": "肉源",
+    "factions": [
+      "Roost",
+      "Wood"
+    ],
+    "aspects": [
+      "Grail",
+      "Moth",
+      "Heart",
+      "Moon"
+    ],
+    "gender": "阴性",
+    "desc_cn": "她们互为倒影，互为爱人。在水中，在镜中，在血中。你分不清哪个是在这里，哪个是在那里。"
+  },
+  {
+    "id": "hour.doorintheeye",
+    "sourceId": "hour_I",
+    "type": "hour",
+    "name_cn": "瞳中之扉",
+    "name_en": "The Door in the Eye",
+    "aliases": [
+      "瞳中之扉",
+      "The Door in the Eye",
+      "守夜人",
+      "The Watchman",
+      "无情者",
+      "The Merciless"
+    ],
+    "origin": "琥珀",
+    "factions": ["Solar"],
+    "aspects": [
+      "Lantern",
+      "Rose"
+    ],
+    "gender": "阳性",
+    "desc_cn": "既是道路也是守门人。这种光明不仅照亮事物，更将其刺穿。有些知识一旦入眼，便无法被遗忘。"
+  },
+  {
+    "id": "hour.sisterandwitch",
+    "sourceId": "hour_XVIII",
+    "type": "hour",
+    "name_cn": "双生巫女",
+    "name_en": "Sister-and-Witch",
+    "aliases": [
+      "双生巫女",
+      "Sister-and-Witch"
+    ],
+    "origin": "肉源",
+    "factions": [],
+    "aspects": [
+      "Heart",
+      "Rose",
+      "Grail",
+      "Moon"
+    ],
+    "gender": "阴性",
+    "desc_cn": "结合即是分离。她们在深红的秘密中低语，编织着连结血脉的结。"
+  },
+  {
+    "id": "hour.giribrago",
+    "sourceId": "hour_XXI",
+    "type": "hour",
+    "name_cn": "耀山之隙",
+    "name_en": "The Giribrago",
+    "aliases": [
+      "耀山之隙",
+      "创口",
+      "The Giribrago",
+      "the Wound"
+    ],
+    "origin": "未知",
+    "factions": [],
+    "aspects": [
+      "Lantern",
+      "Knock"
+    ],
+    "gender": "阳性",
+    "desc_cn": "他收容；他带来赠礼；他从不破坏。他从山中迸出。他是碎片，是裂隙，是残余，是创口，是钻石。"
+  },
+  {
+    "id": "hour.blackbone",
+    "sourceId": "hour_XXIII",
+    "type": "hour",
+    "name_cn": "黑骸",
+    "name_en": "The Blackbone",
+    "aliases": [
+      "黑骸",
+      "The Blackbone",
+      "水波",
+      "The Wave"
+    ],
+    "origin": "未知",
+    "factions": [],
+    "aspects": [
+      "Grail",
+      "Moon"
+    ],
+    "gender": "阴性",
+    "desc_cn": "海洋深处那幽暗隐秘的丰饶之源。"
+  },
+  {
+    "id": "hour.therisingspider",
+    "sourceId": "hour_XXIV",
+    "type": "hour",
+    "name_cn": "扶摇蜘蛛",
+    "name_en": "The Rising Spider",
+    "aliases": [
+      "扶摇蜘蛛",
+      "The Rising Spider"
+    ],
+    "origin": "虚源",
+    "factions": [],
+    "aspects": [
+      "Knock",
+      "Edge",
+      "Grail"
+    ],
+    "gender": "阴性",
+    "desc_cn": "秘密的编织者。她在漫宿的角落里结网，等待着那些鲁莽的闯入者。文字是她的丝线。"
+  },
+  {
+    "id": "hour.applebright",
+    "sourceId": "hour_XXVI",
+    "type": "hour",
+    "name_cn": "光明果",
+    "name_en": "The Applebright",
+    "aliases": [
+      "光明果",
+      "The Applebright"
+    ],
+    "origin": "虚源",
+    "factions": [],
+    "aspects": [
+      "Grail",
+      "Sky",
+      "Heart",
+      "Moth"
+    ],
+    "gender": "阴性",
+    "desc_cn": "诱人的果实，内在却充满了异样的甜美。它是光与血肉的错误结合，令人无法抗拒。"
+  },
+  {
+    "id": "hour.mareinthetree",
+    "sourceId": "hour_XXVII",
+    "type": "hour",
+    "name_cn": "树中牝马",
+    "name_en": "The Mare-in-the-Tree",
+    "aliases": [
+      "树中牝马",
+      "The Mare-in-the-Tree"
+    ],
+    "origin": "虚源",
+    "factions": [],
+    "aspects": [
+      "Moth",
+      "Forge",
+      "Nectar"
+    ],
+    "gender": "阴性",
+    "desc_cn": "噩梦栖息于树枝之间。混乱的自然力量，她在森林的低语中不仅带来了生命，也带来了异化。"
+  },
+  {
+    "id": "hour.witness",
+    "sourceId": "hour_XXVIII",
+    "type": "hour",
+    "name_cn": "见证人",
+    "name_en": "The Witness",
+    "aliases": [
+      "见证人",
+      "The Witness"
+    ],
+    "origin": "虚源",
+    "factions": [],
+    "aspects": [
+      "Heart",
+      "Grail",
+      "Lantern",
+      "Moth",
+      "Forge"
+    ],
+    "gender": "阳性",
+    "desc_cn": "他看着一切。哪怕是那些不该被看见的仪式，哪怕是那些应当被埋葬的罪行。"
+  },
+  {
+    "id": "hour.chandler",
+    "sourceId": "hour_XXIX",
+    "type": "hour",
+    "name_cn": "制烛人",
+    "name_en": "The Chandler",
+    "aliases": [
+      "制烛人",
+      "The Chandler"
+    ],
+    "origin": "尚未诞生",
+    "factions": [],
+    "aspects": [
+      "Lantern",
+      "Edge",
+      "Forge",
+      "Moth"
+    ],
+    "gender": "尚未确定",
+    "desc_cn": "他照亮前路，但他也是那个掐灭烛火的人。在未知的时间线里，他既是引导者也是终结者。"
+  }
+]
