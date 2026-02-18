@@ -1,3 +1,4 @@
+{ "hours":
 [
   {
     "id": "hour.horned_axe",
@@ -9,7 +10,9 @@
       "双角斧",
       "The Horned Axe"
     ],
-    "origin": ["Stone"],
+    "origin": [
+      "Stone"
+    ],
     "factions": [
       "Knot"
     ],
@@ -32,7 +35,9 @@
       "七蟠",
       "The Seven-Coils"
     ],
-    "origin": ["Stone"],
+    "origin": [
+      "Stone"
+    ],
     "factions": [],
     "aspects": [
       "Knock",
@@ -53,7 +58,9 @@
       "转轮",
       "The Wheel"
     ],
-    "origin": ["Stone"],
+    "origin": [
+      "Stone"
+    ],
     "factions": [],
     "aspects": [
       "Heart",
@@ -73,7 +80,9 @@
       "燧石",
       "The Flint"
     ],
-    "origin": ["Stone"],
+    "origin": [
+      "Stone"
+    ],
     "factions": [],
     "aspects": [
       "Forge",
@@ -92,7 +101,9 @@
       "逆孵之卵",
       "The Egg Unhatching"
     ],
-    "origin": ["Stone"],
+    "origin": [
+      "Stone"
+    ],
     "factions": [],
     "aspects": [
       "Lantern",
@@ -112,7 +123,9 @@
       "浪潮",
       "The Tide"
     ],
-    "origin": ["Stone"],
+    "origin": [
+      "Stone"
+    ],
     "factions": [],
     "aspects": [
       "Grail",
@@ -133,7 +146,9 @@
       "The Moth",
       "The Dapple-King"
     ],
-    "origin": ["Blood"],
+    "origin": [
+      "Blood"
+    ],
     "factions": [
       "Wood"
     ],
@@ -160,7 +175,9 @@
       "The Great Mother",
       "The Source"
     ],
-    "origin": ["Blood"],
+    "origin": [
+      "Blood"
+    ],
     "factions": [
       "Knot"
     ],
@@ -183,7 +200,9 @@
       "The Velvet",
       "The Black Velvet"
     ],
-    "origin": ["Blood"],
+    "origin": [
+      "Blood"
+    ],
     "factions": [
       "Wood"
     ],
@@ -212,7 +231,10 @@
       "Pine-Knight",
       "The Heart Relentless"
     ],
-    "origin": ["Blood","Flesh"],
+    "origin": [
+      "Blood",
+      "Flesh"
+    ],
     "factions": [
       "Knot"
     ],
@@ -235,7 +257,9 @@
       "The Forge of Days",
       "The Unburnt God"
     ],
-    "origin": ["Light"],
+    "origin": [
+      "Light"
+    ],
     "factions": [
       "Solar"
     ],
@@ -259,7 +283,9 @@
       "The Meniscate",
       "The Mirror-Queen"
     ],
-    "origin": ["Light"],
+    "origin": [
+      "Light"
+    ],
     "factions": [
       "Solar"
     ],
@@ -287,7 +313,9 @@
       "Sun-in-Rags",
       "The Cold Sun"
     ],
-    "origin": ["Light"],
+    "origin": [
+      "Light"
+    ],
     "factions": [
       "Solar"
     ],
@@ -310,7 +338,9 @@
       "黎明之神",
       "The Madrugad"
     ],
-    "origin": ["Light"],
+    "origin": [
+      "Light"
+    ],
     "factions": [
       "Solar"
     ],
@@ -333,7 +363,9 @@
       "制花人",
       "The Flowermaker"
     ],
-    "origin": ["Light"],
+    "origin": [
+      "Light"
+    ],
     "factions": [],
     "aspects": [
       "Grail",
@@ -353,7 +385,9 @@
       "骄阳",
       "The Sun-in-Splendour"
     ],
-    "origin": ["Light"],
+    "origin": [
+      "Light"
+    ],
     "factions": [
       "Solar"
     ],
@@ -378,9 +412,13 @@
       "The Honey-Tree",
       "铜绿"
     ],
-    "origin": ["Blood"],
-    "factions": ["Knot",
-      "Wood"],
+    "origin": [
+      "Blood"
+    ],
+    "factions": [
+      "Knot",
+      "Wood"
+    ],
     "aspects": [
       "Moth",
       "Heart",
@@ -400,7 +438,9 @@
       "蚁母",
       "The Mother of Ants"
     ],
-    "origin": ["Flesh"],
+    "origin": [
+      "Flesh"
+    ],
     "factions": [],
     "aspects": [
       "Knock",
@@ -423,7 +463,9 @@
       "The Colonel",
       "The Scarred Captain"
     ],
-    "origin": "Flesh",
+    "origin": [
+      "Flesh"
+    ],
     "factions": [],
     "aspects": [
       "Edge",
@@ -446,7 +488,9 @@
       "The Lionsmith",
       "The Monster-Slayer"
     ],
-    "origin": "Flesh",
+    "origin": [
+      "Flesh"
+    ],
     "factions": [],
     "aspects": [
       "Edge",
@@ -469,8 +513,12 @@
       "The Elegiast",
       "The Ivory Dove"
     ],
-    "origin": "Flesh",
-    "factions": ["Roost"],
+    "origin": [
+      "Flesh"
+    ],
+    "factions": [
+      "Roost"
+    ],
     "aspects": [
       "Winter"
     ],
@@ -487,7 +535,9 @@
       "白雪",
       "The White"
     ],
-    "origin": "Nowhere",
+    "origin": [
+      "Nowhere"
+    ],
     "factions": [],
     "aspects": [
       "Winter",
@@ -509,10 +559,13 @@
       "蜈蚣",
       "巡礼者",
       "景象窃贼"
-
     ],
-    "origin": "肉源",
-    "factions": ["Roost"],
+    "origin": [
+      "Flesh"
+    ],
+    "factions": [
+      "Roost"
+    ],
     "aspects": [
       "Moth",
       "Rose",
@@ -531,7 +584,9 @@
       "戴冠之孳",
       "The Crowned Growth"
     ],
-    "origin": "Nowhere",
+    "origin": [
+      "Nowhere"
+    ],
     "factions": [],
     "aspects": [
       "Grail",
@@ -552,7 +607,9 @@
       "噬身之狼",
       "The Wolf Divided"
     ],
-    "origin": "血源",
+    "origin": [
+      "Blood"
+    ],
     "factions": [],
     "aspects": [
       "Edge",
@@ -572,7 +629,9 @@
       "The Beachcomber",
       "The Beach-Crow"
     ],
-    "origin": "肉源",
+    "origin": [
+      "Flesh"
+    ],
     "factions": [
       "Roost"
     ],
@@ -597,7 +656,9 @@
       "The Witch-and-Sister",
       "The Twins"
     ],
-    "origin": "肉源",
+    "origin": [
+      "Flesh"
+    ],
     "factions": [
       "Roost",
       "Wood"
@@ -625,8 +686,12 @@
       "无情者",
       "The Merciless"
     ],
-    "origin": "琥珀",
-    "factions": ["Solar"],
+    "origin": [
+      "Amber"
+    ],
+    "factions": [
+      "Solar"
+    ],
     "aspects": [
       "Lantern",
       "Rose"
@@ -644,7 +709,9 @@
       "双生巫女",
       "Sister-and-Witch"
     ],
-    "origin": "肉源",
+    "origin": [
+      "Flesh"
+    ],
     "factions": [],
     "aspects": [
       "Heart",
@@ -667,7 +734,9 @@
       "The Giribrago",
       "the Wound"
     ],
-    "origin": "未知",
+    "origin": [
+      "Unknown"
+    ],
     "factions": [],
     "aspects": [
       "Lantern",
@@ -688,7 +757,9 @@
       "水波",
       "The Wave"
     ],
-    "origin": "未知",
+    "origin": [
+      "Unknown"
+    ],
     "factions": [],
     "aspects": [
       "Grail",
@@ -707,7 +778,9 @@
       "扶摇蜘蛛",
       "The Rising Spider"
     ],
-    "origin": "虚源",
+    "origin": [
+      "Nowhere"
+    ],
     "factions": [],
     "aspects": [
       "Knock",
@@ -727,7 +800,9 @@
       "光明果",
       "The Applebright"
     ],
-    "origin": "虚源",
+    "origin": [
+      "Nowhere"
+    ],
     "factions": [],
     "aspects": [
       "Grail",
@@ -748,7 +823,9 @@
       "树中牝马",
       "The Mare-in-the-Tree"
     ],
-    "origin": "虚源",
+    "origin": [
+      "Nowhere"
+    ],
     "factions": [],
     "aspects": [
       "Moth",
@@ -768,7 +845,9 @@
       "见证人",
       "The Witness"
     ],
-    "origin": "虚源",
+    "origin": [
+      "Nowhere"
+    ],
     "factions": [],
     "aspects": [
       "Heart",
@@ -790,7 +869,9 @@
       "制烛人",
       "The Chandler"
     ],
-    "origin": "尚未诞生",
+    "origin": [
+      "Not yet born"
+    ],
     "factions": [],
     "aspects": [
       "Lantern",
@@ -802,3 +883,4 @@
     "desc_cn": "他照亮前路，但他也是那个掐灭烛火的人。在未知的时间线里，他既是引导者也是终结者。"
   }
 ]
+}

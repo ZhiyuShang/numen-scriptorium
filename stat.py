@@ -41,14 +41,16 @@ def merge_hours_stat():
         return
     with open(file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
-        print('number of hours',len(data))
+
+        data_hour = data['hours']
+        print('number of hours',len(data_hour))
         ids = set()
         sourceIds = set()
         origins = set()
         factions = set()
         hour_numbers = set()
-        targets= set()
-        for item in data:
+
+        for item in data_hour:
             if item['id'] in ids:
                 print(f'Duplicate id {item["id"]}')
             if item['sourceId'] in sourceIds:
@@ -68,25 +70,22 @@ def merge_hours_stat():
                         hour_numbers.add(num)
                     else:
                         print(f'Invalid hour number: {num} (sourceId: {sid})')
-            if type(item['origin']) != list:
-                item['origin'] = [item['origin']]
-            for ori in item['origin']:
-                target = targets.add(replacing(ori,item))
+
+            for i,ori in enumerate(item['origin']):
                 origins.add(ori)
             
             for fra in item['factions']:
                 factions.add(fra)
 
         print('origins',origins)
-        print('targets',targets)
         print('factions',factions)
 
         missing_nums = [i for i in range(41) if i not in hour_numbers]
         if missing_nums:
             print(f'Missing hour numbers (0-40): {missing_nums}')
 
-
-
+    # with open(file_path, 'w', encoding='utf-8') as f:
+    #     json.dump(data, f, ensure_ascii=False, indent=2)
 
 if __name__ == '__main__':
     merge_hours_stat()
