@@ -3,8 +3,8 @@ import os
 from pathlib import Path
 import random
 
-RAW_FILE = os.path.join("data", "boh_raw_data.json")   # 你的原始文件
-OUT_FILE = os.path.join("data", "train.jsonl")         # 输出训练数据
+RAW_FILE = os.path.join("data", "boh_raw_data_items_core.json")   # 你的原始文件
+OUT_FILE = os.path.join("data", "train_items_core.jsonl")         # 输出训练数据
 
 # 目标：结构化→文本样本在全体样本中的占比
 TARGET_STRUCT_RATIO = 0.2   # 可调：0.1 ~ 0.3 之间都可以
