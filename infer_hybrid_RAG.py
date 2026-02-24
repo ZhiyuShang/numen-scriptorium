@@ -45,39 +45,29 @@ class HybridRetriever:
                 found_entities.add(std_name)
         return list(found_entities)
 
-    def retrieve(self, query: str, top_k: int = 3):
-        print(f"\n[RAG] 正在分析问题: '{query}'")
+    def retrieve(self, query: str, top_k: int = 1):
+        print(f"\n[RAG] 正在分析问题: '{query[:30]}...'")
         
-        # --- 分支 A: 知识图谱检索 ---
-        entities = self.extract_entities(query)
-        kg_context = []
-        if entities:
-            print(f"[RAG] -> 图谱引擎: 捕捉到实体 {entities}")
-            for t in self.triplets:
-                if t["head_name"] in entities or t["tail_name"] in entities:
-                    # 将三元组翻译成人类可读的句子
-                    rel = t["relation"]
-                    if rel == "HAS_ORIGIN":
-                        kg_context.append(f"- {t['head_name']} 的起源是 {t['tail_name']}")
-                    elif rel == "BELONGS_TO":
-                        kg_context.append(f"- {t['head_name']} 属于派系 {t['tail_name']}")
-                    elif rel == "PARTICIPATED_IN":
-                        kg_context.append(f"- {t['head_name']} 参与了历史事件：{t['tail_name']}")
-        
+        # --- 分支 A: 知识图谱提取 (词典模式) ---
+        # 直接提取中英对照，而不是描述性句子
+        matched_terms = set()
+        for alias, std_name in self.alias_map.items():
+            if alias in query or alias.lower() in query.lower():
+                # 明确告诉模型这个词该怎么翻
+                matched_terms.add(f"- {alias} -> {std_name}")
+                
         # --- 分支 B: 向量库语义检索 ---
-        print("[RAG] -> 向量引擎: 正在进行语义搜索...")
         query_embedding = self.embedder.encode([query]).tolist()
         results = self.collection.query(
             query_embeddings=query_embedding,
             n_results=top_k
         )
-        
         vector_context = results['documents'][0] if results['documents'] else []
 
-        # --- 组装最终的上下文提示词 (Context) ---
-        context_str = "【知识图谱确定的事实】\n"
-        context_str += "\n".join(kg_context) if kg_context else "无直接图谱关联。"
-        context_str += "\n\n【相关历史文献摘要】\n"
+        # --- 组装最终的上下文提示词 ---
+        context_str = "【强制术语对照表】（遇到以下英文必须使用对应的中文翻译）：\n"
+        context_str += "\n".join(matched_terms) if matched_terms else "无特殊术语。\n"
+        context_str += "\n【背景语境参考】（仅供理解上下文，不要抄袭）：\n"
         context_str += "\n".join(vector_context)
         
         return context_str
@@ -127,17 +117,22 @@ def load_llm():
 #         text = text.split("回答：", 1)[1]
 #     return text.strip()
 
-def generate_answer(tokenizer, model, instruction: str, rag_context: str, text_to_translate: str, max_new_tokens: int = 512):
-    # 【核心修改 1：重构 Prompt 模板】
-    # 将 RAG 内容严格限制在“参考资料”区域，并在最后再次强调翻译指令，防止模型遗忘。
+def generate_answer(tokenizer, model, rag_context: str, text_to_translate: str, max_new_tokens: int = 512):
+    
+    # 1. 将 RAG 词典巧妙地融合到 Instruction 中，保持微调时的英文指令风格
+    instruction = (
+        "Translate the following English item description into Chinese, "
+        "preserving the solemn, ritualistic tone and occult atmosphere of 'Book of Hours'.\n"
+        "Reference Dictionary for proper nouns:\n"
+        f"{rag_context}"
+    )
+    
+    # 2. 严格对齐你微调数据集里的字段格式！
+    # 如果你微调时是用类似 Alpaca 的模板，代码层面的拼接应该是这样的：
     prompt = (
-        f"指令：{instruction}\n\n"
-        f"【专有名词与背景参考】（仅作翻译时的词汇对齐与语境参考，切勿直接摘抄或总结）：\n"
-        f"------------------------\n"
-        f"{rag_context}\n"
-        f"------------------------\n\n"
-        f"【需要翻译的英文原文】：\n{text_to_translate}\n\n"
-        f"回答（中文翻译）："
+        f"Instruction: {instruction}\n"
+        f"Input: {text_to_translate}\n"
+        f"Output: "
     )
 
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
@@ -147,17 +142,18 @@ def generate_answer(tokenizer, model, instruction: str, rag_context: str, text_t
             **inputs,
             max_new_tokens=max_new_tokens,
             do_sample=True,
-            temperature=0.4,      
+            temperature=0.3,       
             top_p=0.85,
-            repetition_penalty=1.15, # 【防复读】
+            repetition_penalty=1.1, # 依然保留轻微的防复读
             eos_token_id=tokenizer.eos_token_id,
         )
 
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     
-    # 截取“回答（中文翻译）：”之后的内容
-    if "回答（中文翻译）：" in text:
-        text = text.split("回答（中文翻译）：", 1)[1]
+    # 根据你实际的 Output 标识符来截取
+    if "Output: " in text:
+        text = text.split("Output: ", 1)[1]
+            
     return text.strip()
 
 # ================= 3. 主程序流水线 =================
@@ -168,13 +164,13 @@ if __name__ == "__main__":
 
     # 2. 制定系统指令 (专为 0.6B 小模型 + RAG 优化)
     # 参考上下文，且保持文风
-    system_instruction = (
-    "你是一名翻译者，需要将英文文本翻译为中文。\n"
-    "要求：\n"
-    "1. 保留所有专有名词（包括人物、地名），不要将它们翻译为《司辰之书》；\n"
-    "2. 在保证忠实的前提下，让整体语气更接近游戏《司辰之书》，适度使用象征与暗示。\n"
-    "请翻译下面这段英文故事："
-    )
+    # system_instruction = (
+    # "你是一名翻译者，需要将英文文本翻译为中文。\n"
+    # "要求：\n"
+    # "1. 保留所有专有名词（包括人物、地名），不要将它们翻译为《司辰之书》；\n"
+    # "2. 在保证忠实的前提下，让整体语气更接近游戏《司辰之书》，适度使用象征与暗示。\n"
+    # "请翻译下面这段英文故事："
+    # )
 
     # 3. 开始对话测试
     queries = [
@@ -194,7 +190,7 @@ if __name__ == "__main__":
         answer = generate_answer(
             tokenizer=tokenizer, 
             model=model, 
-            instruction=system_instruction, 
+            #instruction=system_instruction, 
             rag_context=context,           # 独立的 RAG 上下文传入
             text_to_translate=q            # 纯净的英文原文传入
             )
