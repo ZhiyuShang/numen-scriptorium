@@ -122,5 +122,5 @@ def main():
 
 if __name__ == "__main__":
     #example run in terminal:
-    #python scripts/split_jsonl.py --in_file data/train_items_core.jsonl --val_ratio 0.05 --test_ratio 0.0 --seed 42
+    #python scripts/split_jsonl.py --in_file data/train_all.jsonl --val_ratio 0.05 --test_ratio 0.0 --seed 42
     main()
