@@ -4,8 +4,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import time
 from peft import PeftModel
 import time
-BASE_MODEL = "Qwen/Qwen3-0.6B"
-LORA_DIR = os.path.join("outputs", "qwen3_0_6b_boh_qlora")
+BASE_MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
+LORA_DIR = os.path.join("outputs", "qwen2_5_1_5b_boh_qlora", "checkpoint-1400")
 
 
 def load_model():
@@ -78,7 +78,7 @@ if __name__ == "__main__":
        "In the city of Emesa, beneath the Church of the Holy Belt, in a sarcophagus of black corundum, Elagabalus lies: accursed of Janus, neither Long nor mortal, neither man nor woman, neither a liar nor a speaker of truth, neither real nor imagined. On his light-suffused skin is made manifest the Sun-in-Splendour's grand design...\n Elagabalus is the source of one-half of this text. The source of the other-half is obscure, but its power is evident. It is impossible to be certain if the Sun really planned for us to enter Eternity. It is impossible to be sure if the Grail, the Vagabond, and the Forge, stole this birthright from us, or saved us from it. But there is a great secret here."
     )
 
-    out = generate(tokenizer, model, instr, user, max_new_tokens=200)
+    out = generate(tokenizer, model, instr, user, max_new_tokens=500)
     print("=== English -> Chinese Translation ===")
     print(out)
     end_time = time.time()

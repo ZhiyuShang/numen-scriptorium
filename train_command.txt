@@ -1,0 +1,14 @@
+$env:PYTHONUTF8="1"
+$env:PYTHONIOENCODING="utf-8"
+$env:WANDB_DIR="D:\wandb"
+$env:WANDB_CONFIG_DIR="D:\wandb\.config"
+$env:WANDB_CACHE_DIR="D:\wandb\.cache"
+
+cd numen-scriptorium
+
+python train_qlora_qwen.py
+
+python train_qlora_qwen.py --resume
+python train_qlora_qwen.py --resume latest
+
+python train_qlora_qwen.py --resume outputs/qwen2_5_1_5b_boh_qlora/checkpoint-1400

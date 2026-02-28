@@ -2,12 +2,16 @@ import json
 import os
 from pathlib import Path
 import random
+import hashlib
 
-RAW_FILE = os.path.join("data", "boh_raw_data.json")   # 你的原始文件
-OUT_FILE = os.path.join("data", "train.jsonl")         # 输出训练数据
+RAW_FILE = os.path.join("data", "corrected_cs_raw_data_items.json")  # 你的原始文件
+OUT_FILE = os.path.join("data", "train_items_cs.jsonl")              # 输出训练数据
 
 # 目标：结构化→文本样本在全体样本中的占比
 TARGET_STRUCT_RATIO = 0.2   # 可调：0.1 ~ 0.3 之间都可以
+
+# 内层 *_cn 对文本的最小长度（太短的字段通常是噪声，例如 label/title/单词）
+MIN_NESTED_PAIR_LEN = 0
 
 # ====== 类型映射表（可以按需要继续补充） ======
 TYPE_MAP_EN = {
@@ -108,6 +112,29 @@ MYSTERY_EN = {
     ),
 }
 
+# ====== 语言学名映射 (专门用于解析 CS 中的 scholar 产出) ======
+SCHOLAR_LANG_DICT_EN = {
+    "fucine": "Fucine",
+    "phrygian": "Phrygian",
+    "vak": "Vak",
+    "aramaic": "Aramaic",
+    "greek": "Greek",
+    "latin": "Latin",
+    "sanskrit": "Sanskrit",
+    "mandaic":"Mandaic"
+}
+
+SCHOLAR_LANG_DICT_ZH = {
+    "fucine": "富奇诺语",
+    "phrygian": "弗里吉亚语",
+    "vak": "伐诃语",
+    "aramaic": "亚兰语",
+    "greek": "希腊语",
+    "latin": "拉丁语",
+    "sanskrit": "梵语",
+    "mandaic":"曼达安语"
+}
+
 
 def guess_type(item):
     """
@@ -118,7 +145,6 @@ def guess_type(item):
     _id = (item.get("id") or "").lower()
     aspects = item.get("aspects", {}) or {}
 
-    # 先按 id 前缀 / 关键词做一些启发式判断
     if _id.startswith("letter.") or "letter" in _id:
         t = "letter"
     elif "scroll" in _id:
@@ -128,7 +154,6 @@ def guess_type(item):
     elif "codex" in _id:
         t = "codex"
     else:
-        # 如果 id 没给出信息，再看 aspects 中的 'other' 类型线索
         other_keys = set()
         for k in aspects.keys():
             if "." not in k:
@@ -136,11 +161,9 @@ def guess_type(item):
             elif k.split(".", 1)[0] == "record":
                 other_keys.add("record")
 
-        # 排除无关状态型 key
         ignore = {"soph", "infinitereadable", "soaked", "readable"}
         other_keys = {x for x in other_keys if x not in ignore}
 
-        # 按优先顺序判断：codex / scroll / tablet / journal / correspondence / invitation / delivery / film / record...
         if "codex" in other_keys:
             t = "codex"
         elif "scroll" in other_keys:
@@ -160,14 +183,12 @@ def guess_type(item):
         elif "record" in other_keys:
             t = "record"
         else:
-            # 如果还是没有，就回退到原始 type
             t = raw_type or "item"
 
     type_zh = TYPE_MAP_ZH.get(t, "物品")
     return t, type_zh
 
 
-# 一些风格提示模板，用来随机选择，避免 instruction 太单调
 EN_ITEM_TEMPLATES = [
     "Translate the following Chinese item description into English, preserving the solemn, ritualistic tone and occult atmosphere.",
     "Translate the following Chinese item description into English, keeping a sombre, quasi-religious and slightly Lovecraftian style.",
@@ -199,58 +220,38 @@ EN_MISC_TEMPLATES = [
 ]
 
 
-def add_example(examples, instruction, inp, out):
-    """简单包装一条样本；如果 input / output 为空就忽略。"""
+def add_example(examples, instruction, inp, out, seen=None):
+    """简单包装一条样本；如果 input / output 为空就忽略。支持去重。"""
     if not inp or not out:
         return
-    examples.append(
-        {
-            "instruction": instruction,
-            "input": inp,
-            "output": out,
-        }
-    )
+    ex = {"instruction": instruction, "input": inp, "output": out}
+    if seen is not None:
+        sig = hashlib.md5(
+            (instruction + "\n" + inp + "\n" + out).encode("utf-8", errors="ignore")
+        ).hexdigest()
+        if sig in seen:
+            return
+        seen.add(sig)
+    examples.append(ex)
 
 
 def looks_untranslated(name: str, name_cn: str) -> bool:
-    """判断 name_cn 是否基本没翻译（简单启发式）。"""
     if not name or not name_cn:
         return True
     n = name.strip().lower()
     c = name_cn.strip().lower()
     if n == c:
         return True
-    # 去掉常见的引号、书名号等再比一次
     for ch in ["《", "》", '"', "“", "”", "'"]:
         n = n.replace(ch, "")
         c = c.replace(ch, "")
     return n == c
 
 
-def aspects_to_tags(aspects: dict):
-    """
-    原始标签提取（保留），目前未在结构输入中直接使用，
-    但可以作为调试/分析用途。
-    """
-    if not aspects:
-        return [], []
-    keys = list(aspects.keys())
-    zh_tags = keys
-    en_tags = [k.split(".")[-1] for k in keys]
-    return zh_tags, en_tags
-
-
 def aspects_to_semantic_text(aspects: dict, lang: str = "zh") -> str:
-    """
-    根据 aspects 生成“设定标签说明”，当前只处理 mystery.*，
-    以后可以扩展 w / r / memories 等。
-    """
     if not aspects:
         return ""
-
     lines = []
-
-    # 1. mystery.*
     for k in aspects.keys():
         if k.startswith("mystery."):
             _, name = k.split(".", 1)
@@ -262,8 +263,66 @@ def aspects_to_semantic_text(aspects: dict, lang: str = "zh") -> str:
                 desc = MYSTERY_EN.get(name)
                 if desc:
                     lines.append(f"Principle: {desc}")
-
     return "\n".join(lines)
+
+
+def collect_cn_pairs(obj, path=""):
+    """
+    递归收集任何形如 key / key_cn 的字符串对。
+    返回 [(path, en_text, cn_text), ...]
+    """
+    pairs = []
+
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            if k.endswith("_cn"):
+                continue
+            cn_k = f"{k}_cn"
+            if cn_k in obj and isinstance(v, str) and isinstance(obj[cn_k], str):
+                en = v.strip()
+                cn = obj[cn_k].strip()
+                if en and cn:
+                    pairs.append((path + k, en, cn))
+
+        for k, v in obj.items():
+            pairs.extend(collect_cn_pairs(v, path + f"{k}."))
+        return pairs
+
+    if isinstance(obj, list):
+        for i, v in enumerate(obj):
+            pairs.extend(collect_cn_pairs(v, path + f"[{i}]."))
+        return pairs
+
+    return pairs
+
+
+def strip_trailing_numen_note(text: str, marker: str) -> str:
+    """
+    你原来那段：如果末尾是 [...] 且含 marker，则去掉最后一个 '[' 后面的注记。
+    """
+    if not text:
+        return text
+    t = text.strip()
+    if t.endswith("]") and marker in t:
+        t = t.rsplit("[", 1)[0].strip()
+    return t
+
+
+def first_reading_text(readings_list):
+    """
+    从 readings/readings_cn 的 list[dict] 里提取第一条的 intro/content 合并文本。
+    返回字符串（可能为空）。
+    """
+    if not readings_list or not isinstance(readings_list, list):
+        return ""
+    r0 = readings_list[0] if readings_list else None
+    if not isinstance(r0, dict):
+        return ""
+    intro = (r0.get("intro") or "").strip()
+    content = (r0.get("content") or "").strip()
+    if intro and content:
+        return intro + "\n " + content
+    return intro or content
 
 
 def main():
@@ -275,85 +334,59 @@ def main():
 
     items = raw.get("items", [])
 
-    base_examples = []    # 翻译 / 对照类等“基础”样本
-    struct_examples = []  # 结构化信息 -> 文本 的样本
+    # item_id_map_en = {it.get("id"): it.get("name") for it in items if "id" in it}
+    # item_id_map_zh = {it.get("id"): it.get("name_cn") for it in items if "id" in it}
 
-    aspects_diff = {"other": set()}
+    base_examples = []
+    struct_examples = []
+
+    # 去重集合：避免同一条样本重复写入
+    seen_base = set()
+    seen_struct = set()
 
     for item in items:
         name = (item.get("name") or "").strip()
         name_cn = (item.get("name_cn") or "").strip()
+
         desc = (item.get("description") or "").strip()
         desc_cn = (item.get("description_cn") or "").strip()
+
+        # 清理末尾 numen 注记
+        desc = strip_trailing_numen_note(desc, "<i>numen</i>")
+        desc_cn = strip_trailing_numen_note(desc_cn, "<i>闰识</i>")
+
         aspects = item.get("aspects", {}) or {}
 
-        readings = (item.get("readings", [])) or []
-        readings_cn = (item.get("readings_cn", [])) or []
+        # results（只取第一条，保持和你原来一致）
+        results = (item.get("results", []) or [])
+        results_en = ""
+        results_cn = ""
+        if results and isinstance(results, list) and isinstance(results[0], dict):
+            results_en = (results[0].get("result_name") or "").strip()
+            results_cn = (results[0].get("result_name_cn") or "").strip()
 
-        results = (item.get("results", [])) or []
-        
-        if readings:
-            if readings[0].get('intro') and readings[0].get('content'):
-                readings = readings[0]['intro'].strip() + "\n " + readings[0]['content'].strip()
-            elif readings[0].get('intro'):
-                readings = readings[0]['intro'].strip()
-            elif readings[0].get('content'):
-                readings = readings[0]['content'].strip()
+        # readings：用“单独变量”提取第一条，避免污染后面的 list
+        reading_text_en = first_reading_text(item.get("readings", []) or [])
+        reading_text_cn = first_reading_text(item.get("readings_cn", []) or [])
 
-        if readings_cn:
-            if readings_cn[0].get('intro') and readings_cn[0].get('content'):
-                readings_cn = readings_cn[0]['intro'].strip() +"\n "+ readings_cn[0]['content'].strip()
-            elif readings_cn[0].get('intro'):
-                readings_cn = readings_cn[0]['intro'].strip()
-            elif readings_cn[0].get('content'):
-                readings_cn = readings_cn[0]['content'].strip()
-
-        if desc.endswith(']'):
-            if '<i>numen</i>' in desc:
-                desc = desc.rsplit('[', 1)[0].strip()
-        if desc_cn.endswith(']'):
-            if '<i>闰识</i>' in desc_cn:
-                desc_cn = desc_cn.rsplit('[', 1)[0].strip()
-
-        if results:
-            results_en = []
-            results_cn = []
-            results_en.append(results[0]['result_name'])
-            results_cn.append(results[0]['result_name_cn'])
-            results_en = ",".join(results_en)
-            results_cn = ",".join(results_cn)
-
-        # 统计 aspects 分布
-        # for k in aspects.keys():
-        #     if "." in k:
-        #         key, value = k.split(".", 1)
-        #         if key in aspects_diff:
-        #             aspects_diff[key].add(value)
-        #         else:
-        #             aspects_diff[key] = set([value])
-        #     else:
-        #         aspects_diff["other"].add(k)
+        # 只有两边都有，才拼进 desc，保证对齐
+        if reading_text_en and reading_text_cn:
+            desc = (desc + "\n " + reading_text_en).strip()
+            desc_cn = (desc_cn + "\n " + reading_text_cn).strip()
 
         type_en, type_zh = guess_type(item)
-        zh_tags, en_tags = aspects_to_tags(aspects)
 
-        # 语义标签文本
         semantic_zh = aspects_to_semantic_text(aspects, lang="zh")
         semantic_en = aspects_to_semantic_text(aspects, lang="en")
 
         # ========== 1. 物品描述：英 <-> 中（基础样本） ==========
-        if readings:
-            desc = desc+ "\n " + readings
-            desc_cn = desc_cn+ "\n " + readings_cn
-
         if desc and desc_cn:
-            # 名称如果没翻译，不强制要求用 name_cn
             if not looks_untranslated(name, name_cn):
                 eng_name = name
                 cn_name = name_cn
             else:
                 eng_name = name
-                cn_name = name  # 或者 ""，看你喜好
+                cn_name = name
 
             eng_block = (
                 f"Name: {eng_name}\n"
@@ -366,35 +399,31 @@ def main():
                 f"描述：{desc_cn}"
             )
 
-            # 1-1 英 -> 中
-            zh_item_instr = random.choice(ZH_ITEM_TEMPLATES)
             add_example(
                 base_examples,
-                zh_item_instr,
+                random.choice(ZH_ITEM_TEMPLATES),
                 eng_block,
                 cn_block,
+                seen=seen_base,
             )
-
-            # 1-2 中 -> 英
-            en_item_instr = random.choice(EN_ITEM_TEMPLATES)
             add_example(
                 base_examples,
-                en_item_instr,
+                random.choice(EN_ITEM_TEMPLATES),
                 cn_block,
                 eng_block,
+                seen=seen_base,
             )
 
-            # 1-3 中英对照输出
             out_block = f"【中文】\n{cn_block}\n\n【English】\n{eng_block}"
             add_example(
                 base_examples,
                 "根据下面的英文物品描述，生成一个中英文对照版本。先输出中文的【名称】【类型】【描述】，再输出对应的英文【Name】【Type】【Description】。",
                 eng_block,
                 out_block,
+                seen=seen_base,
             )
 
             # ========== 3. 结构化信息 -> 文本（结构样本） ==========
-            # 中文方向：结构 -> 中文描述
             struct_input_zh = (
                 "物品信息：\n"
                 f"名称：{name_cn or name}\n"
@@ -402,16 +431,16 @@ def main():
                 f"{semantic_zh if semantic_zh else ''}\n\n"
                 f"习得：{results_cn if results_cn else ''}\n"
                 "请根据以上信息，用中文写出该物品的详细描述，"
-                "风格接近《司辰之书》，带有神秘主义、宗教神话与隐喻感。"
-            )
+                "风格接近《密教模拟器》，带有神秘主义、宗教神话与隐喻感。"
+            )  #司辰之书
             add_example(
                 struct_examples,
                 "根据给定的物品结构化信息，生成一段完整的中文物品描述。",
                 struct_input_zh,
                 desc_cn,
+                seen=seen_struct,
             )
 
-            # 英文方向：结构 -> 英文描述
             struct_input_en = (
                 "Item Info:\n"
                 f"Name: {name}\n"
@@ -426,58 +455,105 @@ def main():
                 "Given structured item information, generate a complete English item description.",
                 struct_input_en,
                 desc,
+                seen=seen_struct,
+            )
+
+        # ========== 1.x 额外内层字段：自动抓取 *_cn 对并加入训练集 ==========
+        nested_pairs = collect_cn_pairs(item)
+
+        # 避免重复：这些字段你已经处理过/或者不需要
+        skip_prefixes = {
+            "description",
+            "description_cn",
+            "name",
+            "name_cn",
+            "type",
+            "icon",
+            "id",
+            "readings",
+            "readings_cn",
+        }
+
+        for p, en_txt, cn_txt in nested_pairs:
+            # 跳过已处理/不需要的路径
+            if any(p == s or p.startswith(s + ".") for s in skip_prefixes):
+                continue
+
+            # 过滤太短的字段（通常是噪声）
+            if len(en_txt) < MIN_NESTED_PAIR_LEN or len(cn_txt) < MIN_NESTED_PAIR_LEN:
+                continue
+
+            en_inp = f"Item: {name}\nField: {p}\nText:\n{en_txt}"
+            cn_inp = f"物品：{name_cn or name}\n字段：{p}\n文本：\n{cn_txt}"
+
+            add_example(
+                base_examples,
+                random.choice(ZH_MISC_TEMPLATES),
+                en_inp,
+                cn_inp,
+                seen=seen_base,
+            )
+            add_example(
+                base_examples,
+                random.choice(EN_MISC_TEMPLATES),
+                cn_inp,
+                en_inp,
+                seen=seen_base,
             )
 
         # ========== 2. readings / readings_cn 段落翻译（基础样本） ==========
         readings = item.get("readings", []) or []
         readings_cn = item.get("readings_cn", []) or []
 
-        for r_en, r_cn in zip(readings, readings_cn):
-            intro_en = (r_en.get("intro") or "").strip()
-            content_en = (r_en.get("content") or "").strip()
-            intro_cn = (r_cn.get("intro") or "").strip()
-            content_cn = (r_cn.get("content") or "").strip()
+        if isinstance(readings, list) and isinstance(readings_cn, list):
+            for r_en, r_cn in zip(readings, readings_cn):
+                if not isinstance(r_en, dict) or not isinstance(r_cn, dict):
+                    continue
 
-            # 2-1 intro: 两端都有才用
-            if intro_en and intro_cn:
-                add_example(
-                    base_examples,
-                    random.choice(ZH_STORY_TEMPLATES),
-                    intro_en,
-                    intro_cn,
-                )
-                add_example(
-                    base_examples,
-                    random.choice(EN_STORY_TEMPLATES),
-                    intro_cn,
-                    intro_en,
-                )
+                intro_en = (r_en.get("intro") or "").strip()
+                content_en = (r_en.get("content") or "").strip()
+                intro_cn = (r_cn.get("intro") or "").strip()
+                content_cn = (r_cn.get("content") or "").strip()
 
-            # 2-2 content: 两端都有才用
-            if content_en and content_cn:
-                add_example(
-                    base_examples,
-                    random.choice(ZH_MISC_TEMPLATES),
-                    content_en,
-                    content_cn,
-                )
- 
-                add_example(
-                    base_examples,
-                    random.choice(EN_MISC_TEMPLATES),
-                    content_cn,
-                    content_en,
-                )
+                if intro_en and intro_cn:
+                    add_example(
+                        base_examples,
+                        random.choice(ZH_STORY_TEMPLATES),
+                        intro_en,
+                        intro_cn,
+                        seen=seen_base,
+                    )
+                    add_example(
+                        base_examples,
+                        random.choice(EN_STORY_TEMPLATES),
+                        intro_cn,
+                        intro_en,
+                        seen=seen_base,
+                    )
+
+                if content_en and content_cn:
+                    add_example(
+                        base_examples,
+                        random.choice(ZH_MISC_TEMPLATES),
+                        content_en,
+                        content_cn,
+                        seen=seen_base,
+                    )
+                    add_example(
+                        base_examples,
+                        random.choice(EN_MISC_TEMPLATES),
+                        content_cn,
+                        content_en,
+                        seen=seen_base,
+                    )
 
     # ====== 控制结构化样本占比 ======
     N_base = len(base_examples)
     N_struct_raw = len(struct_examples)
 
-    # 目标：N_struct / (N_base + N_struct) ≈ TARGET_STRUCT_RATIO
-    # 推出：N_struct_target = (TARGET_STRUCT_RATIO / (1 - TARGET_STRUCT_RATIO)) * N_base
-    max_struct = int(TARGET_STRUCT_RATIO * N_base / (1.0 - TARGET_STRUCT_RATIO))
+    max_struct = int(TARGET_STRUCT_RATIO * N_base / (1.0 - TARGET_STRUCT_RATIO)) if N_base > 0 else 0
 
-    if N_struct_raw > max_struct:
+    if N_struct_raw > max_struct and max_struct > 0:
         struct_examples = random.sample(struct_examples, max_struct)
         print(
             f"结构化样本过多，已从 {N_struct_raw} 条随机抽取 {max_struct} 条，"
@@ -493,12 +569,15 @@ def main():
     all_examples = base_examples + struct_examples
 
     # ========== 写出 jsonl ==========
-    with open(OUT_FILE, "w", encoding="utf-8") as f:
+    out_path = Path(OUT_FILE)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    with out_path.open("w", encoding="utf-8") as f:
         for ex in all_examples:
             f.write(json.dumps(ex, ensure_ascii=False) + "\n")
 
     print(
-        f"基础样本 {N_base} 条，结构化样本 {len(struct_examples)} 条，"
+        f"基础样本 {len(base_examples)} 条，结构化样本 {len(struct_examples)} 条，"
         f"总计 {len(all_examples)} 条，已写入 {OUT_FILE}"
     )
 
