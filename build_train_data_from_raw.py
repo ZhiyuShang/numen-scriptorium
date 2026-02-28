@@ -4,7 +4,7 @@ from pathlib import Path
 import random
 import hashlib
 
-RAW_FILE = os.path.join("data", "corrected_cs_raw_data_items.json")  # 你的原始文件
+RAW_FILE = os.path.join("data", "corrected_cs_raw_items.json")  # 你的原始文件
 OUT_FILE = os.path.join("data", "train_items_cs.jsonl")              # 输出训练数据
 
 # 目标：结构化→文本样本在全体样本中的占比
@@ -334,8 +334,8 @@ def main():
 
     items = raw.get("items", [])
 
-    # item_id_map_en = {it.get("id"): it.get("name") for it in items if "id" in it}
-    # item_id_map_zh = {it.get("id"): it.get("name_cn") for it in items if "id" in it}
+    item_id_map_en = {it.get("id"): it.get("name") for it in items if "id" in it}
+    item_id_map_zh = {it.get("id"): it.get("name_cn") for it in items if "id" in it}
 
     base_examples = []
     struct_examples = []
@@ -364,6 +364,20 @@ def main():
         if results and isinstance(results, list) and isinstance(results[0], dict):
             results_en = (results[0].get("result_name") or "").strip()
             results_cn = (results[0].get("result_name_cn") or "").strip()
+        elif item.get("type") == "book" and "effects" in item:
+            # CS 逻辑：只有类别为 book 且含有 effects 时才提取“习得”
+            effects = item.get("effects", {})
+            for eff_key, eff_val in effects.items():
+                if eff_val > 0:  # 大于 0 才是读书产出物 (消耗品通常是 -1)
+                    if eff_key.startswith("fragment"):
+                        results_en = item_id_map_en.get(eff_key, eff_key)
+                        results_cn = item_id_map_zh.get(eff_key, eff_key)
+                        break
+                    elif eff_key.startswith("scholar"):
+                        lang_key = eff_key.replace("scholar", "")
+                        results_en = SCHOLAR_LANG_DICT_EN.get(lang_key, lang_key)
+                        results_cn = SCHOLAR_LANG_DICT_ZH.get(lang_key, lang_key)
+                        break
 
         # readings：用“单独变量”提取第一条，避免污染后面的 list
         reading_text_en = first_reading_text(item.get("readings", []) or [])
@@ -424,15 +438,21 @@ def main():
             )
 
             # ========== 3. 结构化信息 -> 文本（结构样本） ==========
+            lines_zh = [
+                "物品信息：",
+                f"名称：{name_cn or name}",
+                f"类型：{type_zh}"
+            ]
+            if semantic_zh:
+                lines_zh.append(semantic_zh)
+            if results_cn:  # 只有成功提取到了产出物，才会加入"习得："行
+                lines_zh.append(f"习得：{results_cn}")
+                
             struct_input_zh = (
-                "物品信息：\n"
-                f"名称：{name_cn or name}\n"
-                f"类型：{type_zh}\n"
-                f"{semantic_zh if semantic_zh else ''}\n\n"
-                f"习得：{results_cn if results_cn else ''}\n"
+                "\n".join(lines_zh) + "\n\n"
                 "请根据以上信息，用中文写出该物品的详细描述，"
                 "风格接近《密教模拟器》，带有神秘主义、宗教神话与隐喻感。"
-            )  #司辰之书
+            )   #司辰之书
             add_example(
                 struct_examples,
                 "根据给定的物品结构化信息，生成一段完整的中文物品描述。",
@@ -441,12 +461,18 @@ def main():
                 seen=seen_struct,
             )
 
+            lines_en = [
+                "Item Info:",
+                f"Name: {name}",
+                f"Type: {type_en}"
+            ]
+            if semantic_en:
+                lines_en.append(semantic_en)
+            if results_en:  # 同理，仅当存在产出时加入"Learned:"行
+                lines_en.append(f"Learned: {results_en}")
+                
             struct_input_en = (
-                "Item Info:\n"
-                f"Name: {name}\n"
-                f"Type: {type_en}\n"
-                f"{semantic_en if semantic_en else ''}\n\n"
-                f"Learned: {results_en if results_en else ''}\n"
+                "\n".join(lines_en) + "\n\n"
                 "Based on the information above, write a full English item description "
                 "in the style of 'Book of Hours', with occult, quasi-religious and symbolic overtones."
             )
