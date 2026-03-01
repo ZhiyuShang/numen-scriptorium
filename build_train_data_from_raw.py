@@ -23,6 +23,10 @@ TYPE_MAP_EN = {
     "日记": "journal",
     "胶卷": "film",
     "唱片": "record",
+    "密传": "fragment",
+    "影响": "influence",
+    "工具": "tool",
+    "原料": "ingredient"
 }
 
 TYPE_MAP_ZH = {
@@ -34,7 +38,13 @@ TYPE_MAP_ZH = {
     "journal": "日记",
     "film": "胶卷",
     "record": "唱片",
+    "fragment":"密传",
+    "influence":"影响",
+    "tool": "工具",
+    "ingredient":"原料"
 }
+
+
 
 # ====== mystery 语义映射 ======
 MYSTERY_ZH = {
@@ -200,7 +210,7 @@ ZH_ITEM_TEMPLATES = [
 ]
 
 ZH_STORY_TEMPLATES = [
-    "将下面的英文故事段落翻译为中文，保持《司辰之书》式的叙事风格，善用象征与暗示。",
+    "将下面的英文故事段落翻译为中文，保持《密教模拟器》式的叙事风格，善用象征与暗示。",
     "将下面的英文故事段落翻译为中文，保留其谜语般隐喻与宗教神话气息。",
 ]
 
@@ -219,6 +229,15 @@ EN_MISC_TEMPLATES = [
     "Translate the following Chinese passage into English, preserving its restrained but unsettling, myth-tinged tone.",
 ]
 
+ZH_CONTINUATION_TEMPLATES = [
+    "根据以下探险地点的背景和初始情况，续写接下来的探险过程与最终发现。保持《密教模拟器》那种阴暗、神秘且带有暗示的文风。",
+    "你正在参与一场秘密的神秘学探险。基于提供的初始情境，续写突破阻碍后的场景以及最终的结局。"
+]
+
+EN_CONTINUATION_TEMPLATES = [
+    "Continue the narrative of this secret expedition based on the initial setup. Preserve the dark, mysterious, and occult tone of 'Cultist Simulator'.",
+    "Based on the given expedition premise, write the continuation of the story, describing the breakthrough and the final discoveries."
+]
 
 def add_example(examples, instruction, inp, out, seen=None):
     """简单包装一条样本；如果 input / output 为空就忽略。支持去重。"""
@@ -296,14 +315,14 @@ def collect_cn_pairs(obj, path=""):
     return pairs
 
 
-def strip_trailing_numen_note(text: str, marker: str) -> str:
+def strip_trailing_numen_note(text: str) -> str:
     """
-    你原来那段：如果末尾是 [...] 且含 marker，则去掉最后一个 '[' 后面的注记。
+    你原来那段：如果末尾是 [...] 则去掉最后一个 '[' 后面的注记。
     """
     if not text:
         return text
     t = text.strip()
-    if t.endswith("]") and marker in t:
+    if t.endswith(".]") or t.endswith('。]') or t.endswith('.].'):  #and marker in t:
         t = t.rsplit("[", 1)[0].strip()
     return t
 
@@ -352,8 +371,8 @@ def main():
         desc_cn = (item.get("description_cn") or "").strip()
 
         # 清理末尾 numen 注记
-        desc = strip_trailing_numen_note(desc, "<i>numen</i>")
-        desc_cn = strip_trailing_numen_note(desc_cn, "<i>闰识</i>")
+        desc = strip_trailing_numen_note(desc) #"<i>numen</i>" "<i>闰识</i>"
+        desc_cn = strip_trailing_numen_note(desc_cn)
 
         aspects = item.get("aspects", {}) or {}
 
@@ -572,7 +591,73 @@ def main():
                         content_en,
                         seen=seen_base,
                     )
+        # ========== 2.x 探险地 (vault) 特有字段翻译与故事续写 ==========
+        vault_descriptions = item.get("descriptions", {})
+        if isinstance(vault_descriptions, dict):
+            # 1. 提取各个阶段的文本
+            setup_en = (vault_descriptions.get("setup_start", {}).get("en") or "").strip()
+            setup_cn = (vault_descriptions.get("setup_start", {}).get("cn") or "").strip()
+            suc_start_en = (vault_descriptions.get("success_start", {}).get("en") or "").strip()
+            suc_start_cn = (vault_descriptions.get("success_start", {}).get("cn") or "").strip()
+            suc_desc_en = (vault_descriptions.get("success_desc", {}).get("en") or "").strip()
+            suc_desc_cn = (vault_descriptions.get("success_desc", {}).get("cn") or "").strip()
 
+            setup_en = strip_trailing_numen_note(setup_en)
+            setup_cn = strip_trailing_numen_note(setup_cn)
+            suc_start_en = strip_trailing_numen_note(suc_start_en)
+            suc_start_cn = strip_trailing_numen_note(suc_start_cn)
+            suc_desc_en = strip_trailing_numen_note(suc_desc_en)
+            suc_desc_cn = strip_trailing_numen_note(suc_desc_cn)
+
+            # 2. 原有的翻译样本对 
+            for desc_key in ["setup_start", "success_start", "success_desc"]:
+                desc_obj = vault_descriptions.get(desc_key)
+                if isinstance(desc_obj, dict):
+                    en_text = (desc_obj.get("en") or "").strip()
+                    en_text = strip_trailing_numen_note(en_text)
+                    cn_text = (desc_obj.get("cn") or "").strip()
+                    cn_text = strip_trailing_numen_note(cn_text)
+                    if en_text and cn_text:
+                        add_example(base_examples, random.choice(ZH_STORY_TEMPLATES), en_text, cn_text, seen=seen_base)
+                        add_example(base_examples, random.choice(EN_STORY_TEMPLATES), cn_text, en_text, seen=seen_base)
+
+            clean_name_en = name
+            if ":" in clean_name_en:
+                clean_name_en = clean_name_en.split(":", 1)[1].strip()
+            elif clean_name_en.startswith("An Expedition to"):
+                clean_name_en = clean_name_en.replace("An Expedition to", "").strip()
+
+            clean_name_cn = name_cn
+            if "：" in clean_name_cn:  # 中文全角冒号
+                clean_name_cn = clean_name_cn.split("：", 1)[1].strip()
+            elif ":" in clean_name_cn: # 兼容半角冒号
+                clean_name_cn = clean_name_cn.split(":", 1)[1].strip()
+            elif clean_name_cn.startswith("探险"):
+                clean_name_cn = clean_name_cn.replace("探险", "", 1).strip()
+
+            # 3. 探险故事续写样本（中文）
+            if setup_cn and suc_start_cn and suc_desc_cn:
+                inp_cn = f"探险地：{clean_name_cn}\n背景：{setup_cn}"
+                out_cn = f"{suc_start_cn}\n\n{suc_desc_cn}"
+                add_example(
+                    base_examples, 
+                    random.choice(ZH_CONTINUATION_TEMPLATES), 
+                    inp_cn, 
+                    out_cn, 
+                    seen=seen_base
+                )
+
+            # 4. 探险故事续写样本（英文）
+            if setup_en and suc_start_en and suc_desc_en:
+                inp_en = f"Expedition: {clean_name_en}\nPremise: {setup_en}"
+                out_en = f"{suc_start_en}\n\n{suc_desc_en}"
+                add_example(
+                    base_examples, 
+                    random.choice(EN_CONTINUATION_TEMPLATES), 
+                    inp_en, 
+                    out_en, 
+                    seen=seen_base
+                )
     # ====== 控制结构化样本占比 ======
     N_base = len(base_examples)
     N_struct_raw = len(struct_examples)
