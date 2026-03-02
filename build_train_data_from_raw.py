@@ -3,17 +3,17 @@ import os
 from pathlib import Path
 import random
 import hashlib
-import zhconv
-import re
+# import zhconv
+# import re
 
-try:
-    from translate import Translator
-    # 初始化英译中翻译器
-    _translator = Translator(from_lang="en", to_lang="zh-CN")
-except ImportError:
-    print("未检测到 translate 库，自动翻译功能将回退为默认'物品'。可运行 pip install translate 安装。")
-    _translator = None
-_auto_trans_cache = {}
+# try:
+#     from translate import Translator
+#     # 初始化英译中翻译器
+#     _translator = Translator(from_lang="en", to_lang="zh-CN")
+# except ImportError:
+#     print("未检测到 translate 库，自动翻译功能将回退为默认'物品'。可运行 pip install translate 安装。")
+#     _translator = None
+# _auto_trans_cache = {}
 
 RAW_FILE = os.path.join("data", "boh_raw_data_items.json")  # 你的原始文件
 OUT_FILE = os.path.join("data", "train_items_boh.jsonl")    # 输出训练数据
@@ -64,8 +64,72 @@ TYPE_MAP_ZH = {
     'weather':'天气',
     'ability':'魂质',
     'incident':'事件',
-    'skills': '技艺'
+    'skills': '技艺',
+    'skills_r':'技艺',
+    # === 根据 EDA 频次表精选的 AspectedItem 高频前缀 ===
+    "painting": "画作",
+    "bust": "半身像",
+    "bottle": "瓶装物",
+    "pot": "壶",
+    "chair": "椅子",
+    "mem": "回忆",
+    "weapon": "武器",
+    "candle": "蜡烛",
+    "numen": "闰识",
+    "pie": "派",
+    "casket": "箱匣",
+    "glass": "杯装饮品",
+    "tea": "茶",
+    "paint": "颜料",
+    "lamp": "灯具",
+    "sofa": "沙发",
+    "stool": "凳子",
+    "vase": "花瓶",
+    "veg": "蔬菜",
+    "armchair": "扶手椅",
+    "clock": "钟表",
+    "cup": "杯装饮品",
+    "egg": "蛋",
+    "wire": "金属丝",
+    "music": "乐曲",
+    "mirror": "镜子",
+    "liquid": "液体",
+    "packet": "包装冲剂",
+    "spintria": "古币",
+    "cake": "蛋糕",
+    "mackerel": "鲭鱼",
+    "soup": "汤",
+    "statuette": "小雕像",
+    "chicken": "家禽",
+    "sacrament": "圣餐",
+    "statue": "雕像",
+    "marrow": "西葫芦",
+    "meringue": "蛋白酥",
+    "hours": "司辰",      # 原作中特指司辰题材的物品/雕像
+    "stag": "鹿",
+    "window": "花窗玻璃",
+    "basket": "筐",
+    "dog": "狗",
+    "gull": "海鸥",
+    "cat": "猫",
+    "viper": "蛇",
+    "assam": "茶",         # 阿萨姆统一归为茶
+    "lapsang": "茶",       # 正山小种统一归为茶
+    "box": "盒子",
+    "packages": "包裹",
+    "bucket": "桶",
+    "footstool": "脚凳",
+    "bolt": "布匹",
+    "beef": "牛肉",
+    "oil": "油",
+    "bread": "面包",
+    "pheasant": "野鸡",
+    "pumpkin": "南瓜",
+    "toastie": "吐司",
+    "shield": "盾徽",
+    "weapons": "武器",
 }
+
 
 
 
@@ -178,13 +242,14 @@ SCHOLAR_LANG_DICT_ZH = {
 
 def guess_type(item):
     """
-    根据 item 的原始 type、id 和 aspects 中的 'other' 进行类型推断，
-    尽量区分：book / letter / scroll / codex / tablet 等。
+    根据 item 的原始 type、id 和 aspects 进行类型推断。
+    使用绝对安全的白名单机制，无法精准确定的类别一律回退为通用的“物品”。
     """
     raw_type = (item.get("type") or "").strip().lower()
     _id = (item.get("id") or "").lower()
     aspects = item.get("aspects", {}) or {}
 
+    # 1. 基于 ID 强特征的推断
     if _id.startswith("letter.") or "letter" in _id:
         t = "letter"
     elif "scroll" in _id:
@@ -194,6 +259,7 @@ def guess_type(item):
     elif "codex" in _id:
         t = "codex"
     else:
+        # 2. 基于 Aspects 包含的特殊性相推断
         other_keys = set()
         for k in aspects.keys():
             if "." not in k:
@@ -223,29 +289,28 @@ def guess_type(item):
         elif "record" in other_keys:
             t = "record"
         else:
-            if raw_type == "aspecteditem" and "." in _id:
-                t = _id.split(".", 1)[0]
+            # 3. 处理 aspecteditem
+            if raw_type == "aspecteditem":
+                # 如果有 '.'，提取前缀
+                if "." in _id:
+                    prefix = _id.split(".", 1)[0]
+                    if prefix in TYPE_MAP_ZH:
+                        t = prefix
+                    else:
+                        t = "item"
+                # 如果没有 '.'，信息量不足，直接舍去强行分类
+                else:
+                    t = "item"
             else:
                 t = raw_type or "item"
 
-    if t in TYPE_MAP_ZH:
-        type_zh = TYPE_MAP_ZH[t]
-    else:
-        # 如果 TYPE_MAP_ZH 里没有，触发自动翻译
-        if t not in _auto_trans_cache:
-            if _translator:
-                try:
-                    res = _translator.translate(t)
-                    if "MYMEMORY" not in res:
-                        # 【核心修复】：强行将结果转换为大陆简体！
-                        _auto_trans_cache[t] = zhconv.convert(res, 'zh-cn')
-                except:
-                    _auto_trans_cache[t] = "物品"
-            else:
-                _auto_trans_cache[t] = "物品"
-        
-        type_zh = _auto_trans_cache[t]
-    return t, type_zh
+    # 4. 查表获取中文名，如果 t 完全不认识，则安全兜底为“物品”
+    type_zh = TYPE_MAP_ZH.get(t, "物品")
+    
+    # 首字母大写处理英文名（针对兜底的 item，输出 Item）
+    type_en = t.capitalize() if t else "Item"
+    
+    return type_en, type_zh
 
 
 EN_ITEM_TEMPLATES = [
