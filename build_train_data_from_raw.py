@@ -3,9 +3,22 @@ import os
 from pathlib import Path
 import random
 import hashlib
+import zhconv
+import re
 
-RAW_FILE = os.path.join("data", "corrected_cs_raw_items.json")  # 你的原始文件
-OUT_FILE = os.path.join("data", "train_items_cs.jsonl")              # 输出训练数据
+try:
+    from translate import Translator
+    # 初始化英译中翻译器
+    _translator = Translator(from_lang="en", to_lang="zh-CN")
+except ImportError:
+    print("未检测到 translate 库，自动翻译功能将回退为默认'物品'。可运行 pip install translate 安装。")
+    _translator = None
+_auto_trans_cache = {}
+
+RAW_FILE = os.path.join("data", "boh_raw_data_items.json")  # 你的原始文件
+OUT_FILE = os.path.join("data", "train_items_boh.jsonl")    # 输出训练数据
+
+GAME = "司辰之书" if 'boh' in RAW_FILE else "密教模拟器" 
 
 # 目标：结构化→文本样本在全体样本中的占比
 TARGET_STRUCT_RATIO = 0.2   # 可调：0.1 ~ 0.3 之间都可以
@@ -26,7 +39,12 @@ TYPE_MAP_EN = {
     "密传": "fragment",
     "影响": "influence",
     "工具": "tool",
-    "原料": "ingredient"
+    "原料": "ingredient",
+    "访客": "visitor",
+    "天气": "weather",
+    "魂质": "ability",
+    "事件": "incident",
+    "技艺": "skills"
 }
 
 TYPE_MAP_ZH = {
@@ -41,7 +59,12 @@ TYPE_MAP_ZH = {
     "fragment":"密传",
     "influence":"影响",
     "tool": "工具",
-    "ingredient":"原料"
+    "ingredient":"原料",
+    'visitor':'访客',
+    'weather':'天气',
+    'ability':'魂质',
+    'incident':'事件',
+    'skills': '技艺'
 }
 
 
@@ -122,6 +145,13 @@ MYSTERY_EN = {
     ),
 }
 
+SPRITE_ZH_MAP = {
+    "lantern": "灯", "forge": "铸", "edge": "刃", "winter": "冬",
+    "heart": "心", "moth": "蛾", "grail": "杯", "knock": "启",
+    "secrethistories": "秘史", "rose": "引", "moon": "月",
+    "nectar": "蜜", "sky": "穹", "scale": "鳞"
+}
+
 # ====== 语言学名映射 (专门用于解析 CS 中的 scholar 产出) ======
 SCHOLAR_LANG_DICT_EN = {
     "fucine": "Fucine",
@@ -193,9 +223,28 @@ def guess_type(item):
         elif "record" in other_keys:
             t = "record"
         else:
-            t = raw_type or "item"
+            if raw_type == "aspecteditem" and "." in _id:
+                t = _id.split(".", 1)[0]
+            else:
+                t = raw_type or "item"
 
-    type_zh = TYPE_MAP_ZH.get(t, "物品")
+    if t in TYPE_MAP_ZH:
+        type_zh = TYPE_MAP_ZH[t]
+    else:
+        # 如果 TYPE_MAP_ZH 里没有，触发自动翻译
+        if t not in _auto_trans_cache:
+            if _translator:
+                try:
+                    res = _translator.translate(t)
+                    if "MYMEMORY" not in res:
+                        # 【核心修复】：强行将结果转换为大陆简体！
+                        _auto_trans_cache[t] = zhconv.convert(res, 'zh-cn')
+                except:
+                    _auto_trans_cache[t] = "物品"
+            else:
+                _auto_trans_cache[t] = "物品"
+        
+        type_zh = _auto_trans_cache[t]
     return t, type_zh
 
 
@@ -210,7 +259,7 @@ ZH_ITEM_TEMPLATES = [
 ]
 
 ZH_STORY_TEMPLATES = [
-    "将下面的英文故事段落翻译为中文，保持《密教模拟器》式的叙事风格，善用象征与暗示。",
+    f"将下面的英文故事段落翻译为中文，保持《{GAME}》式的叙事风格，善用象征与暗示。",
     "将下面的英文故事段落翻译为中文，保留其谜语般隐喻与宗教神话气息。",
 ]
 
@@ -230,7 +279,7 @@ EN_MISC_TEMPLATES = [
 ]
 
 ZH_CONTINUATION_TEMPLATES = [
-    "根据以下探险地点的背景和初始情况，续写接下来的探险过程与最终发现。保持《密教模拟器》那种阴暗、神秘且带有暗示的文风。",
+    f"根据以下探险地点的背景和初始情况，续写接下来的探险过程与最终发现。保持《{GAME}》那种阴暗、神秘且带有暗示的文风。",
     "你正在参与一场秘密的神秘学探险。基于提供的初始情境，续写突破阻碍后的场景以及最终的结局。"
 ]
 
@@ -282,49 +331,57 @@ def aspects_to_semantic_text(aspects: dict, lang: str = "zh") -> str:
                 desc = MYSTERY_EN.get(name)
                 if desc:
                     lines.append(f"Principle: {desc}")
+        elif k in MYSTERY_EN.keys():
+            if lang == "zh":
+                lines.append(f"准则:{MYSTERY_ZH[k]}")
+            else:
+                lines.append(f"Principle: {MYSTERY_EN[k]}")
     return "\n".join(lines)
 
-
-def collect_cn_pairs(obj, path=""):
+def is_boring_short_text(text: str) -> bool:
     """
-    递归收集任何形如 key / key_cn 的字符串对。
-    返回 [(path, en_text, cn_text), ...]
+    判断文本是否“短且无趣”。
+    规则：如果长度小于 12 个字符，并且句中没有逗号、分号或冒号，则判定为过于简单的短句。
     """
-    pairs = []
+    if len(text) < 12 and not any(punc in text for punc in ["，", ",", "；", ";", "：", ":"]):
+        return True
+    return False
 
-    if isinstance(obj, dict):
-        for k, v in obj.items():
-            if k.endswith("_cn"):
-                continue
-            cn_k = f"{k}_cn"
-            if cn_k in obj and isinstance(v, str) and isinstance(obj[cn_k], str):
-                en = v.strip()
-                cn = obj[cn_k].strip()
-                if en and cn:
-                    pairs.append((path + k, en, cn))
-
-        for k, v in obj.items():
-            pairs.extend(collect_cn_pairs(v, path + f"{k}."))
-        return pairs
-
-    if isinstance(obj, list):
-        for i, v in enumerate(obj):
-            pairs.extend(collect_cn_pairs(v, path + f"[{i}]."))
-        return pairs
-
-    return pairs
-
-
-def strip_trailing_numen_note(text: str) -> str:
+def clean_text(text: str) -> str:
     """
-    你原来那段：如果末尾是 [...] 则去掉最后一个 '[' 后面的注记。
+    智能文本清洗函数：
+    1. 剔除末尾的注记
+    2. 将图标 <sprite name=xxx> 还原为对应文字
+    3. 将 <b> 和 <i> 转换为大模型更易理解的 Markdown 语法
     """
     if not text:
         return text
     t = text.strip()
-    if t.endswith(".]") or t.endswith('。]') or t.endswith('.].'):  #and marker in t:
+    
+    # 1. 剔除末尾无意义的注记 [...]
+    if t.endswith(".]") or t.endswith('。]') or t.endswith('.].'):
         t = t.rsplit("[", 1)[0].strip()
-    return t
+        
+    # 2. 智能处理 <sprite> 图标标签
+    # def sprite_repl(match):
+    #     sprite_name = match.group(1).lower()
+    #     # 简单判定：如果当前句子包含中文，则翻译为中文性相；否则首字母大写
+    #     if any('\u4e00' <= char <= '\u9fff' for char in t):
+    #         return SPRITE_ZH_MAP.get(sprite_name, sprite_name)
+    #     else:
+    #         return sprite_name.capitalize()
+            
+    # t = re.sub(r'<sprite\s+name=([^>]+)>', sprite_repl, t)
+    
+    # # 3. 将 <b> 和 <i> 转换为 Markdown 语法（大模型更敏感）
+    # # 如果你想保留 HTML 给游戏 Mod 用，可以直接注释掉这两行
+    # t = t.replace('<b>', '**').replace('</b>', '**')
+    # t = t.replace('<i>', '*').replace('</i>', '*')
+    
+    # # 4. 兜底清洗：删掉其他任何不认识的异常 HTML 标签，但保留我们刚刚转换的文本
+    # t = re.sub(r'<[^>]+>', '', t)
+    
+    return t.strip()
 
 
 def first_reading_text(readings_list):
@@ -370,9 +427,9 @@ def main():
         desc = (item.get("description") or "").strip()
         desc_cn = (item.get("description_cn") or "").strip()
 
-        # 清理末尾 numen 注记
-        desc = strip_trailing_numen_note(desc) #"<i>numen</i>" "<i>闰识</i>"
-        desc_cn = strip_trailing_numen_note(desc_cn)
+        # 清理末尾 [] 注记
+        desc = clean_text(desc) #"<i>numen</i>" "<i>闰识</i>"
+        desc_cn = clean_text(desc_cn)
 
         aspects = item.get("aspects", {}) or {}
 
@@ -457,94 +514,52 @@ def main():
             )
 
             # ========== 3. 结构化信息 -> 文本（结构样本） ==========
-            lines_zh = [
-                "物品信息：",
-                f"名称：{name_cn or name}",
-                f"类型：{type_zh}"
-            ]
-            if semantic_zh:
-                lines_zh.append(semantic_zh)
-            if results_cn:  # 只有成功提取到了产出物，才会加入"习得："行
-                lines_zh.append(f"习得：{results_cn}")
-                
-            struct_input_zh = (
-                "\n".join(lines_zh) + "\n\n"
-                "请根据以上信息，用中文写出该物品的详细描述，"
-                "风格接近《密教模拟器》，带有神秘主义、宗教神话与隐喻感。"
-            )   #司辰之书
-            add_example(
-                struct_examples,
-                "根据给定的物品结构化信息，生成一段完整的中文物品描述。",
-                struct_input_zh,
-                desc_cn,
-                seen=seen_struct,
-            )
-
-            lines_en = [
-                "Item Info:",
-                f"Name: {name}",
-                f"Type: {type_en}"
-            ]
-            if semantic_en:
-                lines_en.append(semantic_en)
-            if results_en:  # 同理，仅当存在产出时加入"Learned:"行
-                lines_en.append(f"Learned: {results_en}")
-                
-            struct_input_en = (
-                "\n".join(lines_en) + "\n\n"
-                "Based on the information above, write a full English item description "
-                "in the style of 'Book of Hours', with occult, quasi-religious and symbolic overtones."
-            )
-            add_example(
-                struct_examples,
-                "Given structured item information, generate a complete English item description.",
-                struct_input_en,
-                desc,
-                seen=seen_struct,
-            )
-
-        # ========== 1.x 额外内层字段：自动抓取 *_cn 对并加入训练集 ==========
-        nested_pairs = collect_cn_pairs(item)
-
-        # 避免重复：这些字段你已经处理过/或者不需要
-        skip_prefixes = {
-            "description",
-            "description_cn",
-            "name",
-            "name_cn",
-            "type",
-            "icon",
-            "id",
-            "readings",
-            "readings_cn",
-        }
-
-        for p, en_txt, cn_txt in nested_pairs:
-            # 跳过已处理/不需要的路径
-            if any(p == s or p.startswith(s + ".") for s in skip_prefixes):
-                continue
-
-            # 过滤太短的字段（通常是噪声）
-            if len(en_txt) < MIN_NESTED_PAIR_LEN or len(cn_txt) < MIN_NESTED_PAIR_LEN:
-                continue
-
-            en_inp = f"Item: {name}\nField: {p}\nText:\n{en_txt}"
-            cn_inp = f"物品：{name_cn or name}\n字段：{p}\n文本：\n{cn_txt}"
-
-            add_example(
-                base_examples,
-                random.choice(ZH_MISC_TEMPLATES),
-                en_inp,
-                cn_inp,
-                seen=seen_base,
-            )
-            add_example(
-                base_examples,
-                random.choice(EN_MISC_TEMPLATES),
-                cn_inp,
-                en_inp,
-                seen=seen_base,
-            )
+            if not is_boring_short_text(desc_cn):
+                lines_zh = [
+                    "物品信息：",
+                    f"名称：{name_cn or name}",
+                    f"类型：{type_zh}"
+                ]
+                if semantic_zh:
+                    lines_zh.append(semantic_zh)
+                if results_cn:  # 只有成功提取到了产出物，才会加入"习得："行
+                    lines_zh.append(f"习得：{results_cn}")
+                    
+                struct_input_zh = (
+                    "\n".join(lines_zh) + "\n\n"
+                    "请根据以上信息，用中文写出该物品的详细描述，"
+                    f"风格接近《{GAME}》，带有神秘主义、宗教神话与隐喻感。"
+                )   
+                add_example(
+                    struct_examples,
+                    "根据给定的物品结构化信息，生成一段完整的中文物品描述。",
+                    struct_input_zh,
+                    desc_cn,
+                    seen=seen_struct,
+                )
+            if not is_boring_short_text(desc):
+                lines_en = [
+                    "Item Info:",
+                    f"Name: {name}",
+                    f"Type: {type_en}"
+                ]
+                if semantic_en:
+                    lines_en.append(semantic_en)
+                if results_en:  # 同理，仅当存在产出时加入"Learned:"行
+                    lines_en.append(f"Learned: {results_en}")
+                    
+                struct_input_en = (
+                    "\n".join(lines_en) + "\n\n"
+                    "Based on the information above, write a full English item description "
+                    "in the style of 'Book of Hours', with occult, quasi-religious and symbolic overtones."
+                )
+                add_example(
+                    struct_examples,
+                    "Given structured item information, generate a complete English item description.",
+                    struct_input_en,
+                    desc,
+                    seen=seen_struct,
+                )
 
         # ========== 2. readings / readings_cn 段落翻译（基础样本） ==========
         readings = item.get("readings", []) or []
@@ -602,21 +617,21 @@ def main():
             suc_desc_en = (vault_descriptions.get("success_desc", {}).get("en") or "").strip()
             suc_desc_cn = (vault_descriptions.get("success_desc", {}).get("cn") or "").strip()
 
-            setup_en = strip_trailing_numen_note(setup_en)
-            setup_cn = strip_trailing_numen_note(setup_cn)
-            suc_start_en = strip_trailing_numen_note(suc_start_en)
-            suc_start_cn = strip_trailing_numen_note(suc_start_cn)
-            suc_desc_en = strip_trailing_numen_note(suc_desc_en)
-            suc_desc_cn = strip_trailing_numen_note(suc_desc_cn)
+            setup_en = clean_text(setup_en)
+            setup_cn = clean_text(setup_cn)
+            suc_start_en = clean_text(suc_start_en)
+            suc_start_cn = clean_text(suc_start_cn)
+            suc_desc_en = clean_text(suc_desc_en)
+            suc_desc_cn = clean_text(suc_desc_cn)
 
             # 2. 原有的翻译样本对 
             for desc_key in ["setup_start", "success_start", "success_desc"]:
                 desc_obj = vault_descriptions.get(desc_key)
                 if isinstance(desc_obj, dict):
                     en_text = (desc_obj.get("en") or "").strip()
-                    en_text = strip_trailing_numen_note(en_text)
+                    en_text = clean_text(en_text)
                     cn_text = (desc_obj.get("cn") or "").strip()
-                    cn_text = strip_trailing_numen_note(cn_text)
+                    cn_text = clean_text(cn_text)
                     if en_text and cn_text:
                         add_example(base_examples, random.choice(ZH_STORY_TEMPLATES), en_text, cn_text, seen=seen_base)
                         add_example(base_examples, random.choice(EN_STORY_TEMPLATES), cn_text, en_text, seen=seen_base)
@@ -658,6 +673,40 @@ def main():
                     out_en, 
                     seen=seen_base
                 )
+
+        # ========== 2.x 事件 (incident) 访客反应翻译 ==========
+        visitacted_reactions = item.get("visitacted_reactions", {})
+        if isinstance(visitacted_reactions, dict):
+            # 遍历访客 (如 "arun", "connie")
+            for visitor_id, aspect_dict in visitacted_reactions.items():
+                if isinstance(aspect_dict, dict):
+                    # 遍历对应的性相 (如 "moon", "knock")
+                    for aspect, reaction_data in aspect_dict.items():
+                        if isinstance(reaction_data, dict):
+                            en_text = (reaction_data.get("description") or "").strip()
+                            cn_text = (reaction_data.get("description_cn") or "").strip()
+                            
+                            # 清除可能存在的标签注记
+                            en_text = clean_text(en_text)
+                            cn_text = clean_text(cn_text)
+                            
+                            if en_text and cn_text:
+                                # 访客的反应通常带有很强的叙事色彩与谜语人风格，
+                                # 使用 MISC 模板（神秘主义/哲思感）或 STORY 模板最为合适
+                                add_example(
+                                    base_examples,
+                                    random.choice(ZH_MISC_TEMPLATES),
+                                    en_text,
+                                    cn_text,
+                                    seen=seen_base,
+                                )
+                                add_example(
+                                    base_examples,
+                                    random.choice(EN_MISC_TEMPLATES),
+                                    cn_text,
+                                    en_text,
+                                    seen=seen_base,
+                                )
     # ====== 控制结构化样本占比 ======
     N_base = len(base_examples)
     N_struct_raw = len(struct_examples)
