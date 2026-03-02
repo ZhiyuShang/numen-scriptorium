@@ -5,6 +5,12 @@ __pycache__/
 *.so
 .Python
 
+# Package / tooling
+.pytest_cache/
+
+# Local editable src layout helper
+src/*.egg-info/
+
 # Generated JSON files
 hours.json
 lore_entities.json
@@ -32,6 +38,8 @@ dist/
 
 # Logs
 *.log
+*.tmp
+logs/
 
 # System files
 .DS_Store
@@ -43,3 +51,14 @@ Thumbs.db
 # Merge script (if it's generated/temporary)
 merge_hours.py
 future.txt
+
+# Experiment / artifacts
+outputs/
+outputs_*/
+wandb/
+
+# Scratch files
+temp.py
+temp.txt
+run_infer.log
+misc/

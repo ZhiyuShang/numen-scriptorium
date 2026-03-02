@@ -1,4 +1,100 @@
 
+## Project Structure (Updated)
+
+This repo now uses a standard `src/` package layout while keeping old commands compatible.
+
+### Install (required)
+
+From repo root:
+
+- Local: `pip install -e .`
+- Quick package check: `python -c "import numen_scriptorium; print(numen_scriptorium.__version__)"`
+
+Colab (after `git clone`):
+
+1. `cd` into repo root
+2. `pip install -e .`
+
+### New directories
+
+```text
+src/numen_scriptorium/
+  cli/            # train / infer / smoke entrypoints
+  training/       # QLoRA training implementation
+  inference/      # adapter loading + generation
+  data/           # data module namespace
+  common.py
+  config.py
+  paths.py
+
+configs/
+  train_qwen_1_5b.yaml
+  train_qwen_7b.yaml
+
+scripts/
+  train.py
+  infer.py
+  smoke.py
+  build_dataset.py
+  boh_extractor.py
+  cs_extractor.py
+```
+
+### New recommended commands
+
+Local (from repo root):
+
+- Build dataset:
+  `python scripts/build_dataset.py`
+- Split JSONL:
+  `python scripts/split_jsonl.py --in_file data/train_all.jsonl --val_ratio 0.05 --test_ratio 0.0 --seed 42`
+
+- Train:
+  - 7B:
+    `python -m numen_scriptorium.cli.train --config configs/train_qwen_7b.yaml`
+  - 1.5B:
+    `python -m numen_scriptorium.cli.train --config configs/train_qwen_1_5b.yaml`
+- Train with overrides (example):
+  `python -m numen_scriptorium.cli.train --config configs/train_qwen_7b.yaml --preset t4 --output_dir outputs/qwen2_5_7b_boh_qlora_t4 --resume latest`
+- Infer (base + adapter):
+  `python -m numen_scriptorium.cli.infer --base_model Qwen/Qwen2.5-7B-Instruct --adapter outputs/qwen2_5_7b_boh_qlora/best`
+- Smoke test (no training):
+  `python -m numen_scriptorium.cli.smoke --config configs/train_qwen_7b.yaml --max_seq_len 512`
+
+- (Short form)
+  `python -m numen_scriptorium.cli.train --config configs/train_qwen_7b.yaml`
+
+Script shortcuts:
+
+- `python scripts/train.py --config configs/train_qwen_7b.yaml`
+- `python scripts/infer.py --adapter outputs/.../best`
+
+### Backward compatibility
+
+Old entry files still work:
+
+- `python train_qlora_qwen.py ...`
+- `python infer_qlora_qwen3_boh.py ...`
+- `python boh_extractor.py`
+- `python cs_extractor.py`
+- `python build_train_data_from_raw.py`
+- `python transfer_raw.py`
+
+They now delegate to the new package CLI.
+
+### Colab note
+
+If running in Colab, `cd` into repo root before running commands above so relative config/data paths resolve correctly.
+
+### Hugging Face download notes (Windows)
+
+- Optional token for higher limits/faster downloads:
+  - Windows CMD/PowerShell: `set HF_TOKEN=your_token` (CMD) / `$env:HF_TOKEN="your_token"` (PowerShell)
+  - Bash: `export HF_TOKEN=your_token`
+- Symlink warning on Windows is expected if Developer Mode is off.
+  - You can enable **Windows Developer Mode** or run terminal as Administrator.
+  - To silence warning only: set `HF_HUB_DISABLE_SYMLINKS_WARNING=1`.
+
 ---
 
 # 🇬🇧 English README

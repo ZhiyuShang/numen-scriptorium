@@ -1,0 +1,24 @@
+base_model: Qwen/Qwen2.5-1.5B-Instruct
+output_dir: outputs/qwen2_5_1_5b_boh_qlora
+train_file: data_split/train.jsonl
+val_file: data_split/val.jsonl
+
+preset: t4
+max_seq_len: 1024
+micro_batch_size: 1
+gradient_accumulation_steps: 16
+num_epochs: 4
+learning_rate: 5.0e-5
+lora_r: 16
+lora_alpha: 32
+lora_dropout: 0.05
+
+eval_steps: 200
+save_steps: 200
+logging_steps: 10
+save_total_limit: 4
+
+warmup_ratio: 0.03
+max_grad_norm: 1.0
+
+report_to: wandb
