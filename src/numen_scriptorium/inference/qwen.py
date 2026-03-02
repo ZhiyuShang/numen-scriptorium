@@ -39,13 +39,25 @@ def load_model(base_model: str, lora_dir: str):
     return tokenizer, model
 
 
-def generate(tokenizer, model, instruction: str, user_input: str = "", max_new_tokens: int = 256):
+def generate(
+    tokenizer,
+    model,
+    instruction: str,
+    user_input: str = "",
+    max_new_tokens: int = 256,
+    seed: int | None = None,
+):
     if user_input:
         prompt = f"指令：{instruction}\n输入：{user_input}\n回答："
     else:
         prompt = f"指令：{instruction}\n回答："
 
     inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    generator = None
+    if seed is not None:
+        generator = torch.Generator(device=inputs["input_ids"].device)
+        generator.manual_seed(seed)
+
     with torch.no_grad():
         outputs = model.generate(
             **inputs,
@@ -54,6 +66,7 @@ def generate(tokenizer, model, instruction: str, user_input: str = "", max_new_t
             temperature=0.7,
             top_p=0.9,
             eos_token_id=tokenizer.eos_token_id,
+            generator=generator,
         )
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
     if "回答：" in text:

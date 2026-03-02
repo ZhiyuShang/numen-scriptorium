@@ -14,6 +14,12 @@ def main():
     parser.add_argument("--preset", type=str, choices=["t4", "a100"], default=None)
     parser.add_argument("--max_seq_len", type=int, default=None)
     parser.add_argument("--report_to", type=str, choices=["wandb", "none"], default=None)
+    parser.add_argument("--seed", type=int, default=None)
+    parser.add_argument(
+        "--deterministic",
+        action="store_true",
+        help="Enable deterministic torch behavior (may reduce performance).",
+    )
     parser.add_argument("--resume", nargs="?", const="latest", default=None)
     args = parser.parse_args()
 
@@ -25,6 +31,8 @@ def main():
             "output_dir": args.output_dir,
             "preset": args.preset,
             "report_to": args.report_to,
+            "seed": args.seed,
+            "deterministic": args.deterministic if args.deterministic else None,
         },
     )
     train_from_config(cfg, resume=args.resume, max_seq_len_override=args.max_seq_len)

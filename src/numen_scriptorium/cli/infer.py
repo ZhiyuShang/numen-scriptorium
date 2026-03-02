@@ -4,6 +4,7 @@ import argparse
 import time
 
 from numen_scriptorium.inference.qwen import generate, load_model
+from numen_scriptorium.repro import set_global_seed
 
 
 def main():
@@ -18,9 +19,16 @@ def main():
     parser.add_argument("--instruction", type=str, default="请将输入翻译为中文。")
     parser.add_argument("--input", type=str, default="")
     parser.add_argument("--max_new_tokens", type=int, default=256)
+    parser.add_argument("--seed", type=int, default=42, help="Global random seed for reproducibility.")
+    parser.add_argument(
+        "--deterministic",
+        action="store_true",
+        help="Enable deterministic torch behavior (may reduce performance).",
+    )
     args = parser.parse_args()
 
     t0 = time.time()
+    set_global_seed(args.seed, deterministic=args.deterministic)
     tokenizer, model = load_model(args.base_model, args.adapter)
     out = generate(
         tokenizer,
@@ -28,6 +36,7 @@ def main():
         instruction=args.instruction,
         user_input=args.input,
         max_new_tokens=args.max_new_tokens,
+        seed=args.seed,
     )
     print(out)
     print(f"Time taken: {time.time() - t0:.2f}s")

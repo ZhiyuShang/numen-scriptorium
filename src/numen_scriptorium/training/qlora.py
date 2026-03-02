@@ -17,6 +17,7 @@ from transformers import (
 from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 
 from numen_scriptorium.paths import ROOT
+from numen_scriptorium.repro import set_global_seed
 
 
 PRESET_CONFIGS = {
@@ -153,6 +154,9 @@ def resolve_training_config(config: Dict[str, Any], max_seq_len_override: int | 
 
 def train_from_config(config: Dict[str, Any], resume: str | None = None, max_seq_len_override: int | None = None):
     cfg = resolve_training_config(config, max_seq_len_override)
+    seed = int(cfg.get("seed", 42))
+    deterministic = bool(cfg.get("deterministic", False))
+    set_global_seed(seed, deterministic=deterministic)
 
     base_model = cfg.get("base_model", "Qwen/Qwen2.5-7B-Instruct")
     output_dir = _resolve_path(cfg.get("output_dir", "outputs/qwen2_5_7b_boh_qlora"))
@@ -178,6 +182,7 @@ def train_from_config(config: Dict[str, Any], resume: str | None = None, max_seq
     print(f"learning_rate: {cfg['learning_rate']}")
     print(f"lora(r/alpha): {cfg['lora_r']}/{cfg['lora_alpha']}")
     print(f"fp16: {use_fp16}, bf16: {use_bf16}")
+    print(f"seed: {seed}, deterministic: {deterministic}")
     print(f"output_dir: {output_dir}")
     print("=" * 80)
 
@@ -245,6 +250,8 @@ def train_from_config(config: Dict[str, Any], resume: str | None = None, max_seq
         bf16=use_bf16,
         report_to=report_to_value,
         run_name=run_name,
+        seed=seed,
+        data_seed=seed,
         remove_unused_columns=False,
     )
 
@@ -276,6 +283,10 @@ def train_from_config(config: Dict[str, Any], resume: str | None = None, max_seq
 
 def smoke_test_from_config(config: Dict[str, Any], max_seq_len_override: int | None = None):
     cfg = resolve_training_config(config, max_seq_len_override)
+    seed = int(cfg.get("seed", 42))
+    deterministic = bool(cfg.get("deterministic", False))
+    set_global_seed(seed, deterministic=deterministic)
+
     base_model = cfg.get("base_model", "Qwen/Qwen2.5-7B-Instruct")
     train_file = _resolve_path(cfg.get("train_file", "data_split/train.jsonl"))
 

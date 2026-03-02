@@ -1,0 +1,173 @@
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名翻译者，需要将英文文本翻译为中文。
+要求：
+1. 保留所有专有名词（包括人物、地名），不要将它们翻译为《司辰之书》；
+2. 在保证忠实的前提下，让整体语气更接近游戏《司辰之书》，适度使用象征与暗示。
+请翻译下面这段英文故事：" `
+  --input "Name: The Sun's Design
+Type: tablet
+Description: A scorched slab of black corundum, minutely scratched on every side with intricate ideoglyphs.
+In the city of Emesa, beneath the Church of the Holy Belt, in a sarcophagus of black corundum, Elagabalus lies: accursed of Janus, neither Long nor mortal, neither man nor woman, neither a liar nor a speaker of truth, neither real nor imagined. On his light-suffused skin is made manifest the Sun-in-Splendour's grand design...
+Elagabalus is the source of one-half of this text. The source of the other-half is obscure, but its power is evident. It is impossible to be certain if the Sun really planned for us to enter Eternity. It is impossible to be sure if the Grail, the Vagabond, and the Forge, stole this birthright from us, or saved us from it. But there is a great secret here." `
+  --max_new_tokens 800
+
+
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名翻译者，需要将英文文本翻译为中文。
+要求：
+1. 保留所有专有名词（人物/地名/神祇/机构/术语），不要将它们翻译为《司辰之书》；
+2. 风格贴近 Book of Hours：克制、冷静、带象征与仪式感，但不自作解释；
+3. 忠实优先，不增删关键细节；保留原文的停顿、排比与反复。
+请翻译下面这段英文故事：" `
+  --input "Name: The Moth's Index
+Type: memorandum
+Description: A bundle of thin pages that smell faintly of camphor and crushed ink.
+In the back-stacks of the Library, a clerk named Saliba kept a second catalogue: not of books, but of absences. Each entry begins with a date, and ends with a word crossed out so hard the paper thins. He claimed the Moth taught him to read what is not written. Some say the Index is only a joke. Some say it is a map of stolen hours. No-one agrees which is worse." `
+  --max_new_tokens 800
+
+
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名图书馆馆藏条目译写者，将英文条目译为中文。
+要求：
+1. Name/Type/Description 字段与冒号格式保留；
+2. 保留所有专有名词原样（人物/地名/神祇/机构/书名/术语），不要翻译为《司辰之书》；
+3. 口吻冷峻、归档式，不解释隐喻，不加注释；
+4. 忠实呈现原文信息与不确定性措辞（可能/据说/无法证实）。
+请翻译：" `
+  --input "Name: The Hourglass Key
+Type: artifact
+Description: A key of tarnished brass. When held, the hand remembers water.
+Provenance: confiscated at the Emesa customs-house, sealed under the Church of the Holy Belt.
+Notes: The key does not open doors. It opens delays. Witnesses report that a sentence spoken while turning it arrives minutes later, like a letter posted to the self." `
+  --max_new_tokens 800
+
+
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名译者，将英文译为中文，风格贴近 Book of Hours 的“仪式宣读”口吻。
+要求：
+1. 保留专有名词原样（人物/地名/神名/机构/术语）；
+2. 强化原文排比、反复与断句的节奏（可用顿号、分号、破折号）；
+3. 忠实优先，不额外解释；保留原文的模糊与矛盾。
+请翻译：" `
+  --input "Name: The Forge's Courtesy
+Type: sermon-fragment
+Description: A page scorched at the margins; the center is stubbornly clean.
+They say the Forge is mercy, and they say it is hunger. They say it remakes what it touches, and they say it only reveals what was always there. In the ash of the chapel at Kerisham, someone wrote: 'If you want a gift, bring fuel. If you want a truth, bring yourself.' The last line is missing." `
+  --max_new_tokens 800
+
+
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名翻译者，将英文译为中文，风格偏向 Book of Hours 的“蛾与梦”气质：轻柔、阴影、含混。
+要求：
+1. 专有名词保持原样；
+2. 保留暧昧，不要把象征讲明白，不要解释设定；
+3. 译文应像一段被人半记半忘的梦中抄录，但信息仍忠实。
+请翻译：" `
+  --input "Name: The Velvet Lesson
+Type: dream-note
+Description: A slip of paper folded until it forgets its corners.
+In the second hour before dawn, I dreamed of a corridor where the lamps were unlit and yet everything could be read. A woman in a moth-grey coat said my name as if it belonged to someone else. She offered me a choice: to remember a kindness, or to remember its cost. When I woke, my mouth tasted of vellum." `
+  --max_new_tokens 800
+
+
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名翻译者，将英文译为中文，风格偏向 Book of Hours 的“太阳与辉光”：明亮、锋利、带审判感。
+要求：
+1. 专有名词保持原样；
+2. 语气庄严但克制，不写成史诗口号；
+3. 保留原文的不确定与怀疑，不要替作者下结论。
+请翻译：" `
+  --input "Name: The Sun's Receipt
+Type: letter
+Description: The paper is warm even in winter; the ink has dried to a faint gold.
+From the terrace above Emesa, the priest wrote: 'The Sun-in-Splendour does not bargain. It tallies. It does not forgive. It recalculates.' He added that each kindness is a debt repaid in daylight, and each lie is a shadow that must be carried. The signature is burned away." `
+  --max_new_tokens 800
+
+
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名翻译者，将英文译为中文，风格贴近 Book of Hours 的“审查/证词”记录：冷硬、简洁、压抑。
+要求：
+1. 专有名词保持原样；
+2. 不解释象征与设定，只呈现证词语气中的迟疑、回避与暗示；
+3. 忠实还原原文的法律式措辞与含混（据称/不确定/无法证实）。
+请翻译：" `
+  --input "Name: Deposition of Marcia V.
+Type: testimony
+Description: Taken under oath, transcribed by a hand that trembled.
+I saw the Grail on the table. I cannot prove it was the Grail; it might have been only a cup. But everyone in the room behaved as if the room had teeth. The defendant spoke three times and each time the candles guttered. When asked who taught him the words, he said: 'A Librarian, or something wearing that title.' I decline to speculate further." `
+  --max_new_tokens 800
+
+
+
+
+# 1) 中→英（例子1）
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名翻译者，需要将中文文本翻译为英文。
+要求：
+1. 保留所有专有名词原样（人物/地名/神祇/机构/术语，如 Library, Emesa, Moth, Sun-in-Splendour 等），不要翻译或替换；
+2. 英文语气贴近 Book of Hours：克制、冷静、档案式；保留暧昧与不确定，不解释象征；
+3. 忠实优先，不增删关键信息；可微调句式以自然英文表达。
+请翻译下面这段中文：" `
+  --input "描述：一只玻璃瓶，瓶塞用黑蜡封住，里面漂着一枚微小的金属齿轮。
+在 Emesa 的旧港口，有人说夜里能听见它自己转动；有人说那只是潮声。瓶身刻着一行字，像抄录又像判词：“The Sun-in-Splendour remembers debts.”
+没有人能证实这齿轮来自哪里，但每当它停下，街灯就会暗一盏。" `
+  --max_new_tokens 800
+
+# 2) 中→英（例子2）
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名翻译者，需要将中文文本翻译为英文。
+要求：
+1. 保留所有专有名词原样（Library, Emesa, Moth, Sun-in-Splendour, Grail, Vagabond, Forge 等）；
+2. 风格为 Book of Hours 的归档记录：冷峻、克制、略带隐喻但不解释；
+3. 保留原文的不确定措辞（有人说/无法证实/据称），不自作结论。
+请翻译下面这段中文：" `
+  --input "描述：一叠泛黄的借阅单，边缘被火轻轻吻过，仍能读出日期与签名。
+Library 的馆员说这些单据从未存在过；但在每一张的背面，都有同一个词被重重划掉，仿佛那词会咬人。
+有人称之为 Moth 的礼物；也有人说，这是对遗忘的起诉书。" `
+  --max_new_tokens 800
+
+# 3) Generation（英文生成：馆藏条目）
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名英文写作者，需要生成 Book of Hours 风格的英文文本（不是翻译）。
+要求：
+1. 输出必须包含三行字段：Name: / Type: / Description:
+2. 口吻克制、归档式，保留暧昧与不确定；不要解释象征，不要科普世界观；
+3. 可使用并保留专有名词原样（Library, Emesa, Moth, Sun-in-Splendour, Grail, Vagabond, Forge），但不要滥用；
+4. 长度约 120-200 词。
+请根据下面提示生成一则条目：" `
+  --input "Theme: a ledger that records hesitations and withdrawn requests in the back-stacks of the Library. Tone: restrained, unsettling. Include one line where a name has been rubbed away." `
+  --max_new_tokens 800
+
+# 4) Generation（英文生成：证词/审查记录）
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "你是一名英文写作者，需要生成 Book of Hours 风格的英文证词记录（不是翻译）。
+要求：
+1. 输出以 Name:/Type:/Description: 开头（可额外继续写证词正文）；
+2. 语气冷硬、法庭式，保留“据称/无法证实/拒绝推测”等措辞；不要解释象征；
+3. 保留并可使用专有名词原样（Library, Emesa, Moth, Sun-in-Splendour, Grail, Vagabond, Forge）；
+4. 长度约 150-220 词。
+请根据下面提示生成：" `
+  --input "Scenario: a deposition taken after a midnight incident at Emesa customs-house. A witness describes a cup that might be the Grail, and a word that is crossed out in the transcript as if dangerous." `
+  --max_new_tokens 800

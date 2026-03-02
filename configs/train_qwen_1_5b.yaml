@@ -22,3 +22,5 @@ warmup_ratio: 0.03
 max_grad_norm: 1.0
 
 report_to: wandb
+seed: 42
+deterministic: false
