@@ -43,3 +43,4 @@ Thumbs.db
 # Merge script (if it's generated/temporary)
 merge_hours.py
 future.txt
+*zip
