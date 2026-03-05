@@ -1,0 +1,61 @@
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "You are a translator. Translate the English text into Chinese.
+Requirements:
+1) Keep all proper nouns (including people and place names) unchanged; do NOT translate them into Book of Hours-style Chinese names.
+2) While staying faithful, make the overall tone closer to the game Book of Hours, with a moderate use of symbolism and implication.
+Please translate the following English story:" `
+  --input "Name: The Sun's Design
+Type: tablet
+Description: A scorched slab of black corundum, minutely scratched on every side with intricate ideoglyphs.
+In the city of Emesa, beneath the Church of the Holy Belt, in a sarcophagus of black corundum, Elagabalus lies: accursed of Janus, neither Long nor mortal, neither man nor woman, neither a liar nor a speaker of truth, neither real nor imagined. On his light-suffused skin is made manifest the Sun-in-Splendour's grand design...
+Elagabalus is the source of one-half of this text. The source of the other-half is obscure, but its power is evident. It is impossible to be certain if the Sun really planned for us to enter Eternity. It is impossible to be sure if the Grail, the Vagabond, and the Forge, stole this birthright from us, or saved us from it. But there is a great secret here." `
+  --max_new_tokens 800
+
+
+
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "You are a translator. Translate English into Chinese in a Book of Hours mood with a 'Moth and Dream' temperament: gentle, shadowed, and slightly blurred.
+Requirements:
+1) Keep proper nouns unchanged.
+2) Preserve ambiguity; do not spell out symbols, and do not explain lore or settings.
+3) The translation should read like a dream-copied note half-remembered, yet remain faithful to the information.
+Translate:" `
+  --input "Name: The Velvet Lesson
+Type: dream-note
+Description: A slip of paper folded until it forgets its corners.
+In the second hour before dawn, I dreamed of a corridor where the lamps were unlit and yet everything could be read. A woman in a moth-grey coat said my name as if it belonged to someone else. She offered me a choice: to remember a kindness, or to remember its cost. When I woke, my mouth tasted of vellum." `
+  --max_new_tokens 800
+
+
+
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "You are an English writer. Generate Book of Hours–style English (this is NOT translation).
+Requirements:
+1) Output must include exactly three field lines: Name: / Type: / Description:
+2) Voice should be restrained and archival; keep ambiguity and uncertainty. Do not explain symbols; do not lecture worldbuilding.
+3) You may use and must preserve proper nouns as-is (Library, Emesa, Moth, Sun-in-Splendour, Grail, Vagabond, Forge), but do not overuse them.
+4) Length about 120–200 words.
+Generate one entry based on the prompt:" `
+  --input "Theme: a ledger that records hesitations and withdrawn requests in the back-stacks of the Library. Tone: restrained, unsettling. Include one line where a name has been rubbed away." `
+  --max_new_tokens 800
+
+
+
+python infer_qlora_qwen3_boh.py `
+  --base_model Qwen/Qwen2.5-7B-Instruct `
+  --adapter outputs/qwen2_5_7b_boh_qlora/best `
+  --instruction "You are an English writer. Generate a Book of Hours–style deposition record in English (this is NOT translation).
+Requirements:
+1) Begin with Name:/Type:/Description: (you may continue with the deposition body afterwards).
+2) Tone: cold, court-like; use phrasing like 'it is alleged / cannot be verified / declines to speculate'. Do not explain symbols.
+3) You may use and must preserve proper nouns as-is (Library, Emesa, Moth, Sun-in-Splendour, Grail, Vagabond, Forge).
+4) Length about 150–220 words.
+Generate based on the prompt:" `
+  --input "Scenario: a deposition taken after a midnight incident at Emesa customs-house. A witness describes a cup that might be the Grail, and a word that is crossed out in the transcript as if dangerous." `
+  --max_new_tokens 800

@@ -62,3 +62,10 @@ temp.py
 temp.txt
 run_infer.log
 misc/
+
+# Model weights / large artifacts
+*.safetensors
+*.bin
+*.pt
+checkpoints/
+data/

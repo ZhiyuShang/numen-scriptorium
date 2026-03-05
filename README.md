@@ -15,6 +15,39 @@ Colab (after `git clone`):
 1. `cd` into repo root
 2. `pip install -e .`
 
+### HF Space / Local Gradio Demo (`app.py`)
+
+Run locally from repo root:
+
+- `python app.py`
+
+UI highlights:
+
+- `gr.Blocks` layout with title, usage instructions, and input examples
+- Advanced generation controls in an **Accordion** (`max_new_tokens`, `temperature`, `top_p`)
+- Model/System status panel (loaded state, device, model/adapter config, per-request timing)
+- Responsive generation via token streaming (plus elapsed time updates)
+- Friendly UI error messages (no raw stack traces)
+
+Space env vars (optional): `NS_BASE_MODEL`, `NS_ADAPTER`, `NS_USE_4BIT`, `NS_DEFAULT_INSTRUCTION`.
+
+#### Demo examples file format (button autofill)
+
+The UI loads example buttons from `demo_examples.txt` (or fallback `demo_example.txt`) at repo root.
+Each example block should follow this CLI-like shape:
+
+```text
+python infer_qlora_qwen3_boh.py `
+  --instruction "...multi-line instruction..." `
+  --input "...multi-line input..." `
+  --max_new_tokens 800
+```
+
+Notes:
+- `--instruction` and `--input` are required for each block.
+- `--max_new_tokens` is optional; if present, the slider is auto-filled when clicking the button.
+- Buttons only show labels; full example text is not displayed inline in the UI.
+
 ### New directories
 
 ```text
@@ -269,7 +302,7 @@ README.md                   # This file
   - 任务/事件简介  
   - 世界观设定段落
 
-### 📖 RAG / 知识图谱（规划中）
+### 📖 RAG / 知识图谱
 
 - 整合 BOH / CS 的设定文档与提取的信息  
 - 利用向量检索和轻量知识图谱，为模型提供上下文  
