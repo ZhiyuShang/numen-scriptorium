@@ -385,13 +385,6 @@
     "tail_name": "Not yet born"
   },
   {
-    "head_id": "hour.madrugad",
-    "head_name": "昕旦",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.漫宿历史与时代划分",
-    "tail_name": "漫宿历史与时代划分"
-  },
-  {
     "head_id": "hour.sun_in_splendour",
     "head_name": "骄阳",
     "relation": "PARTICIPATED_IN",
@@ -399,15 +392,22 @@
     "tail_name": "漫宿历史与时代划分"
   },
   {
-    "head_id": "hour.egg_unhatching",
-    "head_name": "逆孵之卵",
+    "head_id": "hour.madrugad",
+    "head_name": "昕旦",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.漫宿历史与时代划分",
+    "tail_name": "漫宿历史与时代划分"
+  },
+  {
+    "head_id": "hour.madrugad",
+    "head_name": "昕旦",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.石源诸神的诞生",
     "tail_name": "石源诸神的诞生"
   },
   {
-    "head_id": "hour.madrugad",
-    "head_name": "昕旦",
+    "head_id": "hour.egg_unhatching",
+    "head_name": "逆孵之卵",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.石源诸神的诞生",
     "tail_name": "石源诸神的诞生"
@@ -427,20 +427,6 @@
     "tail_name": "林地与血源诸神的崛起"
   },
   {
-    "head_id": "hour.wheel",
-    "head_name": "转轮",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.林地与血源诸神的崛起",
-    "tail_name": "林地与血源诸神的崛起"
-  },
-  {
-    "head_id": "hour.madrugad",
-    "head_name": "昕旦",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.林地与血源诸神的崛起",
-    "tail_name": "林地与血源诸神的崛起"
-  },
-  {
     "head_id": "hour.red_grail",
     "head_name": "赤杯",
     "relation": "PARTICIPATED_IN",
@@ -450,6 +436,20 @@
   {
     "head_id": "hour.moth",
     "head_name": "飞蛾",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.林地与血源诸神的崛起",
+    "tail_name": "林地与血源诸神的崛起"
+  },
+  {
+    "head_id": "hour.wheel",
+    "head_name": "转轮",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.林地与血源诸神的崛起",
+    "tail_name": "林地与血源诸神的崛起"
+  },
+  {
+    "head_id": "hour.madrugad",
+    "head_name": "昕旦",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.林地与血源诸神的崛起",
     "tail_name": "林地与血源诸神的崛起"
@@ -462,6 +462,13 @@
     "tail_name": "辉光与光源诸神的降临"
   },
   {
+    "head_id": "hour.forge_of_days",
+    "head_name": "白日铸炉",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.辉光与光源诸神的降临",
+    "tail_name": "辉光与光源诸神的降临"
+  },
+  {
     "head_id": "hour.madrugad",
     "head_name": "昕旦",
     "relation": "PARTICIPATED_IN",
@@ -469,11 +476,11 @@
     "tail_name": "辉光与光源诸神的降临"
   },
   {
-    "head_id": "hour.forge_of_days",
-    "head_name": "白日铸炉",
+    "head_id": "hour.madrugad",
+    "head_name": "昕旦",
     "relation": "PARTICIPATED_IN",
-    "tail_id": "event.辉光与光源诸神的降临",
-    "tail_name": "辉光与光源诸神的降临"
+    "tail_id": "event.覆石之战",
+    "tail_name": "覆石之战"
   },
   {
     "head_id": "hour.egg_unhatching",
@@ -483,22 +490,8 @@
     "tail_name": "覆石之战"
   },
   {
-    "head_id": "hour.madrugad",
-    "head_name": "昕旦",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.覆石之战",
-    "tail_name": "覆石之战"
-  },
-  {
     "head_id": "hour.moth",
     "head_name": "飞蛾",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.飞蛾猎杀转轮",
-    "tail_name": "飞蛾猎杀转轮"
-  },
-  {
-    "head_id": "hour.thunderskin",
-    "head_name": "轰雷之皮",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.飞蛾猎杀转轮",
     "tail_name": "飞蛾猎杀转轮"
@@ -511,6 +504,13 @@
     "tail_name": "飞蛾猎杀转轮"
   },
   {
+    "head_id": "hour.thunderskin",
+    "head_name": "轰雷之皮",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.飞蛾猎杀转轮",
+    "tail_name": "飞蛾猎杀转轮"
+  },
+  {
     "head_id": "hour.madrugad",
     "head_name": "昕旦",
     "relation": "PARTICIPATED_IN",
@@ -518,15 +518,15 @@
     "tail_name": "飞蛾猎杀转轮"
   },
   {
-    "head_id": "hour.red_grail",
-    "head_name": "赤杯",
+    "head_id": "hour.moth",
+    "head_name": "飞蛾",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.赤杯饮干浪潮",
     "tail_name": "赤杯饮干浪潮"
   },
   {
-    "head_id": "hour.moth",
-    "head_name": "飞蛾",
+    "head_id": "hour.red_grail",
+    "head_name": "赤杯",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.赤杯饮干浪潮",
     "tail_name": "赤杯饮干浪潮"
@@ -567,6 +567,13 @@
     "tail_name": "上校杀死七蟠"
   },
   {
+    "head_id": "hour.colonel",
+    "head_name": "上校",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.上校杀死七蟠",
+    "tail_name": "上校杀死七蟠"
+  },
+  {
     "head_id": "hour.madrugad",
     "head_name": "昕旦",
     "relation": "PARTICIPATED_IN",
@@ -581,11 +588,25 @@
     "tail_name": "上校杀死七蟠"
   },
   {
-    "head_id": "hour.colonel",
-    "head_name": "上校",
+    "head_id": "hour.sun_in_splendour",
+    "head_name": "骄阳",
     "relation": "PARTICIPATED_IN",
-    "tail_id": "event.上校杀死七蟠",
-    "tail_name": "上校杀死七蟠"
+    "tail_id": "event.逆孵之卵逃入辉光",
+    "tail_name": "逆孵之卵逃入辉光"
+  },
+  {
+    "head_id": "hour.madrugad",
+    "head_name": "昕旦",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.逆孵之卵逃入辉光",
+    "tail_name": "逆孵之卵逃入辉光"
+  },
+  {
+    "head_id": "hour.doorintheeye",
+    "head_name": "瞳中之扉",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.逆孵之卵逃入辉光",
+    "tail_name": "逆孵之卵逃入辉光"
   },
   {
     "head_id": "hour.egg_unhatching",
@@ -595,25 +616,11 @@
     "tail_name": "逆孵之卵逃入辉光"
   },
   {
-    "head_id": "hour.doorintheeye",
-    "head_name": "瞳中之扉",
+    "head_id": "hour.velvet",
+    "head_name": "丝毧",
     "relation": "PARTICIPATED_IN",
-    "tail_id": "event.逆孵之卵逃入辉光",
-    "tail_name": "逆孵之卵逃入辉光"
-  },
-  {
-    "head_id": "hour.madrugad",
-    "head_name": "昕旦",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.逆孵之卵逃入辉光",
-    "tail_name": "逆孵之卵逃入辉光"
-  },
-  {
-    "head_id": "hour.sun_in_splendour",
-    "head_name": "骄阳",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.逆孵之卵逃入辉光",
-    "tail_name": "逆孵之卵逃入辉光"
+    "tail_id": "event.伐诃的晋升与根冠的建立",
+    "tail_name": "伐诃的晋升与根冠的建立"
   },
   {
     "head_id": "hour.horned_axe",
@@ -623,22 +630,15 @@
     "tail_name": "伐诃的晋升与根冠的建立"
   },
   {
-    "head_id": "hour.velvet",
-    "head_name": "丝毧",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.伐诃的晋升与根冠的建立",
-    "tail_name": "伐诃的晋升与根冠的建立"
-  },
-  {
-    "head_id": "hour.madrugad",
-    "head_name": "昕旦",
+    "head_id": "hour.doorintheeye",
+    "head_name": "瞳中之扉",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.守夜人之树被种下",
     "tail_name": "守夜人之树被种下"
   },
   {
-    "head_id": "hour.doorintheeye",
-    "head_name": "瞳中之扉",
+    "head_id": "hour.madrugad",
+    "head_name": "昕旦",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.守夜人之树被种下",
     "tail_name": "守夜人之树被种下"
@@ -653,6 +653,13 @@
   {
     "head_id": "hour.seven_coils",
     "head_name": "七蟠",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.肉源诸神的大规模诞生",
+    "tail_name": "肉源诸神的大规模诞生"
+  },
+  {
+    "head_id": "hour.red_grail",
+    "head_name": "赤杯",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.肉源诸神的大规模诞生",
     "tail_name": "肉源诸神的大规模诞生"
@@ -672,11 +679,11 @@
     "tail_name": "肉源诸神的大规模诞生"
   },
   {
-    "head_id": "hour.red_grail",
-    "head_name": "赤杯",
+    "head_id": "hour.forge_of_days",
+    "head_name": "白日铸炉",
     "relation": "PARTICIPATED_IN",
-    "tail_id": "event.肉源诸神的大规模诞生",
-    "tail_name": "肉源诸神的大规模诞生"
+    "tail_id": "event.铸炉重塑漫宿",
+    "tail_name": "铸炉重塑漫宿"
   },
   {
     "head_id": "hour.sun_in_splendour",
@@ -686,22 +693,15 @@
     "tail_name": "铸炉重塑漫宿"
   },
   {
-    "head_id": "hour.forge_of_days",
-    "head_name": "白日铸炉",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.铸炉重塑漫宿",
-    "tail_name": "铸炉重塑漫宿"
-  },
-  {
-    "head_id": "hour.thunderskin",
-    "head_name": "轰雷之皮",
+    "head_id": "hour.horned_axe",
+    "head_name": "双角斧",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.停战协议的签订与绳结盟约的确立",
     "tail_name": "停战协议的签订与绳结盟约的确立"
   },
   {
-    "head_id": "hour.horned_axe",
-    "head_name": "双角斧",
+    "head_id": "hour.thunderskin",
+    "head_name": "轰雷之皮",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.停战协议的签订与绳结盟约的确立",
     "tail_name": "停战协议的签订与绳结盟约的确立"
@@ -714,6 +714,13 @@
     "tail_name": "停战协议的签订与绳结盟约的确立"
   },
   {
+    "head_id": "hour.red_grail",
+    "head_name": "赤杯",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.停战协议的签订与绳结盟约的确立",
+    "tail_name": "停战协议的签订与绳结盟约的确立"
+  },
+  {
     "head_id": "hour.sun_in_splendour",
     "head_name": "骄阳",
     "relation": "PARTICIPATED_IN",
@@ -721,11 +728,11 @@
     "tail_name": "停战协议的签订与绳结盟约的确立"
   },
   {
-    "head_id": "hour.red_grail",
-    "head_name": "赤杯",
+    "head_id": "hour.sun_in_splendour",
+    "head_name": "骄阳",
     "relation": "PARTICIPATED_IN",
-    "tail_id": "event.停战协议的签订与绳结盟约的确立",
-    "tail_name": "停战协议的签订与绳结盟约的确立"
+    "tail_id": "event.路权战争",
+    "tail_name": "路权战争"
   },
   {
     "head_id": "hour.vagabond",
@@ -745,33 +752,12 @@
     "head_id": "hour.sun_in_splendour",
     "head_name": "骄阳",
     "relation": "PARTICIPATED_IN",
-    "tail_id": "event.路权战争",
-    "tail_name": "路权战争"
-  },
-  {
-    "head_id": "hour.wolf_divided",
-    "head_name": "裂分之狼",
-    "relation": "PARTICIPATED_IN",
     "tail_id": "event.置闰",
     "tail_name": "置闰"
   },
   {
     "head_id": "hour.forge_of_days",
     "head_name": "白日铸炉",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.置闰",
-    "tail_name": "置闰"
-  },
-  {
-    "head_id": "hour.sun_in_rags",
-    "head_name": "残阳",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.置闰",
-    "tail_name": "置闰"
-  },
-  {
-    "head_id": "hour.sun_in_splendour",
-    "head_name": "骄阳",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.置闰",
     "tail_name": "置闰"
@@ -784,8 +770,8 @@
     "tail_name": "置闰"
   },
   {
-    "head_id": "hour.madrugad",
-    "head_name": "昕旦",
+    "head_id": "hour.sun_in_rags",
+    "head_name": "残阳",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.置闰",
     "tail_name": "置闰"
@@ -796,6 +782,34 @@
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.置闰",
     "tail_name": "置闰"
+  },
+  {
+    "head_id": "hour.madrugad",
+    "head_name": "昕旦",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.置闰",
+    "tail_name": "置闰"
+  },
+  {
+    "head_id": "hour.wolf_divided",
+    "head_name": "裂分之狼",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.置闰",
+    "tail_name": "置闰"
+  },
+  {
+    "head_id": "hour.beachcomber",
+    "head_name": "拾滩鸦",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.栖木的建立与成员更迭",
+    "tail_name": "栖木的建立与成员更迭"
+  },
+  {
+    "head_id": "hour.red_grail",
+    "head_name": "赤杯",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.栖木的建立与成员更迭",
+    "tail_name": "栖木的建立与成员更迭"
   },
   {
     "head_id": "hour.vagabond",
@@ -812,13 +826,6 @@
     "tail_name": "栖木的建立与成员更迭"
   },
   {
-    "head_id": "hour.beachcomber",
-    "head_name": "拾滩鸦",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.栖木的建立与成员更迭",
-    "tail_name": "栖木的建立与成员更迭"
-  },
-  {
     "head_id": "hour.sun_in_splendour",
     "head_name": "骄阳",
     "relation": "PARTICIPATED_IN",
@@ -826,11 +833,11 @@
     "tail_name": "栖木的建立与成员更迭"
   },
   {
-    "head_id": "hour.red_grail",
-    "head_name": "赤杯",
+    "head_id": "hour.horned_axe",
+    "head_name": "双角斧",
     "relation": "PARTICIPATED_IN",
-    "tail_id": "event.栖木的建立与成员更迭",
-    "tail_name": "栖木的建立与成员更迭"
+    "tail_id": "event.选取第六位成员",
+    "tail_name": "选取第六位成员"
   },
   {
     "head_id": "hour.thunderskin",
@@ -840,8 +847,15 @@
     "tail_name": "选取第六位成员"
   },
   {
-    "head_id": "hour.horned_axe",
-    "head_name": "双角斧",
+    "head_id": "hour.red_grail",
+    "head_name": "赤杯",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.选取第六位成员",
+    "tail_name": "选取第六位成员"
+  },
+  {
+    "head_id": "hour.moth",
+    "head_name": "飞蛾",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.选取第六位成员",
     "tail_name": "选取第六位成员"
@@ -854,27 +868,6 @@
     "tail_name": "选取第六位成员"
   },
   {
-    "head_id": "hour.red_grail",
-    "head_name": "赤杯",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.选取第六位成员",
-    "tail_name": "选取第六位成员"
-  },
-  {
-    "head_id": "hour.moth",
-    "head_name": "飞蛾",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.选取第六位成员",
-    "tail_name": "选取第六位成员"
-  },
-  {
-    "head_id": "hour.colonel",
-    "head_name": "上校",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.驱逐第七位成员",
-    "tail_name": "驱逐第七位成员"
-  },
-  {
     "head_id": "hour.moth",
     "head_name": "飞蛾",
     "relation": "PARTICIPATED_IN",
@@ -884,6 +877,13 @@
   {
     "head_id": "hour.white",
     "head_name": "白雪",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.驱逐第七位成员",
+    "tail_name": "驱逐第七位成员"
+  },
+  {
+    "head_id": "hour.colonel",
+    "head_name": "上校",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.驱逐第七位成员",
     "tail_name": "驱逐第七位成员"
@@ -910,29 +910,15 @@
     "tail_name": "蠕虫大战"
   },
   {
-    "head_id": "hour.colonel",
-    "head_name": "上校",
+    "head_id": "hour.sun_in_splendour",
+    "head_name": "骄阳",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.太阳大战",
     "tail_name": "太阳大战"
   },
   {
-    "head_id": "hour.vagabond",
-    "head_name": "浪游旅人",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.太阳大战",
-    "tail_name": "太阳大战"
-  },
-  {
-    "head_id": "hour.thunderskin",
-    "head_name": "轰雷之皮",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.太阳大战",
-    "tail_name": "太阳大战"
-  },
-  {
-    "head_id": "hour.wolf_divided",
-    "head_name": "裂分之狼",
+    "head_id": "hour.doorintheeye",
+    "head_name": "瞳中之扉",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.太阳大战",
     "tail_name": "太阳大战"
@@ -945,36 +931,8 @@
     "tail_name": "太阳大战"
   },
   {
-    "head_id": "hour.lionsmith",
-    "head_name": "狮子匠",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.太阳大战",
-    "tail_name": "太阳大战"
-  },
-  {
-    "head_id": "hour.mother_of_ants",
-    "head_name": "蚁母",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.太阳大战",
-    "tail_name": "太阳大战"
-  },
-  {
-    "head_id": "hour.egg_unhatching",
-    "head_name": "逆孵之卵",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.太阳大战",
-    "tail_name": "太阳大战"
-  },
-  {
-    "head_id": "hour.madrugad",
-    "head_name": "昕旦",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.太阳大战",
-    "tail_name": "太阳大战"
-  },
-  {
-    "head_id": "hour.sun_in_splendour",
-    "head_name": "骄阳",
+    "head_id": "hour.thunderskin",
+    "head_name": "轰雷之皮",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.太阳大战",
     "tail_name": "太阳大战"
@@ -982,6 +940,13 @@
   {
     "head_id": "hour.chandler",
     "head_name": "制烛人",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.太阳大战",
+    "tail_name": "太阳大战"
+  },
+  {
+    "head_id": "hour.egg_unhatching",
+    "head_name": "逆孵之卵",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.太阳大战",
     "tail_name": "太阳大战"
@@ -994,6 +959,27 @@
     "tail_name": "太阳大战"
   },
   {
+    "head_id": "hour.vagabond",
+    "head_name": "浪游旅人",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.太阳大战",
+    "tail_name": "太阳大战"
+  },
+  {
+    "head_id": "hour.colonel",
+    "head_name": "上校",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.太阳大战",
+    "tail_name": "太阳大战"
+  },
+  {
+    "head_id": "hour.lionsmith",
+    "head_name": "狮子匠",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.太阳大战",
+    "tail_name": "太阳大战"
+  },
+  {
     "head_id": "hour.moth",
     "head_name": "飞蛾",
     "relation": "PARTICIPATED_IN",
@@ -1001,22 +987,29 @@
     "tail_name": "太阳大战"
   },
   {
-    "head_id": "hour.doorintheeye",
-    "head_name": "瞳中之扉",
+    "head_id": "hour.madrugad",
+    "head_name": "昕旦",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.太阳大战",
     "tail_name": "太阳大战"
   },
   {
-    "head_id": "hour.egg_unhatching",
-    "head_name": "逆孵之卵",
+    "head_id": "hour.wolf_divided",
+    "head_name": "裂分之狼",
     "relation": "PARTICIPATED_IN",
-    "tail_id": "event.第二拂晓花落谁家",
-    "tail_name": "第二拂晓花落谁家"
+    "tail_id": "event.太阳大战",
+    "tail_name": "太阳大战"
   },
   {
-    "head_id": "hour.sun_in_splendour",
-    "head_name": "骄阳",
+    "head_id": "hour.mother_of_ants",
+    "head_name": "蚁母",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.太阳大战",
+    "tail_name": "太阳大战"
+  },
+  {
+    "head_id": "hour.doorintheeye",
+    "head_name": "瞳中之扉",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.第二拂晓花落谁家",
     "tail_name": "第二拂晓花落谁家"
@@ -1029,6 +1022,13 @@
     "tail_name": "第二拂晓花落谁家"
   },
   {
+    "head_id": "hour.egg_unhatching",
+    "head_name": "逆孵之卵",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.第二拂晓花落谁家",
+    "tail_name": "第二拂晓花落谁家"
+  },
+  {
     "head_id": "hour.madrugad",
     "head_name": "昕旦",
     "relation": "PARTICIPATED_IN",
@@ -1036,18 +1036,11 @@
     "tail_name": "第二拂晓花落谁家"
   },
   {
-    "head_id": "hour.doorintheeye",
-    "head_name": "瞳中之扉",
+    "head_id": "hour.sun_in_splendour",
+    "head_name": "骄阳",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.第二拂晓花落谁家",
     "tail_name": "第二拂晓花落谁家"
-  },
-  {
-    "head_id": "hour.vagabond",
-    "head_name": "浪游旅人",
-    "relation": "PARTICIPATED_IN",
-    "tail_id": "event.根冠的终结与通往辉光的巡礼",
-    "tail_name": "根冠的终结与通往辉光的巡礼"
   },
   {
     "head_id": "hour.moth",
@@ -1057,8 +1050,8 @@
     "tail_name": "根冠的终结与通往辉光的巡礼"
   },
   {
-    "head_id": "hour.doorintheeye",
-    "head_name": "瞳中之扉",
+    "head_id": "hour.vagabond",
+    "head_name": "浪游旅人",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.根冠的终结与通往辉光的巡礼",
     "tail_name": "根冠的终结与通往辉光的巡礼"
@@ -1066,6 +1059,13 @@
   {
     "head_id": "hour.sun_in_splendour",
     "head_name": "骄阳",
+    "relation": "PARTICIPATED_IN",
+    "tail_id": "event.根冠的终结与通往辉光的巡礼",
+    "tail_name": "根冠的终结与通往辉光的巡礼"
+  },
+  {
+    "head_id": "hour.doorintheeye",
+    "head_name": "瞳中之扉",
     "relation": "PARTICIPATED_IN",
     "tail_id": "event.根冠的终结与通往辉光的巡礼",
     "tail_name": "根冠的终结与通往辉光的巡礼"
