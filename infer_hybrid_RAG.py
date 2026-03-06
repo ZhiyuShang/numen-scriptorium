@@ -46,31 +46,31 @@ class HybridRetriever:
         return list(found_entities)
 
     def retrieve(self, query: str, top_k: int = 1):
-        print(f"\n[RAG] 正在分析问题: '{query[:30]}...'")
+        print(f"\n[RAG] 正在启动双引擎检索...")
         
-        # --- 分支 A: 知识图谱提取 (词典模式) ---
-        # 直接提取中英对照，而不是描述性句子
-        matched_terms = set()
+        # --- 分支 A: 知识图谱提取 (精确词典) ---
+        rag_dict = {}
         for alias, std_name in self.alias_map.items():
-            if alias in query or alias.lower() in query.lower():
-                # 明确告诉模型这个词该怎么翻
-                matched_terms.add(f"- {alias} -> {std_name}")
-        print(matched_terms)
-        # --- 分支 B: 向量库语义检索 ---
-        query_embedding = self.embedder.encode([query]).tolist()
-        results = self.collection.query(
-            query_embeddings=query_embedding,
-            n_results=top_k
-        )
-        vector_context = results['documents'][0] if results['documents'] else []
+            if alias.lower() in query.lower() and len(alias) > 2:
+                rag_dict[alias] = std_name
+        print(f"[RAG] -> 图谱引擎命中术语: {rag_dict}")
+                
+        # --- 分支 B: 向量库语义检索 (背景故事) ---
+        vector_context = ""
+        try:
+            query_embedding = self.embedder.encode([query]).tolist()
+            results = self.collection.query(
+                query_embeddings=query_embedding,
+                n_results=top_k
+            )
+            if results and results['documents'] and results['documents'][0]:
+                # 将检索到的 top_k 个文段拼接起来
+                vector_context = "\n".join(results['documents'][0])
+                print(f"[RAG] -> 向量引擎命中背景: 获取了 {len(results['documents'][0])} 段相关设定。")
+        except Exception as e:
+            print(f"[RAG] -> 向量检索跳过或失败: {e}")
 
-        # --- 组装最终的上下文提示词 ---
-        context_str = "【强制术语对照表】（遇到以下英文必须使用对应的中文翻译）：\n"
-        context_str += "\n".join(matched_terms) if matched_terms else "无特殊术语。\n"
-        context_str += "\n【背景语境参考】（仅供理解上下文，不要抄袭）：\n"
-        context_str += "\n".join(vector_context)
-        
-        return context_str
+        return rag_dict, vector_context
 
     def retrieve_dict(self, query: str) -> dict:
         """纯粹的图谱词典提取器，返回字典供打小抄使用"""
@@ -131,24 +131,31 @@ def load_llm():
 #         text = text.split("回答：", 1)[1]
 #     return text.strip()
 
-def generate_answer(tokenizer, model, instruction: str, rag_dict: dict, text_to_translate: str, max_new_tokens: int = 512):
+def generate_answer(tokenizer, model, instruction: str, rag_dict: dict, vector_context: str, text_to_translate: str, max_new_tokens: int = 512):
     
-    # 【外挂技巧】：把 RAG 搜到的词典，直接暴力替换/标注到待翻译的英文里
-    # 比如 rag_dict 是 {"Sun-in-Splendour": "骄阳", "Grail": "赤杯"}
+    # 【外挂技巧 1：术语硬注入】（保留这个优秀机制）
     injected_text = text_to_translate
     for eng_term, cn_term in rag_dict.items():
         if eng_term in injected_text:
-            # 在原文中直接给模型打小抄
             injected_text = injected_text.replace(eng_term, f"{eng_term}({cn_term})")
+
+    # 【外挂技巧 2：动态构建 System Prompt 提供背景】
+    dynamic_system_prompt = instruction
+    if vector_context:
+        dynamic_system_prompt += (
+            "\n\n【背景语境参考】\n"
+            "以下内容为从《司辰之书》世界观数据库中检索到的相关背景故事。\n"
+            "请仅将此作为理解上下文、隐喻和设定语气的参考，**绝对不要**直接翻译或抄袭参考文本：\n"
+            f"\"\"\"{vector_context}\"\"\""
+        )
 
     # 构建标准的消息格式
     messages = [
-        {"role": "system", "content": instruction},
-        {"role": "user", "content": f"请翻译以下文本（括号内为强制规定的中文译名）：\n{injected_text}"}
+        {"role": "system", "content": dynamic_system_prompt},
+        {"role": "user", "content": f"请翻译以下文本（括号内为强制规定的中文译名，请在最终翻译中直接使用该译名，去掉括号和英文）：\n{injected_text}"}
     ]
     
-    # 【核心修复】：使用 Qwen 官方的 Chat Template 生成带特殊 Token 的 Prompt
-    # 这能保证它 100% 吐出正确的 EOS token 并停下来！
+    # 转换为 Qwen2.5 专属格式
     text_input = tokenizer.apply_chat_template(
         messages, 
         tokenize=False, 
@@ -165,11 +172,10 @@ def generate_answer(tokenizer, model, instruction: str, rag_dict: dict, text_to_
             temperature=0.3,       
             top_p=0.85,
             repetition_penalty=1.1,
-            # 告诉模型遇到 im_end 就立刻停止
             eos_token_id=tokenizer.eos_token_id, 
         )
 
-    # 截取新生成的部分（忽略前面拼接的 Prompt）
+    # 截取新生成的部分
     input_len = inputs['input_ids'].shape[1]
     generated_tokens = outputs[0][input_len:]
     text = tokenizer.decode(generated_tokens, skip_special_tokens=True)
@@ -204,7 +210,7 @@ if __name__ == "__main__":
         
         # 步骤 A：混合检索提取上下文
         #context = retriever.retrieve(q, top_k=1)
-        rag_dict = retriever.retrieve_dict(q)
+        rag_dict, vector_context = retriever.retrieve(q, top_k=1) # 可以尝试把 top_k 改成 2 
         
         # 步骤 C：模型推理生成
         print("\n[LLM] 正在结合设定进行翻译...")
@@ -212,9 +218,10 @@ if __name__ == "__main__":
             tokenizer=tokenizer, 
             model=model, 
             instruction=system_instruction, 
-            rag_dict=rag_dict,           # 独立的 RAG 上下文传入
-            text_to_translate=q            # 纯净的英文原文传入
-            )
+            rag_dict=rag_dict,             # 图谱引擎：强制术语
+            vector_context=vector_context, # 向量引擎：背景故事
+            text_to_translate=q            # 原文
+        )
         
         print("\n" + "="*50)
         print(f"提问: {q}")
